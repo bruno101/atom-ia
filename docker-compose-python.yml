@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  chatbot:
+    build:
+      context: ./python-backend
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./python-backend:/app
+      - ~/.cache/huggingface:/root/.cache/huggingface  # monte o cache do HF local
+    tty: true

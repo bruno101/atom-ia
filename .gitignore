@@ -1,0 +1,18 @@
+# Ignorar arquivos temporários Python
+python-backend/__pycache__/
+python-backend/.gradio/
+python-backend/chroma_db/
+python-backend/storage/
+python-backend/.env
+
+# Ignorar arquivos .pyc e caches
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar caches e logs gerais
+*.log
+.cache/
+
+# Ignorar arquivos do sistema
+.DS_Store
