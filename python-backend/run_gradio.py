@@ -1,4 +1,4 @@
-from rag_core import pipeline_completo
+from atom_rag import pipeline_completo
 import gradio as gr
 
 demo = gr.Interface(fn=pipeline_completo, inputs=["text"], outputs=["text"])

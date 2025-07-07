@@ -4,6 +4,9 @@ python-backend/.gradio/
 python-backend/chroma_db/
 python-backend/storage/
 python-backend/.env
+python-backend/artigos/
+python-backend/csv/
+python-backend/rag_core.py
 
 # Ignorar arquivos .pyc e caches
 *.pyc
@@ -16,3 +19,8 @@ python-backend/.env
 
 # Ignorar arquivos do sistema
 .DS_Store
+
+**/node_modules/
+**/build/
+**/storage_atom/
+**/chroma_db_atom/

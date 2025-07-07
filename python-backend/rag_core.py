@@ -13,6 +13,7 @@ from llama_index.core.query_engine import CustomQueryEngine
 from llama_index.core.retrievers import BaseRetriever
 from llama_index.core.response_synthesizers import BaseSynthesizer, get_response_synthesizer
 
+
 # Load environment variables
 load_dotenv()
 GROQ_API = os.getenv("GROQ_API")

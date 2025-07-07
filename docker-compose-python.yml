@@ -4,9 +4,16 @@ services:
   chatbot:
     build:
       context: ./python-backend
+    networks:
+      - atom-network
     ports:
       - "7860:7860"
     volumes:
       - ./python-backend:/app
-      - ~/.cache/huggingface:/root/.cache/huggingface  # monte o cache do HF local
+      - ~/.cache/huggingface:/root/.cache/huggingface
     tty: true
+
+networks:
+  atom-network:
+    external: true
+    name: docker_default

@@ -1,25 +1,71 @@
-# main.py
-
-from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
+from typing import List, Optional
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field
+from atom_rag import pipeline_completo
 import uvicorn
-from rag_core import pipeline_completo
+import logging
 
-app = FastAPI()
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-@app.post("/ask")
-async def ask(request: Request):
-    data = await request.json()
-    consulta = data.get("consulta")
+app = FastAPI(
+    title="Chatbot AtoModesto",
+    description="API para responder consultas com RAG e LLM, com histórico opcional",
+    version="1.1.0"
+)
 
-    if not consulta:
-        return JSONResponse(content={"error": "Consulta não fornecida."}, status_code=400)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
+class MensagemHistorico(BaseModel):
+    usuario: str = Field(..., description="Mensagem do usuário")
+    bot: str = Field(..., description="Resposta do bot")
+
+class ConsultaRequest(BaseModel):
+    consulta: str = Field(..., min_length=3, description="Texto da consulta a ser respondida.")
+    historico: Optional[List[MensagemHistorico]] = Field(
+        default=None,
+        description="Histórico opcional de interações anteriores"
+    )
+
+class ConsultaResponse(BaseModel):
+    resposta: str
+
+@app.post("/ask", response_model=ConsultaResponse)
+async def ask(req: ConsultaRequest):
     try:
-        resposta = pipeline_completo(consulta)
+        logger.info(f"Recebida consulta: {req.consulta}")
+
+        historico_str = None
+        if req.historico:
+            historico_formatado = [(m.usuario, m.bot) for m in req.historico]
+            historico_str = "\n".join(
+                f"Usuário: {usuario}\nBot: {bot}\n---"
+                for usuario, bot in historico_formatado
+                )
+
+        if historico_str:
+            resposta = pipeline_completo(req.consulta, historico_str)
+        else:
+            resposta = pipeline_completo(req.consulta)
+
         return {"resposta": resposta}
+
+    except ValueError as e:
+        logger.warning(f"Erro de validação: {str(e)}")
+        raise HTTPException(status_code=422, detail=str(e))
+    except TypeError as e:
+        logger.error(f"Erro de tipo: {str(e)}")
+        raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
+        logger.exception("Erro inesperado")
+        raise HTTPException(status_code=500, detail="Erro interno do servidor")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=7860)
+    uvicorn.run("main:app", host="0.0.0.0", port=7860, reload=True)

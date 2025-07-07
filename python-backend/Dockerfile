@@ -18,4 +18,6 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 
 COPY . .
 
-CMD ["python", "main.py"]
+CMD ["tail", "-f", "/dev/null"]
+
+#CMD ["python", "main.py"]
