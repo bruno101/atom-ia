@@ -3,13 +3,13 @@ version: '3.8'
 services:
   chatbot:
     build:
-      context: ./python-backend
+      context: .
     networks:
       - atom-network
     ports:
       - "7860:7860"
     volumes:
-      - ./python-backend:/app
+      - .:/app
       - ~/.cache/huggingface:/root/.cache/huggingface
     tty: true
 
