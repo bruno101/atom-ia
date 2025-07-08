@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 
 const Sidebar = ({ showSidebar, toggleSidebar, suggestedLinks }) => {

@@ -264,11 +264,21 @@ body {
 }
 
 .message-content {
-  white-space: pre-wrap;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   word-break: break-word;
+}
+
+.message-content ol,
+.message-content ul {
+  padding-left: 1.5rem;  
+  margin-left: 0;       
+}
+
+.message-content li > p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .message-time {

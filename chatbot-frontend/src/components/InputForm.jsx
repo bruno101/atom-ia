@@ -1,4 +1,3 @@
-import { useState } from "react";
 import SearchIcon from "./icons/SearchIcon";
 import SendIcon from "./icons/SendIcon";
 import LoaderIcon from "./icons/LoaderIcon";
