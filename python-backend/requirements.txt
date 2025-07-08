@@ -8,3 +8,4 @@ python-dotenv
 chromadb
 pymysql
 rapidfuzz
+llama-index-llms-google-genai

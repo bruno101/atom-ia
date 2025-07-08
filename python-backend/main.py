@@ -2,7 +2,7 @@ from typing import List, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from atom_rag import pipeline_completo
+from rag_models.model2 import pipeline_completo
 import uvicorn
 import logging
 
