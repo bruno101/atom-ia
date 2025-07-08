@@ -101,6 +101,7 @@ qa_prompt = PromptTemplate(
       "paginas": [
         {
         "slug": "Slug da página recomendada",
+        "title": "Titulo da página recomendada",
         "descricao": "Descrição resumida do conteúdo da página",
         "justificativa": "Motivo da recomendação e como essa página pode ajudar na pesquisa"
       }
@@ -202,4 +203,6 @@ def pipeline_completo(consulta, historico=None):
     response = query_engine_customize.custom_query(consulta, historico)
     resposta_json = json.loads(response)
     resposta_json_validada = validando(resposta_json, slugs_validos)
-    return formatando_respostas(resposta_json_validada, consulta)
+    resposta_textual = formatando_respostas(resposta_json_validada, consulta)
+    print("Paginas", [pagina for pagina in resposta_json_validada['data']['paginas']] )
+    return {"resposta":resposta_textual, "links":[{"url": f"http://localhost:63001/index.php/{pagina['slug']}", "slug":pagina['slug'], "title":pagina['title'], "justificativa":pagina['justificativa'], "descricao":pagina['descricao']} for pagina in resposta_json_validada['data']['paginas']]}

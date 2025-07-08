@@ -17,7 +17,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], 
+    allow_origins=["http://localhost:3000", "http://localhost:63001"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -33,9 +33,17 @@ class ConsultaRequest(BaseModel):
         default=None,
         description="Histórico opcional de interações anteriores"
     )
+    
+class Link(BaseModel):
+    url: str = Field(..., description="URL da página recomendada")
+    title: str = Field(..., description="Título da página recomendada")
+    slug: str = Field(..., description="Slug da página recomendada")
+    justificativa: Optional[str] = Field(None, description="Justificativa para a recomendação da página")
+    descricao: Optional[str] = Field(None, description="Descrição da página recomendada")
 
 class ConsultaResponse(BaseModel):
     resposta: str
+    links: List[Link]
 
 @app.post("/ask", response_model=ConsultaResponse)
 async def ask(req: ConsultaRequest):
@@ -55,7 +63,7 @@ async def ask(req: ConsultaRequest):
         else:
             resposta = pipeline_completo(req.consulta)
 
-        return {"resposta": resposta}
+        return resposta
 
     except ValueError as e:
         logger.warning(f"Erro de validação: {str(e)}")
