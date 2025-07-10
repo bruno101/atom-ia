@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import "./App.css";
-import ChatHeader from "./components/ChatHeader";
-import InputForm from "./components/InputForm";
-import MessageList from "./components/MessageList";
-import Sidebar from "./components/Sidebar";
+import ChatHeader from "./components/ChatHeader/ChatHeader";
+import InputForm from "./components/InputForm/InputForm";
+import MessageList from "./components/MessageList/MessageList";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   const [messages, setMessages] = useState([
@@ -129,31 +129,31 @@ function App() {
   return (
     <div className="app">
       <div className="main-container">
-        {/* Sidebar da esquerda - Links sugeridos */}
+
         <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} suggestedLinks={suggestedLinks}/>
 
-        {/* Lado direito - Interface do Chat */}
         <div className="chat-section">
-          {/* Header */}
+
           <ChatHeader/>
 
-          {/* Contêiner do Chat */}
           <div className="chat-container">
+
             <MessageList messages={messages} isLoading={isLoading} scrollRef={scrollAreaRef}/>
 
-            {/* Área de Input */}
             <div className="input-area">
-              <div className="input-section-title">
-                <h3>Faça sua consulta arquivística:</h3>
-              </div>
+              
               <InputForm input={input} setInput={setInput} onSubmit={handleSubmit} isLoading={isLoading}/>
 
               <div className="footer-info">
                 <span>ModestIA • Powered by AtoM • Dataprev © 2025</span>
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
     </div>
   );

@@ -1,0 +1,50 @@
+.chatHeader {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 20px 30px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerContent svg {
+  width: 32px;
+  height: 32px;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.headerText h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0c94ad;
+  margin: 0;
+}
+
+.headerText p {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 2px 0 0 0;
+}
+
+.sparkle {
+  width: "2.7em";
+  height: "2.7em";
+  margin-right: "2px";
+}
+
+@media (max-width: 768px) {
+  .chat-header {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatHeader {
+    padding: 15px;
+  }
+}

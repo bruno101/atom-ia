@@ -1,0 +1,118 @@
+.message {
+  display: flex;
+  gap: 10px;
+}
+
+.messageUser {
+  justify-content: flex-end;
+}
+
+.messageAssistant {
+  justify-content: flex-start;
+}
+
+.messageAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.messageAvatarBot {
+  background-color: #0c94ad;
+  color: white;
+}
+
+.messageAvatarUser {
+  background-color: #0c94ad;
+  color: white;
+}
+
+.messageBubble {
+  max-width: calc(100% - 50px);
+  border-radius: 8px;
+  padding: 12px 14px;
+  border: 1px solid #dee2e6;
+}
+
+.bubbleUser {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.bubbleAssistant {
+  background-color: #ffffff;
+  color: #333;
+  border-color: #dee2e6;
+}
+
+.messageContent {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+.messageContent ol,
+.messageContent ul {
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+.messageContent li > p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.messageTime {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  margin-top: 8px;
+  opacity: 0.7;
+}
+
+.timeDot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+@media (max-width: 1024px) {
+  .messageBubble {
+    max-width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 768px) {
+  .message {
+    gap: 8px;
+  }
+
+  .messageBubble {
+    max-width: calc(100% - 40px);
+    padding: 10px 12px;
+  }
+
+  .messageContent {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .messageBubble {
+    max-width: calc(100% - 36px);
+  }
+
+  .messageAvatar {
+    width: 28px;
+    height: 28px;
+  }
+}

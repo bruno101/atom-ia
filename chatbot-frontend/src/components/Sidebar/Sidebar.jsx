@@ -1,37 +1,40 @@
-import ExternalLinkIcon from "./icons/ExternalLinkIcon";
+import ExternalLinkIcon from "../../icons/ExternalLinkIcon";
+import styles from './Sidebar.module.css';
 
 const Sidebar = ({ showSidebar, toggleSidebar, suggestedLinks }) => {
-
   return (
     <>
-      <div className="mobile-header">
-        <button className="sidebar-toggle" onClick={toggleSidebar}>
+      <div className={styles.mobileHeader}>
+        <button className={styles.sidebarToggle} onClick={toggleSidebar}>
           <span>Recursos sugeridos</span>
         </button>
       </div>
-      <div className={`sidebar ${showSidebar ? "sidebar-visible" : ""}`}>
-        <div className="sidebar-section">
-          <h3 className="sidebar-title">Recursos sugeridos:</h3>
-          <button className="close-sidebar" onClick={toggleSidebar}>
+
+      <div className={`${styles.sidebar} ${showSidebar ? styles.sidebarVisible : ""}`}>
+        <div className={styles.sidebarSection}>
+          <h3 className={styles.sidebarTitle}>Recursos sugeridos:</h3>
+          <button className={styles.closeSidebar} onClick={toggleSidebar}>
             &times;
           </button>
 
           {suggestedLinks.length > 0 ? (
-            <div className="links-container">
+            <div className={styles.linksContainer}>
               {suggestedLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="suggested-link"
+                  className={styles.suggestedLink}
                 >
-                  <div className="link-content">
-                    <span className="link-title">
+                  <div className={styles.linkContent}>
+                    <span className={styles.linkTitle}>
                       {link.title || link.slug}
                     </span>
                     {link.description && (
-                      <span className="link-description">{link.descricao}</span>
+                      <span className={styles.linkDescription}>
+                        {link.descricao}
+                      </span>
                     )}
                   </div>
                   <ExternalLinkIcon />
@@ -39,7 +42,7 @@ const Sidebar = ({ showSidebar, toggleSidebar, suggestedLinks }) => {
               ))}
             </div>
           ) : (
-            <div className="no-links">
+            <div className={styles.noLinks}>
               <p>Faça uma consulta para ver recursos relacionados</p>
             </div>
           )}
