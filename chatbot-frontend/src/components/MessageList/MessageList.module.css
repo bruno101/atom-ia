@@ -1,5 +1,3 @@
-/* MessageList.module.css */
-
 .messagesArea {
   flex: 1;
   overflow-y: auto;
@@ -48,6 +46,12 @@
   border: 1px solid #dee2e6;
 }
 
+.sparkleWhite {
+  width: 1.6em;
+  height: 1.6em;
+  object-fit: contain;
+}
+
 .bubbleAssistant {
   background-color: #ffffff;
   color: #333;
@@ -65,7 +69,6 @@
   font-size: 14px;
 }
 
-/* --- NEW CSS FOR SPINNER --- */
 .spinner {
   animation: spin 1s linear infinite;
 }

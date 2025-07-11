@@ -1,4 +1,3 @@
-import ArchiveIcon from "../../icons/ArchiveIcon";
 import UserIcon from "../../icons/UserIcon";
 import formatTime from "../../utils/formatTime";
 import ReactMarkdown from "react-markdown";

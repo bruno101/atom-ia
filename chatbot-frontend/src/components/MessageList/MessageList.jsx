@@ -1,7 +1,6 @@
 // components/MessageList/MessageList.jsx
 import ChatMessage from "../ChatMessage/ChatMessage";
 import LoaderIcon from "../../icons/LoaderIcon";
-import ArchiveIcon from "../../icons/ArchiveIcon";
 import styles from "./MessageList.module.css";
 
 const MessageList = ({ messages, isLoading, streamedMessage, scrollRef }) => {
@@ -17,7 +16,11 @@ const MessageList = ({ messages, isLoading, streamedMessage, scrollRef }) => {
             <div
               className={`${styles.messageAvatar} ${styles.messageAvatarBot}`}
             >
-              <ArchiveIcon />
+              <img
+                src="/images/sparkle-white.png"
+                alt=""
+                className={styles.sparkleWhite}
+              />
             </div>
             <div
               className={`${styles.messageBubble} ${styles.bubbleAssistant}`}
