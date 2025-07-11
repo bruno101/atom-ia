@@ -1,7 +1,28 @@
+from fastapi import FastAPI
+from api import routers
+from config import configure_app
+
+app = FastAPI(
+    title="Chatbot AtoModesto",
+    description="API para responder consultas com RAG e LLM",
+    version="1.1.0"
+)
+
+configure_app(app)
+app.include_router(routers.router)
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=7860, reload=True)
+
+"""import json
 from typing import List, Optional
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from sse_starlette.sse import EventSourceResponse
+from rag_models.model4.query import handle_query
 from rag_models.model2 import pipeline_completo
 import uvicorn
 import logging
@@ -74,6 +95,47 @@ async def ask(req: ConsultaRequest):
     except Exception as e:
         logger.exception("Erro inesperado")
         raise HTTPException(status_code=500, detail="Erro interno do servidor")
+    
+@app.post("/ask-stream") 
+async def ask_stream(request: Request, req: ConsultaRequest): 
+    async def event_generator():
+        try:
+            historico_str = None
+            if req.historico:
+                historico_formatado = [(m.usuario, m.bot) for m in req.historico]
+                historico_str = "\n".join(
+                    f"Usuário: {usuario}\nBot: {bot}\n---"
+                    for usuario, bot in historico_formatado
+                )
+            
+            async for message in handle_query(req.consulta, historico_str): 
+                if await request.is_disconnected():
+                    logger.info("Client disconnected from SSE stream.")
+                    break
+
+                if message.startswith("FINAL_RESULT::"):
+                    final_data = message.replace("FINAL_RESULT::", "")
+                    yield {
+                        "event": "done",
+                        "data": final_data 
+                    }
+                    return 
+                else:
+                    yield {
+                        "event": "progress",
+                        "data": message
+                    }
+        except Exception as e:
+            error_message = f"Erro no servidor: {str(e)}"
+            logger.exception(f"Erro inesperado no event_generator para consulta '{req.consulta}'")
+            yield {
+                "event": "error",
+                "data": error_message
+            }
+            return 
+
+    return EventSourceResponse(event_generator())
+
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=7860, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=7860, reload=True)"""

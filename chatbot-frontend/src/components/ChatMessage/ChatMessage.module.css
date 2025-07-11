@@ -32,6 +32,12 @@
   color: white;
 }
 
+.sparkleWhite {
+  width: 1.6em;
+  height: 1.6em;
+  object-fit: contain;
+}
+
 .messageBubble {
   max-width: calc(100% - 50px);
   border-radius: 8px;
@@ -83,6 +89,17 @@
   height: 3px;
   border-radius: 50%;
   background: currentColor;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1024px) {

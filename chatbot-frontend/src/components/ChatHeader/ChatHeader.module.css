@@ -32,9 +32,9 @@
 }
 
 .sparkle {
-  width: "2.7em";
-  height: "2.7em";
-  margin-right: "2px";
+  width: 2.7em;
+  height: 2.7em;
+  margin-right: 2px;
 }
 
 @media (max-width: 768px) {

@@ -1,3 +1,5 @@
+/* MessageList.module.css */
+
 .messagesArea {
   flex: 1;
   overflow-y: auto;
@@ -63,6 +65,21 @@
   font-size: 14px;
 }
 
+/* --- NEW CSS FOR SPINNER --- */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* --- END NEW CSS FOR SPINNER --- */
+
 @media (max-width: 1024px) {
   .messagesArea {
     padding: 15px;
@@ -81,7 +98,7 @@
   .message {
     gap: 8px;
   }
-  
+
   .messageBubble {
     max-width: calc(100% - 40px);
     padding: 10px 12px;

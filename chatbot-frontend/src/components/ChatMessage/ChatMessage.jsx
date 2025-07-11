@@ -10,7 +10,11 @@ const ChatMessage = ({ message }) => {
     <div className={`${styles.message} ${isUser ? styles.messageUser : styles.messageAssistant}`}>
       {!isUser && (
         <div className={`${styles.messageAvatar} ${styles.messageAvatarBot}`}>
-          <ArchiveIcon />
+          <img
+                  src="/images/sparkle-white.png"
+                  alt=""
+                  className={styles.sparkleWhite}
+                />
         </div>
       )}
       <div

@@ -1,29 +1,39 @@
+// components/MessageList/MessageList.jsx
 import ChatMessage from "../ChatMessage/ChatMessage";
 import LoaderIcon from "../../icons/LoaderIcon";
 import ArchiveIcon from "../../icons/ArchiveIcon";
 import styles from "./MessageList.module.css";
 
-const MessageList = ({ messages, isLoading, scrollRef }) => (
-  <div className={styles.messagesArea} ref={scrollRef}>
-    <div className={styles.messagesContainer}>
-      {messages.map((m) => (
-        <ChatMessage key={m.id} message={m} />
-      ))}
-      {isLoading && (
-        <div className={`${styles.message} ${styles.messageAssistant}`}>
-          <div className={`${styles.messageAvatar} ${styles.messageAvatarBot}`}>
-            <ArchiveIcon />
-          </div>
-          <div className={`${styles.messageBubble} ${styles.bubbleAssistant}`}>
-            <div className={styles.loadingContent}>
-              <LoaderIcon />
-              <span>Consultando banco de dados AtoM...</span>
+const MessageList = ({ messages, isLoading, streamedMessage, scrollRef }) => {
+  return (
+    <div className={styles.messagesArea} ref={scrollRef}>
+      <div className={styles.messagesContainer}>
+        {messages.map((m) => (
+          <ChatMessage key={m.id} message={m} />
+        ))}
+
+        {(isLoading || streamedMessage) && (
+          <div className={`${styles.message} ${styles.messageAssistant}`}>
+            <div
+              className={`${styles.messageAvatar} ${styles.messageAvatarBot}`}
+            >
+              <ArchiveIcon />
+            </div>
+            <div
+              className={`${styles.messageBubble} ${styles.bubbleAssistant}`}
+            >
+              <div className={styles.loadingContent}>
+                <LoaderIcon className={styles.spinner} />
+                <span>
+                  {streamedMessage || "Consultando banco de dados..."}
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default MessageList;

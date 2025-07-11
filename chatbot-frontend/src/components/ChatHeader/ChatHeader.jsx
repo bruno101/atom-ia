@@ -6,8 +6,8 @@ const ChatHeader = () => (
     <div className={styles.headerContent}>
       <img
         src="/images/sparkle.png"
-        alt="Sparkle"
-        style={{ width: "2.7em", height: "2.7em", marginRight: "2px" }}
+        alt=""
+        className={styles.sparkle}
       />
       <div className={styles.headerText}>
         <h1>ModestIA</h1>
