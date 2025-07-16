@@ -4,6 +4,7 @@ from .validation import (
     formatando_respostas
 )
 from . import messages
+from .config import URL_ATOM, NUMBER_OF_VECTOR_QUERIES
 from db_connection import fetch_slugs
 import json
 
@@ -13,14 +14,25 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         yield messages.MENSAGEM_PIPELINE_INICIALIZANDO
     
     try:
-        
-        nodes = query_engine.retriever.retrieve(consulta)
-        num_documentos = len(nodes) 
+        prompt = f"""
+            Extraia as palavras-chave E expressões curtas mais importantes e relevantes para busca vetorial de documentos que ajudem a responder a seguinte consulta.
+            Separe cada item por vírgula. Ordene do mais importante para o menos importante, e gere ${NUMBER_OF_VECTOR_QUERIES} expressões.
+            Consulta: {consulta}
+            Resultado (apenas termos e expressões separadas por vírgula):
+        """
+        raw_output = llm.complete(prompt)
+        if messages.MENSAGEM_CONSULTA_VETORIAL_GERADA:
+            yield messages.MENSAGEM_CONSULTA_VETORIAL_GERADA
+            
+        lista_consultas_vectoriais = str(raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
+        consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
+        nos = query_engine.custom_vector_query(consultas_vetoriais)
+        num_documentos = len(nos) 
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
             yield messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS.format(num_documentos=num_documentos)
         
-        response = query_engine.custom_query(consulta, historico or "", nodes)
-        resposta_json = extrair_json_da_resposta(response)
+        resposta = query_engine.custom_query(consulta, historico or "", nos)
+        resposta_json = extrair_json_da_resposta(resposta)
         try:
             numero_paginas = len(resposta_json["data"]["paginas"])
             if messages.MENSAGEM_PAGINAS_SELECIONADAS:
@@ -38,7 +50,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
             "resposta": resposta_textual,
             "links": [
                 {
-                    "url": f"http://localhost:63001/index.php/{p.get('slug', '')}", 
+                    "url": f"{URL_ATOM}/index.php/{p.get('slug', '')}", 
                     "slug": p.get('slug', ''),
                     "title": p.get('title', ''),
                     "justificativa": p.get('justificativa', None),

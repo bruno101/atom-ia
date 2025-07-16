@@ -2,6 +2,19 @@ import json
 import re
 from rapidfuzz import process
 from db_connection import fetch_slugs
+from .config import URL_ATOM
+
+def remover_slugs_duplicadas(nodes):
+    seen_slugs = set()
+    unique_nodes = []
+
+    for node in nodes:
+        slug = node.metadata["slug"]
+        if slug and slug not in seen_slugs:
+            seen_slugs.add(slug)
+            unique_nodes.append(node)
+
+    return unique_nodes
 
 def extrair_json_da_resposta(texto):
     # Tenta capturar o primeiro bloco JSON entre chaves
@@ -34,7 +47,7 @@ def validando(resposta_json, slugs_validos):
                 pagina['slug'] = slug_corrigido
             else:
                 resposta_json['data']['paginas'].pop(i)
-        pagina['url'] = f"http://localhost:63001/index.php/{pagina.get('slug', '')}"
+        pagina['url'] = f"{URL_ATOM}/index.php/{pagina.get('slug', '')}"
         pagina['title'] = pagina.get('title', '')
         pagina['descricao'] = pagina.get('descricao', None) 
         pagina['justificativa'] = pagina.get('justificativa', None) 

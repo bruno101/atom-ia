@@ -4,8 +4,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GEMINI_API = os.getenv("GEMINI_API")
-EMBEDDING_MODEL = "intfloat/multilingual-e5-large"
+
+EMBEDDING_MODEL = "intfloat/multilingual-e5-large-instruct"
+LLM_MODEL = "gemini-2.5-flash"
+
 CHROMA_PATH = "./chroma_db_atom"
 STORAGE_PATH = "./storage_atom"
 COLLECTION_NAME = "documentos_atom"
-MAX_NODES = 15
+
+URL_ATOM = "http://localhost:63001"
+
+NUMBER_OF_VECTOR_QUERIES = 7
+NODES_PER_VECTOR_QUERY = 12
+MAX_CHARS_PER_NODE = 2500
+MAX_QUERY_CHARS = 1000
