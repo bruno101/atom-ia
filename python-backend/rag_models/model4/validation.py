@@ -54,11 +54,12 @@ def validando(resposta_json, slugs_validos):
     
     return resposta_json
 
-def formatando_respostas(resposta_json, consulta, llm):
+def formatando_respostas(resposta_json, consulta, llm, historico_str=None):
     prompt = f'''
-Você é um assistente que recomenda páginas do AtoM para ajudar na pesquisa.
+Você é um assistente que recomenda páginas do AtoM para ajudar na pesquisa.\n
 
-Consulta: "{consulta}"
+{f"Atenção às mensagens anteriores do usuário para que você entenda o contexto da conversa. Histórico de Conversa: {historico_str}." if historico_str else ""}
+\nSegue a consulta que deve ser respondida. Consulta: "{consulta}".\n
 
 Com base neste JSON:
 {json.dumps(resposta_json, ensure_ascii=False, indent=2)}

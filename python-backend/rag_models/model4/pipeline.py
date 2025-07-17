@@ -4,11 +4,16 @@ from .validation import (
     formatando_respostas
 )
 from . import messages
-from .config import URL_ATOM, NUMBER_OF_VECTOR_QUERIES
+from .config import URL_ATOM, NUMBER_OF_VECTOR_QUERIES, MAX_QUERY_CHARS
 from db_connection import fetch_slugs
 import json
 
 async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, slugs_validos=None):
+    
+    tamanho_maximo_historico = max(MAX_QUERY_CHARS - len(consulta), 0)
+    historico_str = historico[:tamanho_maximo_historico] if historico and tamanho_maximo_historico >= 100 else ""
+    
+    print("Histórico é: ", historico_str)
     
     if messages.MENSAGEM_PIPELINE_INICIALIZANDO:
         yield messages.MENSAGEM_PIPELINE_INICIALIZANDO
@@ -16,8 +21,9 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
     try:
         prompt = f"""
             Extraia as palavras-chave E expressões curtas mais importantes e relevantes para busca vetorial de documentos que ajudem a responder a seguinte consulta.
-            Separe cada item por vírgula. Ordene do mais importante para o menos importante, e gere ${NUMBER_OF_VECTOR_QUERIES} expressões.
-            Consulta: {consulta}
+            Separe cada item por vírgula. Ordene do mais importante para o menos importante, e gere ${NUMBER_OF_VECTOR_QUERIES} expressões.\n
+            {f"Histórico da Conversa: {historico_str}." if historico_str else ""}
+            \nConsulta: {consulta}.\n
             Resultado (apenas termos e expressões separadas por vírgula):
         """
         raw_output = llm.complete(prompt)
@@ -26,12 +32,13 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
             
         lista_consultas_vectoriais = str(raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
         consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
+        print("Consultas geradas: ", consultas_vetoriais)
         nos = query_engine.custom_vector_query(consultas_vetoriais)
         num_documentos = len(nos) 
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
             yield messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS.format(num_documentos=num_documentos)
         
-        resposta = query_engine.custom_query(consulta, historico or "", nos)
+        resposta = query_engine.custom_query(consulta, historico_str or "", nos)
         resposta_json = extrair_json_da_resposta(resposta)
         try:
             numero_paginas = len(resposta_json["data"]["paginas"])
@@ -44,7 +51,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         if messages.MENSAGEM_RESPOSTA_VALIDADA:
             yield messages.MENSAGEM_RESPOSTA_VALIDADA
 
-        resposta_textual = formatando_respostas(resposta_json_validada, consulta, llm)
+        resposta_textual = formatando_respostas(resposta_json_validada, consulta, llm, historico_str or "")
 
         final = {
             "resposta": resposta_textual,

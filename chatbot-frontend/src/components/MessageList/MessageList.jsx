@@ -28,7 +28,7 @@ const MessageList = ({ messages, isLoading, streamedMessage, scrollRef }) => {
               <div className={styles.loadingContent}>
                 <LoaderIcon className={styles.spinner} />
                 <span>
-                  {streamedMessage || "Consultando banco de dados..."}
+                  {streamedMessage || "Aguardando resposta..."}
                 </span>
               </div>
             </div>
