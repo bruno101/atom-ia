@@ -1,4 +1,4 @@
-from .config import GEMINI_API, NUMBER_OF_VECTOR_QUERIES
+from .config import GEMINI_API, NUMBER_OF_VECTOR_QUERIES, NUMBER_OF_TRADITIONAL_QUERIES
 from llama_index.llms.google_genai import GoogleGenAI
 from .index_management import create_or_load_index
 from .query_engine import create_query_engine
@@ -16,6 +16,13 @@ index, _ = create_or_load_index()
 query_engine = create_query_engine(index, llm)
 
 
+def debug_db_search():
+    if (NUMBER_OF_TRADITIONAL_QUERIES > 0):
+        nos = query_engine.custom_global_query("alforria, abolição")
+        print("resultado: ", nos)
+        resposta = query_engine.custom_query("Me encontre documentos sobre alforria", "", nos)
+        print(resposta)
+    
 
 def debug_embeddings():
     consulta = "Me encontre documentos sobre alforria"
@@ -34,13 +41,13 @@ def debug_embeddings():
         Resultado (apenas termos e expressões separadas por vírgula):
     """
     raw_output = llm.complete(prompt)
-    query_list = str(raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
-    queries = [q.strip() for q in query_list if q.strip()]
+    vector_query_list = str(raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
+    vector_queries = [q.strip() for q in vector_query_list if q.strip()]
     all_nodes = []
     
     
     with open("output.txt", "w", encoding="utf-8") as f:
-        for query in queries:
+        for query in vector_queries:
             f.write(f"Searching for: {query}\n")
             print(f"Searching for: {query}")
             retrieved = query_engine.retriever.retrieve(f"query: {query}")

@@ -9,7 +9,7 @@ def remover_slugs_duplicadas(nodes):
     unique_nodes = []
 
     for node in nodes:
-        slug = node.metadata["slug"]
+        slug = node["slug"]
         if slug and slug not in seen_slugs:
             seen_slugs.add(slug)
             unique_nodes.append(node)

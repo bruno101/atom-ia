@@ -31,11 +31,7 @@ const Sidebar = ({ showSidebar, toggleSidebar, suggestedLinks }) => {
                     <span className={styles.linkTitle}>
                       {link.title || link.slug}
                     </span>
-                    {link.description && (
-                      <span className={styles.linkDescription}>
-                        {link.descricao}
-                      </span>
-                    )}
+
                   </div>
                   <ExternalLinkIcon />
                 </a>

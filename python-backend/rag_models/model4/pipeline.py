@@ -4,7 +4,7 @@ from .validation import (
     formatando_respostas
 )
 from . import messages
-from .config import URL_ATOM, NUMBER_OF_VECTOR_QUERIES, MAX_QUERY_CHARS
+from .config import URL_ATOM, NUMBER_OF_VECTOR_QUERIES, NUMBER_OF_TRADITIONAL_QUERIES, MAX_QUERY_CHARS
 from db_connection import fetch_slugs
 import json
 
@@ -21,7 +21,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
     try:
         prompt = f"""
             Extraia as palavras-chave E expressões curtas mais importantes e relevantes para busca vetorial de documentos que ajudem a responder a seguinte consulta.
-            Separe cada item por vírgula. Ordene do mais importante para o menos importante, e gere ${NUMBER_OF_VECTOR_QUERIES} expressões.\n
+            Separe cada item por vírgula. Ordene do mais importante para o menos importante, e gere ${max(NUMBER_OF_VECTOR_QUERIES, NUMBER_OF_TRADITIONAL_QUERIES)} expressões.\n
             {f"Histórico da Conversa: {historico_str}." if historico_str else ""}
             \nConsulta: {consulta}.\n
             Resultado (apenas termos e expressões separadas por vírgula):
@@ -29,16 +29,15 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         raw_output = llm.complete(prompt)
         if messages.MENSAGEM_CONSULTA_VETORIAL_GERADA:
             yield messages.MENSAGEM_CONSULTA_VETORIAL_GERADA
-            
-        lista_consultas_vectoriais = str(raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
-        consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
-        print("Consultas geradas: ", consultas_vetoriais)
-        nos = query_engine.custom_vector_query(consultas_vetoriais)
+        
+        nos = query_engine.custom_global_query(raw_output)
+        print("Nós encontrados: \n\n", nos)
         num_documentos = len(nos) 
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
             yield messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS.format(num_documentos=num_documentos)
         
         resposta = query_engine.custom_query(consulta, historico_str or "", nos)
+        print("Resposta gerada: \n\n", resposta)
         resposta_json = extrair_json_da_resposta(resposta)
         try:
             numero_paginas = len(resposta_json["data"]["paginas"])

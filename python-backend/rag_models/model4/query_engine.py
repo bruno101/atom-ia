@@ -3,7 +3,8 @@ from llama_index.core.retrievers import BaseRetriever
 from llama_index.core.response_synthesizers import BaseSynthesizer, get_response_synthesizer
 from llama_index.core import PromptTemplate
 from llama_index.llms.google_genai import GoogleGenAI
-from .config import NODES_PER_VECTOR_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS
+from fetch_documents import fetch_documents_from_db, search_db
+from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES
 from .validation import remover_slugs_duplicadas
 
 qa_prompt = PromptTemplate(
@@ -41,18 +42,52 @@ class RAGStringQueryEngine(CustomQueryEngine):
     qa_prompt: PromptTemplate
     
     def custom_vector_query(self, consultas_vetoriais: list[str]):
-        nos_com_repeticao = []
+        nos = []
         for consulta_vetorial in consultas_vetoriais:
-            nos_com_repeticao = nos_com_repeticao + self.retriever.retrieve(f"query: {consulta_vetorial}")
-        nos = remover_slugs_duplicadas(nos_com_repeticao)
+            nos = nos + self.retriever.retrieve(f"query: {consulta_vetorial}")
+        nos_reformatados = [{"slug":no.metadata.get("slug"), "content":no.get_content()} for no in nos]
+        return nos_reformatados
+    
+    def custom_traditional_query(self, consultas_tradicionais: list[str]):
+        nos = []
+        resultados = search_db(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
+        print("resultados", resultados)
+        for resultado in resultados:
+            no = {"slug":resultado.doc_id, "content":resultado.text}
+            nos = list(nos) + [no]
         return nos
+        
+    def custom_global_query(self, keywords_raw_output):
+        
+        nos_consulta_tradicional = []
+        nos_consulta_vetorial = []
+        
+        if (NUMBER_OF_TRADITIONAL_QUERIES > 0):
+            lista_consultas_tradicionais = str(keywords_raw_output).split(",")[:NUMBER_OF_TRADITIONAL_QUERIES]
+            consultas_tradicionais = [q.strip() for q in lista_consultas_tradicionais if q.strip()]
+            print("Consultas tradicionais geradas: ", consultas_tradicionais)
+            nos_consulta_tradicional = self.custom_traditional_query(consultas_tradicionais)
+            print(nos_consulta_tradicional)
+        
+        if (NUMBER_OF_VECTOR_QUERIES > 0):
+            lista_consultas_vectoriais = str(keywords_raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
+            consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
+            print("Consultas vetoriais geradas: ", consultas_vetoriais)
+            nos_consulta_vetorial = self.custom_vector_query(consultas_vetoriais)
+            print(nos_consulta_vetorial)
+        
+        nos_com_repeticao = nos_consulta_vetorial + nos_consulta_tradicional
+        nos = remover_slugs_duplicadas(nos_com_repeticao)
+        
+        return nos
+        
 
     def custom_query(self, query_str: str, historico_str: str, nodes):
     
         clipped_nodes = []
         for i, n in enumerate(nodes):
-            content = n.node.get_content()
-            slug = n.node.metadata.get("slug", "[sem slug]")
+            content = n["content"]
+            slug = n["slug"]
             content = "Atenção! O seguinte é o slug da página, que, se necessário, deve ser copiado exatamente como está: ***" + slug + "***" + content
             clipped_content = content[:MAX_CHARS_PER_NODE]
             clipped_nodes.append(clipped_content)
