@@ -2,7 +2,11 @@ import json
 import re
 from rapidfuzz import process
 from db_connection import fetch_slugs
-from .config import URL_ATOM
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
 
 def remover_slugs_duplicadas(nodes):
     seen_slugs = set()

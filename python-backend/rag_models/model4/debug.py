@@ -17,11 +17,9 @@ query_engine = create_query_engine(index, llm)
 
 
 def debug_db_search():
+    print("DEBUGGING SEARCH")
     if (NUMBER_OF_TRADITIONAL_QUERIES > 0):
-        nos = query_engine.custom_global_query("alforria, abolição")
-        print("resultado: ", nos)
-        resposta = query_engine.custom_query("Me encontre documentos sobre alforria", "", nos)
-        print(resposta)
+        nos = query_engine.custom_traditional_query(["freyre"])
     
 
 def debug_embeddings():

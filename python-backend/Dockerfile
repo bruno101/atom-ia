@@ -12,7 +12,7 @@ ENV HTTP_PROXY=http://10.0.220.11:3128
 ENV HTTPS_PROXY=http://10.0.220.11:3128
 ENV http_proxy=http://10.0.220.11:3128
 ENV https_proxy=http://10.0.220.11:3128
-ENV NO_PROXY=localhost,127.0.0.1
+ENV NO_PROXY=localhost,127.0.0.1,elasticsearch
 
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('intfloat/multilingual-e5-large')"
 

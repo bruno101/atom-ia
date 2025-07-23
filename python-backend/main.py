@@ -1,5 +1,4 @@
 """from rag_models.model4.debug import debug_db_search
-
 debug_db_search()"""
 
 from fastapi import FastAPI

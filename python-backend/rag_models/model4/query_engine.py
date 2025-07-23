@@ -3,7 +3,7 @@ from llama_index.core.retrievers import BaseRetriever
 from llama_index.core.response_synthesizers import BaseSynthesizer, get_response_synthesizer
 from llama_index.core import PromptTemplate
 from llama_index.llms.google_genai import GoogleGenAI
-from fetch_documents import fetch_documents_from_db, search_db
+from fetch_documents import fetch_documents_from_db, fetch_documents_from_elastic_search
 from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES
 from .validation import remover_slugs_duplicadas
 
@@ -50,8 +50,8 @@ class RAGStringQueryEngine(CustomQueryEngine):
     
     def custom_traditional_query(self, consultas_tradicionais: list[str]):
         nos = []
-        resultados = search_db(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
-        print("resultados", resultados)
+        resultados = fetch_documents_from_elastic_search(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
+        print("resultados da busca trad: ", resultados)
         for resultado in resultados:
             no = {"slug":resultado.doc_id, "content":resultado.text}
             nos = list(nos) + [no]
@@ -67,7 +67,6 @@ class RAGStringQueryEngine(CustomQueryEngine):
             consultas_tradicionais = [q.strip() for q in lista_consultas_tradicionais if q.strip()]
             print("Consultas tradicionais geradas: ", consultas_tradicionais)
             nos_consulta_tradicional = self.custom_traditional_query(consultas_tradicionais)
-            print(nos_consulta_tradicional)
         
         if (NUMBER_OF_VECTOR_QUERIES > 0):
             lista_consultas_vectoriais = str(keywords_raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]

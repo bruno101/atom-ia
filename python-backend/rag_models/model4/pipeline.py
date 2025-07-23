@@ -4,9 +4,14 @@ from .validation import (
     formatando_respostas
 )
 from . import messages
-from .config import URL_ATOM, NUMBER_OF_VECTOR_QUERIES, NUMBER_OF_TRADITIONAL_QUERIES, MAX_QUERY_CHARS
+from .config import NUMBER_OF_VECTOR_QUERIES, NUMBER_OF_TRADITIONAL_QUERIES, MAX_QUERY_CHARS
 from db_connection import fetch_slugs
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
 
 async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, slugs_validos=None):
     
