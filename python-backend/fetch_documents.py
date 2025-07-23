@@ -38,9 +38,17 @@ def handle_subjects(key, value, parts):
     parts.append(f"{key}: {subjects}.")
 
 def handle_dates(key, dates, parts):
-    if dates and dates[0]:
-        date = dates[0]
-        parts.append(f"{key}: {date['startDate']} - {date['endDate']}.")
+    try:
+        if (
+            isinstance(dates, list) and len(dates) > 0 and
+            isinstance(dates[0], dict) and
+            'startDate' in dates[0] and 'endDate' in dates[0] and
+            dates[0]['startDate'] and dates[0]['endDate']
+        ):
+            date = dates[0]
+            parts.append(f"{key}: {date['startDate']} - {date['endDate']}.")
+    except Exception as e:
+        pass  
 
 def handle_i18n(value, parts):
     i18n = value['pt']
@@ -82,7 +90,10 @@ def fetch_documents_from_elastic_search(queries: list[str], number_results: int)
 
         slug = ""
         parts = []
-        source = row['_source']
+        source = row.get('_source') if isinstance(row, dict) else None
+        
+        if not isinstance(source, dict):
+            continue
         
         print("source is", source)
 

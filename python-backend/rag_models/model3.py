@@ -87,8 +87,7 @@ qa_prompt = PromptTemplate(
       }
       ]
     }}
-    Caso não encontre informações sobre o tema específico, recomende as informações mais relevantes ou relacionadas possíveis.
-    Só recomende slugs dessa base de dados. Os slugs são identificadores técnicos. Eles **devem ser copiados exatamente como estão na base**, sem nenhuma alteração. NÃO insira, remova ou modifique hífens, acentos ou letras. Apenas use os slugs retornados pela base.
+    Caso não encontre informações sobre o tema específico, recomende as informações mais relevantes ou relacionadas possíveis. Retorne o máximo número de informações relacionadas ao tema possível, não 
 """
     "\nQuery: {query_str}\n"
     "Answer: "
