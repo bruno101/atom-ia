@@ -69,8 +69,11 @@ Com base neste JSON:
 {json.dumps(resposta_json, ensure_ascii=False, indent=2)}
 
 Recomende as páginas listadas no JSON - na ordem em que são listadas - , explique por que são úteis e forneça o link completo no formato:
-http://localhost:63001/index.php/{{slug}}
+{URL_ATOM}/index.php/{{slug}}
 
 Responda em português, de forma clara e objetiva. Se não houver informações relevantes ou evidências claras no contexto acima, informe isso explicitamente. Lembre-se de que você está respondendo a uma consulta do usuário, então não mencione o fato de que você recebeu uma lista de informações.
+
+Exemplo de como formatar com markdown uma das recomendações:
+"*   **[Título da página XYZ.]**\n    [Comentário sobre página XYZ, que pode, por exemplo, explicar a sua utilidade para a busca].\n    Link: [Link para a página XYZ]\n\n"
 '''
     return llm.complete(prompt=prompt).text

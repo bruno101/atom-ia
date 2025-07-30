@@ -4,7 +4,7 @@ from llama_index.core.response_synthesizers import BaseSynthesizer, get_response
 from llama_index.core import PromptTemplate
 from llama_index.llms.google_genai import GoogleGenAI
 from fetch_documents import fetch_documents_from_db, fetch_documents_from_elastic_search
-from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES
+from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES, MAX_NODES_VECTOR_QUERY, MAX_NODES_TRADITIONAL_QUERY
 from .validation import remover_slugs_duplicadas
 
 qa_prompt = PromptTemplate(
@@ -46,34 +46,42 @@ class RAGStringQueryEngine(CustomQueryEngine):
         for consulta_vetorial in consultas_vetoriais:
             nos = nos + self.retriever.retrieve(f"query: {consulta_vetorial}")
         nos_reformatados = [{"slug":no.metadata.get("slug"), "content":no.get_content()} for no in nos]
-        return nos_reformatados
+        print("Busca vetorial encontrou: ", len(nos_reformatados))
+        return nos_reformatados[:MAX_NODES_VECTOR_QUERY]
     
     def custom_traditional_query(self, consultas_tradicionais: list[str]):
         nos = []
         resultados = fetch_documents_from_elastic_search(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
-        print("resultados da busca trad: ", resultados)
         for resultado in resultados:
             no = {"slug":resultado.doc_id, "content":resultado.text}
             nos = list(nos) + [no]
-        return nos
+        print("Busca tradicional encontrou: ", len(nos))
+        return nos[:MAX_NODES_TRADITIONAL_QUERY]
         
     def custom_global_query(self, keywords_raw_output):
         
         nos_consulta_tradicional = []
         nos_consulta_vetorial = []
+        lista_consultas = str(keywords_raw_output).split(",")
+        len_lista_consultas = len(lista_consultas)
         
         if (NUMBER_OF_TRADITIONAL_QUERIES > 0):
-            lista_consultas_tradicionais = str(keywords_raw_output).split(",")[:NUMBER_OF_TRADITIONAL_QUERIES]
+            lista_consultas_tradicionais = []
+            if (len(lista_consultas) < NUMBER_OF_TRADITIONAL_QUERIES + NUMBER_OF_VECTOR_QUERIES):
+                print("Ocorreu erro na geração das consultas tradicionais")
+                lista_consultas_tradicionais = lista_consultas[:min(len_lista_consultas, NUMBER_OF_TRADITIONAL_QUERIES)]
+            else:
+                lista_consultas_tradicionais = str(keywords_raw_output).split(",")[NUMBER_OF_VECTOR_QUERIES:(NUMBER_OF_TRADITIONAL_QUERIES+NUMBER_OF_VECTOR_QUERIES)]
+            
             consultas_tradicionais = [q.strip() for q in lista_consultas_tradicionais if q.strip()]
             print("Consultas tradicionais geradas: ", consultas_tradicionais)
             nos_consulta_tradicional = self.custom_traditional_query(consultas_tradicionais)
         
         if (NUMBER_OF_VECTOR_QUERIES > 0):
-            lista_consultas_vectoriais = str(keywords_raw_output).split(",")[:NUMBER_OF_VECTOR_QUERIES]
+            lista_consultas_vectoriais = lista_consultas[:min(len_lista_consultas, NUMBER_OF_VECTOR_QUERIES)]
             consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
             print("Consultas vetoriais geradas: ", consultas_vetoriais)
             nos_consulta_vetorial = self.custom_vector_query(consultas_vetoriais)
-            print(nos_consulta_vetorial)
         
         nos_com_repeticao = nos_consulta_vetorial + nos_consulta_tradicional
         nos = remover_slugs_duplicadas(nos_com_repeticao)

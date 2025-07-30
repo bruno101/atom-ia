@@ -54,7 +54,7 @@ export default function createHandleSubmit({
       ...(historico.length > 0 && { historico }),
     };
 
-    const url = "http://localhost:7860/ask-stream";
+    const url = process.env.REACT_APP_API_URL;
 
     abortControllerRef.current = fetchSse(
       url,
@@ -84,6 +84,8 @@ export default function createHandleSubmit({
             id: (Date.now() + 1).toString(),
             role: "assistant",
             content: data.resposta || "Resposta final indisponível.",
+            palavras_chave: data.palavras_chave,
+            links_analisados: data.links_analisados,
             timestamp: new Date(),
           };
 

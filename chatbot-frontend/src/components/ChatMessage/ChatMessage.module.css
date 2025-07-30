@@ -91,6 +91,146 @@
   background: currentColor;
 }
 
+.metadataSection {
+  margin-top: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.bubbleUser .metadataSection {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.metadataHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.bubbleUser .metadataHeader {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.metadataHeader:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.bubbleUser .metadataHeader:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.chevron {
+  transition: all 0.2s ease;
+  margin-left: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.metadataHeader[aria-expanded="true"] .chevron {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+.metadataContent {
+  padding: 8px 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bubbleUser .metadataContent {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.linkContainer, .keywordContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.linkPill {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e3f2fd;
+  color: #1565c0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.bubbleUser .linkPill {
+  background-color: #0d47a1;
+  color: #bbdefb;
+}
+
+.linkPill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bubbleUser .linkPill:hover {
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.linkIcon {
+  margin-right: 4px;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.keywordPill {
+  background-color: #e0f7fa;
+  color: #007c91;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.bubbleUser .keywordPill {
+  background-color: #004d40;
+  color: #b2dfdb;
+}
+
+.countPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: #e3f2fd;
+  color: #1565c0;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.keywordCountPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: #e3fdf4;
+  color: #0c94ad;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

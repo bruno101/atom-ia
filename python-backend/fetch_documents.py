@@ -26,8 +26,6 @@ def fetch_documents_from_db():
         doc = Document(text=content, doc_id=slug, metadata={"slug": slug})
         documents.append(doc)
     
-    print("fetched documents")
-
     return documents
 
 def handle_slug(key, value, parts):
@@ -62,7 +60,6 @@ def contains_any_word(value_str, expression):
         
 def handle_generic_attribute(key, value, parts, expression):
     value_str = json.dumps(value)
-    print("handling generic: \n\n", value, "\n\n", expression, "\n\n", contains_any_word(value_str, expression), "\n\n")
     if (value_str != "" and contains_any_word(value_str, expression)):
         parts.append(f"{key}: {value_str}")
         
@@ -86,8 +83,6 @@ def fetch_documents_from_elastic_search(queries: list[str], number_results: int)
     
     for row in rows:
         
-        print("row is", row)
-
         slug = ""
         parts = []
         source = row.get('_source') if isinstance(row, dict) else None
@@ -95,12 +90,7 @@ def fetch_documents_from_elastic_search(queries: list[str], number_results: int)
         if not isinstance(source, dict):
             continue
         
-        print("source is", source)
-
         for key, value in source.items():
-            
-            print("key is", key)
-            print("value is", value)
             
             process_key_value(key, value, parts, " ".join(queries))
             if key == "slug":
@@ -109,18 +99,10 @@ def fetch_documents_from_elastic_search(queries: list[str], number_results: int)
         if not slug:
             
             print("No slug!")
-        
-        print("finished generating parts for this row")
-        print("the parts are\n\n", parts, "\n\n")
+    
             
-        content = "passage: " + "\n".join(parts)
-        
-        print("finished generating content for this row")
-        
+        content = "passage: " + "\n".join(parts)        
         doc = Document(text=content, doc_id=slug, metadata={"slug": slug})
-        
-        print("finished generating doc for this row")
-
         documents.append(doc)
     
 
