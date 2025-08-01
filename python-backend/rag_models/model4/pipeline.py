@@ -25,18 +25,36 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
     
     try:
         prompt = f"""
-            Extraia as palavras-chave E expressões curtas mais importantes e relevantes para busca vetorial e lexical de documentos que ajudem a responder a seguinte consulta.
-            Sua tarefa é determinar o que é adequado para busca vetorial e o que é adequado para busca lexical exita.
-            Exemplo:
-            Se a consulta fosse "Estou pesquisando sobre a história dos judeus no Brasil":
-            1) as consultas "judeus no Brasil,cristão-novos,inquisição no brasil,comunidade judaica,imigração de judeus,criptojudaísmo,antissemitismo" seriam adequadas para busca vetorial, pois considera variações do tema original e temas relacionados nas consultas.
-            2) as consultas "judeu,judeus,judaico,judaica,judaicos,judaicas,cristão-novo,cristão novo,cristãos-novos,cristãos novos,hebreu,hebreus,Israel,inquisição" seriam adequadas para busca lexical exata, pois são expressões de uma ou no máximo duas palavras relevantes para o tema hipotético, e variações de gênero, número e grafia são consideradas nas consultas.
-            Segue a consulta real.
-            Separe cada item por vírgula. Gere ${(NUMBER_OF_VECTOR_QUERIES + NUMBER_OF_TRADITIONAL_QUERIES)} expressões, entre as quais as ${NUMBER_OF_VECTOR_QUERIES} primeiras são para busca vetorial e as ${NUMBER_OF_TRADITIONAL_QUERIES} últimas são para busca lexical exata.\n
-            {f"Histórico da Conversa: {historico_str}." if historico_str else ""}
-            \nConsulta: {consulta}.\n
-            Resultado (apenas termos e expressões separadas por vírgula):
-        """
+                    Extraia as palavras-chave E expressões curtas mais importantes e relevantes para busca vetorial e lexical de documentos que ajudem a responder a consulta que será dada ao fim dessa prompt.
+                    Sua tarefa é determinar o que é adequado para busca vetorial e o que é adequado para busca lexical exata.
+
+                    Para a **busca vetorial**, produza exatamente {NUMBER_OF_VECTOR_QUERIES} consultas robustas:
+                    - Cada consulta deve ter de 4 a 8 palavras em português, sem vírgulas internas.
+                    - Use expressões completas e naturais que incluam:
+                    - o tema principal,
+                    - sinônimos e variações de grafia relevantes,
+                    - entidades, datas, locais e instituições associadas,
+                    - subtemas ou facetas relacionadas (ex.: suportes documentais, personagens, eventos).
+                    - Não gere consultas redundantes: cada uma deve focar em um aspecto diferente do tema.
+
+                    Para a **busca lexical exata**, produza {NUMBER_OF_TRADITIONAL_QUERIES} expressões curtas de uma ou duas palavras relevantes:
+                    - Inclua variações de gênero, número e grafia,
+                    - Inclua formas alternativas de escrever o mesmo termo (incluindo erros comuns),
+                    - Não ultrapasse duas palavras por termo.
+
+                    Exemplo:
+                    Se a consulta fosse "Estou pesquisando sobre a história dos judeus no Brasil":
+                    1) a consulta "judeus no Brasil cristãos-novos inquisição antissemitismo" etc. seria adequada para busca vetorial, pois considera variações do tema e termos relacionados.
+                    2) as consultas "judeu,judeus,judaico,judaica,judaicos,judaicas,cristão-novo,cristão novo,cristãos-novos,cristãos novos,hebreu,hebreus,Israel,inquisição" seriam adequadas para busca lexical exata, pois são expressões de uma ou no máximo duas palavras relevantes que incluem variações de grafia, gênero, número, escritas alternativas possíveis para o mesmo termo (incluindo erros comuns) etc.
+
+                    Separe cada item por vírgula. Gere {(NUMBER_OF_VECTOR_QUERIES + NUMBER_OF_TRADITIONAL_QUERIES)} expressões, sendo as {NUMBER_OF_VECTOR_QUERIES} primeiras para busca vetorial e as {NUMBER_OF_TRADITIONAL_QUERIES} últimas para busca lexical exata.
+                    Segue a consulta real.
+                    
+                    {f"Histórico da Conversa: {historico_str}." if historico_str else ""}
+                    Consulta: {consulta}.
+
+                    Resultado (apenas termos e expressões separados por vírgula):
+                """
         raw_output = llm.complete(prompt)
         if messages.MENSAGEM_CONSULTA_VETORIAL_GERADA:
             yield messages.MENSAGEM_CONSULTA_VETORIAL_GERADA

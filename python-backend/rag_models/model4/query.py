@@ -6,6 +6,7 @@ from .pipeline import pipeline_stream
 from .embeddings import get_embedding_model
 from llama_index.core import Settings
 from db_connection import fetch_slugs
+from sentence_transformers import CrossEncoder
 
 llm = GoogleGenAI(model=LLM_MODEL, api_key=GEMINI_API)
 Settings.llm = llm

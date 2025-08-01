@@ -7,6 +7,8 @@ python-backend/artigos/
 python-backend/csv/
 python-backend/rag_core.py
 python-backend/.env
+**/debug.py
+**/output.txt
 
 # Ignorar arquivos .pyc e caches
 *.pyc

@@ -6,6 +6,7 @@ from llama_index.llms.google_genai import GoogleGenAI
 from fetch_documents import fetch_documents_from_db, fetch_documents_from_elastic_search
 from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES, MAX_NODES_VECTOR_QUERY, MAX_NODES_TRADITIONAL_QUERY
 from .validation import remover_slugs_duplicadas
+import numpy as np
 
 qa_prompt = PromptTemplate(
     "Context information is below.\n"
@@ -41,13 +42,28 @@ class RAGStringQueryEngine(CustomQueryEngine):
     llm: GoogleGenAI
     qa_prompt: PromptTemplate
     
+    
     def custom_vector_query(self, consultas_vetoriais: list[str]):
         nos = []
-        for consulta_vetorial in consultas_vetoriais:
-            nos = nos + self.retriever.retrieve(f"query: {consulta_vetorial}")
-        nos_reformatados = [{"slug":no.metadata.get("slug"), "content":no.get_content()} for no in nos]
-        print("Busca vetorial encontrou: ", len(nos_reformatados))
-        return nos_reformatados[:MAX_NODES_VECTOR_QUERY]
+        nos = []
+        for idx, consulta_vetorial in enumerate(consultas_vetoriais):
+            retrieved = self.retriever.retrieve("query: " + consulta_vetorial)
+            
+            sorted_retrieved = sorted(retrieved, key=lambda x: getattr(x, "score", 0), reverse=True)
+
+            print(f"\n🔎 Top resultados para a consulta #{idx + 1}:\n\"{consulta_vetorial}\"\n")
+            for rank, no in enumerate(sorted_retrieved[:10], start=1):
+                score = getattr(no, "score", None)
+                slug = no.metadata.get("slug")
+                if rank == 1:
+                    print(f"Melhor resultado para a consulta #{idx + 1}:\n\"{no.get_content()}\"\n")
+                print(f"{rank:>2}. {slug} - Retriever Score: {score:.4f}" if score is not None else f"{rank:>2}. {slug} - Score: N/A")
+            
+            nos += retrieved 
+
+        nos_reformatados = [{"slug": no.metadata.get("slug"), "content": no.get_content()} for no in nos]
+        nos_sem_duplicatas = remover_slugs_duplicadas(nos_reformatados)
+        return nos_sem_duplicatas[:MAX_NODES_VECTOR_QUERY]
     
     def custom_traditional_query(self, consultas_tradicionais: list[str]):
         nos = []

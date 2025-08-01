@@ -1,6 +1,5 @@
-"""from rag_models.model4.debug import debug_db_search
-debug_db_search()"""
-
+"""from rag_models.model4.debug import debug_hyde
+debug_hyde()"""
 from fastapi import FastAPI
 from api import routers
 from config import configure_app

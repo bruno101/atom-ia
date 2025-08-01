@@ -66,7 +66,7 @@ const ChatMessage = ({ message }) => {
               >
                 <span>
                   🔗 Links Analisados{" "}
-                  <span className={styles.countPill}>69</span>
+                  <span className={styles.countPill}>{message.links_analisados.length}</span>
                 </span>
                 <span className={styles.chevron}>▶</span>
               </button>
