@@ -24,13 +24,15 @@ def extrair_json_da_resposta(texto):
     # Tenta capturar o primeiro bloco JSON entre chaves
     match = re.search(r'\{[\s\S]*\}', texto)
     if not match:
-        raise ValueError("Não foi possível extrair JSON da resposta do modelo.")
+        print("Não foi possível extrair JSON da resposta do modelo.")
+        return {"data": {"paginas": []}}
     
     json_str = match.group()
     try:
         return json.loads(json_str)
     except json.JSONDecodeError as e:
-        raise ValueError(f"Erro ao decodificar JSON: {e}")
+        print(f"Erro ao decodificar JSON: {e}")
+        return {"data": {"paginas": []}}
     
 def corrigir_slug(slug_modelo, slugs_validos):
     melhor, _, _ = process.extractOne(slug_modelo, slugs_validos, score_cutoff=90)

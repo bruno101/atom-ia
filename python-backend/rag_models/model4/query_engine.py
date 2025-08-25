@@ -51,14 +51,10 @@ class RAGStringQueryEngine(CustomQueryEngine):
             
             sorted_retrieved = sorted(retrieved, key=lambda x: getattr(x, "score", 0), reverse=True)
 
-            print(f"\n🔎 Top resultados para a consulta #{idx + 1}:\n\"{consulta_vetorial}\"\n")
             for rank, no in enumerate(sorted_retrieved[:10], start=1):
                 score = getattr(no, "score", None)
                 slug = no.metadata.get("slug")
-                if rank == 1:
-                    print(f"Melhor resultado para a consulta #{idx + 1}:\n\"{no.get_content()}\"\n")
-                print(f"{rank:>2}. {slug} - Retriever Score: {score:.4f}" if score is not None else f"{rank:>2}. {slug} - Score: N/A")
-            
+        
             nos += retrieved 
 
         nos_reformatados = [{"slug": no.metadata.get("slug"), "content": no.get_content()} for no in nos]
@@ -69,8 +65,10 @@ class RAGStringQueryEngine(CustomQueryEngine):
         nos = []
         resultados = fetch_documents_from_elastic_search(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
         for resultado in resultados:
-            no = {"slug":resultado.doc_id, "content":resultado.text}
-            nos = list(nos) + [no]
+            print("BT: " + resultado.text + "\n")
+            text = resultado.text if isinstance(resultado.text, str) else resultado.get_content()
+            no = {"slug": resultado.doc_id, "content": text}
+            nos.append(no)
         print("Busca tradicional encontrou: ", len(nos))
         return nos[:MAX_NODES_TRADITIONAL_QUERY]
         
@@ -110,7 +108,9 @@ class RAGStringQueryEngine(CustomQueryEngine):
         clipped_nodes = []
         for i, n in enumerate(nodes):
             content = n["content"]
-            slug = n["slug"]
+            slug = n["slug"] 
+            if hasattr(content, 'get_content'):
+                content = content.get_content()
             content = "Atenção! O seguinte é o slug da página, que, se necessário, deve ser copiado exatamente como está: ***" + slug + "***" + content
             clipped_content = content[:MAX_CHARS_PER_NODE]
             clipped_nodes.append(clipped_content)

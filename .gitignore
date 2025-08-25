@@ -9,6 +9,7 @@ python-backend/rag_core.py
 python-backend/.env
 **/debug.py
 **/output.txt
+**/migrate.py
 
 # Ignorar arquivos .pyc e caches
 *.pyc

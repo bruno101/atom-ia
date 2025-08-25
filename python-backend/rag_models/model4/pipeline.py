@@ -61,12 +61,13 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         
         print("output inicial gerado: " + str(raw_output))
         nos = query_engine.custom_global_query(raw_output)
-        print("Nós selecionados: ", nos)
         num_documentos = len(nos) 
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
             yield messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS.format(num_documentos=num_documentos)
         
         resposta = query_engine.custom_query(consulta, historico_str or "", nos)
+        print("segundo output gerado, deve ser json válido: :")
+        print(resposta)
         resposta_json = extrair_json_da_resposta(resposta)
         try:
             numero_paginas = len(resposta_json["data"]["paginas"])
