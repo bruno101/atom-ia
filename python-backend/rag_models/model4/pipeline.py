@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 # Carrega variáveis de ambiente
 load_dotenv()
 # URL base do sistema Atom para geração de links
-URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
+URL_ATOM = os.getenv('URL_ATOM', 'https://dibrarq.arquivonacional.gov.br/')
 
 async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, slugs_validos=None):
     """Pipeline principal para processamento de consultas com streaming de progresso
