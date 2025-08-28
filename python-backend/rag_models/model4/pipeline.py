@@ -9,7 +9,6 @@ from db_connection import fetch_slugs
 import json
 import os
 from dotenv import load_dotenv
-import time
 
 load_dotenv()
 URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
