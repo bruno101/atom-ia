@@ -7,6 +7,7 @@ from fetch_documents import fetch_documents_from_db, fetch_documents_from_elasti
 from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES, MAX_NODES_VECTOR_QUERY, MAX_NODES_TRADITIONAL_QUERY
 from .validation import remover_slugs_duplicadas
 import numpy as np
+import time
 
 qa_prompt = PromptTemplate(
     "Context information is below.\n"
@@ -65,11 +66,9 @@ class RAGStringQueryEngine(CustomQueryEngine):
         nos = []
         resultados = fetch_documents_from_elastic_search(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
         for resultado in resultados:
-            print("BT: " + resultado.text + "\n")
             text = resultado.text if isinstance(resultado.text, str) else resultado.get_content()
             no = {"slug": resultado.doc_id, "content": text}
             nos.append(no)
-        print("Busca tradicional encontrou: ", len(nos))
         return nos[:MAX_NODES_TRADITIONAL_QUERY]
         
     def custom_global_query(self, keywords_raw_output):
@@ -82,19 +81,16 @@ class RAGStringQueryEngine(CustomQueryEngine):
         if (NUMBER_OF_TRADITIONAL_QUERIES > 0):
             lista_consultas_tradicionais = []
             if (len(lista_consultas) < NUMBER_OF_TRADITIONAL_QUERIES + NUMBER_OF_VECTOR_QUERIES):
-                print("Ocorreu erro na geração das consultas tradicionais")
                 lista_consultas_tradicionais = lista_consultas[:min(len_lista_consultas, NUMBER_OF_TRADITIONAL_QUERIES)]
             else:
                 lista_consultas_tradicionais = str(keywords_raw_output).split(",")[NUMBER_OF_VECTOR_QUERIES:(NUMBER_OF_TRADITIONAL_QUERIES+NUMBER_OF_VECTOR_QUERIES)]
             
             consultas_tradicionais = [q.strip() for q in lista_consultas_tradicionais if q.strip()]
-            print("Consultas tradicionais geradas: ", consultas_tradicionais)
             nos_consulta_tradicional = self.custom_traditional_query(consultas_tradicionais)
         
         if (NUMBER_OF_VECTOR_QUERIES > 0):
             lista_consultas_vectoriais = lista_consultas[:min(len_lista_consultas, NUMBER_OF_VECTOR_QUERIES)]
             consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
-            print("Consultas vetoriais geradas: ", consultas_vetoriais)
             nos_consulta_vetorial = self.custom_vector_query(consultas_vetoriais)
         
         nos_com_repeticao = nos_consulta_vetorial + nos_consulta_tradicional
@@ -117,11 +113,31 @@ class RAGStringQueryEngine(CustomQueryEngine):
         
         context_str = "\n\n".join(clipped_nodes)
         historico_instrucoes = "Atenção às mensagens anteriores do usuário para que você entenda o contexto da conversa. Histórico da conversa:\n" + historico_str if historico_str else ""
-        #print("Prompt gerada foi: ", self.qa_prompt.format(context_str=context_str, query_str=query_str[:MAX_QUERY_CHARS], historico_str=historico_instrucoes))
+
+        final_prompt = self.qa_prompt.format(context_str=context_str, query_str=query_str[:MAX_QUERY_CHARS], historico_str=historico_instrucoes)
         
-        response = self.llm.complete(
-            prompt = self.qa_prompt.format(context_str=context_str, query_str=query_str[:MAX_QUERY_CHARS], historico_str=historico_instrucoes)
-        )
+        response = None
+        max_attempts = 3
+        sleep_durations = [10, 30]
+        
+        for attempt in range(max_attempts):
+            # Make the API call
+            response = self.llm.complete(prompt=final_prompt)
+
+            # If we get a valid response, break the loop
+            if response and str(response):
+                print(f"DEBUG: Received a valid response on attempt {attempt + 1}.")
+                break
+
+            # If the response is empty and we still have retries left
+            if attempt < max_attempts - 1:
+                sleep_time = sleep_durations[attempt]
+                print(f"DEBUG: Response is empty. Retrying in {sleep_time} seconds... (Attempt {attempt + 2}/{max_attempts})")
+                time.sleep(sleep_time)
+            else:
+                # This was the last attempt
+                print("DEBUG: Response is still empty after all retries.")            
+    
         return str(response)
     
 def create_query_engine(index, llm):
