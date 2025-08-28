@@ -58,7 +58,17 @@
 }
 
 .messageContent {
-  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+.messageContent p {
+  font-size: 15px !important;
+}
+
+.bubbleUser p {
+  color: white !important;
   line-height: 1.5;
   font-weight: 400;
   word-break: break-word;
@@ -259,7 +269,7 @@
   }
 
   .messageContent {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 

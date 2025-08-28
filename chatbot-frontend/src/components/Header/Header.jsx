@@ -1,35 +1,40 @@
 // Header.jsx
 import React from "react";
-import { BrHeader } from "@govbr-ds/react-components";
+import { BrHeader, BrBreadcrumbs, BrDivider } from "@govbr-ds/react-components";
 
 const Header = () => {
   return (
-    <BrHeader signature={"SIAN"} quickAccessLinks={[
+    <><BrHeader signature={"Ministério da Gestão e da Inovação em Serviços Públicos"} quickAccessLinks={[
       {
-        "label": "Acesso Rápido 1"
+        "label": "Órgãos do Governo"
       },
       {
-        "label": "Acesso Rápido 2"
+        "label": "Acesso à Informação"
+      },
+      {
+        "label": "Legislação"
+      },
+      {
+        "label": "Acessibilidade"
       }
     ]}
     urlLogo={"https://www.gov.br/ds/assets/img/govbr-logo.png"} features={[
       {
         "label": "Funcionalidade 1",
-        "icon": "chart-bar"
+        "icon": "cookie-bite"
       },
       {
         "label": "Funcionalidade 2",
-        "icon": "headset"
+        "icon": "th"
       },
-      {
-        "label": "Funcionalidade 3",
-        "icon": "comment"
-      },
+
       {
         "label": "Funcionalidade 4",
         "icon": "adjust"
       }
-    ]} showMenuButton={true} showSearchBar={true} title={"Chatbot SIAN"} subTitle={"Chatbot do Sistema de Informações do Arquivo Nacional"}></BrHeader>
+    ]} showMenuButton={true} showSearchBar={true} title={"Arquivo Nacional"} ></BrHeader>
+    <BrDivider/>
+    </>
   );
 };
 
