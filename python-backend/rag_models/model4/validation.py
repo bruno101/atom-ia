@@ -5,6 +5,7 @@ import re
 from rapidfuzz import process
 from db_connection import fetch_slugs
 import os
+import time
 from dotenv import load_dotenv
 
 # Carrega variáveis de ambiente
@@ -145,5 +146,29 @@ Responda em português, de forma clara e objetiva. Se não houver informações 
 Exemplo de como formatar com markdown uma das recomendações:
 "*   **[Título da página XYZ.]**\n    [Comentário sobre página XYZ, que pode, por exemplo, explicar a sua utilidade para a busca].\n    Link: [Link para a página XYZ]\n\n"
 '''
+    output = None
+    max_attempts = 3  # Número máximo de tentativas
+    sleep_durations = [10, 30]  # Tempos de espera entre tentativas
+        
+    # Sistema de retry para lidar com falhas temporárias da API
+    for attempt in range(max_attempts):
+        # Faz a chamada para o modelo LLM
+        output = llm.complete(prompt=prompt).text
+
+        # Se recebeu uma resposta válida, sai do loop
+        if output and str(output):
+            print(f"DEBUG: Resposta válida recebida na tentativa {attempt + 1}.")
+            break
+
+        # Se a resposta está vazia e ainda há tentativas restantes
+        if attempt < max_attempts - 1:
+            sleep_time = sleep_durations[attempt]
+            print(f"DEBUG: Resposta vazia. Tentando novamente em {sleep_time} segundos... (Tentativa {attempt + 2}/{max_attempts})")
+            time.sleep(sleep_time)
+        else:
+           # Esta foi a última tentativa
+            print("DEBUG: Resposta ainda vazia após todas as tentativas.") 
+            output = "Erro na geração da resposta devido a falhas nas consultas à API do Gemini."
+    
     # Gera resposta formatada usando o modelo de linguagem
-    return llm.complete(prompt=prompt).text
+    return output

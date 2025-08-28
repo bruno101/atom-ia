@@ -11,11 +11,12 @@ from db_connection import fetch_slugs
 import json
 import os
 from dotenv import load_dotenv
+import time
 
 # Carrega variáveis de ambiente
 load_dotenv()
 # URL base do sistema Atom para geração de links
-URL_ATOM = os.getenv('URL_ATOM', 'https://dibrarq.arquivonacional.gov.br/')
+URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
 
 async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, slugs_validos=None):
     """Pipeline principal para processamento de consultas com streaming de progresso
@@ -70,8 +71,31 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                     Consulta: {consulta}.
 
                     Resultado (apenas termos e expressões separados por vírgula):
-                """
-        raw_output = llm.complete(prompt)
+                """        
+        
+        raw_output = None
+        max_attempts = 3  # Número máximo de tentativas
+        sleep_durations = [10, 30]  # Tempos de espera entre tentativas
+        
+        # Sistema de retry para lidar com falhas temporárias da API
+        for attempt in range(max_attempts):
+            # Faz a chamada para o modelo LLM
+            raw_output = llm.complete(prompt)
+
+            # Se recebeu uma resposta válida, sai do loop
+            if raw_output and str(raw_output):
+                print(f"DEBUG: Resposta válida recebida na tentativa {attempt + 1}.")
+                break
+
+            # Se a resposta está vazia e ainda há tentativas restantes
+            if attempt < max_attempts - 1:
+                sleep_time = sleep_durations[attempt]
+                print(f"DEBUG: Resposta vazia. Tentando novamente em {sleep_time} segundos... (Tentativa {attempt + 2}/{max_attempts})")
+                time.sleep(sleep_time)
+            else:
+                # Esta foi a última tentativa
+                print("DEBUG: Resposta ainda vazia após todas as tentativas.") 
+                raw_output = consulta
         
         if messages.MENSAGEM_CONSULTA_VETORIAL_GERADA:
             yield messages.MENSAGEM_CONSULTA_VETORIAL_GERADA
