@@ -1,3 +1,5 @@
+# Pipeline principal do sistema RAG
+# Orquestra todo o fluxo de processamento de consultas do usuário
 from .validation import (
     extrair_json_da_resposta,
     validando,
@@ -11,12 +13,28 @@ import os
 from dotenv import load_dotenv
 import time
 
+# Carrega variáveis de ambiente
 load_dotenv()
+# URL base do sistema Atom para geração de links
 URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
 
 async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, slugs_validos=None):
+    """Pipeline principal para processamento de consultas com streaming de progresso
     
+    Args:
+        consulta (str): Consulta do usuário
+        historico (str, optional): Histórico da conversa
+        query_engine: Motor de consulta RAG
+        llm: Modelo de linguagem
+        slugs_validos (list): Lista de slugs válidos do banco
+        
+    Yields:
+        str: Mensagens de progresso e resultado final
+    """
+    
+    # Calcula o tamanho máximo do histórico baseado no limite de caracteres
     tamanho_maximo_historico = max(MAX_QUERY_CHARS - len(consulta), 0)
+    # Trunca o histórico se necessário, mantendo pelo menos 100 caracteres
     historico_str = historico[:tamanho_maximo_historico] if historico and tamanho_maximo_historico >= 100 else ""
         
     if messages.MENSAGEM_PIPELINE_INICIALIZANDO:

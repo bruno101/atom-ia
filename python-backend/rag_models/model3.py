@@ -1,3 +1,5 @@
+# MODELO LEGADO 3 - Sistema RAG com streaming básico (VERSÃO ANTERIOR)
+# Este modelo introduziu streaming mas foi substituído pelo model4 com busca híbrida
 import os, json, glob, re
 import pandas as pd
 import chromadb
@@ -20,11 +22,11 @@ from fetch_documents import fetch_documents_from_db
 from db_connection import fetch_slugs
 import logging
 
-# Configure logging
+# Configura logging para debug
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Load environment variables
+# Carrega variáveis de ambiente
 load_dotenv()
 GEMINI_API = os.getenv("GEMINI_API")
 EMBEDDING_MODEL = "intfloat/multilingual-e5-large"
