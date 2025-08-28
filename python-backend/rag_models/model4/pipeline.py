@@ -9,6 +9,7 @@ from db_connection import fetch_slugs
 import json
 import os
 from dotenv import load_dotenv
+import time
 
 load_dotenv()
 URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
@@ -17,9 +18,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
     
     tamanho_maximo_historico = max(MAX_QUERY_CHARS - len(consulta), 0)
     historico_str = historico[:tamanho_maximo_historico] if historico and tamanho_maximo_historico >= 100 else ""
-    
-    print("Histórico é: ", historico_str)
-    
+        
     if messages.MENSAGEM_PIPELINE_INICIALIZANDO:
         yield messages.MENSAGEM_PIPELINE_INICIALIZANDO
     
@@ -56,10 +55,10 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                     Resultado (apenas termos e expressões separados por vírgula):
                 """
         raw_output = llm.complete(prompt)
+        
         if messages.MENSAGEM_CONSULTA_VETORIAL_GERADA:
             yield messages.MENSAGEM_CONSULTA_VETORIAL_GERADA
         
-        print("output inicial gerado: " + str(raw_output))
         nos = query_engine.custom_global_query(raw_output)
         num_documentos = len(nos) 
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:

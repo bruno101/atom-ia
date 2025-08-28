@@ -35,8 +35,13 @@ def extrair_json_da_resposta(texto):
         return {"data": {"paginas": []}}
     
 def corrigir_slug(slug_modelo, slugs_validos):
-    melhor, _, _ = process.extractOne(slug_modelo, slugs_validos, score_cutoff=90)
-    return melhor if melhor else None
+    match = process.extractOne(slug_modelo, slugs_validos, score_cutoff=90)
+    
+    if match:
+        melhor, _, _ = match
+        return melhor
+    
+    return None
 
 def validando(resposta_json, slugs_validos):
     if 'data' not in resposta_json or 'paginas' not in resposta_json['data']:
