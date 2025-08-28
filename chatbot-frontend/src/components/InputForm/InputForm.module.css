@@ -60,7 +60,7 @@
   gap: 6px;
   padding: 0 16px;
   height: 44px;
-  background-color: #0166b3;
+  background-color: #0C326F;
   color: white;
   border: none;
   border-radius: 6px 0 0 6px;
@@ -72,11 +72,11 @@
 }
 
 .settingsButton:hover {
-  background-color: #0c94ad;
+  background-color: #1351B4;
 }
 
 .settingsButton:focus {
-  background-color: #0c94ad;
+  background-color: #1351B4;
   outline: #0c94ad30 solid 4px;
 }
 
@@ -92,7 +92,7 @@
   gap: 8px;
   padding: 0 16px;
   height: 44px;
-  background-color: #0166b3;
+  background-color: #0C326F;
   color: white;
   border: none;
   border-radius: 0 6px 6px 0;
@@ -104,7 +104,7 @@
 }
 
 .submitButton:hover:not(:disabled) {
-  background-color: #0c94ad;
+  background-color: #1351B4;
 }
 
 .submitButton:disabled {
@@ -113,7 +113,7 @@
 }
 
 .settingsButton:focus {
-  background-color: #0c94ad;
+  background-color: #1351B4;
   outline: #0c94ad30 solid 4px;
 }
 

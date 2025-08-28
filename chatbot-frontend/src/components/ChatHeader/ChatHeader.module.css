@@ -21,8 +21,15 @@
 .headerText h1 {
   font-size: 24px;
   font-weight: 400;
-  color: #0c94ad;
+  color: #2670E8;
   margin: 0;
+}
+
+.highlight {
+  background-color: #2670E8;
+  color: white;
+  padding: 0px 4px;
+  border-radius: 3px;
 }
 
 .headerText p {

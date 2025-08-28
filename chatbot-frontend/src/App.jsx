@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "./App.css";
+import Header from "./components/Header/Header";
 import ChatHeader from "./components/ChatHeader/ChatHeader";
 import InputForm from "./components/InputForm/InputForm";
 import MessageList from "./components/MessageList/MessageList";
@@ -13,7 +14,7 @@ function App() {
       id: "1",
       role: "assistant",
       content:
-        "Olá! Eu sou ModestIA, uma IA especializada em busca arquivística.\n\nEstou conectada ao banco de dados do AtoM (Access to Memory) e posso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nComo posso auxiliar em sua pesquisa hoje?",
+        "Olá! Eu sou S**IA**N, uma IA especializada em busca arquivística.\n\nEstou conectada ao banco de dados do AtoM (Access to Memory) e posso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nComo posso auxiliar em sua pesquisa hoje?",
       timestamp: new Date(),
     },
   ]);
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <div className="app">
+      <Header />
       <div className="main-container">
         <Sidebar
           showSidebar={showSidebar}
@@ -72,7 +74,7 @@ function App() {
                 isLoading={isLoading}
               />
               <div className="footer-info">
-                <span>ModestIA • Powered by AtoM • Dataprev © 2025</span>
+                <span>Chatbot SIAN • Dataprev © 2025</span>
               </div>
             </div>
           </div>
