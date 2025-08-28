@@ -11,6 +11,7 @@ const fetchSse = (
 
   const processStream = async () => {
     try {
+      console.log(url)
       const response = await fetch(url, {
         method: "POST",
         headers: {
