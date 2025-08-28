@@ -55,6 +55,7 @@ export default function createHandleSubmit({
     };
 
     const url = process.env.REACT_APP_API_URL;
+    console.log("HANDLER LOG: 🚀 Enviando requisição SSE:", url);
 
     abortControllerRef.current = fetchSse(
       url,

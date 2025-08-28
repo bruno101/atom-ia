@@ -1,3 +1,5 @@
+# MODELO LEGADO 1 - Sistema RAG com Groq/Llama3 (DESCONTINUADO)
+# Este modelo foi substituído pelo model4 que usa Google Gemini
 import os, json, glob
 import pandas as pd
 import chromadb
@@ -19,7 +21,7 @@ from rapidfuzz import process
 from fetch_documents import fetch_documents_from_db
 from db_connection import fetch_slugs
 
-# Load environment variables
+# Carrega variáveis de ambiente
 load_dotenv()
 GROQ_API = os.getenv("GROQ_API")
 EMBEDDING_MODEL = "intfloat/multilingual-e5-large"

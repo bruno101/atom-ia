@@ -1,3 +1,5 @@
+# Módulo de debug para testes e desenvolvimento do sistema RAG
+# Contém funções para testar componentes individuais
 from .validation import (
     extrair_json_da_resposta,
     validando
@@ -13,14 +15,23 @@ from llama_index.core import Settings
 from .index_management import create_or_load_index
 from .embeddings import get_embedding_model
 
+# Inicialização do ambiente de debug
 print("DEBUG IS RUNNING")
+# Configura o modelo de linguagem
 llm = GoogleGenAI(model="gemini-2.5-flash", api_key=GEMINI_API)
 Settings.llm = llm
 Settings.embed_model = get_embedding_model()
+# Carrega o índice e cria o motor de consulta
 index, _ = create_or_load_index()
 query_engine = create_query_engine(index, llm)
     
 def debug_hyde():
+    """Função de debug para testar consultas globais com palavras-chave predefinidas
+    
+    Testa o sistema com um conjunto de palavras-chave sobre história e literatura brasileira
+    para verificar a recuperação de documentos relevantes.
+    """
+    # Palavras-chave de teste cobrindo diferentes tópicos
     raw_output = """História judeus Brasil colonização imigração, 
     educação no Império do Brasil, 
     Comunidade judaica Brasil cultura tradições sinagogas, 
@@ -33,6 +44,7 @@ def debug_hyde():
     Impacto cultural Sítio Picapau Amarelo educação"""
     
     print("output inicial gerado: " + str(raw_output))
+    # Testa a consulta global com as palavras-chave
     nos = query_engine.custom_global_query(raw_output)
     
     

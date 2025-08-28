@@ -1,3 +1,5 @@
+# MODELO LEGADO 2 - Sistema RAG com Google Gemini (VERSÃO ANTERIOR)
+# Este modelo foi evoluído para o model4 com busca híbrida e streaming
 import os, json, glob, re
 import pandas as pd
 import chromadb
@@ -19,7 +21,7 @@ from rapidfuzz import process
 from fetch_documents import fetch_documents_from_db
 from db_connection import fetch_slugs
 
-# Load environment variables
+# Carrega variáveis de ambiente
 load_dotenv()
 GEMINI_API = os.getenv("GEMINI_API")
 EMBEDDING_MODEL = "intfloat/multilingual-e5-large"
