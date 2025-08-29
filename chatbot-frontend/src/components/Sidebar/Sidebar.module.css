@@ -4,7 +4,7 @@
   border-right: 1px solid #e9ecef;
   padding: 0;
   transition: transform 0.3s ease;
-  height: 100vh;
+  height: calc(100vh - 170px);
   overflow-y: auto;
 }
 

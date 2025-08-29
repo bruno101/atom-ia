@@ -2,3 +2,9 @@
   height: 8vh;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    display: none
+  }
+}
