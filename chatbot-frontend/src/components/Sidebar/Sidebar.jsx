@@ -12,11 +12,11 @@ const Sidebar = ({ showSidebar, toggleSidebar, suggestedLinks }) => {
 
       <div className={`${styles.sidebar} ${showSidebar ? styles.sidebarVisible : ""}`}>
         <div className={styles.sidebarSection}>
-        <img
-        src="/images/an-logo.webp"
-        alt=""
-        className={styles.logo}
-      />
+          <img
+            src="/images/an-logo.webp"
+            alt=""
+            className={styles.logo}
+          />
           <h3 className={styles.sidebarTitle}>Recursos sugeridos:</h3>
           <button className={styles.closeSidebar} onClick={toggleSidebar}>
             &times;
