@@ -1,4 +1,3 @@
-// Header.jsx
 import React from "react";
 import { BrHeader, BrBreadcrumbs, BrDivider } from "@govbr-ds/react-components";
 
@@ -32,7 +31,7 @@ const Header = () => {
         "label": "Funcionalidade 4",
         "icon": "adjust"
       }
-    ]} showMenuButton={true} showSearchBar={true} title={"Arquivo Nacional"} ></BrHeader>
+    ]} showMenuButton={true} showSearchBar={true} title={"Arquivo Nacional"} fluid={"xl"}    ></BrHeader>
     <BrDivider/>
     </>
   );

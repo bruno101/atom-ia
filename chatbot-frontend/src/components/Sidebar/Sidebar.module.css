@@ -107,13 +107,29 @@
   font-size: 14px;
 }
 
+.logo {
+  width: 16em;
+height: 11em;
+margin-left: 3em;
+}
+
 @media (max-width: 1024px) {
   .sidebar {
     width: 300px;
   }
+  .logo {
+    width: 15em;
+height: 10em;
+margin-left: 1.5em;
+  }
 }
 
 @media (max-width: 768px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   .mobileHeader {
     display: flex;
   }

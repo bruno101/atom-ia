@@ -6,6 +6,7 @@ import InputForm from "./components/InputForm/InputForm";
 import MessageList from "./components/MessageList/MessageList";
 import Sidebar from "./components/Sidebar/Sidebar";
 import createHandleSubmit from "./logic/createHandleSubmit";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
