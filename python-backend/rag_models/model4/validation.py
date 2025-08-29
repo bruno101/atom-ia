@@ -147,8 +147,8 @@ Exemplo de como formatar com markdown uma das recomendações:
 "*   **[Título da página XYZ.]**\n    [Comentário sobre página XYZ, que pode, por exemplo, explicar a sua utilidade para a busca].\n    Link: [Link para a página XYZ]\n\n"
 '''
     output = None
-    max_attempts = 3  # Número máximo de tentativas
-    sleep_durations = [10, 30]  # Tempos de espera entre tentativas
+    max_attempts = 10  # Número máximo de tentativas
+    sleep_durations = [3, 5, 7, 9, 11, 13, 15, 17, 19]  # Tempos de espera entre tentativas
         
     # Sistema de retry para lidar com falhas temporárias da API
     for attempt in range(max_attempts):

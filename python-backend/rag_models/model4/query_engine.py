@@ -178,8 +178,8 @@ class RAGStringQueryEngine(CustomQueryEngine):
         final_prompt = self.qa_prompt.format(context_str=context_str, query_str=query_str[:MAX_QUERY_CHARS], historico_str=historico_instrucoes)
         
         response = None
-        max_attempts = 3  # Número máximo de tentativas
-        sleep_durations = [10, 30]  # Tempos de espera entre tentativas
+        max_attempts = 10  # Número máximo de tentativas
+        sleep_durations = [3, 5, 7, 9, 11, 13, 15, 17, 19]  # Tempos de espera entre tentativas
         
         # Sistema de retry para lidar com falhas temporárias da API
         for attempt in range(max_attempts):

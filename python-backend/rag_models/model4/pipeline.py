@@ -74,8 +74,8 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                 """        
         
         raw_output = None
-        max_attempts = 3  # Número máximo de tentativas
-        sleep_durations = [10, 30]  # Tempos de espera entre tentativas
+        max_attempts = 10  # Número máximo de tentativas
+        sleep_durations = [3, 5, 7, 9, 11, 13, 15, 17, 19]  # Tempos de espera entre tentativas
         
         # Sistema de retry para lidar com falhas temporárias da API
         for attempt in range(max_attempts):
@@ -105,18 +105,42 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
             yield messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS.format(num_documentos=num_documentos)
         
-        resposta = query_engine.custom_query(consulta, historico_str or "", nos)
-        print("segundo output gerado, deve ser json válido: :")
-        print(resposta)
-        resposta_json = extrair_json_da_resposta(resposta)
-        try:
-            numero_paginas = len(resposta_json["data"]["paginas"])
-            if messages.MENSAGEM_PAGINAS_SELECIONADAS:
-                yield messages.MENSAGEM_PAGINAS_SELECIONADAS.format(numero_paginas=numero_paginas)
-        except:
-            logger.debug("Exceção calculando número de páginas. Continuando com a validação.")
-            
-        resposta_json_validada = validando(resposta_json, slugs_validos)
+        resposta_json_validada = None
+        
+        # Sistema de retry para extração e validação do JSON
+        for attempt in range(max_attempts):
+            try:
+                resposta = query_engine.custom_query(consulta, historico_str or "", nos)
+                print("segundo output gerado, deve ser json válido: :")
+                print(resposta)
+                resposta_json = extrair_json_da_resposta(resposta)
+                try:
+                    numero_paginas = len(resposta_json["data"]["paginas"])
+                    if messages.MENSAGEM_PAGINAS_SELECIONADAS:
+                        yield messages.MENSAGEM_PAGINAS_SELECIONADAS.format(numero_paginas=numero_paginas)
+                except:
+                    print("Exceção calculando número de páginas. Continuando com a validação.")
+                    
+                resposta_json_validada = validando(resposta_json, slugs_validos)
+                break  # Se chegou até aqui, deu certo
+                
+            except Exception as e:
+                print(f"Erro na extração/validação do JSON (tentativa {attempt + 1}/{max_attempts}): {str(e)}")
+                if attempt < max_attempts - 1:
+                    sleep_time = sleep_durations[attempt]
+                    print(f"Tentando novamente em {sleep_time} segundos...")
+                    time.sleep(sleep_time)
+                else:
+                    # Após todas as tentativas falharem, retorna erro ao usuário
+                    final_erro = {
+                        "resposta": "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos.",
+                        "links": [],
+                        "palavras_chave": str(raw_output).split(","),
+                        "links_analisados": [f"{URL_ATOM}/index.php/" + no["slug"] for no in nos]
+                    }
+                    yield f"FINAL_RESULT::{json.dumps(final_erro, ensure_ascii=False)}"
+                    return
+                    
         if messages.MENSAGEM_RESPOSTA_VALIDADA:
             yield messages.MENSAGEM_RESPOSTA_VALIDADA
 

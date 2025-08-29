@@ -15,7 +15,7 @@ function App() {
       id: "1",
       role: "assistant",
       content:
-        "Olá! Eu sou S**IA**N, uma IA especializada em busca arquivística.\n\nEstou conectada ao banco de dados do AtoM (Access to Memory) e posso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nComo posso auxiliar em sua pesquisa hoje?",
+        "Olá! Eu sou S**IA**N, uma IA especializada em busca arquivística.\n\nPosso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nO que você deseja pesquisar hoje?",
       timestamp: new Date(),
     },
   ]);
