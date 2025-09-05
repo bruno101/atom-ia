@@ -1,14 +1,13 @@
 # Importações necessárias para o motor de consulta RAG
-from llama_index.core.query_engine import CustomQueryEngine
-from llama_index.core.retrievers import BaseRetriever
-from llama_index.core.response_synthesizers import BaseSynthesizer, get_response_synthesizer
 from llama_index.core import PromptTemplate
 from llama_index.llms.google_genai import GoogleGenAI
-from fetch_documents import fetch_documents_from_db, fetch_documents_from_elastic_search
 from .config import NODES_PER_VECTOR_QUERY, NODES_PER_TRADITIONAL_QUERY, MAX_CHARS_PER_NODE, MAX_QUERY_CHARS, NUMBER_OF_TRADITIONAL_QUERIES, NUMBER_OF_VECTOR_QUERIES, MAX_NODES_VECTOR_QUERY, MAX_NODES_TRADITIONAL_QUERY
-from .validation import remover_slugs_duplicadas
+from .validation import remover_urls_duplicadas
+from vector_search import search_similar_documents
+from text_search import search_documents_by_text
 import numpy as np
 import time
+
 
 # Template de prompt para geração de respostas em formato JSON
 # Define como o modelo deve responder às consultas dos usuários
@@ -23,30 +22,31 @@ qa_prompt = PromptTemplate(
     {"data": {
       "paginas": [
         {
-        "slug": "Slug da página recomendada",
-        "title": "Titulo da página recomendada",
+        "url": "Url da página recomendada",
+        "titulo": "Titulo da página recomendada",
         "descricao": "Descrição resumida do conteúdo da página",
         "justificativa": "Motivo da recomendação e como essa página pode ajudar na pesquisa"
       }
       ]
     }}
     Caso não encontre informações sobre o tema específico, recomende as informações mais relevantes ou relacionadas possíveis. Recomende o máximo possível de documentos relacionados ao tema. Idealmente, retorne pelo menos cinco links. Formate a sua resposta de forma esteticamente agradável, com o uso de markdown.
-    Só recomende slugs dessa base de dados. Os slugs são identificadores técnicos. Eles **devem ser copiados exatamente como estão na base**, sem nenhuma alteração. NÃO insira, remova ou modifique hífens, acentos ou letras. Apenas use os slugs retornados pela base.
+    Só recomende urls dessa base de dados. Os urls são identificadores técnicos. Eles **devem ser copiados exatamente como estão na base**, sem nenhuma alteração. NÃO insira, remova ou modifique hífens, acentos ou letras. Apenas use as urls retornadas pela base.
 """
     "---------------------\n"
     "{historico_str}"
-    "\Segue a consulta que deve ser respondida. Consulta: {query_str}\n"
+    "\nSegue a consulta que deve ser respondida. Consulta: {query_str}\n"
     "Resposta: "
 )
 
 # Motor de consulta RAG personalizado
 # Combina busca vetorial e tradicional para recuperar documentos relevantes
-class RAGStringQueryEngine(CustomQueryEngine):
-    retriever: BaseRetriever
-    response_synthesizer: BaseSynthesizer
+class RAGStringQueryEngine:
     llm: GoogleGenAI
     qa_prompt: PromptTemplate
     
+    def __init__(self, llm, qa_prompt):
+            self.llm = llm
+            self.qa_prompt = qa_prompt
     
     def custom_vector_query(self, consultas_vetoriais: list[str]):
         """Executa consultas vetoriais usando embeddings semânticos
@@ -60,22 +60,14 @@ class RAGStringQueryEngine(CustomQueryEngine):
         nos = []  # Lista para armazenar todos os nós recuperados
         for idx, consulta_vetorial in enumerate(consultas_vetoriais):
             # Recupera documentos usando busca vetorial com prefixo "query:"
-            retrieved = self.retriever.retrieve("query: " + consulta_vetorial)
-            
-            # Ordena os resultados por score de similaridade (maior para menor)
-            sorted_retrieved = sorted(retrieved, key=lambda x: getattr(x, "score", 0), reverse=True)
-
-            # Log dos resultados para debug (opcional)
-            for rank, no in enumerate(sorted_retrieved[:10], start=1):
-                score = getattr(no, "score", None)
-                slug = no.metadata.get("slug")
-        
+            retrieved = search_similar_documents(consulta_vetorial, n_results=NODES_PER_VECTOR_QUERY)
             nos += retrieved  # Adiciona todos os nós recuperados à lista 
 
         # Reformata os nós para estrutura padronizada
-        nos_reformatados = [{"slug": no.metadata.get("slug"), "content": no.get_content()} for no in nos]
-        # Remove duplicatas baseado no slug
-        nos_sem_duplicatas = remover_slugs_duplicadas(nos_reformatados)
+        nos_reformatados = [{"text": no["text"], "url": no["url"], "title": no["title"]} for no in nos]
+        print("Consulta vetorial achou: " + str(len(nos_reformatados)))
+        # Remove duplicatas baseado na url
+        nos_sem_duplicatas = remover_urls_duplicadas(nos_reformatados)
         return nos_sem_duplicatas[:MAX_NODES_VECTOR_QUERY]
     
     def custom_traditional_query(self, consultas_tradicionais: list[str]):
@@ -89,12 +81,12 @@ class RAGStringQueryEngine(CustomQueryEngine):
         """
         nos = []
         # Busca documentos no Elasticsearch usando consultas tradicionais
-        resultados = fetch_documents_from_elastic_search(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
+        resultados = search_documents_by_text(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
+        print("Consulta tradicional achou: " + str(len(resultados)))
         
         for resultado in resultados:
             # Extrai o texto do resultado de forma segura
-            text = resultado.text if isinstance(resultado.text, str) else resultado.get_content()
-            no = {"slug": resultado.doc_id, "content": text}
+            no = {"text": resultado["text"], "url": resultado["url"], "title": resultado["title"]}
             nos.append(no)
             
         return nos[:MAX_NODES_TRADITIONAL_QUERY]
@@ -137,8 +129,8 @@ class RAGStringQueryEngine(CustomQueryEngine):
         
         # Combina resultados de ambas as consultas
         nos_com_repeticao = nos_consulta_vetorial + nos_consulta_tradicional
-        # Remove duplicatas baseado no slug
-        nos = remover_slugs_duplicadas(nos_com_repeticao)
+        # Remove duplicatas baseado na url
+        nos = remover_urls_duplicadas(nos_com_repeticao)
         
         return nos
         
@@ -158,13 +150,11 @@ class RAGStringQueryEngine(CustomQueryEngine):
         clipped_nodes = []
         # Processa cada nó para criar o contexto
         for i, n in enumerate(nodes):
-            content = n["content"]
-            slug = n["slug"] 
-            # Extrai conteúdo se necessário
-            if hasattr(content, 'get_content'):
-                content = content.get_content()
-            # Adiciona slug como identificador único no início do conteúdo
-            content = "Atenção! O seguinte é o slug da página, que, se necessário, deve ser copiado exatamente como está: ***" + slug + "***" + content
+            title = n["title"]
+            content = n["text"]
+            url = n["url"] 
+            # Adiciona url  como identificador único no início do conteúdo
+            content = "Atenção! O seguinte é a url da página, que, se necessário, deve ser copiada exatamente como está: ***" + url + "***\n título: " + title + "\n\n***conteúdo: " + content
             # Limita o tamanho do conteúdo para evitar excesso de tokens
             clipped_content = content[:MAX_CHARS_PER_NODE]
             clipped_nodes.append(clipped_content)
@@ -181,7 +171,7 @@ class RAGStringQueryEngine(CustomQueryEngine):
     
         return str(response)
     
-def create_query_engine(index, llm):
+def create_query_engine(llm):
     """Cria uma instância do motor de consulta RAG
     
     Args:
@@ -192,13 +182,8 @@ def create_query_engine(index, llm):
         Instância configurada do RAGStringQueryEngine
     """
     # Configura o recuperador com busca por similaridade
-    retriever = index.as_retriever(similarity_top_k=NODES_PER_VECTOR_QUERY, with_similarity=True)
-    # Configura o sintetizador de respostas em modo compacto
-    synthesizer = get_response_synthesizer(response_mode="compact", llm=llm)
     
     return RAGStringQueryEngine(
-        retriever=retriever,
-        response_synthesizer=synthesizer,
-        llm=llm,
-        qa_prompt=qa_prompt
+        llm,
+        qa_prompt
     )

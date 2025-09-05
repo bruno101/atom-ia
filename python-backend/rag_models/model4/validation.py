@@ -168,7 +168,7 @@ Exemplo de como formatar com markdown uma das recomendações:
         else:
            # Esta foi a última tentativa
             print("DEBUG: Resposta ainda vazia após todas as tentativas.") 
-            output = "Erro na geração da resposta devido a falhas nas consultas à API do Gemini."
+            output = "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos."
     
     # Gera resposta formatada usando o modelo de linguagem
     return output

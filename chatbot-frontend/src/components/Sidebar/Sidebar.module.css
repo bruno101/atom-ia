@@ -57,6 +57,7 @@
   color: #2378C3;
   transition: all 0.2s ease;
   gap: 12px;
+  min-height: fit-content;
 }
 
 .suggestedLink:hover {
@@ -69,12 +70,18 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .linkTitle {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .noLinks {

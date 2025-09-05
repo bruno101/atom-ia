@@ -7,18 +7,12 @@ from .validation import (
 )
 from . import messages
 from .config import NUMBER_OF_VECTOR_QUERIES, NUMBER_OF_TRADITIONAL_QUERIES, MAX_QUERY_CHARS
-from db_connection import fetch_slugs
 import json
 import os
 from dotenv import load_dotenv
 import time
 
-# Carrega variáveis de ambiente
-load_dotenv()
-# URL base do sistema Atom para geração de links
-URL_ATOM = os.getenv('URL_ATOM', 'http://localhost:63001')
-
-async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, slugs_validos=None):
+async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, urls_validas=None):
     """Pipeline principal para processamento de consultas com streaming de progresso
     
     Args:
@@ -26,7 +20,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         historico (str, optional): Histórico da conversa
         query_engine: Motor de consulta RAG
         llm: Modelo de linguagem
-        slugs_validos (list): Lista de slugs válidos do banco
+        urls_validas (list): Lista de urls válidas do banco
         
     Yields:
         str: Mensagens de progresso e resultado final
@@ -99,7 +93,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                         "resposta": "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos.",
                         "links": [],
                         "palavras_chave": str(raw_output).split(","),
-                        "links_analisados": [f"{URL_ATOM}/index.php/" + no["slug"] for no in nos]
+                        "links_analisados": [no["url"] for no in nos]
                 }
                 yield f"FINAL_RESULT::{json.dumps(final_erro, ensure_ascii=False)}"
                 return
@@ -130,7 +124,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                 except:
                     print("Exceção calculando número de páginas. Continuando com a validação.")
                     
-                resposta_json_validada = validando(resposta_json, slugs_validos)
+                resposta_json_validada = validando(resposta_json, urls_validas)
                 break  # Se chegou até aqui, deu certo
                 
             except Exception as e:
@@ -145,7 +139,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                         "resposta": "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos.",
                         "links": [],
                         "palavras_chave": str(raw_output).split(","),
-                        "links_analisados": [f"{URL_ATOM}/index.php/" + no["slug"] for no in nos]
+                        "links_analisados": [no["url"] for no in nos]
                     }
                     yield f"FINAL_RESULT::{json.dumps(final_erro, ensure_ascii=False)}"
                     return
@@ -159,16 +153,16 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
             "resposta": resposta_textual,
             "links": [
                 {
-                    "url": f"{URL_ATOM}/index.php/{p.get('slug', '')}", 
-                    "slug": p.get('slug', ''),
-                    "title": p.get('title', ''),
+                    "slug": p.get('url', ''),
+                    "url": p.get('url', ''),
+                    "title": p.get('titulo', ''),
                     "justificativa": p.get('justificativa', None),
                     "descricao": p.get('descricao', None)
                 }
                 for p in resposta_json_validada.get('data', {}).get('paginas', [])
             ],
             "palavras_chave" : str(raw_output).split(","),
-            "links_analisados": [f"{URL_ATOM}/index.php/" + no["slug"] for no in nos]
+            "links_analisados": [no["url"] for no in nos]
         }
 
         yield f"FINAL_RESULT::{json.dumps(final, ensure_ascii=False)}"

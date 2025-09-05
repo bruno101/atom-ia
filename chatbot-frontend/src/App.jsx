@@ -9,7 +9,6 @@ import createHandleSubmit from "./logic/createHandleSubmit";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-
   const [messages, setMessages] = useState([
     {
       id: "1",
@@ -59,14 +58,16 @@ function App() {
           suggestedLinks={suggestedLinks}
         />
         <div className="chat-section">
-          <ChatHeader />
           <div className="chat-container">
-            <MessageList
-              messages={messages}
-              streamedMessage={currentProgressMessage}
-              isLoading={isLoading}
-              scrollRef={scrollAreaRef}
-            />
+            <div className="chat-scrollable" ref={scrollAreaRef}>
+              <ChatHeader />
+              <MessageList
+                messages={messages}
+                streamedMessage={currentProgressMessage}
+                isLoading={isLoading}
+              />
+            </div>
+
             <div className="input-area">
               <InputForm
                 input={input}
@@ -81,7 +82,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

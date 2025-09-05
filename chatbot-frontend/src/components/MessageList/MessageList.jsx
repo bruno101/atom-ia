@@ -3,9 +3,9 @@ import ChatMessage from "../ChatMessage/ChatMessage";
 import LoaderIcon from "../../icons/LoaderIcon";
 import styles from "./MessageList.module.css";
 
-const MessageList = ({ messages, isLoading, streamedMessage, scrollRef }) => {
+const MessageList = ({ messages, isLoading, streamedMessage }) => {
   return (
-    <div className={styles.messagesArea} ref={scrollRef}>
+    <div className={styles.messagesArea}>
       <div className={styles.messagesContainer}>
         {messages.map((m) => (
           <ChatMessage key={m.id} message={m} />

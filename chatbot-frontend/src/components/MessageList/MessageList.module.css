@@ -1,10 +1,11 @@
 .messagesArea {
-  flex: 1;
-  overflow-y: auto;
+  flex: 0 0 auto;
   padding: 20px;
   background-color: #ffffff;
-  height: 0;
+  height: auto;
+  overflow: visible;
 }
+
 
 .messagesContainer {
   display: flex;
