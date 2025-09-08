@@ -22,7 +22,8 @@ const ChatMessage = ({ message }) => {
     try {
       const parsed = new URL(url);
       const pathParts = parsed.pathname.split("/").filter((part) => part);
-      return pathParts[pathParts.length - 1] || parsed.hostname;
+      const slug = pathParts[pathParts.length - 1] || parsed.hostname;
+      return slug + parsed.search;
     } catch {
       return (
         url

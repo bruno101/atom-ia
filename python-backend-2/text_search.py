@@ -273,7 +273,7 @@ def test_text_search():
     try:
         # Teste com múltiplas consultas
         test_queries = [
-            "canudos"
+            "Tocantins"
         ]
         
         results = search_documents_by_text(test_queries, n_results_per_query=10)
