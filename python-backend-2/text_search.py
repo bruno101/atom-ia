@@ -1,301 +1,258 @@
 # -*- coding: utf-8 -*-
 """
-Módulo para busca textual/lexical usando Oracle Text Search
-Permite buscar documentos usando consultas textuais com recursos de fuzzy matching e relevância
+Módulo principal de busca textual com algoritmos de busca plugáveis
+
+Este módulo fornece uma interface unificada para diferentes algoritmos de busca,
+permitindo fácil comparação e troca entre diferentes estratégias de busca.
 """
 import os
 import logging
-import oracledb
+from datetime import datetime
+from search_algorithms import elasticsearch_search
+import google.generativeai as genai
 from dotenv import load_dotenv
+import json
 
-# Configurar logging para debug
+# Configuração do sistema de logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Carregar variáveis de ambiente
+# Carrega variáveis de ambiente
 load_dotenv()
-DB_USER = os.getenv("DB_USER")
-DB_PASSWORD = os.getenv("DB_PASSWORD") 
-DB_DSN = os.getenv("DB_DSN")
 
-def create_text_index_if_needed():
-    """Cria índices de texto Oracle se não existirem para melhorar performance de busca"""
-    try:
-        with oracledb.connect(user=DB_USER, password=DB_PASSWORD, dsn=DB_DSN) as connection:
-            with connection.cursor() as cursor:
-                # Verificar se índice de texto já existe
-                cursor.execute("""
-                    SELECT COUNT(*) FROM user_indexes 
-                    WHERE index_name = 'DOCUMENTS_TEXT_IDX'
-                """)
-                
-                if cursor.fetchone()[0] == 0:
-                    logger.info("Criando índice de texto Oracle...")
-                    cursor.execute("""
-                        CREATE INDEX documents_text_idx ON documents(text) 
-                        INDEXTYPE IS CTXSYS.CONTEXT
-                    """)
-                    connection.commit()
-                    logger.info("Índice de texto criado com sucesso")
-                else:
-                    logger.info("Índice de texto já existe")
-                
-                # Verificar se índice de título já existe
-                cursor.execute("""
-                    SELECT COUNT(*) FROM user_indexes 
-                    WHERE index_name = 'DOCUMENTS_TITLE_IDX'
-                """)
-                
-                if cursor.fetchone()[0] == 0:
-                    logger.info("Criando índice de título Oracle...")
-                    cursor.execute("""
-                        CREATE INDEX documents_title_idx ON documents(title) 
-                        INDEXTYPE IS CTXSYS.CONTEXT
-                    """)
-                    connection.commit()
-                    logger.info("Índice de título criado com sucesso")
-                else:
-                    logger.info("Índice de título já existe")
-                    
-    except oracledb.Error as e:
-        logger.warning(f"Não foi possível criar índices de texto: {e}")
-        # Continua sem índice - busca ainda funcionará, mas mais lenta
-
-def sync_text_index():
-    """Reconstrói o índice Oracle Text para garantir sincronização após deleções"""
-    try:
-        with oracledb.connect(user=DB_USER, password=DB_PASSWORD, dsn=DB_DSN) as connection:
-            with connection.cursor() as cursor:
-                logger.info("Reconstruindo índice Oracle Text...")
-                cursor.execute("ALTER INDEX DOCUMENTS_TEXT_IDX REBUILD")
-                connection.commit()
-                logger.info("Índice reconstruído com sucesso")
-    except oracledb.Error as e:
-        logger.warning(f"Erro ao reconstruir índice: {e}")
+# Algoritmo de busca padrão (BM25)
+DEFAULT_SEARCH_ALGORITHM = elasticsearch_search
+EVALUATE_WITH_GEMINI = True
 
 def search_documents_by_text(queries, n_results_per_query=5):
-    """Busca documentos usando consulta textual/lexical com fuzzy matching
+    """Função principal de busca usando algoritmo BM25 padrão
     
     Args:
         queries (list[str]): Lista de consultas textuais
-        n_results_per_query (int): Número de resultados por consulta (padrão: 5)
+        n_results_per_query (int): Número de resultados por consulta
         
     Returns:
-        list[dict]: Lista de documentos com campos 'text', 'url' e 'query_matched'
+        list[dict]: Lista de documentos encontrados com scores de relevância
     """
-    logger.info(f"Iniciando busca textual para {len(queries)} consultas")
-    
-    # Validar parâmetros
-    if not queries or not isinstance(queries, list):
-        logger.warning("Lista de consultas vazia ou inválida")
-        return []
-    
-    if n_results_per_query <= 0:
-        logger.warning("Número de resultados deve ser positivo")
-        return []
-    
-    # Tentar criar índice se necessário
-    create_text_index_if_needed()
-    
-    all_documents = []
-    
-    try:
-        with oracledb.connect(user=DB_USER, password=DB_PASSWORD, dsn=DB_DSN) as connection:
-            logger.info("Conexão com Oracle estabelecida")
-            
-            with connection.cursor() as cursor:
-                for query_idx, query in enumerate(queries):
-                    if not query or not query.strip():
-                        logger.warning(f"Consulta {query_idx + 1} está vazia, pulando...")
-                        continue
-                    
-                    logger.info(f"Processando consulta {query_idx + 1}/{len(queries)}: '{query}'")
-                    
-                    # Preparar termos de busca - limpar e dividir em palavras
-                    search_terms = [term.strip() for term in query.split() if term.strip()]
-                    
-                    if not search_terms:
-                        logger.warning(f"Nenhum termo válido na consulta: '{query}'")
-                        continue
-                    
-                    # Tentar busca com índice Oracle Text primeiro
-                    results = _search_with_oracle_text(cursor, search_terms, n_results_per_query)
-                    
-                    
-                    # Processar resultados
-                    for text, url, title, score in results:
-                        # Handle CLOB objects
-                        text_content = text.read() if hasattr(text, 'read') else str(text)
-                        
-                        all_documents.append({
-                            'text': text_content,
-                            'url': url,
-                            'title': title,
-                            'query_matched': query,
-                            'relevance_score': score
-                        })
-                        print("url: ", url)
-                    
-                    logger.info(f"Encontrados {len(results)} resultados para consulta: '{query}'")
-        
-        logger.info(f"Busca textual concluída. Total de {len(all_documents)} documentos encontrados")
-        return all_documents
-        
-    except oracledb.Error as e:
-        logger.error(f"Erro de banco de dados Oracle: {e}")
-        raise
-    except Exception as e:
-        logger.error(f"Erro inesperado na busca textual: {e}")
-        raise
+    # Converte consultas para minúsculas para busca case-insensitive
+    if isinstance(queries, list):
+        queries = [q.lower() if q else q for q in queries]
+        print("Consultas:\n")
+        print(queries)
+    return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query)
 
-def _search_with_oracle_text(cursor, search_terms, n_results):
-    """Busca usando Oracle Text Search com sintaxe simplificada"""
-    try:
-        # Usar sintaxe mais simples do Oracle Text
-        oracle_query_parts = []
-        
-        for term in search_terms:
-            # Sintaxe mais simples - apenas wildcards
-            oracle_query_parts.extend([
-                term,  # Termo exato
-                f"{term}%",  # Prefixo
-            ])
-        
-        # Combinar termos com OR
-        oracle_text_query = " OR ".join(oracle_query_parts)
-        
-        sql = """
-        SELECT text, url, title, (SCORE(1) + SCORE(2)) as relevance
-        FROM documents 
-        WHERE CONTAINS(text, :1, 1) > 0 OR CONTAINS(title, :2, 2) > 0
-        ORDER BY (SCORE(1) + SCORE(2)) DESC
-        FETCH FIRST :3 ROWS ONLY
-        """
-        
-        logger.debug(f"Oracle Text query: {oracle_text_query}")
-        cursor.execute(sql, (oracle_text_query, oracle_text_query, n_results))
-        
-        return cursor.fetchall()
-        
-    except oracledb.Error as e:
-        logger.warning(f"Oracle Text search falhou: {e}")
-        return []
 
-def _search_with_like_fuzzy(cursor, search_terms, n_results):
-    """Busca usando LIKE com fuzzy matching robusto"""
-    try:
-        # Usar REGEXP_LIKE para busca mais robusta
-        like_conditions = []
-        score_conditions = []
-        params = []
+def evaluate_with_gemini(query, all_results):
+    """Avalia resultados dos algoritmos usando Gemini 2.5 Flash
+    
+    Args:
+        query (str): Consulta de teste
+        all_results (dict): Resultados de todos os algoritmos
         
-        for i, term in enumerate(search_terms):
-            # Gerar padrões de busca mais robustos
-            patterns = [
-                f".*{term.lower()}.*",  # Substring básica
-                f".*{term.lower()}s.*",  # Plural
-                f".*{term.lower()[:-1]}.*" if term.lower().endswith('s') and len(term) > 2 else f".*{term.lower()}.*"
+    Returns:
+        str: Relatório em markdown gerado pelo Gemini
+    """
+    try:
+        # Configura Gemini
+        genai.configure(api_key=os.getenv('GEMINI_API'))
+        model = genai.GenerativeModel('gemini-2.5-flash')
+        
+        # Prepara dados para análise
+        analysis_data = {
+            "query": query,
+            "algorithms": {}
+        }
+        
+        for algo_name, results in all_results.items():
+            analysis_data["algorithms"][algo_name] = [
+                {
+                    "rank": i+1,
+                    "score": doc['relevance_score'],
+                    "url": doc['url'],
+                    "text_preview": doc['text'][:5000] + "..."
+                }
+                for i, doc in enumerate(results[:10])
             ]
-            
-            # Remover duplicatas
-            patterns = list(set(patterns))
-            
-            term_conditions = []
-            for j, pattern in enumerate(patterns):
-                param_name = f"term_{i}_{j}"
-                # Usar REGEXP_LIKE para busca case-insensitive
-                term_conditions.append(f"REGEXP_LIKE(text, :{param_name}, 'i')")
-                score_conditions.append(f"CASE WHEN REGEXP_LIKE(text, :{param_name}, 'i') THEN 1 ELSE 0 END")
-                params.append((param_name, pattern))
-            
-            like_conditions.append(f"({' OR '.join(term_conditions)})")
         
-        where_clause = " OR ".join(like_conditions)
-        score_calculation = " + ".join(score_conditions)
-        
-        # Construir SQL com parâmetros nomeados
-        sql = f"""
-        SELECT text, url, ({score_calculation}) as relevance
-        FROM documents 
-        WHERE {where_clause}
-        ORDER BY ({score_calculation}) DESC, LENGTH(text) ASC
-        FETCH FIRST {n_results} ROWS ONLY
-        """
-        
-        # Criar dicionário de parâmetros
-        param_dict = {name: value for name, value in params}
-        
-        logger.debug(f"REGEXP query com {len(params)} parâmetros")
-        cursor.execute(sql, param_dict)
-        
-        return cursor.fetchall()
-        
-    except oracledb.Error as e:
-        logger.error(f"REGEXP search falhou: {e}")
-        # Fallback para LIKE simples
-        return _search_with_simple_like(cursor, search_terms, n_results)
+        # Prompt para Gemini
+        prompt = f"""
+Analise os resultados de busca de diferentes algoritmos para a consulta: "{query}"
 
-def _search_with_simple_like(cursor, search_terms, n_results):
-    """Fallback com LIKE muito simples"""
-    try:
-        conditions = []
-        params = {}
-        
-        for i, term in enumerate(search_terms):
-            param_name = f"term_{i}"
-            conditions.append(f"UPPER(text) LIKE UPPER(:{param_name})")
-            params[param_name] = f"%{term}%"
-        
-        where_clause = " OR ".join(conditions)
-        
-        sql = f"""
-        SELECT text, url, 1 as relevance
-        FROM documents 
-        WHERE {where_clause}
-        FETCH FIRST {n_results} ROWS ONLY
-        """
-        
-        logger.debug(f"Simple LIKE fallback com {len(params)} parâmetros")
-        cursor.execute(sql, params)
-        
-        return cursor.fetchall()
-        
-    except oracledb.Error as e:
-        logger.error(f"Simple LIKE search falhou: {e}")
-        return []
+Dados dos algoritmos:
+{json.dumps(analysis_data, indent=2, ensure_ascii=False)}
 
+Gere um relatório estruturado em markdown seguindo EXATAMENTE este formato:
 
+## Resumo Executivo
+[Breve análise geral]
+
+## Avaliação Detalhada por Resultado
+
+Para CADA resultado dos top 10 de CADA algoritmo, atribua uma nota de relevância:
+- **Nota 3**: Altamente relevante para "{query}"
+- **Nota 2**: Moderadamente relevante
+- **Nota 1**: Pouco relevante
+- **Nota 0**: Irrelevante
+
+### [Nome do Algoritmo]
+| Posição | Nota Relevância | Nota com Peso Posição | URL | Justificativa |
+|----------|------------------|------------------------|-----|---------------|
+| 1        | X                | X.X                    | ... | [justificativa] |
+| 2        | X                | X.X                    | ... | [justificativa] |
+| ...      | ...              | ...                    | ... | ... |
+| 10       | X                | X.X                    | ... | [justificativa] |
+**Score Final**: X.XX (média das notas com peso)
+
+[Repita para todos os algoritmos]
+
+## Cálculo de Scores
+**Fórmula**: Nota com Peso = Nota Relevância × (1 + (11 - posição) × 0.1)
+- Posição 1: multiplicador 2.0 (100% bônus)
+- Posição 5: multiplicador 1.6 (60% bônus)
+- Posição 10: multiplicador 1.1 (10% bônus)
+
+## Ranking Final dos Algoritmos
+| Posição | Algoritmo | Score Final | Melhor Resultado |
+|----------|-----------|-------------|------------------|
+| 1º       | [nome]    | X.XX        | [descrição] |
+| 2º       | [nome]    | X.XX        | [descrição] |
+| 3º       | [nome]    | X.XX        | [descrição] |
+
+## Análise Estatística
+- **Melhor resultado individual**: Nota X na posição Y ([algoritmo])
+- **Algoritmo mais consistente**: [nome] (menor variação)
+- **Melhor uso de posições altas**: [nome]
+
+## Recomendações
+- **Para "{query}"**: Use [algoritmo] (score X.XX)
+- **Para consultas similares**: [recomendação]
+- **Observações**: [insights sobre posicionamento]
+
+Avalie APENAS a relevância semântica para "{query}", ignorando scores técnicos dos algoritmos.
+"""
+        
+        # Gera relatório
+        response = model.generate_content(prompt)
+        return response.text
+        
+    except Exception as e:
+        logger.error(f"Erro na avaliação com Gemini: {e}")
+        return None
+
+def test_all_algorithms():
+    """Testa todos os algoritmos de busca e gera relatório de avaliação com Gemini
+    
+    Esta função executa uma consulta de teste em todos os algoritmos disponíveis,
+    salva os resultados em arquivos separados e gera um relatório comparativo
+    usando Gemini 2.5 Flash para avaliar a relevância dos resultados.
+    """
+    # Importa todos os algoritmos de busca disponíveis
+    from search_algorithms import (bm25_search, tfidf_search, simple_like_search, 
+                                 bm25p_search, lambdamart_search, 
+                                 elasticsearch_search, vector_search)
+    
+    # Consulta de teste padrão
+    test_queries = ['práticas religiosas populares Brasil colonial imperial']
+    query = test_queries[0]  # Usa primeira consulta para avaliação
+    
+    # Dicionário com todos os algoritmos disponíveis
+    algorithms = {
+        'bm25': bm25_search,           # BM25 clássico
+        'bm25p': bm25p_search,         # BM25 com proximidade
+        'lambdamart': lambdamart_search, # LambdaMART re-ranking
+        'vector': vector_search,       # Busca vetorial semântica
+        'elasticsearch': elasticsearch_search, # Elasticsearch
+        'tfidf': tfidf_search,         # TF-IDF com similaridade cosseno
+        'simple_like': simple_like_search # Busca simples com LIKE
+    }
+    
+    # Timestamp para identificar execução nos logs
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    all_results = {}
+    
+    # Testa cada algoritmo individualmente
+    for algo_name, algo_module in algorithms.items():
+        logger.info(f"Testando algoritmo {algo_name}...")
+        
+        try:
+            # Executa busca com o algoritmo atual (top 10 para avaliação)
+            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=10)
+            all_results[algo_name] = results
+            
+            # Salva resultados em arquivo de log específico do algoritmo
+            log_filename = f"search_algorithms/{algo_name}_results.txt"
+            with open(log_filename, 'a', encoding='utf-8') as f:
+                f.write(f"\n=== Execução de Teste: {timestamp} ===\n")
+                f.write(f"Consultas: {test_queries}\n")
+                f.write(f"Total de resultados: {len(results)}\n\n")
+                
+                # Escreve cada resultado encontrado
+                for i, doc in enumerate(results, 1):
+                    f.write(f"--- Resultado {i} ---\n")
+                    f.write(f"Score: {doc['relevance_score']:.4f}\n")
+                    f.write(f"URL: {doc['url']}\n")
+                    f.write(f"Trecho do texto: {doc['text']}...\n\n")
+            
+            logger.info(f"{algo_name}: {len(results)} resultados salvos em {log_filename}")
+            
+        except Exception as e:
+            logger.error(f"Erro ao testar {algo_name}: {e}")
+            all_results[algo_name] = []  # Lista vazia em caso de erro
+    
+    if EVALUATE_WITH_GEMINI:
+        # Cria pasta para relatórios se não existir
+        reports_dir = "search_algorithms/reports"
+        os.makedirs(reports_dir, exist_ok=True)
+        
+        # Gera relatório de avaliação com Gemini
+        logger.info("Gerando relatório de avaliação com Gemini...")
+        gemini_report = evaluate_with_gemini(query, all_results)
+        
+        if gemini_report:
+            # Salva relatório em arquivo markdown na pasta reports
+            report_filename = f"{reports_dir}/evaluation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+            with open(report_filename, 'w', encoding='utf-8') as f:
+                f.write(f"# Relatório de Avaliação de Algoritmos de Busca\n\n")
+                f.write(f"**Data:** {timestamp}\n")
+                f.write(f"**Consulta:** `{query}`\n\n")
+                f.write("---\n\n")
+                f.write(gemini_report)
+            
+            logger.info(f"\u2705 Relatório de avaliação salvo em: {report_filename}")
+        else:
+            logger.warning("⚠️ Não foi possível gerar relatório com Gemini")
 
 def test_text_search():
-    """Função de teste para verificar se a busca textual está funcionando"""
-    logger.info("=== TESTE DA BUSCA TEXTUAL ===")
+    """Testa o algoritmo BM25 padrão
+    
+    Executa uma busca de teste usando apenas o algoritmo padrão (BM25)
+    e exibe os resultados no console para verificação rápida.
+    
+    Returns:
+        list[dict]: Lista de documentos encontrados
+    """
+    # Consulta de teste
+    test_queries = ["questão de limites piauí ceará demarcação serras"]
+    logger.info(f"Testando algoritmo padrão com consultas: {test_queries}")
 
-    try:
-        # Teste com múltiplas consultas
-        test_queries = [
-            "Tocantins"
-        ]
-        
-        results = search_documents_by_text(test_queries, n_results_per_query=10)
-        
-        logger.info(f"Teste executado com sucesso!")
-        logger.info(f"Consultas: {test_queries}")
-        logger.info(f"Total de resultados encontrados: {len(results)}")
-        
-        for i, doc in enumerate(results, 1):
-            logger.info(f"\n--- Resultado {i} ---")
-            logger.info(f"Consulta que gerou o match: '{doc['query_matched']}'")
-            logger.info(f"Score de relevância: {doc['relevance_score']}")
-            logger.info(f"URL: {doc['url']}")
-            text_preview = doc['text'][:100] if doc['text'] else 'Sem texto'
-            logger.info(f"Texto (primeiros 100 chars): {text_preview}...")
-        
-        return True
-        
-    except Exception as e:
-        logger.error(f"Teste falhou: {e}")
-        return False
+    # Executa busca com algoritmo padrão
+    results = search_documents_by_text(test_queries, n_results_per_query=5)
+    logger.info(f"Total de resultados encontrados: {len(results)}")
 
+    # Exibe resultados no console
+    for i, doc in enumerate(results, 1):
+        logger.info(f"\n--- Resultado {i} ---")
+        logger.info(f"Score de relevância: {doc['relevance_score']:.2f}")
+        logger.info(f"URL: {doc['url']}")
+        logger.info(f"Trecho do texto: {doc['text']}...")
+
+    return results
+
+
+# Execução principal do módulo
 if __name__ == "__main__":
-    # Executar teste quando script é rodado diretamente
-    test_text_search()
+    # Testa todos os algoritmos disponíveis e gera relatório de avaliação
+    test_all_algorithms()
+    
+    # Descomente a linha abaixo para testar apenas o algoritmo padrão
+    #test_text_search()

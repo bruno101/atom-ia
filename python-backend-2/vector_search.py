@@ -1,165 +1,75 @@
 # -*- coding: utf-8 -*-
 """
-Módulo para busca semântica usando embeddings vetoriais no Oracle 23ai
-Permite buscar documentos similares usando consultas em linguagem natural
-"""
-import os
-import logging
-import oracledb
-import numpy as np
-from sentence_transformers import SentenceTransformer
-from dotenv import load_dotenv
-import ssl
+Módulo de interface para busca semântica usando embeddings vetoriais
 
-# Configurar logging para debug
+Este módulo serve como interface de compatibilidade para o algoritmo de busca
+vetorial que foi movido para search_algorithms/vector_search.py. Mantém a mesma
+API para não quebrar código existente, mas agora utiliza o sistema modular
+de algoritmos de busca.
+"""
+import logging
+from dotenv import load_dotenv
+
+# Configuração do sistema de logging para debug
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Carregar variáveis de ambiente
+# Carrega variáveis de ambiente do arquivo .env
 load_dotenv()
-DB_USER = os.getenv("DB_USER")
-DB_PASSWORD = os.getenv("DB_PASSWORD") 
-DB_DSN = os.getenv("DB_DSN")
 
-# Modelo para gerar embeddings (mesmo usado no populate_database.py)
-MODEL_NAME = 'intfloat/multilingual-e5-large-instruct'
-
-# Cache global do modelo para evitar recarregamento
-_model_cache = None
-
-def get_model():
-    """Carrega o modelo de embedding uma única vez e mantém em cache
-    
-    Returns:
-        SentenceTransformer: Modelo carregado para gerar embeddings
-    """
-    global _model_cache
-    
-    if _model_cache is None:
-        logger.info(f"Carregando modelo {MODEL_NAME}...")
-        try:
-            # Configure proxy for corporate network
-            os.environ['http_proxy'] = 'http://10.0.220.11:3128'
-            os.environ['https_proxy'] = 'http://10.0.220.11:3128'
-            
-            # Bypass SSL verification for corporate networks
-            ssl._create_default_https_context = ssl._create_unverified_context
-            _model_cache = SentenceTransformer(MODEL_NAME)
-            logger.info("Modelo carregado com sucesso")
-        except Exception as e:
-            logger.error(f"Erro ao carregar modelo: {e}")
-            raise
-    
-    return _model_cache
-
-def vectorize_query(query_text):
-    """Converte texto da consulta em vetor de embedding
-    
-    Args:
-        query_text (str): Texto da consulta do usuário
-        
-    Returns:
-        np.ndarray: Vetor de embedding da consulta
-    """
-    logger.info(f"Vetorizando consulta: '{query_text[:50]}...'")
-    
-    try:
-        model = get_model()
-        # Prefixo "query:" recomendado para consultas nos modelos e5
-        query_with_prefix = f"query: {query_text}"
-        embedding = model.encode([query_with_prefix], convert_to_numpy=True)
-        
-        logger.info(f"Embedding gerado com shape: {embedding.shape}")
-        return embedding[0]  # Retorna o primeiro (e único) embedding
-        
-    except Exception as e:
-        logger.error(f"Erro ao vetorizar consulta: {e}")
-        raise
+# Nota: Funções de modelo e vetorização movidas para search_algorithms/vector_search.py
+# Este módulo agora serve como interface de compatibilidade
 
 def search_similar_documents(query_text, n_results=5):
     """Busca documentos similares usando busca vetorial semântica
+    
+    Interface de compatibilidade que utiliza o algoritmo vetorial modular.
+    Mantém a mesma assinatura para não quebrar código existente.
     
     Args:
         query_text (str): Consulta em linguagem natural
         n_results (int): Número de resultados a retornar (padrão: 5)
         
     Returns:
-        list[dict]: Lista de documentos com campos 'text' e 'url'
+        list[dict]: Lista de documentos com campos 'text', 'url' e 'title'
     """
-    logger.info(f"Iniciando busca por '{query_text}' (top {n_results} resultados)")
+    # Importa algoritmo vetorial do módulo search_algorithms
+    from search_algorithms.vector_search import search_documents_by_text
     
-    # Validar parâmetros
-    if not query_text or not query_text.strip():
-        logger.warning("Consulta vazia fornecida")
-        return []
+    # Converte para formato esperado pelo algoritmo modular
+    queries = [query_text] if query_text else []
     
-    if n_results <= 0:
-        logger.warning("Número de resultados deve ser positivo")
-        return []
+    # Chama algoritmo vetorial modular
+    results = search_documents_by_text(queries, n_results_per_query=n_results)
     
-    try:
-        # Gerar embedding da consulta
-        query_vector = vectorize_query(query_text)
-        
-        # Converter para formato Oracle VECTOR
-        vector_str = '[' + ','.join(map(str, query_vector.astype(np.float32))) + ']'
-        logger.info("Vetor da consulta formatado para Oracle")
-        
-        # Conectar ao banco e executar busca
-        with oracledb.connect(user=DB_USER, password=DB_PASSWORD, dsn=DB_DSN) as connection:
-            logger.info("Conexão com Oracle estabelecida")
-            
-            with connection.cursor() as cursor:
-                # Query usando VECTOR_DISTANCE para busca por similaridade
-                # Ordena por menor distância (mais similar)
-                sql = """
-                SELECT text, url, title, VECTOR_DISTANCE(vector, VECTOR(:1)) as distance
-                FROM documents 
-                ORDER BY VECTOR_DISTANCE(vector, VECTOR(:2))
-                FETCH FIRST :3 ROWS ONLY
-                """
-                
-                logger.info(f"Executando consulta SQL para {n_results} resultados")
-                cursor.execute(sql, (vector_str, vector_str, n_results))
-                
-                results = cursor.fetchall()
-                logger.info(f"Encontrados {len(results)} resultados")
-                
-                # Formatar resultados
-                documents = []
-                for i, (text, url, title, distance) in enumerate(results):
-                    # Handle CLOB objects by reading their content
-                    text_content = text.read() if hasattr(text, 'read') else str(text)
-                    
-                    documents.append({
-                        'text': text_content,
-                        'url': url,
-                        'title': title
-                    })
-                    logger.debug(f"Resultado {i+1}: distância={distance:.4f}, url={url}")
-                
-                return documents
-                
-    except oracledb.Error as e:
-        logger.error(f"Erro de banco de dados Oracle: {e}")
-        raise
-    except Exception as e:
-        logger.error(f"Erro inesperado na busca: {e}")
-        raise
+    # Remove campo relevance_score para manter compatibilidade
+    for doc in results:
+        if 'relevance_score' in doc:
+            del doc['relevance_score']
+    
+    return results
 
 def test_vector_search():
-    """Função de teste para verificar se a busca vetorial está funcionando"""
-    logger.info("=== TESTE DA BUSCA VETORIAL ===")
+    """Função de teste para verificar se a busca vetorial está funcionando
+    
+    Testa o algoritmo vetorial através da interface de compatibilidade.
+    Valida integração com o sistema modular de algoritmos de busca.
+    
+    Returns:
+        bool: True se teste passou, False caso contrário
+    """
+    logger.info("=== TESTE DA BUSCA VETORIAL SEMÂNTICA ===")
     
     try:
-        # Teste com consulta simples
+        # Teste com consulta simples sobre tema histórico
         test_query = "escravidão"
         results = search_similar_documents(test_query, n_results=3)
         
         logger.info(f"Teste executado com sucesso!")
-        logger.info(f"Consulta: '{test_query}'")
+        logger.info(f"Consulta de teste: '{test_query}'")
         logger.info(f"Resultados encontrados: {len(results)}")
         
+        # Exibe preview dos resultados encontrados
         for i, doc in enumerate(results, 1):
             logger.info(f"\n--- Resultado {i} ---")
             logger.info(f"URL: {doc['url']}")
@@ -169,9 +79,10 @@ def test_vector_search():
         return True
         
     except Exception as e:
-        logger.error(f"Teste falhou: {e}")
+        logger.error(f"Teste da busca vetorial falhou: {e}")
         return False
 
+# Execução principal do módulo
 if __name__ == "__main__":
-    # Executar teste quando script é rodado diretamente
+    # Executa teste da busca vetorial quando script é rodado diretamente
     test_vector_search()

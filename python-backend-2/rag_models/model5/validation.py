@@ -152,22 +152,27 @@ Exemplo de como formatar com markdown as recomendações:
         
     # Sistema de retry para lidar com falhas temporárias da API
     for attempt in range(max_attempts):
-        # Faz a chamada para o modelo LLM
-        output = llm.complete(prompt=prompt).text
+        try:
+            # Faz a chamada para o modelo LLM
+            output = llm.complete(prompt=prompt).text
 
-        # Se recebeu uma resposta válida, sai do loop
-        if output and str(output):
-            print(f"DEBUG: Resposta válida recebida na tentativa {attempt + 1}.")
-            break
+            # Se recebeu uma resposta válida, sai do loop
+            if output and str(output):
+                print(f"DEBUG: Resposta válida recebida na tentativa {attempt + 1}.")
+                break
+                
+        except Exception as e:
+            print(f"DEBUG: Erro na chamada LLM (tentativa {attempt + 1}/{max_attempts}): {str(e)}")
+            output = None
 
-        # Se a resposta está vazia e ainda há tentativas restantes
+        # Se a resposta está vazia/erro e ainda há tentativas restantes
         if attempt < max_attempts - 1:
             sleep_time = sleep_durations[attempt]
-            print(f"DEBUG: Resposta vazia. Tentando novamente em {sleep_time} segundos... (Tentativa {attempt + 2}/{max_attempts})")
+            print(f"DEBUG: Tentando novamente em {sleep_time} segundos... (Tentativa {attempt + 2}/{max_attempts})")
             time.sleep(sleep_time)
         else:
            # Esta foi a última tentativa
-            print("DEBUG: Resposta ainda vazia após todas as tentativas.") 
+            print("DEBUG: Falha após todas as tentativas.") 
             output = "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos."
     
     # Gera resposta formatada usando o modelo de linguagem
