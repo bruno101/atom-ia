@@ -1,0 +1,26 @@
+# This file defines the Oracle 23ai database service using Docker Compose.
+# It sets up the container, maps the necessary port, and runs an initialization script.
+version: '3.8'
+ 
+services:
+  oracle-db:
+    # Use the official Oracle Database 23ai Free image
+    image: container-registry.oracle.com/database/free:latest
+    container_name: oracle-23ai
+    ports:
+      # Map host port 1521 to the container's port 1521 for external connections
+      - "1521:1521"
+    environment:
+      # IMPORTANT: Change this to a strong password for the SYS/SYSTEM user.
+      # This password must match the one used in init.sql to connect and create the app user.
+      - ORACLE_PWD=yourStrongPassword_123
+    volumes:
+      # This mounts the init.sql script into the container's initialization directory.
+      # Any .sql file in this directory is automatically executed on first startup.
+      - ./init.sql:/container-entrypoint-initdb.d/init.sql
+    healthcheck:
+      # The healthcheck ensures the database is fully running and ready for connections.
+      test: [ "CMD", "/opt/oracle/checkDBStatus.sh" ]
+      interval: 1m
+      timeout: 10s
+      retries: 3
