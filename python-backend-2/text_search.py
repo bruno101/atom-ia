@@ -35,6 +35,8 @@ def search_documents_by_text(queries, n_results_per_query=5):
         list[dict]: Lista de documentos encontrados com scores de relevância
     """
     # Converte consultas para minúsculas para busca case-insensitive
+    print("RES PER QUERY: ")
+    print(n_results_per_query)
     if isinstance(queries, list):
         queries = [q.lower() if q else q for q in queries]
         print("Consultas:\n")

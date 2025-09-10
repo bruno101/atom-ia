@@ -34,7 +34,7 @@ const Sidebar = ({ showSidebar, toggleSidebar, suggestedLinks }) => {
                 >
                   <div className={styles.linkContent}>
                     <span className={styles.linkTitle}>
-                      {link.title || link.slug}
+                      {link.title || link.url}
                     </span>
 
                   </div>

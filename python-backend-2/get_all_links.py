@@ -23,7 +23,6 @@ def get_all_valid_links():
     Returns:
         list[str]: Lista de URLs válidas dos documentos
     """
-    logger.info("Buscando todos os links válidos no banco de dados...")
     
     try:
         with oracledb.connect(user=DB_USER, password=DB_PASSWORD, dsn=DB_DSN) as connection:
@@ -39,7 +38,6 @@ def get_all_valid_links():
                 # Extrair URLs da tupla
                 urls = [row[0] for row in results]
                 
-                logger.info(f"Encontrados {len(urls)} links válidos")
                 return urls
                 
     except oracledb.Error as e:

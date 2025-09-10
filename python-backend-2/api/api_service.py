@@ -1,6 +1,7 @@
 # Serviços da API - lógica de negócio para endpoints
 # Processa requisições de chat e streaming de respostas
-from rag_models.model5.query import handle_query
+from rag_models.thinking.query import handle_query
+from rag_models.flash.query import handle_query_flash
 from api.models import ConsultaRequest, ConsultaResponse
 from fastapi import HTTPException, Request
 import logging
@@ -8,7 +9,7 @@ import logging
 # Logger para rastreamento de operações
 logger = logging.getLogger(__name__)
 
-async def handle_stream(request: Request, req: ConsultaRequest):
+async def handle_stream(request: Request, req: ConsultaRequest, model_name: str):
     """Processa consulta com streaming de progresso em tempo real
     
     Args:
@@ -21,8 +22,12 @@ async def handle_stream(request: Request, req: ConsultaRequest):
     try:
         # Formata histórico da conversa
         historico_str = format_history(req.historico)
+        message_stream = None
         # Inicia o pipeline de processamento com streaming
-        message_stream = handle_query(req.consulta, historico_str)
+        if model_name == "flash":
+            message_stream = handle_query_flash(req.consulta, historico_str)
+        else:
+            message_stream = handle_query(req.consulta, historico_str)
         
         # Processa cada mensagem do stream
         async for message in message_stream:
@@ -37,6 +42,12 @@ async def handle_stream(request: Request, req: ConsultaRequest):
                 yield {
                     "event": "done",
                     "data": message.replace("FINAL_RESULT::", "")
+                }
+            elif message.startswith("PARTIAL_RESPONSE:"):
+                # Resposta parcial do LLM
+                yield {
+                    "event": "partial",
+                    "data": message.replace("PARTIAL_RESPONSE:", "")
                 }
             else:
                 # Mensagem de progresso

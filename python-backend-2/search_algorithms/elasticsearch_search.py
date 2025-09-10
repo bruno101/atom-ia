@@ -50,14 +50,15 @@ def search_documents_by_text(queries, n_results_per_query=5):
                         }
                     ]
                 }
-            }
+            },
+            "size": n_results_per_query
         }
 
         
         try:
             response = es.search(index="documents", body=search_body)
             
-            for hit in response['hits']['hits']:
+            for hit in response['hits']['hits'][:n_results_per_query]:
                 source = hit['_source']
                 all_documents.append({
                     'text': source['text'],
@@ -79,7 +80,7 @@ def search_documents_by_text(queries, n_results_per_query=5):
                     "size": n_results_per_query
                 }
                 response = es.search(index="documents", body=simple_search)
-                for hit in response['hits']['hits']:
+                for hit in response['hits']['hits'][:n_results_per_query]:
                     source = hit['_source']
                     all_documents.append({
                         'text': source['text'],
