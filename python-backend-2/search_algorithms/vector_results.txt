@@ -1,0 +1,945 @@
+
+=== Execução de Teste: 2025-09-09 13:15:11 ===
+Consultas: ['crescimento urbano fortaleza']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8632
+URL: https://atom-mhn.museus.gov.br/index.php/pormenores-arquiteturais-ouro-preto
+Trecho do texto: DID: Pormenores arquiteturais, Ouro Preto | NF-NF-NF099 (031.752) | Iconografia: Bico de pena: 28x20,9 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8617
+URL: https://atom-mhn.museus.gov.br/index.php/matriz-na-cidade-do-aracati-2
+Trecho do texto: DID: Matriz na cidade do Aracati | RC-RC10 (039.043) | Iconografia: Desenho a grafite: 19,3 x 29 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8608
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=9021fb5d-14a2-4b28-bd1d-c886e2bdac2a
+Trecho do texto: Crescimento populacional do Ceará após a seca de 1877-1879: A sua população (do Ceará) quase duplicou no espaço de nove anos! O que se observava em relação à espécie dos brutos, observava-se em relação ao homem. Mulheres com filhos gêmeos em 1880 foram sem conta! A nossa prolificação é apregoada em toda parte. Há cearenses espalhados em quase todos os estados da Federação e no Ceará não se nota falta de gente. Retrato da modernidade em Sobral em 1913: Somos uma cidade civilizada... Quem o duvida? Temos bondes, teatros, casas de diversões, clubes dançantes, sociedades artísticas e beneficentes, centros esportivos, bibliotecas, quatro bandas de músicas, cinco jornais periódicos, oito igrejas, verdadeiro primor de arquitetura, um asilo de mendicidade (em construção), cinco escolas públicas, um grupo escolar, chafarizes para o abastecimento público (em planos), iluminação elétrica (em projeto), estradas de automóveis (em estudos) e estrada de ferro. O estereótipo do homem moderno e elegante em Sobral: Metido dentro de um fato de casimira de cor (última criação), paletó curto, calças largas, estreitando-se na boca, empunhando bengala leve de castão de ouro, usando chapéu de palha (último modelo), eis-nos por aí afora, fumando um cigarro de fumo turco, vamos ao Jockey Club assistir as proezas do 'Mont'dor', ou à 'Soirée Blanche' do 'Grêmio', aos 'Festivais Artísticos', dos 'Democratas' ou ao cinema. Tensão política no Ceará em 1913: Fortaleza, 29. — Na véspera de seu embarque para Pernambuco, o general Torres Homem publicou sua ordem do dia, fazendo as seguinte declaração: 'Vindo em nome do governo Federal, averiguar falta de garantias constitucionais de que se queixavam políticos adversos ao Governo deste estado, sinto mágoa confessar haver verificado essa anormalidade da qual eram fatores pequeninos chefes políticos e algumas autoridades policiais do interior do Estado.' Tensão política nacional envolvendo Hermes da Fonseca e Dantas Barreto: Rio, 29. — 'O Imparcial' publica ter conseguido obter o resumo da carta que o Marechal Dantas Barreto, presidente do Estado de Pernambuco, escreveu ao Marechal Hermes, sobre a proposta de reconciliação política. Nesta carta, o sr. Marechal Dantas Barreto declara ter a melhor boa vontade de colaborar no governo do Marechal Hermes. Não recusa voltar ao P. R. C., simplesmente não abandonaria nunca seus companheiros da Coligação....
+
+--- Resultado 4 ---
+Score: 0.8569
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=4e067a36-531d-4124-adc3-06a2e98c69ae
+Trecho do texto: Situação de Sítio e Tensão Política em Fortaleza em 1914: Na minha opinião cinco mil homens não atacam Fortaleza. A defesa da cidade está muito bem feita. Em cada canto de rua, nos telhados, nas praças, nos bulevares, nos subúrbios, arrabaldes, e mais além ainda nas estradas e caminhos existem trincheiras guarnecidas e bem fortificadas. Essas trincheiras foram construídas, com instruções de oficiais do exército. Defronte do edifício da Assembleia existe um verdadeiro forte. O palácio do governo e aquela pracinha em que está aquele edifício estão minados; aquilo para voar pelos ares falta meio metro de estopim incendido. Apoio Popular e Armamento Civil na Revolta de Fortaleza: Não tenho uma expressão feliz para qualificar o denodo daquela gente. Os fanáticos de Juazeiro são menos fanáticos... O medo parece que não se fez para aquela gente. Demorei-me naquela cidade cerca de 10 dias e não me cansava de ver a dedicação estoica daquela gente pelo seu presidente. Distribuíram-se de sua arma e munições até as mulheres, senhor, até as mulheres se armam... Às vezes parava vendo passar um menino, uma criança, que parecia mal poder com o rifle. Investimento Norte-Americano na Agricultura e Indústria do Pará: Em Nova York acaba de ser fundada uma sociedade industrial com o capital de 1500 contos para o fim de desenvolver a agricultura e a indústria de produtos brasileiros no Estado do Pará. Inundação na Bahia Causa Grandes Prejuízos à Infraestrutura Ferroviária: Com a formidável inundação na Bahia são consideráveis e numerosos os prejuízos sofridos pela estrada de ferro Central da Bahia, tendo-se verificado a destruição total da ponte de embarque, o seccionamento da linha férrea em seis pontos diferentes, grandes modificações nos cortes de aterro, numerosos estragos nas obras de arte, e a perda quase total de numerosos carros e locomotivas que ficaram inteiramente cobertos pelas águas. Aumento da Criminalidade e Percepção de Insegurança em Sobral: Já se foram aqueles bons tempos em que podíamos dormir com as portas abertas sem o menor risco de sermos roubados. Hoje, as coisas são outras: rouba-se descaradamente, e a despeito dos vigorosos cadeados americanos....
+
+--- Resultado 5 ---
+Score: 0.8555
+URL: https://atom-mhn.museus.gov.br/index.php/velho-engenho-de-megaipe-recife
+Trecho do texto: DID: Velho Engenho de Megaípe, Recife | NF-NF-NF050 (031.703) | Iconografia: 01 aquarela: 24,6 x 34,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8553
+URL: https://atom-mhn.museus.gov.br/index.php/estudo
+Trecho do texto: DID: Estudo | PA-PA13 (039.013) | Iconografia: Desenho a grafite, p&b, 32,7x21,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8539
+URL: https://dibrarq.arquivonacional.gov.br/index.php/municipios-mineiros
+Trecho do texto: DID: Municípios Mineiros | MM | 1859-1990 | 823 fotografias | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+ODD: Publicado
+ODD: Parcial
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 0.8533
+URL: https://atom-mhn.museus.gov.br/index.php/af04-aberto
+Trecho do texto: DID: AF04 (aberto) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8532
+URL: https://atom-mhn.museus.gov.br/index.php/marco-antigo-sabara
+Trecho do texto: DID: Marco antigo, Sabará | NF-NF-NF117 (031.770) | Iconografia: Bico de pena: 20,4x12,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8526
+URL: https://atom-mhn.museus.gov.br/index.php/interior-colonial-sabara
+Trecho do texto: DID: Interior colonial, Sabará | NF-NF-NF121 (031.774) | Iconografia: Bico de pena: 15,5x23,2 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 13:30:16 ===
+Consultas: ['crescimento urbano fortaleza']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8632
+URL: https://atom-mhn.museus.gov.br/index.php/pormenores-arquiteturais-ouro-preto
+Trecho do texto: DID: Pormenores arquiteturais, Ouro Preto | NF-NF-NF099 (031.752) | Iconografia: Bico de pena: 28x20,9 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8617
+URL: https://atom-mhn.museus.gov.br/index.php/matriz-na-cidade-do-aracati-2
+Trecho do texto: DID: Matriz na cidade do Aracati | RC-RC10 (039.043) | Iconografia: Desenho a grafite: 19,3 x 29 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8608
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=9021fb5d-14a2-4b28-bd1d-c886e2bdac2a
+Trecho do texto: Crescimento populacional do Ceará após a seca de 1877-1879: A sua população (do Ceará) quase duplicou no espaço de nove anos! O que se observava em relação à espécie dos brutos, observava-se em relação ao homem. Mulheres com filhos gêmeos em 1880 foram sem conta! A nossa prolificação é apregoada em toda parte. Há cearenses espalhados em quase todos os estados da Federação e no Ceará não se nota falta de gente. Retrato da modernidade em Sobral em 1913: Somos uma cidade civilizada... Quem o duvida? Temos bondes, teatros, casas de diversões, clubes dançantes, sociedades artísticas e beneficentes, centros esportivos, bibliotecas, quatro bandas de músicas, cinco jornais periódicos, oito igrejas, verdadeiro primor de arquitetura, um asilo de mendicidade (em construção), cinco escolas públicas, um grupo escolar, chafarizes para o abastecimento público (em planos), iluminação elétrica (em projeto), estradas de automóveis (em estudos) e estrada de ferro. O estereótipo do homem moderno e elegante em Sobral: Metido dentro de um fato de casimira de cor (última criação), paletó curto, calças largas, estreitando-se na boca, empunhando bengala leve de castão de ouro, usando chapéu de palha (último modelo), eis-nos por aí afora, fumando um cigarro de fumo turco, vamos ao Jockey Club assistir as proezas do 'Mont'dor', ou à 'Soirée Blanche' do 'Grêmio', aos 'Festivais Artísticos', dos 'Democratas' ou ao cinema. Tensão política no Ceará em 1913: Fortaleza, 29. — Na véspera de seu embarque para Pernambuco, o general Torres Homem publicou sua ordem do dia, fazendo as seguinte declaração: 'Vindo em nome do governo Federal, averiguar falta de garantias constitucionais de que se queixavam políticos adversos ao Governo deste estado, sinto mágoa confessar haver verificado essa anormalidade da qual eram fatores pequeninos chefes políticos e algumas autoridades policiais do interior do Estado.' Tensão política nacional envolvendo Hermes da Fonseca e Dantas Barreto: Rio, 29. — 'O Imparcial' publica ter conseguido obter o resumo da carta que o Marechal Dantas Barreto, presidente do Estado de Pernambuco, escreveu ao Marechal Hermes, sobre a proposta de reconciliação política. Nesta carta, o sr. Marechal Dantas Barreto declara ter a melhor boa vontade de colaborar no governo do Marechal Hermes. Não recusa voltar ao P. R. C., simplesmente não abandonaria nunca seus companheiros da Coligação....
+
+--- Resultado 4 ---
+Score: 0.8569
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=4e067a36-531d-4124-adc3-06a2e98c69ae
+Trecho do texto: Situação de Sítio e Tensão Política em Fortaleza em 1914: Na minha opinião cinco mil homens não atacam Fortaleza. A defesa da cidade está muito bem feita. Em cada canto de rua, nos telhados, nas praças, nos bulevares, nos subúrbios, arrabaldes, e mais além ainda nas estradas e caminhos existem trincheiras guarnecidas e bem fortificadas. Essas trincheiras foram construídas, com instruções de oficiais do exército. Defronte do edifício da Assembleia existe um verdadeiro forte. O palácio do governo e aquela pracinha em que está aquele edifício estão minados; aquilo para voar pelos ares falta meio metro de estopim incendido. Apoio Popular e Armamento Civil na Revolta de Fortaleza: Não tenho uma expressão feliz para qualificar o denodo daquela gente. Os fanáticos de Juazeiro são menos fanáticos... O medo parece que não se fez para aquela gente. Demorei-me naquela cidade cerca de 10 dias e não me cansava de ver a dedicação estoica daquela gente pelo seu presidente. Distribuíram-se de sua arma e munições até as mulheres, senhor, até as mulheres se armam... Às vezes parava vendo passar um menino, uma criança, que parecia mal poder com o rifle. Investimento Norte-Americano na Agricultura e Indústria do Pará: Em Nova York acaba de ser fundada uma sociedade industrial com o capital de 1500 contos para o fim de desenvolver a agricultura e a indústria de produtos brasileiros no Estado do Pará. Inundação na Bahia Causa Grandes Prejuízos à Infraestrutura Ferroviária: Com a formidável inundação na Bahia são consideráveis e numerosos os prejuízos sofridos pela estrada de ferro Central da Bahia, tendo-se verificado a destruição total da ponte de embarque, o seccionamento da linha férrea em seis pontos diferentes, grandes modificações nos cortes de aterro, numerosos estragos nas obras de arte, e a perda quase total de numerosos carros e locomotivas que ficaram inteiramente cobertos pelas águas. Aumento da Criminalidade e Percepção de Insegurança em Sobral: Já se foram aqueles bons tempos em que podíamos dormir com as portas abertas sem o menor risco de sermos roubados. Hoje, as coisas são outras: rouba-se descaradamente, e a despeito dos vigorosos cadeados americanos....
+
+--- Resultado 5 ---
+Score: 0.8555
+URL: https://atom-mhn.museus.gov.br/index.php/velho-engenho-de-megaipe-recife
+Trecho do texto: DID: Velho Engenho de Megaípe, Recife | NF-NF-NF050 (031.703) | Iconografia: 01 aquarela: 24,6 x 34,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8553
+URL: https://atom-mhn.museus.gov.br/index.php/estudo
+Trecho do texto: DID: Estudo | PA-PA13 (039.013) | Iconografia: Desenho a grafite, p&b, 32,7x21,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8539
+URL: https://dibrarq.arquivonacional.gov.br/index.php/municipios-mineiros
+Trecho do texto: DID: Municípios Mineiros | MM | 1859-1990 | 823 fotografias | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+ODD: Publicado
+ODD: Parcial
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 0.8533
+URL: https://atom-mhn.museus.gov.br/index.php/af04-aberto
+Trecho do texto: DID: AF04 (aberto) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8532
+URL: https://atom-mhn.museus.gov.br/index.php/marco-antigo-sabara
+Trecho do texto: DID: Marco antigo, Sabará | NF-NF-NF117 (031.770) | Iconografia: Bico de pena: 20,4x12,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8526
+URL: https://atom-mhn.museus.gov.br/index.php/interior-colonial-sabara
+Trecho do texto: DID: Interior colonial, Sabará | NF-NF-NF121 (031.774) | Iconografia: Bico de pena: 15,5x23,2 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 13:35:29 ===
+Consultas: ['crescimento urbano fortaleza']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8632
+URL: https://atom-mhn.museus.gov.br/index.php/pormenores-arquiteturais-ouro-preto
+Trecho do texto: DID: Pormenores arquiteturais, Ouro Preto | NF-NF-NF099 (031.752) | Iconografia: Bico de pena: 28x20,9 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8617
+URL: https://atom-mhn.museus.gov.br/index.php/matriz-na-cidade-do-aracati-2
+Trecho do texto: DID: Matriz na cidade do Aracati | RC-RC10 (039.043) | Iconografia: Desenho a grafite: 19,3 x 29 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8608
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=9021fb5d-14a2-4b28-bd1d-c886e2bdac2a
+Trecho do texto: Crescimento populacional do Ceará após a seca de 1877-1879: A sua população (do Ceará) quase duplicou no espaço de nove anos! O que se observava em relação à espécie dos brutos, observava-se em relação ao homem. Mulheres com filhos gêmeos em 1880 foram sem conta! A nossa prolificação é apregoada em toda parte. Há cearenses espalhados em quase todos os estados da Federação e no Ceará não se nota falta de gente. Retrato da modernidade em Sobral em 1913: Somos uma cidade civilizada... Quem o duvida? Temos bondes, teatros, casas de diversões, clubes dançantes, sociedades artísticas e beneficentes, centros esportivos, bibliotecas, quatro bandas de músicas, cinco jornais periódicos, oito igrejas, verdadeiro primor de arquitetura, um asilo de mendicidade (em construção), cinco escolas públicas, um grupo escolar, chafarizes para o abastecimento público (em planos), iluminação elétrica (em projeto), estradas de automóveis (em estudos) e estrada de ferro. O estereótipo do homem moderno e elegante em Sobral: Metido dentro de um fato de casimira de cor (última criação), paletó curto, calças largas, estreitando-se na boca, empunhando bengala leve de castão de ouro, usando chapéu de palha (último modelo), eis-nos por aí afora, fumando um cigarro de fumo turco, vamos ao Jockey Club assistir as proezas do 'Mont'dor', ou à 'Soirée Blanche' do 'Grêmio', aos 'Festivais Artísticos', dos 'Democratas' ou ao cinema. Tensão política no Ceará em 1913: Fortaleza, 29. — Na véspera de seu embarque para Pernambuco, o general Torres Homem publicou sua ordem do dia, fazendo as seguinte declaração: 'Vindo em nome do governo Federal, averiguar falta de garantias constitucionais de que se queixavam políticos adversos ao Governo deste estado, sinto mágoa confessar haver verificado essa anormalidade da qual eram fatores pequeninos chefes políticos e algumas autoridades policiais do interior do Estado.' Tensão política nacional envolvendo Hermes da Fonseca e Dantas Barreto: Rio, 29. — 'O Imparcial' publica ter conseguido obter o resumo da carta que o Marechal Dantas Barreto, presidente do Estado de Pernambuco, escreveu ao Marechal Hermes, sobre a proposta de reconciliação política. Nesta carta, o sr. Marechal Dantas Barreto declara ter a melhor boa vontade de colaborar no governo do Marechal Hermes. Não recusa voltar ao P. R. C., simplesmente não abandonaria nunca seus companheiros da Coligação....
+
+--- Resultado 4 ---
+Score: 0.8569
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=4e067a36-531d-4124-adc3-06a2e98c69ae
+Trecho do texto: Situação de Sítio e Tensão Política em Fortaleza em 1914: Na minha opinião cinco mil homens não atacam Fortaleza. A defesa da cidade está muito bem feita. Em cada canto de rua, nos telhados, nas praças, nos bulevares, nos subúrbios, arrabaldes, e mais além ainda nas estradas e caminhos existem trincheiras guarnecidas e bem fortificadas. Essas trincheiras foram construídas, com instruções de oficiais do exército. Defronte do edifício da Assembleia existe um verdadeiro forte. O palácio do governo e aquela pracinha em que está aquele edifício estão minados; aquilo para voar pelos ares falta meio metro de estopim incendido. Apoio Popular e Armamento Civil na Revolta de Fortaleza: Não tenho uma expressão feliz para qualificar o denodo daquela gente. Os fanáticos de Juazeiro são menos fanáticos... O medo parece que não se fez para aquela gente. Demorei-me naquela cidade cerca de 10 dias e não me cansava de ver a dedicação estoica daquela gente pelo seu presidente. Distribuíram-se de sua arma e munições até as mulheres, senhor, até as mulheres se armam... Às vezes parava vendo passar um menino, uma criança, que parecia mal poder com o rifle. Investimento Norte-Americano na Agricultura e Indústria do Pará: Em Nova York acaba de ser fundada uma sociedade industrial com o capital de 1500 contos para o fim de desenvolver a agricultura e a indústria de produtos brasileiros no Estado do Pará. Inundação na Bahia Causa Grandes Prejuízos à Infraestrutura Ferroviária: Com a formidável inundação na Bahia são consideráveis e numerosos os prejuízos sofridos pela estrada de ferro Central da Bahia, tendo-se verificado a destruição total da ponte de embarque, o seccionamento da linha férrea em seis pontos diferentes, grandes modificações nos cortes de aterro, numerosos estragos nas obras de arte, e a perda quase total de numerosos carros e locomotivas que ficaram inteiramente cobertos pelas águas. Aumento da Criminalidade e Percepção de Insegurança em Sobral: Já se foram aqueles bons tempos em que podíamos dormir com as portas abertas sem o menor risco de sermos roubados. Hoje, as coisas são outras: rouba-se descaradamente, e a despeito dos vigorosos cadeados americanos....
+
+--- Resultado 5 ---
+Score: 0.8555
+URL: https://atom-mhn.museus.gov.br/index.php/velho-engenho-de-megaipe-recife
+Trecho do texto: DID: Velho Engenho de Megaípe, Recife | NF-NF-NF050 (031.703) | Iconografia: 01 aquarela: 24,6 x 34,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8553
+URL: https://atom-mhn.museus.gov.br/index.php/estudo
+Trecho do texto: DID: Estudo | PA-PA13 (039.013) | Iconografia: Desenho a grafite, p&b, 32,7x21,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8539
+URL: https://dibrarq.arquivonacional.gov.br/index.php/municipios-mineiros
+Trecho do texto: DID: Municípios Mineiros | MM | 1859-1990 | 823 fotografias | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+ODD: Publicado
+ODD: Parcial
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 0.8533
+URL: https://atom-mhn.museus.gov.br/index.php/af04-aberto
+Trecho do texto: DID: AF04 (aberto) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8532
+URL: https://atom-mhn.museus.gov.br/index.php/marco-antigo-sabara
+Trecho do texto: DID: Marco antigo, Sabará | NF-NF-NF117 (031.770) | Iconografia: Bico de pena: 20,4x12,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8526
+URL: https://atom-mhn.museus.gov.br/index.php/interior-colonial-sabara
+Trecho do texto: DID: Interior colonial, Sabará | NF-NF-NF121 (031.774) | Iconografia: Bico de pena: 15,5x23,2 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 13:39:13 ===
+Consultas: ['estou pesquisando sobre alforria']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8707
+URL: https://atom-mhn.museus.gov.br/index.php/estudo
+Trecho do texto: DID: Estudo | PA-PA13 (039.013) | Iconografia: Desenho a grafite, p&b, 32,7x21,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8560
+URL: https://atom-mhn.museus.gov.br/index.php/balaustres-fechadura-e-aldraba-sabara
+Trecho do texto: DID: Balaústres, fechadura e aldraba, Sabará | NF-NF-NF118 (031.771) | Iconografia: Bico de pena: 27,6x20,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8555
+URL: https://atom-mhn.museus.gov.br/index.php/aldraba-de-ferro-batido-sabara
+Trecho do texto: DID: Aldraba de ferro batido, Sabará | NF-NF-NF124 (031.777) | Iconografia: Bico de pena: 9x13,9 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8546
+URL: https://atom-mhn.museus.gov.br/index.php/fogao-em-pedra-queluz
+Trecho do texto: DID: Fogão em pedra, Queluz | NF-NF-NF107 (031.760) | Iconografia: Bico de pena: 14x22,6 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p& b, por Hugo Leal
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8543
+URL: https://atom-mhn.museus.gov.br/index.php/cerca-de-caicara-ou-mourao-curral-feito-de-carnauba
+Trecho do texto: DID: Cerca de caiçara ou mourão. Curral feito de carnaúba | RC-RC24 (039.057) | Iconografia: Grafite e aquarela: 19,5 x 29 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8530
+URL: https://atom-mhn.museus.gov.br/index.php/estudo-para-o-quadro-d-catarina-de-ataide
+Trecho do texto: DID: Estudo para o quadro D. Catarina de Ataíde | PA-PA01 (039.001) | Iconografia: Desenho a bico de pena, p&b, 21,4x13,6cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8530
+URL: https://atom-mhn.museus.gov.br/index.php/caricatura-provavelmente-de-alfredo-ellis
+Trecho do texto: DID: Caricatura, provavelmente de Alfredo Ellis | NT-NT05 (032.242) | Iconografia: nanquim e guache; color; 17,6 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado sob pseudônimo Rian. | Alfredo Ellis foi um político brasileiro, eleito senador em 1903. Candidato a vice-presidência da República na chapa encabeçada por Rui Barbosa, foi opositor de Hermes da Fonseca.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8530
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-caete
+Trecho do texto: DID: Mobiliário colonial, Caeté | NF-NF-NF061 (031.714) | Iconografia: Bico de pena: 20,9x28 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8523
+URL: https://atom-mhn.museus.gov.br/index.php/chafariz-dos-contos-ouro-preto
+Trecho do texto: DID: Chafariz dos Contos, Ouro Preto | NF-NF-NF091 (031.744) | Iconografia: Bico de pena: 20,8x27,5 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8523
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-ouro-preto
+Trecho do texto: DID: Mobiliário colonial, Ouro Preto | NF-NF-NF100 (031.753) | Iconografia: Bico de pena: 22,4 x 30,1 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 13:42:36 ===
+Consultas: ['estou pesquisando sobre alforria']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8707
+URL: https://atom-mhn.museus.gov.br/index.php/estudo
+Trecho do texto: DID: Estudo | PA-PA13 (039.013) | Iconografia: Desenho a grafite, p&b, 32,7x21,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8560
+URL: https://atom-mhn.museus.gov.br/index.php/balaustres-fechadura-e-aldraba-sabara
+Trecho do texto: DID: Balaústres, fechadura e aldraba, Sabará | NF-NF-NF118 (031.771) | Iconografia: Bico de pena: 27,6x20,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8555
+URL: https://atom-mhn.museus.gov.br/index.php/aldraba-de-ferro-batido-sabara
+Trecho do texto: DID: Aldraba de ferro batido, Sabará | NF-NF-NF124 (031.777) | Iconografia: Bico de pena: 9x13,9 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8546
+URL: https://atom-mhn.museus.gov.br/index.php/fogao-em-pedra-queluz
+Trecho do texto: DID: Fogão em pedra, Queluz | NF-NF-NF107 (031.760) | Iconografia: Bico de pena: 14x22,6 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p& b, por Hugo Leal
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8543
+URL: https://atom-mhn.museus.gov.br/index.php/cerca-de-caicara-ou-mourao-curral-feito-de-carnauba
+Trecho do texto: DID: Cerca de caiçara ou mourão. Curral feito de carnaúba | RC-RC24 (039.057) | Iconografia: Grafite e aquarela: 19,5 x 29 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8530
+URL: https://atom-mhn.museus.gov.br/index.php/estudo-para-o-quadro-d-catarina-de-ataide
+Trecho do texto: DID: Estudo para o quadro D. Catarina de Ataíde | PA-PA01 (039.001) | Iconografia: Desenho a bico de pena, p&b, 21,4x13,6cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8530
+URL: https://atom-mhn.museus.gov.br/index.php/caricatura-provavelmente-de-alfredo-ellis
+Trecho do texto: DID: Caricatura, provavelmente de Alfredo Ellis | NT-NT05 (032.242) | Iconografia: nanquim e guache; color; 17,6 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado sob pseudônimo Rian. | Alfredo Ellis foi um político brasileiro, eleito senador em 1903. Candidato a vice-presidência da República na chapa encabeçada por Rui Barbosa, foi opositor de Hermes da Fonseca.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8530
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-caete
+Trecho do texto: DID: Mobiliário colonial, Caeté | NF-NF-NF061 (031.714) | Iconografia: Bico de pena: 20,9x28 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8523
+URL: https://atom-mhn.museus.gov.br/index.php/chafariz-dos-contos-ouro-preto
+Trecho do texto: DID: Chafariz dos Contos, Ouro Preto | NF-NF-NF091 (031.744) | Iconografia: Bico de pena: 20,8x27,5 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8523
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-ouro-preto
+Trecho do texto: DID: Mobiliário colonial, Ouro Preto | NF-NF-NF100 (031.753) | Iconografia: Bico de pena: 22,4 x 30,1 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 13:48:15 ===
+Consultas: ['reações à introdução do telégrafo no Brasil']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8714
+URL: https://atom-mhn.museus.gov.br/index.php/image-01
+Trecho do texto: DID: Pavilhão dos Correios e Telégrafos | MC-MCab-MCab07-MCab07.25 (045.812) | 1908 | Iconografia: 01 fotografia, 17,4x23cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Pavilhão dos Correios e Telegraphos
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8703
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000398
+Trecho do texto: Visita do Imperador Dom Pedro II ao Egito: Telegramas — A agência Havas obsequiou-nos com as seguintes comunicações telegráficas que agradecemos: CAIRO, 10 de Dezembro. Suas Majestades o Imperador e a Imperatriz do Brasil receberam a visita do Khedive. Desenvolvimento da Estância Hidromineral de Caxambu: Por ordem do governo foram as águas submetidas a um exame químico, e então dessa data em diante, se tornaram conhecidas pelos seguintes nomes: Gazosa-alcalina - D. Pedro. Gazosa-férrea - Thereza. Gazosa-conde d'Eu. Férrea-gazosa-sulfurosa D. Izabel. Magnesiana gazosa - Leopoldina. Sulfídrica-gazosa - Duque de Saxe. Relato de Assalto e Violência Urbana em São Paulo: Voltava anteontem às 9 horas da noite da casa do subdelegado de Santa Efigênia em direção à sua casa, e ao atravessar o aterrado, na altura do antigo chafariz do Miguel Carlos, saíram inopinadamente dois vultos de trás de algumas tulhas de tijolos aí existentes e agarraram-no pelo braço bradando que lhes desse o que trazia. (...) Acrescenta que, pela fala, persuade-se que seus agressores pertencem à nacionalidade italiana. Emissão de Apólices da Província de São Paulo: Diário de S. Paulo - Parte oficial na qual vem publicado o regulamento expedido pela presidência desta província para emissão de apólices provinciais, conforme a autorização da lei de 7 de julho de 1875. Aviso aos Assinantes do Correio Paulistano para o Ano de 1877: Estando a findar-se o ano de 1876, pedimos aos nossos assinantes que se acham em débito, o obséquio de mandarem satisfazer a importância de suas assinaturas, a fim de poderem continuar a receber a folha no ano próximo vindouro....
+
+--- Resultado 3 ---
+Score: 0.8695
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000994
+Trecho do texto: Reação popular a um imposto sobre bondes no Rio de Janeiro (Revolta do Vintém): Entretanto verifica-se que em uma importante linha de bonde o imposto não é obrigatório, e em outras a concorrência de passageiros tem diminuído consideravelmente, pois a maior parte da população fluminense prefere, embora com sacrifício dos próprios cômodos, esquivar-se ao exagerado imposto. É assim fora de dúvida, que o governo em tal questão não tem o menor apoio da opinião, e só se impõe pela força. Crítica da imprensa paulista à gestão da crise no Rio de Janeiro: Província de S. Paulo — Em seu primeiro editorial demonstra, que os homens do governo não são os menos competentes para censurar o procedimento do povo fluminense, concluindo do seguinte modo: «Estabelecida a questão no ponto da legalidade, esse populacho soube aproveitar as lições dos legitimistas, que dois anos antes pregavam, que tudo caminhava fora da lei, e que só existia, um poder de fato — o moderador. Ah! sofistas!» O debate sobre o movimento republicano na imprensa do Império: Tribuna — Agarra-se com a Província, e defende os homens do vintém da acusação, que lhes faz o órgão republicano, de terem sido patroleiros, e decididamente não quer ver nos trechos escritos pelo ex-patroleiro e atual ministro da Fazenda cousa, que destoe de suas opiniões atuais, e que cheire a incoerência. Descrição da cidade de São Paulo em 1880: A cidade não era então tão crescida como hoje; a sua feição de edifício ou bulício era menor, e como que se toucava por vezes para dar lugar a uma mórbida poesia de melancólico tudo, de poética e de descanso. O costume, a locução, tudo era mais da terra; havia uma individualidade entretecida do caráter de antiga metrópole desacompanhada, como geralmente acontece nas circunscrições territoriais do sul, em todo o Brasil. O debate político entre jornais conservadores e liberais: Ainda mais, o modo por que as estralinhas do Jornal do Comércio atacam os liberais dissidentes, que arrostaram suas iras, demonstram no tom de agrura, com que são redigidos, o despeito, e a consciência da própria fraqueza....
+
+--- Resultado 4 ---
+Score: 0.8692
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=bc35e538-a667-4353-9658-b35fdfaf5e37
+Trecho do texto: Identificação do Periódico O Telephone: Órgão Crítico e Prosaico. (Ano 1) Fortaleza 29 de Novembro de 1891 (Nº 4). Redator responsável: Manoel Corninho. Preços e Periodicidade do Jornal: Assinaturas Mensais: 500 rs. Publica-se aos domingos. Vende-se a 40 réis. Obituário de Antonio de Freitas Uchôa: Vítima de uma pleuropneumonia faleceu na segunda-feira nesta capital, o nosso prezado amigo Antonio de Freitas Uchôa. Terrível e inesperada enfermidade prostrou-o no leito em fim de Outubro, e depois de tormentos e de apreensões sinistras, e em dúbias esperanças, veio à morte, levou aquele idolatrado moço, aos dezenove anos de idade. Rivalidade Jornalística com o "Cangussu": Finalmente tomamos a resolução de responder os artigos referentes a esta redação. As vossas ameaças e insultos que nos dirigiu naquele sentina chamado «Cangussu» nunca nos amedrontou nem nos amedrontará, estamos sempre prontos para sermos insultados por tão imundo jornal. Nota de Pêsames à Família Enlutada: Sua desolada família envia-nos as nossas condolências por tão sensível perda, especialmente aos seus dignos cunhados, Francisco Cavalcante, e Severiano Chagas....
+
+--- Resultado 5 ---
+Score: 0.8686
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000676
+Trecho do texto: Percepção do Crédito Brasileiro na Europa em 1877: Nós fizemos a transcrição dos artigos das folhas inglesas com o fim de mostrar o crédito que o Brasil goza na Europa, e que esse crédito não podia ser abalado atento o governo estável, solo abundante e de grande vitalidade nacional. Como brasileiro enchemo-nos de justo orgulho por ver que o grande perito financeiro do mundo era assim julgado o nosso país. Investimentos em Ferrovias no Império e a Prosperidade de São Paulo: Não é isso para admirar, quando em todo o seu relatório, perde completamente de vista o custo da construção por conta do governo da estrada de ferro D. Pedro II, que batem de se estender do Rio de Janeiro, por uma distância de cerca de 1.000 quilômetros, até o interior da província central de Minas Gerais e pela sua junção com a estrada de ferro Rio de Janeiro a S. Paulo, liga a capital do Império com a sua mais próspera província — São Paulo, onde os lavradores estão à sua própria custa construindo ramais. Debate sobre a Taxação de Material Ferroviário Importado: O governo propôs ultimamente, diz o autor do relatório, com violação das condições das suas concessões, sujeitar o material importado pelas vias férreas brasileiras, que estavam dando lucros, aos direitos de alfândega do império. O governo não fez tal cousa. A sua proposta limitou-se a aplicar d'esse material uma pequena taxa, a que se dá o nome de expediente; e ao apresentar esta proposta, que é cousa muito diversa, declarou o ministro muito positivamente que seriam rigorosamente respeitadas todas as existentes concessões. Exemplo de Literatura de Folhetim do Século XIX: Numa escura noite do mês de Dezembro de 1808 ouviram-se horríveis gritos no terceiro andar de uma casa da travessa de Perigos. Aquela travessa, então como agora, era habitada por gente non sancta. A casa sempre aberta; um ninho de toleradas e de desordens. Apesar da sua pouca extensão, havia nela quatro tavernas. Relato de uma Disputa Política na Câmara Municipal de São Paulo: Por acaso passava homem pela porta do edifício em que funciona atualmente a municipal, não tendo ainda assumido a presidência dessa corporação, que deixei por motivo de viagem para fora do município, quando fui surpreendido pela notícia de que estava ali reunidas três pessoas, em companhia do sr. vereador Portilho, as quais pretendiam entrar em exercício das funções de vereadores da capital. Como era do meu dever, na qualidade de presidente da câmara, e como tal encarregado de velar pela segurança dos interesses municipais, tratei de informar-me sobre o estranho facto daquela simulada reunião....
+
+--- Resultado 6 ---
+Score: 0.8682
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=187137b7-2f54-49cf-8715-acd8c36ae607
+Trecho do texto: Crítica à Imprensa Brasileira sobre o caso Monti e Tognetti: No Brasil tem-se falado mais contra, do que em defesa da Santa Sé. Infelizmente para ele os correspondentes de nossas folhas diárias não são simpáticos ao catolicismo, e em sua maioria transmitem as notícias falsas, que copiam das gazetas adversas à Santa Sé e sobre elas fazem comentários de horrorizar, de maneira que é muito fácil inocular no coração do povo brasileiro a animosidade contra a Santa Sé, representando-a como vingativa e opressora. A Imprensa e a Fé no Brasil do Século XIX: É para lamentar que em um país católico como o Brasil, os proprietários de suas folhas diárias não procurem para seus correspondentes homens de bom senso e que não se vexem de beber notícias falsas em gazetas apaixonadas e sectárias dos maus princípios, que deem o escândalo público de seus tristes comentários. Repercussão Europeia da Execução de Monti e Tognetti: Grande foi o abalo que causou na Europa a execução dos dois criminosos, Monti e Tognetti. Muito se tem escrito pró e contra a Santa Sé, que ficou exposta aos tiros da calúnia de seus inimigos, tão variados, quão diversos são os interesses vãos deste mundo, que combate e condena como perigosos e perniciosos à sociedade em ordem à salvação. Defesa do Papa Pio IX contra a Imprensa Internacional: O correspondente de Florença ainda não cansou de falar na questão Monti e Tognetti, de comentá-la e de chamar a odiosidade pública contra o ínclito Pontífice Pio IX, que deixou livre ação ao tribunal de justiça, que condenou aqueles criminosos à morte. Notícia sobre a Educação no Cariri em 1869: O INTERNATO. A matrícula deste estabelecimento já consta de 30 alunos. Bem grandes e muito sérias tem sido as dificuldades que se tem superado, mas, graças a DEUS, bem sensíveis são os frutos que se vão colhendo, e muito lisonjeiras são as esperanças do futuro....
+
+--- Resultado 7 ---
+Score: 0.8674
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=c92f670d-0874-42c0-b695-3bdb679e7433
+Trecho do texto: Adoção do Sistema Métrico no Império do Brasil: Art. 1.º O atual sistema de pesos e medidas será substituído em todo o império pelo sistema métrico francês, na parte concernente às medidas lineares, de superfície, capacidade e peso. [...] § 1.º O sistema métrico substituirá gradualmente o atual sistema de pesos e medidas em todo o império de modo que em dez anos cesse inteiramente o uso legal dos antigos pesos e medidas. O Desafio da Segurança Pública no Ceará Pós-Epidemia: Há meses, e principalmente depois da epidemia, o serviço da polícia desta cidade é feito, parte por um pequeno destacamento de 12 praças, parte por paisanos notificados pelos inspetores de quarteirão, trabalho que se repete todos os dias, com perda de tempo e considerável perigo, visto como não têm a mínima aptidão e prática do serviço militar, nenhuma garantia oferecem quer guardando as prisões, onde é excessivo o número dos detentos, quer policiando a cidade e fazendo diligências de alcance, fora das vistas da autoridade. A Organização Incipiente da Guarda Nacional: O serviço de um destacamento poderia ser suprido algumas vezes, sem atropelo para a população, se fora feito pelos corpos de G.N. [Guarda Nacional]; mas isto é o que não tem tido lugar nem se poderá verificar; pois que a G.N. ainda está no seu embrião. Não existe senão oficiais avulsos, nenhuma classificação de praças, nenhuma organização de companhias. Disputas Políticas em Pernambuco: Cartas do Recife de 2 deste anunciam ter sido substituído o Sr. Manoel Francisco Correia pelo Sr. João Silveira de Sousa, o qual havia já tomado posse. Triunfou pois a liga, e nova era se abre para Pernambuco. Vejamos agora, se o Sr. Camaragibe continua a ostentar a sua onipotência, e se os últimos serão os primeiros, e os primeiros os últimos. O Sr. Correia havia sido um instrumento da oligarquia muito concorrendo para a eleição do Sr. Álvaro. Nomeação e Elogio a Servidor Durante Epidemia de Cólera: Foi nomeado delegado da polícia da Barbalha o Sr. Raymundo José Camello, um dos homens mais respeitáveis e que melhores serviços tem prestado àquele ramo, o qual se assinalou ultimamente durante a epidemia do cólera-morbus, em que com seu desinteresse e dedicação mostrou-se digno dos maiores elogios....
+
+--- Resultado 8 ---
+Score: 0.8670
+URL: https://dibrarq.arquivonacional.gov.br/index.php/companhia-radiotelegrafica-brasileira
+Trecho do texto: DID: Companhia Radiotelegráfica Brasileira | PF | 1925 - 1970 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Carta e ata da inauguração de estação radiotelegráfica ultrapotente. Álbum de visitantes às instalações da companhia. Radiogramas de felicitações assinados por Washington Luís.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: Luperine, Franco - 1970 - doação - 3
+CUSTODHIST: A coleção foi doada por Franco Luperine, presidente da RADIOBRÁS Agrícola, em 1970. | Este fundo/coleção recebeu anteriormente o código 54 CP 18.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Companhia Radiotelegráfica Brasileira. In: ________. Inventário das coleções. Rio de Janeiro, 2005, p. 240-242. dig. (AN/SCO/SDP 064, v. 1) - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 9 ---
+Score: 0.8655
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-comunicacao-telegrafos-icc4
+Trecho do texto: DID: Série Comunicação - Telégrafos (ICC4) | 8Z | 1843 - 1881 | Textual(is) -sem especificação - 0,18 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Outras | Inventário da Série Comunicação sob a forma de fichário (fichário 03 gav. 5). | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Livros de protocolo de remessas de papéis à Diretoria Geral dos Telégrafos. Livro de registro de ofícios enviados. Ofícios sobre transmissão de telegramas. Folha dos vencimentos dos empregados dos telégrafos da corte. Ofício sobre africano livre, do Serviço dos Telégrafos da Corte. Despesas da Repartição dos Telégrafos da Corte.
+ARRANGEMENT: A revisar | Organização | Assunto.
+CONTROLACCESS: África e pessoas escravizadas | Arquivo Nacional 185 Anos
+ACQINFO: Repartição Geral dos Telégrafos - 1924 - recolhimento - 61
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Telégrafos, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE COMUNICAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 10 ---
+Score: 0.8648
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-ihgspcom-hemeteca-s001-b001138-d000003-bib-jor-imp
+Trecho do texto: A Proclamação da Independência no Ceará: De todos os acontecimentos que precederam a independência, ocorridos no Rio de Janeiro, de 1821 em diante, houve repercussão no Ceará, mais ou menos atenuada pela distância, que era então de mais de um mês, dependente ainda das condições da navegação à vela. Assim é que a revolução constitucional do Porto cuja repercussão no Rio de Janeiro se realizou a 21 de fevereiro de 1821, teve a adesão do Ceará a 14 de abril: foi o governador Francisco Robin obrigado a jurar as bases da futura constituição. Indústria Nacional na Comemoração do Centenário: No grande concerto de 7 de setembro, no Ipiranga, a banda da Brigada Policial usou um completo instrumental fabricado em S. Paulo, nas oficinas da conhecida casa D'Aló, que há trinta anos se vem especializando no fabrico de instrumentos musicais para bandas. Dizer que as nossas bandas atualmente podem usar instrumentos fabricados em nosso próprio Estado já é alguma coisa. Mas o que anima é poder declarar que esses instrumentos foram oficialmente reputados como os melhores, mesmo comparados com os estrangeiros. Petição Histórica de José Bonifácio: (Petição de José Bonifácio, em 1816 justificando requerimento de aposentadoria) Senhor: Representa a Vossa Alteza Real o desembargador José Bonifácio de Andrada e Silva, que o suplicante se acha muito falto de saúde e de forças, como é de notoriedade pública e já por atestação do médico o mostrara perante o governo de Portugal, e sem esperanças algumas de pronto restabelecimento, por serem as moléstias que padece de natureza crônica e já envelhecidas, a que a medicina não sabe curar. O Tratamento da Sífilis em 1922: Por acharmos de interesse geral, publicamos abaixo, em primeira mão, a comunicação feita à Sociedade de Medicina e Cirurgia de Santos pelo diretor da Clínica Dermato-Venérea de Varsóvia, sobre o Tratamento da Sífilis. Muito se tem escrito e se tem esgotado o assunto da terapêutica antissifilítica, mas, até hoje, ainda não se pôde unificá-la, por isso que as preferências de método são as mais variadas. Progresso da Aviação na América do Sul: O RAIDE DE SANTIAGO AO RIO DE JANEIRO. PORTO ALEGRE, 9 — O aviador chileno Aracena levantou voo às 10,17 horas com destino a Florianópolis. O aviador fará etapas em Paranaguá e Santos, de onde seguirá diretamente para o Rio de Janeiro. Telegrafam de Torres, dizendo que devido ao mau tempo o aviador Aracena foi obrigado a aterrar naquela cidade, o que foi feito em boas condições....
+
+
+=== Execução de Teste: 2025-09-09 13:53:26 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8760
+URL: https://atom-mhn.museus.gov.br/index.php/6-58-045-778-pavilhao-da-bahia-noite
+Trecho do texto: DID: Pavilhão da Bahia -  à noite | MC-MCab-MCab06-MCab06.58 (045.778) | 1908 | Iconografia: 01 fotografia, p&b, 13,2x23,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8752
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: DID: Série Viação - Iluminação e Gás – (IV8) | DH | 1861 - 1863 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | Outras | Fichário 03 (gav. 5). | Fichário 89 (gav. 2). | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Registro de correspondência expedida pela Diretoria de Obras Públicas e Navegação sobre estragos causados pelas chuvas no encanamento geral de gás, colocação de lampião nas ruas da corte, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Iluminação e gás, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 3 ---
+Score: 0.8729
+URL: https://atom-mhn.museus.gov.br/index.php/6-57-045-777-pavilhao-das-industrias-noite
+Trecho do texto: DID: Pavilhão das Indústrias - à noite | MC-MCab-MCab06-MCab06.57 (045.777) | 1908 | Iconografia: 01 fotografia, p&b, 12,9x22,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-64-045-784-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.64  (045.784) | 1908 | Iconografia: 01 fotografia, p&b, 10,9x22,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-66-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.66 (045.786) | 1908 | Iconografia: 01 fotografia, p&b, 11x14cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-65-045-785-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.65 (045.785) | 1908 | Iconografia: 01 fotografia, p&b, 10x18,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8701
+URL: https://atom-mhn.museus.gov.br/index.php/6-62-045-782-vista-geral-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista Geral da Exposição Nacional de 1908 - à noite | MC-MCab-MCab06-MCab06.62 (045.782) | 1908 | Iconografia: 01 fotografia, p&b, 18x29,2cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8700
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado a sustentar as ideias livres, proteger a causa da justiça, e propugnar pela fiel observância da lei e interesses locais. Chegada da Iluminação a Gás em Recife: No dia 26 de fevereiro principiou esta cidade a ser iluminada a gás, mas somente nos bairros de S. Antônio e S. José, grande foi a afluência de povo que percorria as ruas destes bairros, para apreciar a brilhante luz de tantos astros, filhos da indústria e trabalho humano, que tem de dissipar as trevas produzidas pela ausência do «rei dos astros», fazendo desta sorte desaparecer os velhos e já bem caducos lampiões. Carestia e Especulação com o Preço da Carne: o alto preço da carne é devido ao grande número de atravessadores para as compras dos gados, desde a porteira do curral dos fazendeiros até esta cidade; e sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente a fim de haver pouca carne no mercado, e eles a poderem vender pelo preço que lhes convier. Concurso na Faculdade de Direito de Recife: Teve efetivamente lugar o concurso da Faculdade de Direito... foi brilhante a discussão entre os candidatos, sobressaindo entre eles pela precisão e força de lógica com que argumentavam os Drs. Pinto Junior e Apprigio Guimarães, foram todos aprovados, a proposta que tem de submetê-los à escolha do governo imperial, foi feita da maneira seguinte: Pinto Junior em 1.º lugar, Apprigio 2.º e Pinto Pessoa 3.º. Guerra do Piemonte e França contra a Áustria: Já há tempos profetizavam que o Piemonte, não obstante ser fraco pela sua pequenez, desembainharia todavia, animado pelo instinto de liberdade, e proteção de alguns países, a sua espada contra Áustria: realizaram-se pois agora estas profecias, e eis o destino da Europa entregue ao cego azar dos combates. A guerra está pois declarada, do Piemonte socorrido pela França contra Áustria....
+
+--- Resultado 9 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-59-045-779-cascata-tomada-noite
+Trecho do texto: DID: Palácio das Indústrias - à noite | MC-MCab-MCab06-MCab06.59 (045.779) | 1908 | Iconografia: 01 fotografia, p&b, 22,2x28,9cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Chateau d"Eau, Luz Elétrica.
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-56-045-776-pavilhao-de-portugal-noite
+Trecho do texto: DID: Pavilhão de Portugal - à noite | MC-MCab-MCab06-MCab06.56 (045.776) | 1908 | Iconografia: 01 fotografia, p&b, 11x21,5cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 13:57:44 ===
+Consultas: ['chegada iluminação a gás e elétrica cidades brasileiras']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8810
+URL: https://atom-mhn.museus.gov.br/index.php/6-58-045-778-pavilhao-da-bahia-noite
+Trecho do texto: DID: Pavilhão da Bahia -  à noite | MC-MCab-MCab06-MCab06.58 (045.778) | 1908 | Iconografia: 01 fotografia, p&b, 13,2x23,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8775
+URL: https://atom-mhn.museus.gov.br/index.php/6-57-045-777-pavilhao-das-industrias-noite
+Trecho do texto: DID: Pavilhão das Indústrias - à noite | MC-MCab-MCab06-MCab06.57 (045.777) | 1908 | Iconografia: 01 fotografia, p&b, 12,9x22,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8737
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: DID: Série Viação - Iluminação e Gás – (IV8) | DH | 1861 - 1863 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | Outras | Fichário 03 (gav. 5). | Fichário 89 (gav. 2). | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Registro de correspondência expedida pela Diretoria de Obras Públicas e Navegação sobre estragos causados pelas chuvas no encanamento geral de gás, colocação de lampião nas ruas da corte, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Iluminação e gás, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 4 ---
+Score: 0.8718
+URL: https://atom-mhn.museus.gov.br/index.php/6-56-045-776-pavilhao-de-portugal-noite
+Trecho do texto: DID: Pavilhão de Portugal - à noite | MC-MCab-MCab06-MCab06.56 (045.776) | 1908 | Iconografia: 01 fotografia, p&b, 11x21,5cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8710
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado a sustentar as ideias livres, proteger a causa da justiça, e propugnar pela fiel observância da lei e interesses locais. Chegada da Iluminação a Gás em Recife: No dia 26 de fevereiro principiou esta cidade a ser iluminada a gás, mas somente nos bairros de S. Antônio e S. José, grande foi a afluência de povo que percorria as ruas destes bairros, para apreciar a brilhante luz de tantos astros, filhos da indústria e trabalho humano, que tem de dissipar as trevas produzidas pela ausência do «rei dos astros», fazendo desta sorte desaparecer os velhos e já bem caducos lampiões. Carestia e Especulação com o Preço da Carne: o alto preço da carne é devido ao grande número de atravessadores para as compras dos gados, desde a porteira do curral dos fazendeiros até esta cidade; e sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente a fim de haver pouca carne no mercado, e eles a poderem vender pelo preço que lhes convier. Concurso na Faculdade de Direito de Recife: Teve efetivamente lugar o concurso da Faculdade de Direito... foi brilhante a discussão entre os candidatos, sobressaindo entre eles pela precisão e força de lógica com que argumentavam os Drs. Pinto Junior e Apprigio Guimarães, foram todos aprovados, a proposta que tem de submetê-los à escolha do governo imperial, foi feita da maneira seguinte: Pinto Junior em 1.º lugar, Apprigio 2.º e Pinto Pessoa 3.º. Guerra do Piemonte e França contra a Áustria: Já há tempos profetizavam que o Piemonte, não obstante ser fraco pela sua pequenez, desembainharia todavia, animado pelo instinto de liberdade, e proteção de alguns países, a sua espada contra Áustria: realizaram-se pois agora estas profecias, e eis o destino da Europa entregue ao cego azar dos combates. A guerra está pois declarada, do Piemonte socorrido pela França contra Áustria....
+
+--- Resultado 6 ---
+Score: 0.8688
+URL: https://atom-mhn.museus.gov.br/index.php/lampada-de-prata-santa-barbara-2
+Trecho do texto: DID: Lâmpada de prata, Santa Bárbara | NF-NF-NF133 (031.786) | Iconografia: Desenho a lápis: 22,4x15,5 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Sem assinatura
+SCOPECONTENT: Minas Gerais
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8688
+URL: https://atom-mhn.museus.gov.br/index.php/lampada-de-prata-santa-barbara-3
+Trecho do texto: DID: Lâmpada de prata, Santa Bárbara | NF-NF-NF134 (031.787) | Iconografia: Desenho a lápis: 22,5x15,6 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+SCOPECONTENT: Minas Gerais
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8673
+URL: https://atom-mhn.museus.gov.br/index.php/6-63-045-784-pavilhao-de-minas-gerais-noite
+Trecho do texto: DID: Pavilhão de Minas Gerais à noite | MC-MCab-MCab06-MCab06.63 (045.783) | 1908 | Iconografia: 01 fotografia, p&b, 15x22cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Observa-se grande número de visitantes e também carro dos bombeiros. | Luz elétrica.
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8660
+URL: https://atom-mhn.museus.gov.br/index.php/6-59-045-779-cascata-tomada-noite
+Trecho do texto: DID: Palácio das Indústrias - à noite | MC-MCab-MCab06-MCab06.59 (045.779) | 1908 | Iconografia: 01 fotografia, p&b, 22,2x28,9cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Chateau d"Eau, Luz Elétrica.
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8658
+URL: https://atom-mhn.museus.gov.br/index.php/6-64-045-784-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.64  (045.784) | 1908 | Iconografia: 01 fotografia, p&b, 10,9x22,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 14:57:18 ===
+Consultas: ['Encontre documentos sobre reações à introdução do telégrafo no Brasil']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8780
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000676
+Trecho do texto: Percepção do Crédito Brasileiro na Europa em 1877: Nós fizemos a transcrição dos artigos das folhas inglesas com o fim de mostrar o crédito que o Brasil goza na Europa, e que esse crédito não podia ser abalado atento o governo estável, solo abundante e de grande vitalidade nacional. Como brasileiro enchemo-nos de justo orgulho por ver que o grande perito financeiro do mundo era assim julgado o nosso país. Investimentos em Ferrovias no Império e a Prosperidade de São Paulo: Não é isso para admirar, quando em todo o seu relatório, perde completamente de vista o custo da construção por conta do governo da estrada de ferro D. Pedro II, que batem de se estender do Rio de Janeiro, por uma distância de cerca de 1.000 quilômetros, até o interior da província central de Minas Gerais e pela sua junção com a estrada de ferro Rio de Janeiro a S. Paulo, liga a capital do Império com a sua mais próspera província — São Paulo, onde os lavradores estão à sua própria custa construindo ramais. Debate sobre a Taxação de Material Ferroviário Importado: O governo propôs ultimamente, diz o autor do relatório, com violação das condições das suas concessões, sujeitar o material importado pelas vias férreas brasileiras, que estavam dando lucros, aos direitos de alfândega do império. O governo não fez tal cousa. A sua proposta limitou-se a aplicar d'esse material uma pequena taxa, a que se dá o nome de expediente; e ao apresentar esta proposta, que é cousa muito diversa, declarou o ministro muito positivamente que seriam rigorosamente respeitadas todas as existentes concessões. Exemplo de Literatura de Folhetim do Século XIX: Numa escura noite do mês de Dezembro de 1808 ouviram-se horríveis gritos no terceiro andar de uma casa da travessa de Perigos. Aquela travessa, então como agora, era habitada por gente non sancta. A casa sempre aberta; um ninho de toleradas e de desordens. Apesar da sua pouca extensão, havia nela quatro tavernas. Relato de uma Disputa Política na Câmara Municipal de São Paulo: Por acaso passava homem pela porta do edifício em que funciona atualmente a municipal, não tendo ainda assumido a presidência dessa corporação, que deixei por motivo de viagem para fora do município, quando fui surpreendido pela notícia de que estava ali reunidas três pessoas, em companhia do sr. vereador Portilho, as quais pretendiam entrar em exercício das funções de vereadores da capital. Como era do meu dever, na qualidade de presidente da câmara, e como tal encarregado de velar pela segurança dos interesses municipais, tratei de informar-me sobre o estranho facto daquela simulada reunião....
+
+--- Resultado 2 ---
+Score: 0.8752
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000398
+Trecho do texto: Visita do Imperador Dom Pedro II ao Egito: Telegramas — A agência Havas obsequiou-nos com as seguintes comunicações telegráficas que agradecemos: CAIRO, 10 de Dezembro. Suas Majestades o Imperador e a Imperatriz do Brasil receberam a visita do Khedive. Desenvolvimento da Estância Hidromineral de Caxambu: Por ordem do governo foram as águas submetidas a um exame químico, e então dessa data em diante, se tornaram conhecidas pelos seguintes nomes: Gazosa-alcalina - D. Pedro. Gazosa-férrea - Thereza. Gazosa-conde d'Eu. Férrea-gazosa-sulfurosa D. Izabel. Magnesiana gazosa - Leopoldina. Sulfídrica-gazosa - Duque de Saxe. Relato de Assalto e Violência Urbana em São Paulo: Voltava anteontem às 9 horas da noite da casa do subdelegado de Santa Efigênia em direção à sua casa, e ao atravessar o aterrado, na altura do antigo chafariz do Miguel Carlos, saíram inopinadamente dois vultos de trás de algumas tulhas de tijolos aí existentes e agarraram-no pelo braço bradando que lhes desse o que trazia. (...) Acrescenta que, pela fala, persuade-se que seus agressores pertencem à nacionalidade italiana. Emissão de Apólices da Província de São Paulo: Diário de S. Paulo - Parte oficial na qual vem publicado o regulamento expedido pela presidência desta província para emissão de apólices provinciais, conforme a autorização da lei de 7 de julho de 1875. Aviso aos Assinantes do Correio Paulistano para o Ano de 1877: Estando a findar-se o ano de 1876, pedimos aos nossos assinantes que se acham em débito, o obséquio de mandarem satisfazer a importância de suas assinaturas, a fim de poderem continuar a receber a folha no ano próximo vindouro....
+
+--- Resultado 3 ---
+Score: 0.8751
+URL: https://dibrarq.arquivonacional.gov.br/index.php/proveniencia-desconhecida
+Trecho do texto: DID: Francisco Bhering | F4 | 1777 - 1937 | Cartográfico(s) -diagrama(s) - 1 item(ns) | Cartográfico(s) -esboço(s) - 1 item(ns) | Cartográfico(s) -esquema(s) - 4 item(ns) | Cartográfico(s) -gráfico(s) - 7 item(ns) | Cartográfico(s) -mapa(s) - 965 item(ns) | Cartográfico(s) -perfil(is) - 198 item(ns) | Cartográfico(s) -planta(s) - 57 item(ns) | Cartográfico(s) -tabela(s) - 1 item(ns) | Iconográfico(s) -fotografia(s) - 7 item(ns) | Iconográfico(s) -gravura(s) - 2 item(ns) | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | francês | português do Brasil | Responsável da descrição | Lucia Maria Fabiano Gusmão | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Bhering, Francisco | Clube de Engenharia (Rio de Janeiro, Brasil)
+BIOGHIST: O engenheiro Francisco Bhering foi um dos primeiros professores da Escola Politécnica de São Paulo. Integrou o Comitê Eletrotécnico Brasileiro, criado em 1909, no Clube de Engenharia do Rio de Janeiro. Entre 1916 e 1922, chefiou a comissão encarregada de elaborar o novo mapa geral do Brasil, trabalho que foi publicado como parte das comemorações do centenário da Independência. Organizou, ainda, em 1919, uma escola de radiotelegrafia que funcionava em anexo ao Observatório da Escola Politécnica, no morro de Santo Antônio, Rio de Janeiro.
+SCOPECONTENT: Documentos cartográficos referentes a correios e telégrafos do Brasil e países da América do Sul e do Norte, ferrovias, urbanismo, estados e municípios brasileiros, hidrografia, terras indígenas, fronteiras do Brasil, colonização, atividades bélicas e desenhos para confecção da carta do Brasil ao milionésimo (carta internacional do mundo).
+ARRANGEMENT: Organizado totalmente | Organização | Assunto - Cronológica - Autor
+CONTROLACCESS: Bhering, Francisco | Clube de Engenharia (Rio de Janeiro, Brasil) | Holandeses no Brasil | Independência (Brasil), 1822 | Arquivo Nacional 185 Anos
+CUSTODHIST: Nominado Memória do Mundo pelo Comitê Nacional do Brasil em setembro de 2011.
+PROCESSINFO: Crédito | Documentos cartográficos: Mariane Costa Pinto.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Catálogo dos documentos cartográficos do fundo Francisco Bhering. Rio de Janeiro, 2000. 254 p. dat. (AN/SCO/CODAC/SDC 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Coordenação-Geral de Processamento e Preservação do Acervo. Coleção Francisco Bhering (F4): instrumento provisório dos documentos cartográficos. Rio de Janeiro: Arquivo Nacional, 2013. 338 p. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO
+ACCESSRESTRICT: Com restrição - Necessidade de organização
+BIBLIOGRAPHY: DUARTE, Rildo Borges. Cartografias capitais: os projetos do Mapa Internacional do Mundo e da Carta do Brasil ao Milionésimo (1891-1930). 2018. Tese (Doutorado em Geografia Humana) - Faculdade de Filosofia, Letras e Ciências Humanas, Universidade de São Paulo, São Paulo, 2018. doi:10.11606/T.8.2019.tde-19032019-121834. Acesso em: 2019-08-23. - Não definido | DUARTE, Rildo Borges. Incógnitas geográficas: Francisco Bhering e as questões territoriais brasileiras no início do século XX. Dissertação apresentada à comissão julgadora do Programa de Pós-Graduação em Geografia Humana do Departamento de Geografia da Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo como exigência parcial para obtenção do título de Mestre em Geografia Humana [...]. Versão corrigida. São Paulo, 2011. 142 p. - Não impressos | DUARTE, Rildo Borges. Incógnitas geográficas: Francisco Bhering e as questões territoriais brasileiras. São Paulo: Alameda, 2013. 186 p. - Impressos, em livros e folhetos
+DSC: Mapas | F4.MAP | 1777 - 1937 | Cartográfico(s) -diagrama(s) - 1 item(ns) | Cartográfico(s) -esboço(s) - 1 item(ns) | Cartográfico(s) -esquema(s) - 4 item(ns) | Cartográfico(s) -gráfico(s) - 7 item(ns) | Cartográfico(s) -mapa(s) - 965 item(ns) | Cartográfico(s) -perfil(is) - 198 item(ns) | Cartográfico(s) -planta(s) - 57 item(ns) | Cartográfico(s) -tabela(s) - 1 item(ns) | Publicado | Carta provisória do território a leste do Rio Branco | F4.MAP.16 | 1900 - 1937 | Cartográfico(s) -mapa(s) - 1 f. | Dimensão Específica | 37 - altura - centímetros | 46 - largura - centímetros | Datas | Datas de produção atribuídas e incertas. | Publicado | Carte de la région guyanaise | F4.MAP.78 | [1930?-1939?] | Cartográfico(s) -mapa(s) - 1 f. | Dimensão Específica | 47 - altura - centímetros | 47 - largura - centímetros | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | francês | Outras | Carimbo: Club de Engenharia. Carta Geográfica do Brasil. 67/1. | Responsável da descrição | Lucia Maria Fabiano Gusmão | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Publicado | Local de Produção | Paris - N- - França | Inserto: Du cap S. Roque au rio Pará. - Escala 1:10.000.000. | Contém lista com os principais lagos do Cabo Norte e ilhas da foz do Amazonas. | Apresenta antigos topônimos. | Venezuela | República do Suriname | Pará | Guiana Francesa | Guiana | Amazonas | Amapá (Estado) | Carta da Guiana Inglêsa, Francesa e Brasileira. Copiada de várias cartas na mesma escala para servir de esclarecimento a parte 2ª dos escritos sobre exploração da Guiana. | F4.MAP.80 | 1860 | Cartográfico(s) -mapa(s) - 1 f. | Dimensão Específica | 44 - altura - centímetros | 56 - largura - centímetros | português do Brasil | Outras | Carimbo: Club de Engenharia - Carta Geográfica do Brasil. 60/1. | Azevedo, José da Costa - barão de Ladário - - - topógrafo | Responsável da descrição | Lucia Maria Fabiano Gusmão | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Publicado | Amapá | Fronteira | Guiana | Guiana Francesa | República do Suriname | Com restrição - Acessível por meio eletrônico | South America, north-east coast, sheet II, Surinam to Cabo do Norte | F4.MAP.80.487 | s/d | Cartográfico(s) -mapa(s) - 1 f. | Dimensão Específica | 51 - altura - centímetros - | 69 - largura - centímetros - | inglês | Outras | Carimbo: Club de Engenheiro - Carta Geográfica do Brasil. 73/5. | Carimbo: Relator da Comissão da Carta C. da Independência do Brasil. 656 - 3 dez. 1919. | Responsável da descrição | Lucia Maria Fabiano Gusmão | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Publicado | Insertos: 1.Entrance to the Kuru River. - Escala 1:48.370. 2.Entrance to the Sinnamari River. - Escala 1:48.370. | Mostra "View borrowed from M. Tardy de Montravel's Carte des Cotes des Guyanes". | Inclui sondagens. | Local de Produção: Londres - Inglaterra | Editora | J & C Walker | Sinalização Náutica | Amapá | República do Suriname | Guiana Francesa...
+
+--- Resultado 4 ---
+Score: 0.8739
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-comunicacao-telegrafos-icc4
+Trecho do texto: DID: Série Comunicação - Telégrafos (ICC4) | 8Z | 1843 - 1881 | Textual(is) -sem especificação - 0,18 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Outras | Inventário da Série Comunicação sob a forma de fichário (fichário 03 gav. 5). | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Livros de protocolo de remessas de papéis à Diretoria Geral dos Telégrafos. Livro de registro de ofícios enviados. Ofícios sobre transmissão de telegramas. Folha dos vencimentos dos empregados dos telégrafos da corte. Ofício sobre africano livre, do Serviço dos Telégrafos da Corte. Despesas da Repartição dos Telégrafos da Corte.
+ARRANGEMENT: A revisar | Organização | Assunto.
+CONTROLACCESS: África e pessoas escravizadas | Arquivo Nacional 185 Anos
+ACQINFO: Repartição Geral dos Telégrafos - 1924 - recolhimento - 61
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Telégrafos, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE COMUNICAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 0.8734
+URL: https://dibrarq.arquivonacional.gov.br/index.php/companhia-radiotelegrafica-brasileira
+Trecho do texto: DID: Companhia Radiotelegráfica Brasileira | PF | 1925 - 1970 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Carta e ata da inauguração de estação radiotelegráfica ultrapotente. Álbum de visitantes às instalações da companhia. Radiogramas de felicitações assinados por Washington Luís.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: Luperine, Franco - 1970 - doação - 3
+CUSTODHIST: A coleção foi doada por Franco Luperine, presidente da RADIOBRÁS Agrícola, em 1970. | Este fundo/coleção recebeu anteriormente o código 54 CP 18.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Companhia Radiotelegráfica Brasileira. In: ________. Inventário das coleções. Rio de Janeiro, 2005, p. 240-242. dig. (AN/SCO/SDP 064, v. 1) - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 6 ---
+Score: 0.8729
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d001060
+Trecho do texto: Crítica ao Atraso do Orçamento Provincial em São Paulo: Entretanto, está vencido o segundo mês da sessão legislativa, e o projeto de orçamento provincial ainda não foi apresentado à discussão. Um partido, que prometeu ao país realizar a verdade dos orçamentos, não pode ser desculpado pelo procedimento irregular de preferir assuntos de mera conveniência particular à discussão de uma lei anual, que diretamente interessa a administração e a província. Repercussão da Dissolução das Congregações Jesuítas na França: Diz que a República Francesa, decretando a dissolução das congregações dos jesuítas, desceu o primeiro degrau da escada do poder. Considera esse ato como um atentado à liberdade de associação, de ensino e de consciência, e por isso condena-o, apesar de detestar as exagerações do Syllabus. A dissolução da congregação dos jesuítas era naquele país uma medida reclamada pelas conveniências políticas do sistema de governo ali estabelecido. O Sistema da Roda dos Expostos para Crianças Abandonadas: Havia em 1833, nas principais cidades, asilos de mendicidade, que tinham uma roda para receber as crianças abandonadas. A influência destes pequenos asilos era tão considerável que foi implantado um sistema que fornecia aos pais pobres ou desnaturados um meio tão cômodo de se desobrigarem da sua progênie, que era uma obra prima de previdência social. A Abolição e o Retorno das Loterias no Brasil Imperial: A origem da loteria perde-se na noite dos tempos. Em 1833 houve como que um protesto da consciência pública; a monarquia constitucional, querendo dar nova feição à velha Lusitânia, aboliu, por ocasião da sua exaltação, as loterias e os jogos de azar. É excelente; todos aplaudiram em nome da moral e do trabalho. Debate sobre Pesca com Dinamite na Assembleia Provincial: O sr. Oscar, em aparte, disse que se houvessem pescarias por estes meios, o que nós nos admiraríamos porque informar-nos-íamos o que é tal: o sr. Oscar nunca descobriu pólvora, quanto mais a dinamite. Tendo por ter-se sentado o sr. Brotero, coube-lhe o defender o seu projeto, o que disse mais do modo que os peixes, porque tanto se interessa; e foi preciso que o sr. Barão do Pinhal viesse em auxílio do emudecido sr. Oscar, cuja eloquência no momento preciso esvaíra-se em fumo....
+
+--- Resultado 7 ---
+Score: 0.8727
+URL: https://atom-mhn.museus.gov.br/index.php/guilherme-schuch-de-capanema-2
+Trecho do texto: DID: Guilherme Schüch de Capanema | GS | 1801-1901 | Textual: metragem linear 1,03 (corresponde a 1.312 itens) | Iconografia: 04 fotografias, 02 gravuras | Cartografia: 02 mapas, 02 plantas | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | alemão | espanhol | francês | italiano | português | Estado de Conservação: Regular | Guilherme Schüch de Capanema
+BIOGHIST: Cientista brasileiro, nascido em Mariana (MG), em 1824, morto em 1909. Formado em Engenharia pela Escola Politécnica de Viena, doutorou-se também em Ciências Físicas e Matemáticas pela Escola Militar do Rio de Janeiro. Catedrático de Mineralogia e de Física na Escola Politécnica do Rio, organizou e dirigiu durante 30 anos a Repartição Geral dos Telégrafos. Contribuiu para a solução de problemas relativos às fronteiras do Brasil com a Argentina e para a instalação das primeiras estações meteorológicas no país. Presidiu a comissão organizada para a introdução no Brasil do sistema métrico decimal. Empenhou-se em pesquisas sobre as secas do Nordeste e descobriu um produto químico, eficaz no combate às formigas (formicida). Representante do Brasil em diversas missões no exterior, sócio do Instituto Histórico e Geográfico Brasileiro, entre outras obras publicou: Decomposição dos Penedos do Brasil; Apontamentos sobre as Secas do Ceará; A Questão de Limites.
+SCOPECONTENT: Documentos da extinta Comissão Científica a qual o titular foi membro; Publicações sobre telegráfo nacional; Correspondências sobre a comissão de limites com a Argentina; Recortes de Jornais sobre telegráfo; Escritos sobre geologia; Documentos oficiais sobre a Estrada de Ferro D. Pedro II; Documentos sobre a matrícula do titular no Instituto Histórico Geográfico Brasileiro.
+ARRANGEMENT: 20 séries: 1. Correspondências, 2. Documentos de Terceiros, 3. Documentos Pessoais, 4. Produção Intelectual, 5.Publicações, 6. Documentos Oficiais, 7. Comissão de Limites, 8. Iconografia, 9. Miscelânea, 10. Cadernos de Anotações, 11. Jornal, 12. Estudo Geodésio, 13. Fronteiras e Demarcações, 14. Telégrafo, 15. Comissão Científica, 16. Comissão de Melhoramentos, 17. Estrada de Ferro de D. Pedro II, 18. Academia Militar, 19. Pesos e Medidas e 20. Instituto Histórico e Geográfico Brasileiro.
+CUSTODHIST: Transferência do Instituto Brasileiro do Patrimônio Cultural -IBPC, atual IPHAN, (Processo 01468.000007/91-08).  No processo não consta a relação dos documentos que vieram transferidos do IBPC para o MHN e também não consta a informação de quem doou a documentação ao IBPC.
+PROCESSINFO: Organizada em 2000/2001 | Organizada por Ana Maria Lemos Ambrózio.
+OTHERFINDAID: Inventário
+ODD: published
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM nº 15/2022....
+
+--- Resultado 8 ---
+Score: 0.8726
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000994
+Trecho do texto: Reação popular a um imposto sobre bondes no Rio de Janeiro (Revolta do Vintém): Entretanto verifica-se que em uma importante linha de bonde o imposto não é obrigatório, e em outras a concorrência de passageiros tem diminuído consideravelmente, pois a maior parte da população fluminense prefere, embora com sacrifício dos próprios cômodos, esquivar-se ao exagerado imposto. É assim fora de dúvida, que o governo em tal questão não tem o menor apoio da opinião, e só se impõe pela força. Crítica da imprensa paulista à gestão da crise no Rio de Janeiro: Província de S. Paulo — Em seu primeiro editorial demonstra, que os homens do governo não são os menos competentes para censurar o procedimento do povo fluminense, concluindo do seguinte modo: «Estabelecida a questão no ponto da legalidade, esse populacho soube aproveitar as lições dos legitimistas, que dois anos antes pregavam, que tudo caminhava fora da lei, e que só existia, um poder de fato — o moderador. Ah! sofistas!» O debate sobre o movimento republicano na imprensa do Império: Tribuna — Agarra-se com a Província, e defende os homens do vintém da acusação, que lhes faz o órgão republicano, de terem sido patroleiros, e decididamente não quer ver nos trechos escritos pelo ex-patroleiro e atual ministro da Fazenda cousa, que destoe de suas opiniões atuais, e que cheire a incoerência. Descrição da cidade de São Paulo em 1880: A cidade não era então tão crescida como hoje; a sua feição de edifício ou bulício era menor, e como que se toucava por vezes para dar lugar a uma mórbida poesia de melancólico tudo, de poética e de descanso. O costume, a locução, tudo era mais da terra; havia uma individualidade entretecida do caráter de antiga metrópole desacompanhada, como geralmente acontece nas circunscrições territoriais do sul, em todo o Brasil. O debate político entre jornais conservadores e liberais: Ainda mais, o modo por que as estralinhas do Jornal do Comércio atacam os liberais dissidentes, que arrostaram suas iras, demonstram no tom de agrura, com que são redigidos, o despeito, e a consciência da própria fraqueza....
+
+--- Resultado 9 ---
+Score: 0.8712
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=187137b7-2f54-49cf-8715-acd8c36ae607
+Trecho do texto: Crítica à Imprensa Brasileira sobre o caso Monti e Tognetti: No Brasil tem-se falado mais contra, do que em defesa da Santa Sé. Infelizmente para ele os correspondentes de nossas folhas diárias não são simpáticos ao catolicismo, e em sua maioria transmitem as notícias falsas, que copiam das gazetas adversas à Santa Sé e sobre elas fazem comentários de horrorizar, de maneira que é muito fácil inocular no coração do povo brasileiro a animosidade contra a Santa Sé, representando-a como vingativa e opressora. A Imprensa e a Fé no Brasil do Século XIX: É para lamentar que em um país católico como o Brasil, os proprietários de suas folhas diárias não procurem para seus correspondentes homens de bom senso e que não se vexem de beber notícias falsas em gazetas apaixonadas e sectárias dos maus princípios, que deem o escândalo público de seus tristes comentários. Repercussão Europeia da Execução de Monti e Tognetti: Grande foi o abalo que causou na Europa a execução dos dois criminosos, Monti e Tognetti. Muito se tem escrito pró e contra a Santa Sé, que ficou exposta aos tiros da calúnia de seus inimigos, tão variados, quão diversos são os interesses vãos deste mundo, que combate e condena como perigosos e perniciosos à sociedade em ordem à salvação. Defesa do Papa Pio IX contra a Imprensa Internacional: O correspondente de Florença ainda não cansou de falar na questão Monti e Tognetti, de comentá-la e de chamar a odiosidade pública contra o ínclito Pontífice Pio IX, que deixou livre ação ao tribunal de justiça, que condenou aqueles criminosos à morte. Notícia sobre a Educação no Cariri em 1869: O INTERNATO. A matrícula deste estabelecimento já consta de 30 alunos. Bem grandes e muito sérias tem sido as dificuldades que se tem superado, mas, graças a DEUS, bem sensíveis são os frutos que se vão colhendo, e muito lisonjeiras são as esperanças do futuro....
+
+--- Resultado 10 ---
+Score: 0.8710
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000384
+Trecho do texto: Notícia de Tentativa de Insurreição de Escravizados: Por comunicação de um respeitável fazendeiro consta-nos que em uma das fazendas da freguesia do Sumidouro, achavam-se os operários servis em estado de quase insurreição, havendo já feito ameaças ao administrador e feitores e projetando resistir a todo e qualquer domínio. É natural que a essa hora tenha já conhecimento deste fato o sr. dr. chefe de polícia da província; se o não conhece, porém, aqui lhe damos o aviso para que proceda como deve em face de tão grave emergência. Análise da Indisciplina no Partido Liberal do Brasil Império: A indisciplina ou é sintomática de decadência social ou prova que passam os partidos por transformações exigidas pelo tempo e desenvolvimento das ideias, e ainda não puderam encontrar a palavra de ordem, o moto que sirva-lhes de laço de união, e que por uma destas transformações atravessa hoje o partido liberal do Brasil. Concessão de Patente para uma Máquina de Força Motriz: O decreto n. 6.369 de 8 deste mês, concedeu a Antonio Joaquim Pereira de Carvalho privilégio por vinte anos para uma máquina de sua invenção, aplicável ao desenvolvimento de uma força motriz, segundo a descrição e desenho apresentado. A Percepção de Leonardo da Vinci como 'Homem Milagroso' no Século XIX: Não há homem por pouco instruído que seja que não tenha ouvido falar deste prodígio sobre-humano. (...) Os contemporâneos do divino artista chamavam-no o homem milagroso, e, em verdade, havia boa razão para tal antonomásia. Ele possuía cópia vasta e profunda de quase todos os conhecimentos humanos. Pela mecânica chegou a fazer autômatos com movimentos que simulavam seres vivos; pela pintura imortalizou-se. Nomeação para a Colônia Militar de Avanhandava em São Paulo: MINISTÉRIO DA GUERRA — Por portaria de 18 do corrente, foi nomeado o tenente honorário do exército, Augusto Rodrigues da Silva Chaves, para o lugar de ajudante do diretor da colônia militar do Avanhandava, da província de S. Paulo....
+
+
+=== Execução de Teste: 2025-09-09 15:39:17 ===
+Consultas: ['Como se vestiam diferentes grupos sociais no Brasil do século XIX?']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8707
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000079
+Trecho do texto: Moda Feminina em meados do Século XIX: A moda caminha rápida; cada dia que foge lhe rouba um encanto e lhe traz uma nova beleza. Agora, que a nossa bela estação convida-nos a gozar das delícias dos salões, ei-la que nos revela novos encantos nos toaletes de inverno, caprichosa alardeando todas as graças de uma ninfa mimosa entre os mil enfeites que ela mesma inventou. Os chapéus e os capotes (bem sabeis que os capotes são os chapéus franzidos) foram alterados no tamanho, nos enfeites e nas suas formas: usam-se pequenos, mui pequenos, quase tomando somente a metade da cabeça. Vestidos de Baile e de Visita em 1855: Nos vestidos de baile, os tecidos de ouro ou prata trazem no mesmo estofo as barras de aplicação, das quais se formam um, dois e três folhos para a guarnição, e são os mais modernos. Os de seda lisa ou bordados de matiz ainda usam-se com quatro até seis folhos da mesma fazenda, ou simplesmente com volantes de renda, os de seda lisa. Os vestidos de visita são de corpo afogado totalmente, ou abertos adiante, de basquine ou bico redondo, saia lisa ou toda em folhos, mais ou menos largos. O Inverno no Rio de Janeiro e a Influência Europeia: Cada um com o que é seu; nós com o nosso inverno, e eles com o seu; nós com o nosso frio, e eles com a sua neve. Chamarai portanto aos nossos meses frios o nosso inverno; e, como me não pagais nada pelo conselho, vos direi, sem o receio de passar por interesseira, que vós deveis agasalhar neste tempo, ainda mesmo que não sintais frio, porque lá vem a noite úmida que vos apanha desprevenida e vos causa prejuízo à saúde. A Chegada da Moda de Paris ao Brasil: Que figurinos preferis que eu vos apresente, novos ou velhos? Se escolherdes os novos, ainda por milagre de Santo Antônio não podereis ter em Julho no Rio de Janeiro figurinos de inverno. Se preferirdes os velhos, tereis com efeito figurinos de inverno, porém do inverno de Paris, que são figurinos de baile quase todos. Em tal caso, querida leitora, é melhor, muito melhor, receber figurinos modernos todos os meses, onde vemos as modas que vão aparecendo, as novidades e os enfeites de bom tom, do que deixar-vos enganar com figurinos que são próprios para a nossa estação, mas que foram publicados em Paris há seis meses, pelo menos. Descrição de Peças do Vestuário Feminino: Mantelete-xale Navailles, de tafetá ornado de renda larga franjada e fita de cetim listada de veludo, afogado atrás, aberto adiante, para formar o xale. Chapéu denominado Capote-Medicis composto de seda, blonde e fitas. Mantelete decotado de tafetá, denominado Mantelet Impératrice pela riqueza de sua guarnição. Esta guarnição consiste em uma ordem de renda mui larga unida à outra ordem de renda mais estreita....
+
+--- Resultado 2 ---
+Score: 0.8678
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000059
+Trecho do texto: A Calmaria Social Pós-Carnaval em 1853: Ao movimento estrepitoso dos nossos bailes de máscaras, de uma semana absorvida em preparativos, em combinações de grandes divertimentos, onde, ainda mesmo quem se não preparava, tinha gosto de discutir, de ser consultado, de dar a sua opinião sobre qual seria o melhor, o mais apropriado vestuário para a senhora ou senhor fulano de tal; uma calma repentina, dias insípidos, vieram suceder a esses dias de tumultuosa alegria! Estamos no refluxo da maré. O Retiro da Elite e o Alívio das Modistas Após o Carnaval: Os especuladores tornaram-se ao fundo de suas gavetas a verificar os lucros; as modistas estão respirando ao verem-se livres das impertinências dos vestuários do século passado; o mundo elegante tornou para o campo a fruir de novo a suave brisa das nossas manhãs de verão; e a Christina meteu-se em casa, tão séria e pacífica, que ninguém dirá, que foi ela a mesma Christina do Carnaval em Andaraí! Descrição da Moda Feminina Para Passeios: Vestido de tafetá tecido em cor de ouro e preto, que dá essa quase furta-cor de ganga que vedes. A saia sendo lisa, é contudo enfeitada na frente com oito ordens de sanefas de franjas da mesma cor, as quais vão sucessivamente diminuindo em distâncias iguais até à cintura, e formam um gracioso avental. Descrição da Moda Feminina Para Ficar em Casa: Saia de tafetá verde claro simplesmente remarcável pela pequena bordadura em frente de folhas de parreira em tecido da mesma cor. Corpinho de basquine redondo, recortado e guarnecido de um ligeiro bordado, que acompanha o recorte em todas as suas curvaturas. O Ideal de Beleza e Sensibilidade Feminina no Século XIX: Maria era naturalmente pálida, tinha cabelos escuros, olhos azuis sempre umedecidos e acompanhados de grandes sobrancelhas negras, pálpebras largas e extremamente desenvolvidas indicando uma dessas almas elevadas e pensativas. Nessa ocasião havia perdido a palidez habitual; seus olhos engrandecidos brilhavam no rosto animado que estava manchado de sinais roxos, e a voz era rouca e trancada, como quando se está profundamente eletrizado....
+
+--- Resultado 3 ---
+Score: 0.8674
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000084
+Trecho do texto: Tecidos e Adornos Luxuosos da Época: As sedas de fio de ouro, tecidas ou bordadas, de um trabalho fabuloso; as tarlatanas e as grenadinas, delicadamente prateadas ou douradas; os enfeites de cabeça, as guarnições, as folhagens, as rendas, em tudo cintilando o ouro e a prata, continuam a estar no auge da moda, gozando do geral acolhimento do mundo elegante. Estilos de Vestidos em Meados do Século XIX: O corpo, à grega, ou à Luís XV, nos vestidos de baile, são os de mais bom-tom, com mangas muito curtas e muito enfeitadas. Nos vestidos de passeio, de estar em casa, e nos de fazer visitas, o corpo é totalmente afogado, ou aberto adiante, de pregas, liso, ou em fofos. Distinção Social na Moda das Cinturas: Diz o Moniteur de la Mode que as elegantes de Paris acham-se tão comodamente vestidas nesta cintura de meio termo, que poucas ou nenhumas esperanças haverá que ela desça sequer um quarto de linha mais abaixo — a menos, diz ainda o Moniteur, que as grisettes, que giram as ruas de Paris em corpo muito de propósito para serem miradas, não se lembrem de restaurar para esse fim a moda, que elas somente usaram, das cinturas horrivelmente baixas. A Preferência pela Cor Violeta e sua Simbologia: Entre as cores já conhecidas de preferência, sobressai hoje a cor de violeta, lembrando talvez a violeta característica do antigo império. Esta cor, essencialmente nos tecidos de seda, está admitida aos vestidos de passeio e roupões. O Retorno da Popularidade da Água de Colônia de Farina: A bem conhecida e mui antiga Água de Colônia, retomou nos toucadores parisienses o primeiro lugar, que outrora ocupara com tantas virtudes aclamada. Dentro do frasquinho mais lapidado; colocado no lugar favorito sobre o qual lança a mão todos os dias a elegante ao pentear-se; aí se acha hoje a prestimosa e legítima água de colônia de Farina, por primeiro perfume das finíssimas cambraias do toilette....
+
+--- Resultado 4 ---
+Score: 0.8670
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000009
+Trecho do texto: O traje de respeito para a Quaresma no Brasil Império: Desta vez portanto ofereço-vos um figurino, que mais a propósito não podia vir para o nosso mês e meio da quaresma: ele vos dá perfeitamente o lindíssimo e muito elegante traje de respeito, usado entre nós nestes dias de religiosa concentração. Este uso ou moda de longa data, que veio desde Espanha até a nossa terra, e que com muita razão aqui se naturalizou, faz hoje o tipo, dizemos assim, da brasileira que se encaminha a visitar o Templo do Senhor. A Princesa de Joinville como ícone da moda brasileira em Paris: E tanto assim é, que Sua Alteza a Senhora Princesa de Joinville, consentiu que lhe tirassem o seu retrato em Paris — de véu e vestido preto — por pedido do seu esposo. É por sem dúvida um muito elegante 'toilette'. Diferenças nos costumes da Semana Santa entre Brasil e Paris: Paris não segue esta moda, porque as suas instituições religiosas são outras, porque enfim não há a solenidade da Semana Santa com as mesmas formalidades que entre nós se observa; daqui vemos, que as francesas nestes dias usam, como em outro qualquer, de seus chapéus, e nenhuma etiqueta. Tendências da moda de luxo em meados do século XIX: Eu citarei aqui, para os vestidos de grande luxo, as verdadeiras rendas de seda de Chantilly em duas, três, quatro e cinco ordens de folhos; as rendas guipure bordadas de vidrilhos, que são de grande novidade e de um lindo efeito; as rendas de lã de um admirável trabalho, e as chamadas rendas de imitação, muito recomendáveis pela facilidade com que se prestam a qualquer enfeite. Apelo pela autonomia feminina nas compras e crítica aos papéis de gênero: Para sempre acabe o sediço costume de encarregarem ao pai, ao marido, aos irmãos e aos primos, essas encomendas que eles chamam de senhoras e que irão resmungar horas inteiras primeiro que as vão comprar, e por fim! fazem compras que poucas vezes saem ao nosso gosto. Quereis saber? É um grande favor que lhes faremos descartando-os dessas comissões, que devem ser feitas só por nós....
+
+--- Resultado 5 ---
+Score: 0.8667
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000048
+Trecho do texto: A Celebração do Aniversário do Imperador na Corte: O mágico cintilar da elegância fluminense tocou a varinha encantada do seu refulgir ao clarão inebriante dos perfumados salões da corte. O dia 2 de dezembro, natalício de S. M. o Imperador, esse dia tão querido de todos os brasileiros, era o dia somente esperado; carregados de joias e de sedas primorosas ainda estavam os odoríferos e brunidos toucadores das nossas elegantes até esse dia, em que o luxo devia acompanhar a solenidade, e o esplendor das galas revelar a alegria de todos os corações. O Retiro da Alta Sociedade para as Chácaras no Verão: Para o campo, para as verdejantes e alegres chácaras dos pitorescos arrabaldes do Rio de Janeiro rodam as caleches de dia em dia, levando para longe dos que não podem ter igual fortuna, a nossa boa sociedade da passada estação dos salões. A Definição de 'Toilette' na Moda Brasileira de 1852: Para sair ou estar em casa, chama-se toilette ao traje completo de uma senhora, desde que ela deixa o seu vestuário de quarto, e prepara-se com mais cuidado e esmero. Por isso é bem conhecida a frase hoje em voga — V. Exa. está com um lindíssimo toilette. É ao todo portanto a que se chama toilette, e não a uma só parte do vestuário. Descrição de um Traje Feminino de Verão: Vestido de cassa branca transparente — saia ornada de três longas pregas passadas com fita batida cor-de-rosa — corpo afogado e franzido, de cintura redonda — cinto de pontas compridas de fita gros-de-Naples cor-de-rosa — e mangas à Pagode guarnecidas de um franzido de renda recortada. Este ligeiro toilette é delicadamente revestido por um Talma, espécie de visite sem mangas, de alvíssima e diáfana cassa. A Moda para Crianças em meados do Século XIX: O menino tem cinco anos; seu boné é de palha de Itália com pala de couro envernizado, camisolinha curta talhada um pouco à feição do corpo, colarinho, punhos e mangas de cambraia guarnecidas com uma rendinha guipure, calcinhas compridas de brim branco, e botinas de marroquim preto. A menina tem dez anos; por chapéu tem uma capeline de palha de arroz coroada por uma grinalda de flores azuis....
+
+--- Resultado 6 ---
+Score: 0.8651
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000095
+Trecho do texto: A Vida Social da Elite Fluminense em 1855: Poucas foram as noites deste mês que deram descanso à nossa Sociedade Fluminense convidada de todas as partes aos repetidos bailes, aos soirées, aos teatros, aos esplêndidos jantares, e até por último, para ver comer fogo a um rei do fogo, cujo nome estrangeiro é preciso espirrar uma vez para bem pronunciá-lo. O Baile do Cassino Fluminense: Depois da Campestre, Phil'Euterpe, Sylphide, e outras muitas sociedades de baile terem dado a sua partida mensal, como que rivalizando-se em beleza e brilhantismo, veio o Cassino Fluminense no dia 24 com os seus encantos e aromas embriagar o mundo elegante sempre ávido em fruir os gozos dessa faustosa reunião. A Influência da Moda Francesa: O Penteado 'à Eugénie': O penteado, à Eugénie, é sem dúvida alguma um dos mais graciosos. Em algumas fisionomias ia perfeitamente, mas em outras, força é dizê-lo, não dizia bem. Produtos de Luxo Importados: Xales da Índia no Rio de Janeiro: Já fostes ver os xales de lã de camelo? Ide ver. Eles estão em exposição nas vidraças do armazém Wallerstein: um é preto e outro escarlate, e ambos de barra coxa em soberbo bordado de ouro e prata, como são geralmente os ricos xales de lã de camelo. Há muito tempo que não chegam da Índia dois tão ricos como estes. Tendências da Moda para Bailes: Cores Claras: Em geral os vestidos, cor de rosa e azul claro, primaram neste baile a par de outros muitos que os não posso enumerar, mas que tiveram toda a minha humilde aprovação, porque eram, sobretudo, de cores claras, objeto essencialíssimo ao toilette de baile....
+
+--- Resultado 7 ---
+Score: 0.8647
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000088
+Trecho do texto: A Atmosfera Social de um Baile de Beneficência em 1855: Os bailes e os teatros oferecem um ornado campo das mais belas novidades, que, no amplo domínio do seu volúvel reinado, a moda nos apresenta neste momento. Quereis uma prova? Fostes ao belíssimo baile de beneficência francesa? Sim? Vistes os riquíssimos, deslumbrantes toilettes que lá apareceram? Vistes essas nobres senhoras, o bom-tom fluminense, fagueiro, gracioso, formando a ala comum entre o plebeu alegre e satisfeito? Oh! Era sublime essa fraternidade envolvida no grande pensamento - A BENEFICÊNCIA! Descrição de um Traje de Gala Feminino no Segundo Reinado: Mme B*** trajava um vestido de filó branco com duas saias: a de cima de filó de Lyon, guarnecida de três ordens de tufos de filó-ilusão postas em recortes em bico, e em cada recorte um laço de fita de cetim: a de baixo, guarnecida com as mesmas três ordens, porém postas ao direito. Corpo liso e decotado com berthe de filó encrespado. Mangas muito curtas, enfeitadas. Penteado em bandós ondeados e com flores. Detalhes da Moda Feminina: o Vestido 'Penteado à Ceres': Mme S*** trajava um rico vestido bordado, de escomilha cor-de-rosa, com duas saias, sendo a de cima em forma de túnica, e apanhada com grinaldas de flores: a saia de baixo guarnecida de renda: o corpo liso e decotado: as mangas curtas. Penteado à Ceres com boninas. A Filantropia como Ideal de Progresso no Século XIX: Foi, pois, com o baile de beneficência francesa, que o mês de Setembro deu a sua entrada. Estreou bem. Que de seus trinta dias nenhum só se perca; que todos sejam empregados em benefício da humanidade desvalida; e que brincando e dançando, vamos concorrendo para as mais belas e louváveis instituições, dignas do progresso do século em que vivemos. A Chegada das Irmãs de Caridade para a Educação de Órfãs no Rio de Janeiro: Esta sociedade entregue à benéfica direção do mui digno e virtuoso Sr. Tounay, cônsul francês na corte de Brasil, faz diariamente um benefício e enxuga diariamente uma lágrima de aflição. Ultimamente, mandou ela buscar, e já chegaram, algumas Irmãs de Caridade, as quais vão tomar conta do estabelecimento instalado na rua das Marrecas para a educação das órfãs indigentes, filhas de seus patrícios; e mais tarde também nesse estabelecimento serão recebidas as órfãs indigentes brasileiras....
+
+--- Resultado 8 ---
+Score: 0.8637
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000021
+Trecho do texto: Costumes do Rio de Janeiro em 1786: Quando o nosso belo Rio de Janeiro, ainda sob o domínio dos vice-reis, mal conhecia as modas e seus infinitos acessórios; quando somente na botica do Fanha se encontrava a pomada cheirosa, tão procurada então pelas nossas boas avós; quando o queijo e a pimenta se denominavam do Reino porque só do reino (está entendido que era o de Portugal, porque de outro se não falava) nos vinham tais artigos. Reclusão Social Feminina no Século XVIII: O jovem Paulo sabia que um íntimo amigo de seu pai, o licenciado B., tinha duas lindíssimas filhas que nunca puseram pé na rua senão para irem à missa de madrugada em Santa Rita, e acompanhadas de toda a família. Uma destas jovens porém tinha visto o belo Paulo, e apesar das empoeiradas rótulas de suas janelas, mais de uma vez o vira passar para casa do seu reverendíssimo tio. A Dança Popular do 'Picapau': Quando as nossas belas patrícias de então não desdenhavam, em qualquer reunião, depois do metódico Minueto, tocar por chibança o popular Picapau, dando com ambas as mimosas mãos movimentos rápidos nos lindos queixinhos para produzirem esses estalidos, cujo triquetroque, imitando o trabalho do pássaro assim denominado, deu o nome a esse farrundim, pelo qual muitos de nossos avós ficaram pelo queixo cativos e presos. Moda Masculina na Época Colonial: Ritinha teve seus sonhos, pensou em Paulo, nos seus lindos cabelos, no seu olhar vivo, no seu buço aveludado, e reparou no garbo de seu fraque azul, com botões de aço facetados, na sua bem talhada calça de ganga, e nos dias dúplices no seu 'robissão' cor de canela. Reflexão Oitocentista sobre o Casamento e as Cabeleiras: As cabeleiras do meu tempo, minha neta, me disse minha avó que isto me contou, traziam noivos; hoje os noivos trazem cabeleiras, e bem feliz é a noiva que, passada a lua de mel, e quando o noivo já não usa da sua formosa cabeleira de pretendente, volta para casa dando o terrível desengano de que, se as cabeleiras são feias em noivos que só delas usam no ato do casamento para cometerem um verdadeiro estelionato....
+
+--- Resultado 9 ---
+Score: 0.8633
+URL: https://atom-mhn.museus.gov.br/index.php/sao-paulo
+Trecho do texto: DID: São Paulo | SM-SMaa-SMaa019 (112.137) | [1940-1949] | Iconografia: guache e nanquim sobre papel ; 51 x 35 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: modelo de casaquinho com dragonas de pele de onça nas mangas. Calças bufantes na altura dos joelhos, com barra em babados. Botas pretas de cano alto. Capa sobre os ombros e, na cabeça, chapéu de abas largas com plumagens. Espada presa ao corpo por cinto transversal
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8624
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000093
+Trecho do texto: A Sofisticação da Moda na Sociedade Fluminense de 1855: Conhece-se facilmente este ano, querida leitora, que uma notável diferença se tem operado no seguimento da Moda entre nós. A adoção de suas mais belas novidades, em tempo e a propósito; a aplicação bem combinada dos diversos toilettes, que distinguem os de teatro, soirées e bailes, dos toilettes de visita de cerimônia e visita familiar, dos de passeio na cidade e passeio no campo; trouxe em resultado uma agradável variedade ao mundo elegante fluminense, que mais realça em seu bom-tom e mais brilho dá à sua elegância. Tecidos e Tendências para a Estação Quente de 1855: Com o presente mês começou a nossa estação calmosa a desenvolver seus dias de estio; todos os tecidos, os mais ligeiros e vaporosos, principiaram a representar com toda a utilidade nos toilettes de bom-tom. As barèges, os tafetás singelos, rajados ou escoceses, as grenadinas, as caças de seda, o nanquim, e finalmente o branco que reaparece mais gracioso e mais ligeiro que nunca; são as primeiras fazendas da estação. Acessórios da Moda Noturna e a Influência Oriental: Os pardessus ainda conservam o favor do mundo elegante para a saída dos teatros e passeios noturnos, pois, sendo mais leves que os xales, abrigam também sem causar incômodo. Os xales de Nanquim, de crepe da China, de filó, ricamente bordados, usam-se ainda: dizemos ainda, porque muitas senhoras os têm colocado no índice das modas passadas. Descrição Detalhada de um Traje de Visita: É de tafetá escocês pardo, rosa da China e preto: corpinho afogado, justo, de talhe redondo, fecha adiante em redingote cascado, ornado de botões pompadour. Cintura afivelada. Mangas encrespadas até o cotovelo, e daí para baixo graciosamente guarnecidas de uma larga maline até o punho. Decididamente a maioria das damas, diz o Moniteur de la Mode, preferem hoje a cintura redonda ao talhe dos vestidos de basquine. O Traje Ideal para um Passeio no Campo: Vestido de tafetá cor de rosa, com arabescos cor de lírio, guarnecido de dois folhos de gaze, bordado de seda preta: o corpinho aberto, formando pregas largas aos lados fechadas na cintura por um cinto de fita cor de rosa com fivela de aço: as mangas largas franzidas em cima e em baixo. Mantelete-xale, de caça da Índia, bordado com dois volantes de renda larga. Chapéu de jardim, de palha, enfeitado de hera e fitas. Umbrela de melania branca....
+
+
+=== Execução de Teste: 2025-09-09 15:43:25 ===
+Consultas: ['moda brasileira século dezenove']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8938
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000079
+Trecho do texto: Moda Feminina em meados do Século XIX: A moda caminha rápida; cada dia que foge lhe rouba um encanto e lhe traz uma nova beleza. Agora, que a nossa bela estação convida-nos a gozar das delícias dos salões, ei-la que nos revela novos encantos nos toaletes de inverno, caprichosa alardeando todas as graças de uma ninfa mimosa entre os mil enfeites que ela mesma inventou. Os chapéus e os capotes (bem sabeis que os capotes são os chapéus franzidos) foram alterados no tamanho, nos enfeites e nas suas formas: usam-se pequenos, mui pequenos, quase tomando somente a metade da cabeça. Vestidos de Baile e de Visita em 1855: Nos vestidos de baile, os tecidos de ouro ou prata trazem no mesmo estofo as barras de aplicação, das quais se formam um, dois e três folhos para a guarnição, e são os mais modernos. Os de seda lisa ou bordados de matiz ainda usam-se com quatro até seis folhos da mesma fazenda, ou simplesmente com volantes de renda, os de seda lisa. Os vestidos de visita são de corpo afogado totalmente, ou abertos adiante, de basquine ou bico redondo, saia lisa ou toda em folhos, mais ou menos largos. O Inverno no Rio de Janeiro e a Influência Europeia: Cada um com o que é seu; nós com o nosso inverno, e eles com o seu; nós com o nosso frio, e eles com a sua neve. Chamarai portanto aos nossos meses frios o nosso inverno; e, como me não pagais nada pelo conselho, vos direi, sem o receio de passar por interesseira, que vós deveis agasalhar neste tempo, ainda mesmo que não sintais frio, porque lá vem a noite úmida que vos apanha desprevenida e vos causa prejuízo à saúde. A Chegada da Moda de Paris ao Brasil: Que figurinos preferis que eu vos apresente, novos ou velhos? Se escolherdes os novos, ainda por milagre de Santo Antônio não podereis ter em Julho no Rio de Janeiro figurinos de inverno. Se preferirdes os velhos, tereis com efeito figurinos de inverno, porém do inverno de Paris, que são figurinos de baile quase todos. Em tal caso, querida leitora, é melhor, muito melhor, receber figurinos modernos todos os meses, onde vemos as modas que vão aparecendo, as novidades e os enfeites de bom tom, do que deixar-vos enganar com figurinos que são próprios para a nossa estação, mas que foram publicados em Paris há seis meses, pelo menos. Descrição de Peças do Vestuário Feminino: Mantelete-xale Navailles, de tafetá ornado de renda larga franjada e fita de cetim listada de veludo, afogado atrás, aberto adiante, para formar o xale. Chapéu denominado Capote-Medicis composto de seda, blonde e fitas. Mantelete decotado de tafetá, denominado Mantelet Impératrice pela riqueza de sua guarnição. Esta guarnição consiste em uma ordem de renda mui larga unida à outra ordem de renda mais estreita....
+
+--- Resultado 2 ---
+Score: 0.8868
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000071
+Trecho do texto: A Democracia da Moda no Século XIX: A moda tem o seu princípio fundamental de que deve partir. No tempo em que a aristocracia tinha uma vida à parte, o princípio da moda era a riqueza. Hoje que os costumes mudaram e que a moda se fez mais popular e democrática, o seu princípio é a elegância e a riqueza. Estética Oitocentista e Modas Ultrapassadas: Há modas que estão julgadas e condenadas em nome do bom-tom, e que em vão viriam hoje pedir a sua reabilitação a nós que fizemos no século XIX da arte da modista uma arte quase geométrica, uma espécie de arquitetura vestiária, onde todas as linhas têm a sua proporção e todo o toilette a sua medida. As cinturas imensamente curtas, as saias estreitas e acanhadas, os cabelos levantados e empoados, como hoje os vemos nos retratos da imperatriz Maria Tereza, são modas anacrônicas que ninguém teria hoje o direito de as ressuscitar. O Ideal da Moda na Sociedade Fluminense: Antigamente a moda tendia a dar ao luxo uma gravidade caricata. Hoje o seu fim, o seu esforço constante é fazer sobressair a beleza, disfarçar as imperfeições naturais, e moldando-se o mais possível às formas humanas, voar para o ideal silfídico e ligeiro, de que eu vos poderei oferecer na nossa sociedade fluminense modelos verdadeiramente brilhantes. Hoje a moda tornou-se mais nacional, mais progressista, mais artística e mais bela. Inovações na Dança de Salão Parisiense: As contradanças, com quatro figuras ou marcas, já não se usam em Paris nos grandes bailes; dançam em linha e executam de cada uma contradança duas marcas somente. Desta forma economizaram eles o tempo, dançam o dobro de contradanças e gozam de maior variedade de pares, que foi sem dúvida o valente motivo de tal modificação. Descrição de um Luxuoso Vestido Importado: Mas sobretudo o vestido que vi em casa de Mme. Barat, todo empapelado, todo cuidadosamente guardado assim que chegou da alfândega, roubou-me todas as atenções. A fazenda é de um azul cor de céu em chamalote dobrado moirée antique de um tecido finíssimo e flexível com três ordens de um tecido de ouro tão perfeitamente acabado que parecem antes três ordens de uma delicadíssima renda larga de ouro....
+
+--- Resultado 3 ---
+Score: 0.8846
+URL: https://atom-mhn.museus.gov.br/index.php/baviera
+Trecho do texto: DID: Baviera | SM-SMar-SMar002 (112.070) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: corpete justo amarrado, mangas na altura da articulação, saia plissada. Sapatos fechados. Lenço na cabeça.
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8827
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000009
+Trecho do texto: O traje de respeito para a Quaresma no Brasil Império: Desta vez portanto ofereço-vos um figurino, que mais a propósito não podia vir para o nosso mês e meio da quaresma: ele vos dá perfeitamente o lindíssimo e muito elegante traje de respeito, usado entre nós nestes dias de religiosa concentração. Este uso ou moda de longa data, que veio desde Espanha até a nossa terra, e que com muita razão aqui se naturalizou, faz hoje o tipo, dizemos assim, da brasileira que se encaminha a visitar o Templo do Senhor. A Princesa de Joinville como ícone da moda brasileira em Paris: E tanto assim é, que Sua Alteza a Senhora Princesa de Joinville, consentiu que lhe tirassem o seu retrato em Paris — de véu e vestido preto — por pedido do seu esposo. É por sem dúvida um muito elegante 'toilette'. Diferenças nos costumes da Semana Santa entre Brasil e Paris: Paris não segue esta moda, porque as suas instituições religiosas são outras, porque enfim não há a solenidade da Semana Santa com as mesmas formalidades que entre nós se observa; daqui vemos, que as francesas nestes dias usam, como em outro qualquer, de seus chapéus, e nenhuma etiqueta. Tendências da moda de luxo em meados do século XIX: Eu citarei aqui, para os vestidos de grande luxo, as verdadeiras rendas de seda de Chantilly em duas, três, quatro e cinco ordens de folhos; as rendas guipure bordadas de vidrilhos, que são de grande novidade e de um lindo efeito; as rendas de lã de um admirável trabalho, e as chamadas rendas de imitação, muito recomendáveis pela facilidade com que se prestam a qualquer enfeite. Apelo pela autonomia feminina nas compras e crítica aos papéis de gênero: Para sempre acabe o sediço costume de encarregarem ao pai, ao marido, aos irmãos e aos primos, essas encomendas que eles chamam de senhoras e que irão resmungar horas inteiras primeiro que as vão comprar, e por fim! fazem compras que poucas vezes saem ao nosso gosto. Quereis saber? É um grande favor que lhes faremos descartando-os dessas comissões, que devem ser feitas só por nós....
+
+--- Resultado 5 ---
+Score: 0.8807
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000093
+Trecho do texto: A Sofisticação da Moda na Sociedade Fluminense de 1855: Conhece-se facilmente este ano, querida leitora, que uma notável diferença se tem operado no seguimento da Moda entre nós. A adoção de suas mais belas novidades, em tempo e a propósito; a aplicação bem combinada dos diversos toilettes, que distinguem os de teatro, soirées e bailes, dos toilettes de visita de cerimônia e visita familiar, dos de passeio na cidade e passeio no campo; trouxe em resultado uma agradável variedade ao mundo elegante fluminense, que mais realça em seu bom-tom e mais brilho dá à sua elegância. Tecidos e Tendências para a Estação Quente de 1855: Com o presente mês começou a nossa estação calmosa a desenvolver seus dias de estio; todos os tecidos, os mais ligeiros e vaporosos, principiaram a representar com toda a utilidade nos toilettes de bom-tom. As barèges, os tafetás singelos, rajados ou escoceses, as grenadinas, as caças de seda, o nanquim, e finalmente o branco que reaparece mais gracioso e mais ligeiro que nunca; são as primeiras fazendas da estação. Acessórios da Moda Noturna e a Influência Oriental: Os pardessus ainda conservam o favor do mundo elegante para a saída dos teatros e passeios noturnos, pois, sendo mais leves que os xales, abrigam também sem causar incômodo. Os xales de Nanquim, de crepe da China, de filó, ricamente bordados, usam-se ainda: dizemos ainda, porque muitas senhoras os têm colocado no índice das modas passadas. Descrição Detalhada de um Traje de Visita: É de tafetá escocês pardo, rosa da China e preto: corpinho afogado, justo, de talhe redondo, fecha adiante em redingote cascado, ornado de botões pompadour. Cintura afivelada. Mangas encrespadas até o cotovelo, e daí para baixo graciosamente guarnecidas de uma larga maline até o punho. Decididamente a maioria das damas, diz o Moniteur de la Mode, preferem hoje a cintura redonda ao talhe dos vestidos de basquine. O Traje Ideal para um Passeio no Campo: Vestido de tafetá cor de rosa, com arabescos cor de lírio, guarnecido de dois folhos de gaze, bordado de seda preta: o corpinho aberto, formando pregas largas aos lados fechadas na cintura por um cinto de fita cor de rosa com fivela de aço: as mangas largas franzidas em cima e em baixo. Mantelete-xale, de caça da Índia, bordado com dois volantes de renda larga. Chapéu de jardim, de palha, enfeitado de hera e fitas. Umbrela de melania branca....
+
+--- Resultado 6 ---
+Score: 0.8802
+URL: https://atom-mhn.museus.gov.br/index.php/sao-paulo
+Trecho do texto: DID: São Paulo | SM-SMaa-SMaa019 (112.137) | [1940-1949] | Iconografia: guache e nanquim sobre papel ; 51 x 35 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: modelo de casaquinho com dragonas de pele de onça nas mangas. Calças bufantes na altura dos joelhos, com barra em babados. Botas pretas de cano alto. Capa sobre os ombros e, na cabeça, chapéu de abas largas com plumagens. Espada presa ao corpo por cinto transversal
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8798
+URL: https://atom-mhn.museus.gov.br/index.php/india-3
+Trecho do texto: DID: Índia | SM-SMar-SMar011 (112.079) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: blusa de mangas curtas, saia transpassada entre as pernas. Transversal ao busto, véu que cobre os cabelos. Objetos de adorno acompanham o traje.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8797
+URL: https://atom-mhn.museus.gov.br/index.php/brasil
+Trecho do texto: DID: Brasil | SM-SMar-SMar003 (112.071) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: vaqueiro nordestino.
+ODD: published...
+
+--- Resultado 9 ---
+Score: 0.8788
+URL: https://atom-mhn.museus.gov.br/index.php/pernambuco
+Trecho do texto: DID: Pernambuco | SM-SMaa-SMaa016 (112.134) | [1940-1949] | Iconografia: guache, nanquim e purpurina sobre papel ; 51 x 36 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: modelo de vestido com corpete justo em ponta, mangas com punhos largos e revirados, formando babados de renda. Saia com barra em gomos, ornada com palmeiras pintadas. Laço e véu rendado na cabeça.
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8788
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000002
+Trecho do texto: A Chegada do 'Colete de Emancipação' e a Influência da Moda Parisiense em 1852: O colete de emancipação é uma destas modas distintas e especiais, que de tempos em tempos Paris oferece às suas elegantes para nelas produzir uma revolução e um furor que, como a eletricidade, vai tocar todos os pontos da França, todos os círculos da sua sociedade, e por fim percorre vitoriosa a Europa toda, e chega à América para aí fazer outro tanto, sempre bem acolhida em toda a parte. Apropriação de Elementos do Vestuário Masculino pela Moda Feminina: Mas um colete, um colete de homem (ora vejam que diferença!) bem talhado, com sua golinha em pé, ou de rebuco, ou de trespasse, empregado sobre o corpo esbelto e piramidal de uma menina de quinze a vinte anos, ou mesmo de uma senhora até aos seus trinta e cinco, é por certo muito bonito. [...] As moças ficam uns anjinhos de graciosidade, verdadeiras tentações de colete, elegantes e gentis. Recomendações de Uso e Combinação do 'Colete de Emancipação': Estes coletes podem ser feitos de seda, de lã, de fustão ou de metim. Usam-se com uma saia de vestido e um paletozinho muito curto, arredondado nas abas, de mangas-pagode, guarnecidas de renda ou sem ela, e deixando descoberto o antebraço. Este paletozinho não deve fechar, para poder deixar aparecer em toda a sua beleza o colete, que será justo e bem liso. A Prática da Costura Doméstica e a Economia Feminina em 1852: As senhoras em geral podem fazer, mesmo em casa, os seus coletes, bordá-los de marca ou ponto real, e fantasiá-los conforme for o seu bom gosto, guardando com toda a cautela a combinação das cores, ponto essencialíssimo em que se baseiam as modas e o segredo de tornar brilhante e de bom-tom, qualquer toalete, por muito simples que ele seja. Retrospectiva Social do Ano de 1851 no Rio de Janeiro: Eis terminado o ano de 1851! Acabou risonho e cheio de encantos como havia principiado; seus belos dias sempre alegres e bonançosos formarão um verdadeiro contraste com os luctuosos tempos, que os precederam; o ano de 1851, foi para o Rio de Janeiro um continuado folguedo, que nos deixou saudosos e docemente impressionados pelos seus repetidos e variados divertimentos....
+
+
+=== Execução de Teste: 2025-09-09 15:48:48 ===
+Consultas: ['Como eram as práticas religiosas populares no Brasil colonial e imperial?']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8558
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000347
+Trecho do texto: Práticas Eleitorais no Império: Apesar de todos os meios de compressão sobre o ânimo dos votantes; não obstante as medidas de corrupção tão afanosamente desenvolvidas pelos nossos adversários, nós os liberais conseguimos fazer o terço dos eleitores. Debate Político sobre o Progresso Social: O Brasil carece menos de reformas políticas que de progresso social. Repercussão do Fanatismo Religioso em Salônica: Deve estar bem presente na memória de todos o triste fato do assassinato dos cônsules da Alemanha e da França em Salônica, vítimas do fanatismo religioso da desenfreada população maometana daquela cidade. Essa cena de sangue foi infelizmente o prelúdio de ainda maiores atrocidades cometidas na Bulgária pelas soldadescas turcas. Sentenças Judiciais no Caso dos Cônsules de Salônica: Continuando a devassa: no dia 5 de junho houve mais julgamentos, a saber: 6 indivíduos (além dos 6 já executados) foram condenados à morte, dos quais um por contumácia, 3 a galés perpétuas, dois a 10 anos, 1 a 3 anos, 1 a 1 mês de prisão simples, 1 a 3 anos de degredo, e 1 menor a castigo corporal. Vida Cultural em São Paulo e Rio de Janeiro: As companhias líricas continuam a fazer as delícias de parte rica do Rio de Janeiro, e a empresa Ferrari, tendo um pessoal excelente, tem dado magníficas representações e ganho muito dinheiro. É fato, porém, que tem sido aplaudido nas representações seguintes e espera-se que obterá triunfo completo com o Guarani....
+
+--- Resultado 2 ---
+Score: 0.8553
+URL: https://atom-mhn.museus.gov.br/index.php/o-principe-oba
+Trecho do texto: DID: O príncipe Obá | AV-A-72A | [18??] | 01 grav.: litogr., p&b; 12x6 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | https://books.google.com.br/books?id=HqpLAQAAIAAJ&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false (página 533) O príncipe Obá | Príncipe Obá frequentava o Palácio Imperial, conforme se pode observar no livro de assentamentos de visitas de 17/06/1882 a 13/12/1884, que compõe a coleção Família Imperial (IMr2).
+SCOPECONTENT: Tipo popular do Rio de Janeiro no séc. XIX que ia freqüentemente ao Palácio Imperial. | Publicada no livro Festas e Tradições Populares do Brazil de Mello Moraes Filho.Rio de Janeiro e Paris: H. Garnier – Livreiro e Editor, 1901.
+ACQINFO: Doação de Carlos Torres de Figueiredo em 1944
+PROCESSINFO: Inserido por Daniella Gomes
+ODD: published
+ODD: Integral
+ODD: Final...
+
+--- Resultado 3 ---
+Score: 0.8546
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000009
+Trecho do texto: O traje de respeito para a Quaresma no Brasil Império: Desta vez portanto ofereço-vos um figurino, que mais a propósito não podia vir para o nosso mês e meio da quaresma: ele vos dá perfeitamente o lindíssimo e muito elegante traje de respeito, usado entre nós nestes dias de religiosa concentração. Este uso ou moda de longa data, que veio desde Espanha até a nossa terra, e que com muita razão aqui se naturalizou, faz hoje o tipo, dizemos assim, da brasileira que se encaminha a visitar o Templo do Senhor. A Princesa de Joinville como ícone da moda brasileira em Paris: E tanto assim é, que Sua Alteza a Senhora Princesa de Joinville, consentiu que lhe tirassem o seu retrato em Paris — de véu e vestido preto — por pedido do seu esposo. É por sem dúvida um muito elegante 'toilette'. Diferenças nos costumes da Semana Santa entre Brasil e Paris: Paris não segue esta moda, porque as suas instituições religiosas são outras, porque enfim não há a solenidade da Semana Santa com as mesmas formalidades que entre nós se observa; daqui vemos, que as francesas nestes dias usam, como em outro qualquer, de seus chapéus, e nenhuma etiqueta. Tendências da moda de luxo em meados do século XIX: Eu citarei aqui, para os vestidos de grande luxo, as verdadeiras rendas de seda de Chantilly em duas, três, quatro e cinco ordens de folhos; as rendas guipure bordadas de vidrilhos, que são de grande novidade e de um lindo efeito; as rendas de lã de um admirável trabalho, e as chamadas rendas de imitação, muito recomendáveis pela facilidade com que se prestam a qualquer enfeite. Apelo pela autonomia feminina nas compras e crítica aos papéis de gênero: Para sempre acabe o sediço costume de encarregarem ao pai, ao marido, aos irmãos e aos primos, essas encomendas que eles chamam de senhoras e que irão resmungar horas inteiras primeiro que as vão comprar, e por fim! fazem compras que poucas vezes saem ao nosso gosto. Quereis saber? É um grande favor que lhes faremos descartando-os dessas comissões, que devem ser feitas só por nós....
+
+--- Resultado 4 ---
+Score: 0.8540
+URL: https://atom-mhn.museus.gov.br/index.php/o-policarpo
+Trecho do texto: DID: O Policarpo | AV-A-68A | [18??] | 01 grav.: litogr., p&b; 11x6 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Link para o livro: https://books.google.com.br/books?id=HqpLAQAAIAAJ&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false  (página 471) O Polycarpo
+SCOPECONTENT: Tipo popular do Rio de Janeiro, em fins do séc. XIX; retrato caricatural. Era músico da Capela Imperial. | Publicada no livro Festas e Tradições Populares do Brazil de Mello Moraes Filho. Rio de Janeiro e Paris: H. Garnier – Livreiro e Editor, 1901.
+ACQINFO: doação de Carlos Torres de Figueiredo em 1944
+PROCESSINFO: Inserido por Daniella Gomes
+ODD: published
+ODD: Integral
+ODD: Final...
+
+--- Resultado 5 ---
+Score: 0.8540
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000381
+Trecho do texto: Manifesto Liberal sobre a Questão Religiosa: Comprometo-me a arcar, mão por mão ou pé por pé, sem tréguas nem quartel, nessa questão religiosa, que se me afigura a maior ameaça que pesa sobre o país, ameaça contra todas as liberdades, pois em coisa alguma pode ser livre um povo que tem grilhões na consciência. Análise Eleitoral do Partido Católico: Começo a crer e esperar que dos genuínos candidatos da excrescência chamada «partido católico», isto é, dos candidatos que não estão filiados a chapas políticas e arvoram a bandeira do Syllabus, nem um só será eleito; mas eu não concluo que se deva lançar no desprezo a ação dos ultramontanos nas presentes eleições. Crítica à Inação Imperial e ao Clero Ultramontano: Os padres ultramontanos estão arrastando o Brasil para a guerra civil e a anarquia. E enquanto lavram as desordens «Sua Alteza Imperial reza, e os ministros dizem uns aos outros — não a perturbemos»! Conflito Religioso em um Funeral: Falecendo, quiseram seus filhos armar a igreja, levantar a canga, consagrar sufrágios, mandar dizer missas. A canga, a armação, tudo aquilo que não se paga aos padres foi proibido; mas permitiu o bom do vigário que mandassem rezar quantas missas quisessem, pagando por cada uma 5$000 réis. Debate sobre o Papel Moeda no Império: Se o nosso papel moeda não tem valor intrínseco, nem representa metal pois não tira o seu valor da promessa de convertibilidade, segue-se que esse papel não é rigorosamente moeda e sim título da dívida sem garantia positiva, que seria vantajoso transformar-se em papel fiduciário conversível em ouro à vontade do portador....
+
+--- Resultado 6 ---
+Score: 0.8537
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-interior-culto-publico-ijj11
+Trecho do texto: DID: Série Interior - Culto Público (IJJ11) | A3 | 1808 - 1904 | Textual(is) -sem especificação - 4,59 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Processos e correspondências sobre condecorações de eclesiásticos, ordenações, mudança e ascensão de posto clerical, licença para tratamento de saúde, defesa em processo de desapropriação, audiências sobre informações eclesiásticas, cargos públicos, atestado de conduta, informações sobre trabalhos em missões. Minutas de avisos e ofícios dirigidos aos ministros dos Negócios da Justiça e dos Negócios do Império sobre folhas de pagamento, cerimônias religiosas, nomeações, relação de casamentos, batismos e óbitos, obras em capelas, compra de materiais, Capela Imperial (vencimentos de reverendos e empregados, custeio de solenidades, receita e despesa da fábrica, papéis relativos a reorganização da música: 1884-1888). Felicitações do clero quando de nascimentos, falecimentos e casamentos de membros da família imperial, término da Guerra do Paraguai, independência do Brasil, coroação e sagração do Imperador. Inventário das peças de ouro e prata da Catedral do Rio de Janeiro. Registro de liberação de casamentos consanguíneos.
+ARRANGEMENT: A revisar | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Culto público, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE INTERIOR.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Sistema Boullier de Branche: série Interior IJJ8-IJJ15. Rio de Janeiro, 196_ . (AN/SCO, Fichários, n. 36?) Nota: Ver fichário n. 36, gav. 1A-2A). Antigo Fichário 03 e F-95, gav. 1A-2A - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 7 ---
+Score: 0.8531
+URL: https://atom-mhn.museus.gov.br/index.php/o-padre-kele
+Trecho do texto: DID: O padre Kelé | AV-A-70A | [18??] | 01 grav.: litogr., p&b; 11x5 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | https://books.google.com.br/books?id=HqpLAQAAIAAJ&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false (página 483) O padre Kelé
+SCOPECONTENT: Tipo popular do Rio de Janeiro em fins do séc. XIX; retrato caricatural. | Publicada no livro Festas e Tradições Populares do Brazil de Mello Moraes Filho. Rio de Janeiro e Paris: H. Garnier – Livreiro e Editor, 1901.
+ACQINFO: Doação de Carlos Torres de Figueiredo em 1944
+PROCESSINFO: Inserido por Daniella Gomes
+ODD: published
+ODD: Integral
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 0.8528
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000486
+Trecho do texto: Questão Religiosa: Expulsão de Sacerdotes em Araras: Ocupa a tribuna o Sr. padre Biundo e faz considerações sobre o fato, ocorrido ultimamente nas Araras, da expulsão dos sacerdotes que ali foram fazer missões. Diz que está convencido que o presidente da província dará as providências que no caso couberem, mas vem protestar, em nome da liberdade e da civilização contra esse ato brutal e de selvageria praticado por meia dúzia de propagandistas de ideias subversivas. Educação em São Paulo: Formação e Gratificação de Professores: Em 1º, o que estabelece a gratificação de 500$ aos professores particulares. Em 1º, o de n. 47, autorizando professores a matricularem-se na escola normal. Política Imperial: A Viagem do Imperador e a Comparação com a Monarquia Inglesa: Entende que não mais se deve entrar a discutir a viagem imperial, à mostra a diferença da viagem da rainha da Inglaterra. Esta soberana saíra do país sem deixar regência; no Brasil não está o governo sem seu chefe. Portanto, as censuras da imprensa inglesa à viagem do imperador não existem, não têm cabimento, visto que as circunstâncias são diversas. Economia do Império: Comparativo das Taxas de Juros de Apólices: A diferença de tipos de emissão vê-se em França, onde há os empréstimos de 3 e 5 por cento; na Inglaterra o mesmo se dá, e até no Brasil temos apólices de 3, 1/2 e de 6. Política Provincial: Conflito Político em Curitiba: O presidente da província, prevendo o caso de ser apurada pela câmara municipal de Curitiba uma duplicata que mudara a lista presente, suspendeu o presidente da câmara e mais 3 vereadores liberais; entretanto que, se a pena tinha razão de ser, o único sobre que devia recair, era o presidente....
+
+--- Resultado 9 ---
+Score: 0.8527
+URL: https://dibrarq.arquivonacional.gov.br/index.php/eclesiastica
+Trecho do texto: DID: Eclesiástica | 2J | 1789 - 1892 | Textual(is) -sem especificação - 30 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Processos de oposição a canonicatos e benefícios vagos. Eleições capitulares. Dispensas de impedimentos matrimoniais. Mapas de alunos de seminário. Nomeação de diplomatas junto a Roma. Pedidos de licença para receber ordens. Alienação de bens eclesiásticos. Nomeação de bispos. Correspondência da Nunciatura Apostólica de Roma. Cartas de congratulações do clero europeu com o imperador do Brasil. Requerimentos solicitando concessão de escravos e africanos livres tutelados pelo governo imperial e licenças para vender, substituir ou permutar escravos.
+ARRANGEMENT: A revisar | Organização | Assunto - Cronológica - Geográfica.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: A Coleção Eclesiástica foi montada com documentos comprados, recolhidos e doados ao Arquivo Nacional, identificados e relacionados em 1945. A grande maioria da documentação acusa tramitação ministerial, basicamente nos ministérios do Império e da Justiça, porque os assuntos eclesiásticos foram da competência sucessiva destes dois ministérios até 1890.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica (A-Z). (AN/SCO, Fichários, n. 29, gav. 1A-8B. Antigo F-73, gav. 1A-8B) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica (Bulas e cartas pontifícias). (AN/SCO, Fichários, n. 29, gav. 9A e 9B. Antigo F-73, gav. 9) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Alfabética. In: _______. Caixa e códice. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 148) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Caixa. In: _______. Caixa. Rio de Janeiro, 19__. .... p, ( Documentos preparados para o prelo, 157) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Geográfica – alfabética assunto e nomes. In: ________. Caixa. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 20) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Geográfica - alfabética. In: _______. Caixa. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 37) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Geográfica. In: _______. Caixa. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 51) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Onomástica último sobrenome. In: ______. Caixa. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 201) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Onomástico último sobrenome. In: _______. Códice. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 24) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Temática – Onomástica último sobrenome. In: ______. Códice. Rio de Janeiro, 19__. .... p. (Documentos preparados para o prelo, 22) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Temática. In: _______. Códice. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 21) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Geográfica – alfabética assunto e nomes. In: ______. Caixa. Rio de Janeiro, 19__. .... p. (Documentos preparados para o prelo, 19) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. In: _________. Diversos documentos, recortes, exposição. Rio de Janeiro, 19__. .... p. (Documentos preparados para o prelo, 205) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. In: _________. Documentos diversos em caixas. Rio de Janeiro, 19__. p. ...-... (Documentos preparados para o prelo, 162) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. In: ___________. Relações diversas. Rio de Janeiro, 19__. p. ... - ... (Documentos preparados para o prelo, 47) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 16) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 219) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Rio de Janeiro, 19__. .... p. (Documentos preparados para o prelo, 157) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Rio de Janeiro, 19__. ....p. (Documentos preparados para o prelo, 148) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Tema – alfabética nome, títulos, função. In: ________Caixa. Rio de Janeiro, 19__. p....-.... (Documentos preparados para o prelo, 17) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Onomástica. In: ______. Caixa. Rio de Janeiro, 19__ (Documentos preparados para o prelo, 217) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Onomástico – vigários - alfabético dioceses. In: _______. Códice. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 25) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Onomástico último sobrenome. In: ________. Códice. Rio de Janeiro, 19__. ...p. (Documentos preparados para o prelo, 23) - Não impressos | ARQUIVO NACIONAL (Brasil). Coleção Eclesiástica. Tema e pacotilhas. In: ______. Caixa. Rio de Janeiro, 19__. ... p. (Documentos preparados para o prelo, 136) - Não impressos | ARQUIVO NACIONAL (Brasil). Seção Histórica. Seção Eclesiástica; extrato do fichário. In.: ____________. [Publicações....]. Rio de Janeiro: Archivo Nacional, 1957. p. 77-93. (Publicações Históricas, 39). - Impressos, em livros e folhetos | ARQUIVO NACIONAL (Brasil). Serviço de Documentação Escrita. Seção de Documentação Histórica. Documentos em caixas. Org. por Ivete Magalhães. Rio de Janeiro: 1962. 57 p.. (AN/SCO/SDE 2) - Não impressos | GUIA Brasileiro de fontes para a história da África, da escravidão negra e do negro na sociedade atual: frente arquivística. Coord. por Arquivo Nacional. Rio de Janeiro: Arquivo Nacional; Brasília: Departamento de Imprensa Nacional, 1988. 2v. (Guia de Fontes para História das Nações, 8: África, 11: Brasil) - Impressos, em livros e folhetos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO
+RELATEDMATERIAL: Na Instituição | Ministério da Justiça e Negócios Interiores -BR RJANRIO 4T | Ministério do Império -BR RJANRIO 53...
+
+--- Resultado 10 ---
+Score: 0.8523
+URL: https://atom-mhn.museus.gov.br/index.php/costumes-coloniais-o-padeiro-ouro-preto
+Trecho do texto: DID: Costumes coloniais. O padeiro, Ouro Preto | NF-NF-NF098 (031.751) | Iconografia: Bico de pena: 27,6x20,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-09 15:53:29 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8802
+URL: https://atom-mhn.museus.gov.br/index.php/interior-colonial-sabara
+Trecho do texto: DID: Interior colonial, Sabará | NF-NF-NF121 (031.774) | Iconografia: Bico de pena: 15,5x23,2 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8790
+URL: https://atom-mhn.museus.gov.br/index.php/igreja-colonial-de-jurujuba-niteroi-rio-de-janeiro
+Trecho do texto: DID: Igreja Colonial de Jurujuba, Niterói, Rio de Janeiro | NF-NF-NF056 (031.709) | Iconografia: 01 aquarela: 22,9 x 30,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 3 ---
+Score: 0.8789
+URL: https://atom-mhn.museus.gov.br/index.php/costumes-coloniais-o-padeiro-ouro-preto
+Trecho do texto: DID: Costumes coloniais. O padeiro, Ouro Preto | NF-NF-NF098 (031.751) | Iconografia: Bico de pena: 27,6x20,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8767
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-mariana-2
+Trecho do texto: DID: Mobiliário colonial, Mariana | NF-NF-NF076 (031.729) | Iconografia: Bico de pena: 27,6x20,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8767
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-mariana
+Trecho do texto: DID: Mobiliário colonial, Mariana | NF-NF-NF075 (031.728) | Iconografia: Bico de pena: 20,2x27 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8762
+URL: https://dibrarq.arquivonacional.gov.br/index.php/maria-luiza-aboim
+Trecho do texto: DID: Maria Luíza Aboim | FR | 1979 | Filmográfico(s) -sem especificação - 6 item(ns) | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Dimensões | Gênero filmográfico inclui negativo de som, negativo de imagem, master de imagem. | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Aboim, Maria Luísa
+SCOPECONTENT: Funcionamento de creche comunitária em Vila Kennedy, no Rio de Janeiro. Ritual de iniciação no candomblé.
+ARRANGEMENT: Organizado totalmente
+CONTROLACCESS: Aboim, Maria Luísa | Arquivo Nacional 185 Anos
+ACQINFO: Museu de Arte Moderna do Rio de Janeiro. Cinemateca - 2002 - comodato - 14 | Museu de Arte Moderna do Rio de Janeiro. Cinemateca - 2003 - comodato - 13
+CUSTODHIST: Em junho de 2002, o Museu de Arte Moderna declarou-se incapaz de guardar adequadamente em suas dependências matrizes de filmes brasileiros que integravam o acervo da Cinemateca, sendo estas, então, redestinadas a outras instituições. O Arquivo Nacional, no Rio de Janeiro, foi uma das instituições que passou a abrigar parte do acervo, por escolha dos proprietários das matrizes, estabelecendo-se o regime de comodato como uma das formas mais comuns de regulação e formalização da entrada na instituição. Mesmo após a lei municipal n. 3.531, de 7 de abril de 2003, que declarou a Cinemateca do MAM patrimônio cultural da cidade do Rio de Janeiro, o que fez com que a transferência de matrizes para outras instituições fosse interrompida, o Arquivo Nacional no Rio de Janeiro continuou a ser procurado pelos produtores de filmes para abrigar a sua produção. | O material deu entrada no Arquivo Nacional em regime de comodato em 27 de janeiro de 2003. O contrato de comodato foi assinado em 25 de fevereiro de 2003 e o extrato de comodato foi publicado sob o n. 16/2003 no Diário Oficial da União, Brasília, ano 140, n. 48, Seção 3, p.1, em 11 de março do referido ano. Na ocasião da entrada, foi registrado em SIAN como acervo Cinemateca do Museu de Arte Moderna, ganhando em 2010 um registro próprio em nível de descrição 1 (fundo/coleção) (cf. processo 00320.000071/2003).
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO
+ACCESSRESTRICT: Pelo contrato de comodato, o Arquivo Nacional foi autorizado a utilizar, sem fins comerciais, cópia do material depositado em suas pesquisas e eventos, bem como a exibi-lo em suas dependências (processo 00320.000071/2003-DV. f. 3).
+USERESTRICT: Copyright - Maria Luísa Aboim | Outras condições | Mediante autoriação do detentor dos direitos.
+BIBLIOGRAPHY: TORRES, Aline Camargo; REYES, Ana Carolina; SILVA, Eliezer Pires; Santos, Janaina Ruivo dos. Imagens de uma mulher em movimento: o acervo audiovisual da cineasta Maria Luiza Aboim. Revista Arquivo em Cartaz, p. 18-29, 2019. - Impressos, em periódicos...
+
+--- Resultado 7 ---
+Score: 0.8757
+URL: https://atom-mhn.museus.gov.br/index.php/mobiliario-colonial-caete
+Trecho do texto: DID: Mobiliário colonial, Caeté | NF-NF-NF061 (031.714) | Iconografia: Bico de pena: 20,9x28 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8727
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000009
+Trecho do texto: O traje de respeito para a Quaresma no Brasil Império: Desta vez portanto ofereço-vos um figurino, que mais a propósito não podia vir para o nosso mês e meio da quaresma: ele vos dá perfeitamente o lindíssimo e muito elegante traje de respeito, usado entre nós nestes dias de religiosa concentração. Este uso ou moda de longa data, que veio desde Espanha até a nossa terra, e que com muita razão aqui se naturalizou, faz hoje o tipo, dizemos assim, da brasileira que se encaminha a visitar o Templo do Senhor. A Princesa de Joinville como ícone da moda brasileira em Paris: E tanto assim é, que Sua Alteza a Senhora Princesa de Joinville, consentiu que lhe tirassem o seu retrato em Paris — de véu e vestido preto — por pedido do seu esposo. É por sem dúvida um muito elegante 'toilette'. Diferenças nos costumes da Semana Santa entre Brasil e Paris: Paris não segue esta moda, porque as suas instituições religiosas são outras, porque enfim não há a solenidade da Semana Santa com as mesmas formalidades que entre nós se observa; daqui vemos, que as francesas nestes dias usam, como em outro qualquer, de seus chapéus, e nenhuma etiqueta. Tendências da moda de luxo em meados do século XIX: Eu citarei aqui, para os vestidos de grande luxo, as verdadeiras rendas de seda de Chantilly em duas, três, quatro e cinco ordens de folhos; as rendas guipure bordadas de vidrilhos, que são de grande novidade e de um lindo efeito; as rendas de lã de um admirável trabalho, e as chamadas rendas de imitação, muito recomendáveis pela facilidade com que se prestam a qualquer enfeite. Apelo pela autonomia feminina nas compras e crítica aos papéis de gênero: Para sempre acabe o sediço costume de encarregarem ao pai, ao marido, aos irmãos e aos primos, essas encomendas que eles chamam de senhoras e que irão resmungar horas inteiras primeiro que as vão comprar, e por fim! fazem compras que poucas vezes saem ao nosso gosto. Quereis saber? É um grande favor que lhes faremos descartando-os dessas comissões, que devem ser feitas só por nós....
+
+--- Resultado 9 ---
+Score: 0.8721
+URL: https://atom-mhn.museus.gov.br/index.php/cama-colonial-tiradentes
+Trecho do texto: DID: Cama colonial, Tiradentes | NF-NF-NF149 (031.802) | Iconografia: Bico de pena: 27x22,7 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8721
+URL: https://atom-mhn.museus.gov.br/index.php/casa-do-vigario-pires-fachada-lateral
+Trecho do texto: DID: Cama colonial, Tiradentes | NF-NF-NF147 (031.800) | Iconografia: Bico de pena: 31,2x22,2 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+ODD: published...
+

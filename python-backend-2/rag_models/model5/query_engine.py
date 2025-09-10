@@ -91,7 +91,7 @@ class RAGStringQueryEngine:
             
         return nos[:MAX_NODES_TRADITIONAL_QUERY]
         
-    def custom_global_query(self, keywords_raw_output):
+    def custom_global_query(self, keywords_raw_output, original_query):
         """Combina consultas vetoriais e tradicionais baseado nas palavras-chave
         
         Args:
@@ -122,9 +122,11 @@ class RAGStringQueryEngine:
         
         # Executa consultas vetoriais se configurado
         if (NUMBER_OF_VECTOR_QUERIES > 0):
-            lista_consultas_vectoriais = lista_consultas[:min(len_lista_consultas, NUMBER_OF_VECTOR_QUERIES)]
+            lista_consultas_vetoriais = [original_query]
+            if (NUMBER_OF_VECTOR_QUERIES > 1):
+                lista_consultas_vetoriais = lista_consultas_vetoriais + lista_consultas[:min(len_lista_consultas, NUMBER_OF_VECTOR_QUERIES-1)]
             # Remove espaços em branco e consultas vazias
-            consultas_vetoriais = [q.strip() for q in lista_consultas_vectoriais if q.strip()]
+            consultas_vetoriais = [q.strip() for q in lista_consultas_vetoriais if q.strip()]
             nos_consulta_vetorial = self.custom_vector_query(consultas_vetoriais)
         
         # Combina resultados de ambas as consultas

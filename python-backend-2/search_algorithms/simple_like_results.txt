@@ -1,0 +1,65 @@
+
+=== Execução de Teste: 2025-09-09 13:15:11 ===
+Consultas: ['crescimento urbano fortaleza']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:30:16 ===
+Consultas: ['crescimento urbano fortaleza']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:35:29 ===
+Consultas: ['crescimento urbano fortaleza']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:39:13 ===
+Consultas: ['estou pesquisando sobre alforria']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:42:36 ===
+Consultas: ['estou pesquisando sobre alforria']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:48:15 ===
+Consultas: ['reações à introdução do telégrafo no Brasil']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:53:26 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 13:57:44 ===
+Consultas: ['chegada iluminação a gás e elétrica cidades brasileiras']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 14:57:18 ===
+Consultas: ['Encontre documentos sobre reações à introdução do telégrafo no Brasil']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 15:39:17 ===
+Consultas: ['Como se vestiam diferentes grupos sociais no Brasil do século XIX?']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 15:43:25 ===
+Consultas: ['moda brasileira século dezenove']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 15:48:48 ===
+Consultas: ['Como eram as práticas religiosas populares no Brasil colonial e imperial?']
+Total de resultados: 0
+
+
+=== Execução de Teste: 2025-09-09 15:53:29 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 0
+
