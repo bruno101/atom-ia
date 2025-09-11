@@ -13,8 +13,8 @@ GEMINI_API = os.getenv("GEMINI_API")
 LLM_MODEL = "gemini-2.5-flash"  # Modelo de linguagem do Google
 
 
-MAX_NODES_VECTOR_QUERY = 15       # Máximo de nós vetoriais totais
-MAX_NODES_TRADITIONAL_QUERY = 15    # Máximo de nós tradicionais totais
+MAX_NODES_VECTOR_QUERY = 10       # Máximo de nós vetoriais totais
+MAX_NODES_TRADITIONAL_QUERY = 10    # Máximo de nós tradicionais totais
 
 # Limitações de tamanho para otimização
 MAX_CHARS_PER_NODE = 2500  # Caracteres máximos por nó (controle de tokens)

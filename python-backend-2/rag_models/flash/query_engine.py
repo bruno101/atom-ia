@@ -34,7 +34,7 @@ def llm_query(llm, consulta, historico_str, nos):
 
         Recomende as páginas listadas no JSON mais relevantes para a consulta - em ordem de relevância - , explique por que são úteis e forneça o link em notação correta de markdown, conforme exemplos abaixo. Tente recomendar pelo menos cinco páginas, mesmo que isso signifique adicionar páginas que são apenas tangencialmente relacionadas. Caso a página seja apenas tangencialmente ou fracamente relacionada, mencione isso explicitamente.
 
-        Responda em português, de forma clara e objetiva. Lembre-se de que você está respondendo a uma consulta do usuário, então não mencione o fato de que você recebeu uma lista de informações ou um JSON.
+        Responda em português, de forma clara e objetiva. Lembre-se de que você está respondendo a uma consulta do usuário, então não mencione o fato de que você recebeu uma lista de informações ou um JSON. Além disso, é extremamente importante que os links sejam copiados exatamente como estão em "url", sem modificações.
 
         Exemplo de como formatar com markdown as recomendações:
         "*   **Título da página XYZ.**\n    [Comentário sobre página XYZ, que pode, por exemplo, explicar a sua utilidade para a busca].\n    [Texto do link para a página XYZ](Link para a página XYZ, copiado exatamente como aparece no campo "url")\n\n"

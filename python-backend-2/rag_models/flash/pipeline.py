@@ -1,7 +1,7 @@
 import json
 import asyncio
 from .config import MAX_QUERY_CHARS
-from .utils import extrair_links
+from .utils import extrair_links_corrigidos
 from . import messages
 from .query_engine import global_query, llm_query
 
@@ -43,10 +43,10 @@ async def pipeline_stream(consulta, historico=None, llm=None):
                 resposta = "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos."
     
     links_validos = [no["url"] for no in nos]
-    links = extrair_links(resposta, nos)
+    resposta_corrigida, links = extrair_links_corrigidos(resposta, nos)
     
     final = {
-            "resposta": resposta,
+            "resposta": resposta_corrigida,
             "links": links,
             "palavras_chave" : [consulta],
             "links_analisados": links_validos
