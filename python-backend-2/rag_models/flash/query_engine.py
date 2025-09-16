@@ -32,7 +32,7 @@ def llm_query(llm, consulta, historico_str, nos):
         Com base neste JSON:
         {json.dumps(nos, ensure_ascii=False, indent=2)}
 
-        Recomende as páginas listadas no JSON mais relevantes para a consulta - em ordem de relevância - , explique por que são úteis e forneça o link em notação correta de markdown, conforme exemplos abaixo. Tente recomendar pelo menos cinco páginas, mesmo que isso signifique adicionar páginas que são apenas tangencialmente relacionadas. Caso a página seja apenas tangencialmente ou fracamente relacionada, mencione isso explicitamente.
+        Recomende as páginas listadas no JSON mais relevantes para a consulta - em ordem de relevância - , explique por que são úteis e forneça o link em notação correta de markdown, conforme exemplos abaixo. Tente recomendar pelo menos cinco páginas, mesmo que isso signifique adicionar páginas que são apenas tangencialmente relacionadas. Apenas caso não haja absolutamente nenhuma relação liste menos que cinco páginas. Caso a página seja apenas tangencialmente ou fracamente relacionada, mencione isso explicitamente. As páginas são completamente independentes umas das outras, então garanta que a análise sobre uma não a confunda com outra.
 
         Responda em português, de forma clara e objetiva. Lembre-se de que você está respondendo a uma consulta do usuário, então não mencione o fato de que você recebeu uma lista de informações ou um JSON. Além disso, é extremamente importante que os links sejam copiados exatamente como estão em "url", sem modificações.
 

@@ -9,6 +9,7 @@ from fastapi import FastAPI
 from api import routers
 from config import configure_app
 
+
 # Cria a instância principal da aplicação FastAPI
 app = FastAPI(
     title="Chatbot ModestIA",

@@ -18,7 +18,6 @@ def configure_app(app):
     app.add_middleware(
         CORSMiddleware,
         allow_origins=[
-            os.getenv('URL_ATOM', 'http://localhost:63001'),      # Sistema AtoM
             os.getenv('URL_FRONTEND', 'http://localhost:3000')     # Frontend React
         ],
         allow_credentials=True,  # Permite cookies e autenticação

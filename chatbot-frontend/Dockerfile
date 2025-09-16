@@ -1,14 +1,20 @@
-FROM nginx:alpine
+# Use a lightweight Nginx web server image
+FROM nginx:1.25-alpine
 
-# Remove config padrão
-RUN rm /etc/nginx/conf.d/default.conf
+# Set the working directory for Nginx
+WORKDIR /usr/share/nginx/html
 
-# Copia o arquivo de config customizado
-COPY default.conf /etc/nginx/conf.d/
+# Remove the default Nginx welcome page
+RUN rm -rf ./*
 
-# Copia o build do React
-COPY build /usr/share/nginx/html
+# Copy your local 'build' folder's contents into the image
+COPY build/ .
 
+# Copy your custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 80
 EXPOSE 80
 
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]

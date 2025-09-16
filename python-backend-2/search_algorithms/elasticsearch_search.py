@@ -7,13 +7,15 @@ from elasticsearch import Elasticsearch
 
 logger = logging.getLogger(__name__)
 
-def search_documents_by_text(queries, n_results_per_query=5):
+
+def search_documents_by_text(queries, n_results_per_query=5,  url_elastic_search="localhost:9200"):
     """Elasticsearch search implementation"""
     if not queries or not isinstance(queries, list):
         return []
     
     try:
-        es = Elasticsearch("http://localhost:9200")
+        print(url_elastic_search)
+        es = Elasticsearch(url_elastic_search)
         if not es.ping():
             logger.error("Elasticsearch not available")
             return []

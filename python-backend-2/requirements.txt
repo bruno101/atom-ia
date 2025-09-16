@@ -6,3 +6,8 @@ rapidfuzz==3.13.0
 llama-index-llms-google-genai==0.2.3
 sse-starlette==2.4.1
 oracledb
+gunicorn
+uvicorn[standard]
+fastapi
+elasticsearch==8.11.0
+google.generativeai

@@ -13,6 +13,10 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import json
 
+load_dotenv()
+URL_ELASTIC_SEARCH = os.getenv("URL_ELASTIC_SEARCH")
+print("url encontrada:", URL_ELASTIC_SEARCH)
+
 # Configuração do sistema de logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -22,7 +26,7 @@ load_dotenv()
 
 # Algoritmo de busca padrão (BM25)
 DEFAULT_SEARCH_ALGORITHM = elasticsearch_search
-EVALUATE_WITH_GEMINI = True
+EVALUATE_WITH_GEMINI = False
 
 def search_documents_by_text(queries, n_results_per_query=5):
     """Função principal de busca usando algoritmo BM25 padrão
@@ -41,7 +45,7 @@ def search_documents_by_text(queries, n_results_per_query=5):
         queries = [q.lower() if q else q for q in queries]
         print("Consultas:\n")
         print(queries)
-    return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query)
+    return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query, url_elastic_search=URL_ELASTIC_SEARCH)
 
 
 def evaluate_with_gemini(query, all_results):
@@ -178,7 +182,7 @@ def test_all_algorithms():
         
         try:
             # Executa busca com o algoritmo atual (top 10 para avaliação)
-            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=10)
+            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=10, url_elastic_search=URL_ELASTIC_SEARCH)
             all_results[algo_name] = results
             
             # Salva resultados em arquivo de log específico do algoritmo
@@ -254,7 +258,8 @@ def test_text_search():
 # Execução principal do módulo
 if __name__ == "__main__":
     # Testa todos os algoritmos disponíveis e gera relatório de avaliação
-    test_all_algorithms()
+    #test_all_algorithms()
     
     # Descomente a linha abaixo para testar apenas o algoritmo padrão
     #test_text_search()
+    test_text_search()
