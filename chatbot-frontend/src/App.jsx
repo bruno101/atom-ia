@@ -7,6 +7,7 @@ import MessageList from "./components/MessageList/MessageList";
 import Sidebar from "./components/Sidebar/Sidebar";
 import createHandleSubmit from "./logic/createHandleSubmit";
 import Footer from "./components/Footer/Footer";
+import { useProgressTimeout } from "./hooks/useProgressTimeout";
 
 function App() {
   const [messages, setMessages] = useState([
@@ -25,9 +26,30 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [currentProgressMessage, setCurrentProgressMessage] = useState("");
   const [partialResponse, setPartialResponse] = useState("");
+
+  // Debug logging para mudanças de estado
+  useEffect(() => {
+    console.log('🔄 APP: isLoading changed to:', isLoading);
+  }, [isLoading]);
+
+  useEffect(() => {
+    console.log('💬 APP: currentProgressMessage changed to:', currentProgressMessage);
+  }, [currentProgressMessage]);
+
+  useEffect(() => {
+    console.log('📝 APP: partialResponse changed, length:', partialResponse?.length || 0);
+  }, [partialResponse]);
   const [showSidebar, setShowSidebar] = useState(false);
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
+  
+
+
+  const { startProgressTimeout, updateProgressMessage, clearProgressTimeout } = useProgressTimeout(
+    isLoading, 
+    partialResponse, 
+    setCurrentProgressMessage
+  );
 
   const scrollToEnd = () => {
     if (scrollAreaRef.current) {
@@ -43,17 +65,26 @@ function App() {
     setSuggestedLinks,
     isLoading,
     setIsLoading,
-    setCurrentProgressMessage,
+    setCurrentProgressMessage: updateProgressMessage,
     setPartialResponse,
     setShowSidebar,
     abortControllerRef,
     selectedModel,
     scrollToEnd,
+    startProgressTimeout,
+    clearProgressTimeout,
   }), [messages, input, isLoading, selectedModel]);
 
 
 
   const toggleSidebar = () => setShowSidebar(!showSidebar);
+
+  // Cleanup do timeout quando o componente for desmontado
+  useEffect(() => {
+    return () => {
+      clearProgressTimeout();
+    };
+  }, []);
 
   return (
     <div className="app">

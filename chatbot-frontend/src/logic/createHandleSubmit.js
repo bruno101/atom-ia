@@ -15,8 +15,11 @@ export default function createHandleSubmit({
   abortControllerRef,
   selectedModel,
   scrollToEnd,
+  startProgressTimeout,
+  clearProgressTimeout,
 }) {
   const fallbackError = (content) => {
+    clearProgressTimeout();
     setIsLoading(false);
     setMessages((prev) => [
       ...prev,
@@ -37,6 +40,8 @@ export default function createHandleSubmit({
       abortControllerRef.current.abort();
       abortControllerRef.current = null;
     }
+    
+    clearProgressTimeout();
 
     const userMessage = {
       id: Date.now().toString(),
@@ -50,6 +55,10 @@ export default function createHandleSubmit({
     setCurrentProgressMessage("");
     setPartialResponse("");
     setIsLoading(true);
+    
+    console.log('🚀 SUBMIT: Starting request, calling startProgressTimeout');
+    // Inicia o timeout para mensagens de progresso automáticas
+    startProgressTimeout();
     
     setTimeout(() => {
       scrollToEnd();
@@ -76,9 +85,11 @@ export default function createHandleSubmit({
         //onMessage
         console.log("HANDLER LOG: 📨 Evento recebido:", event.type, event.data);
         if (event.type === "progress") {
+          console.log('📊 SUBMIT: Progress event received, calling updateProgressMessage');
           setCurrentProgressMessage(event.data);
         } else if (event.type === "partial") {
           console.log("HANDLER LOG: 🔄 Resposta parcial:", event.data);
+          console.log('📝 SUBMIT: Partial response received, should stop auto progress');
           setPartialResponse(prev => prev + event.data);
         } else if (event.type === "error") {
           fallbackError(`Erro do servidor: ${event.data}`);
@@ -108,6 +119,7 @@ export default function createHandleSubmit({
             const newMessages = [...prev, botMessage];
             return newMessages;
           });
+          clearProgressTimeout();
           setCurrentProgressMessage("");
           setPartialResponse("");
           setIsLoading(false);
@@ -123,6 +135,7 @@ export default function createHandleSubmit({
           );
           fallbackError("Erro ao processar a resposta final.");
         } finally {
+          clearProgressTimeout();
           abortControllerRef.current = null;
         }
       },
@@ -133,6 +146,7 @@ export default function createHandleSubmit({
       () => {
         // onClose
         console.log("HANDLER LOG: Stream da API concluído.");
+        clearProgressTimeout();
         if (isLoading) {
           fallbackError(
             "A conexão com o servidor foi encerrada inesperadamente."

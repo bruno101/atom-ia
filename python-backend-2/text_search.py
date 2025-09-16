@@ -238,11 +238,11 @@ def test_text_search():
         list[dict]: Lista de documentos encontrados
     """
     # Consulta de teste
-    test_queries = ["questão de limites piauí ceará demarcação serras"]
+    test_queries = ["estou pesquisando sobre Monteiro Lobato"]
     logger.info(f"Testando algoritmo padrão com consultas: {test_queries}")
 
     # Executa busca com algoritmo padrão
-    results = search_documents_by_text(test_queries, n_results_per_query=5)
+    results = search_documents_by_text(test_queries, n_results_per_query=20)
     logger.info(f"Total de resultados encontrados: {len(results)}")
 
     # Exibe resultados no console

@@ -22,7 +22,6 @@ DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_DSN = os.getenv("DB_DSN")
 
-oracledb.init_oracle_client(lib_dir=r"C:\oracle\instantclient_23_9")
 
 def wait_for_elasticsearch():
     """Wait for Elasticsearch to be ready"""
