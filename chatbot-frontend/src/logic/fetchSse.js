@@ -80,6 +80,7 @@ const fetchSse = (
 
           if (data) {
             const eventPayload = { data, type: eventType, id };
+            console.log("SSE LOG: 📡 Evento processado:", eventType, data.substring(0, 50) + (data.length > 50 ? '...' : ''));
             if (eventType === "done" && onDone) {
               onDone(eventPayload);
             } else if (onMessage) {

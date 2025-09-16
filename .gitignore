@@ -7,6 +7,16 @@ python-backend/artigos/
 python-backend/csv/
 python-backend/rag_core.py
 python-backend/.env
+python-backend/venv/
+python-backend-2/__pycache__/
+python-backend-2/.gradio/
+python-backend-2/chroma_db/
+python-backend-2/storage/
+python-backend-2/artigos/
+python-backend-2/csv/
+python-backend-2/rag_core.py
+python-backend-2/.env
+python-backend-2/venv/
 **/debug.py
 **/output.txt
 **/migrate.py

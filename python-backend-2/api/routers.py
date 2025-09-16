@@ -23,6 +23,22 @@ async def ask_stream(request: Request, req: ConsultaRequest):
         EventSourceResponse: Stream de eventos SSE com progresso
     """
     # Cria gerador de eventos para streaming
-    event_generator = handle_stream(request, req)
+    event_generator = handle_stream(request, req, "thinking")
+    # Retorna resposta SSE (Server-Sent Events)
+    return EventSourceResponse(event_generator)
+
+@router.post("/ask-stream-flash") 
+async def ask_stream(request: Request, req: ConsultaRequest):
+    """Endpoint para consultas com streaming de progresso (SSE)
+    
+    Args:
+        request (Request): Requisição HTTP para controle de conexão
+        req (ConsultaRequest): Dados da consulta
+        
+    Returns:
+        EventSourceResponse: Stream de eventos SSE com progresso
+    """
+    # Cria gerador de eventos para streaming
+    event_generator = handle_stream(request, req, "flash")
     # Retorna resposta SSE (Server-Sent Events)
     return EventSourceResponse(event_generator)

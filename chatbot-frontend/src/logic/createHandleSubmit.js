@@ -10,8 +10,11 @@ export default function createHandleSubmit({
   isLoading,
   setIsLoading,
   setCurrentProgressMessage,
+  setPartialResponse,
   setShowSidebar,
   abortControllerRef,
+  selectedModel,
+  scrollToEnd,
 }) {
   const fallbackError = (content) => {
     setIsLoading(false);
@@ -45,7 +48,12 @@ export default function createHandleSubmit({
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setCurrentProgressMessage("");
+    setPartialResponse("");
     setIsLoading(true);
+    
+    setTimeout(() => {
+      scrollToEnd();
+    }, 100);
     setSuggestedLinks([]);
 
     const historico = buildHistorico(messages);
@@ -54,7 +62,9 @@ export default function createHandleSubmit({
       ...(historico.length > 0 && { historico }),
     };
 
-    const url = process.env.REACT_APP_API_URL;
+    const url = selectedModel === 'flash' 
+      ? process.env.REACT_APP_API_URL_FLASH 
+      : process.env.REACT_APP_API_URL_THINKING;
     console.log("HANDLER LOG: 🚀 Enviando requisição SSE:", url);
 
     abortControllerRef.current = fetchSse(
@@ -64,8 +74,12 @@ export default function createHandleSubmit({
       },
       (event) => {
         //onMessage
+        console.log("HANDLER LOG: 📨 Evento recebido:", event.type, event.data);
         if (event.type === "progress") {
           setCurrentProgressMessage(event.data);
+        } else if (event.type === "partial") {
+          console.log("HANDLER LOG: 🔄 Resposta parcial:", event.data);
+          setPartialResponse(prev => prev + event.data);
         } else if (event.type === "error") {
           fallbackError(`Erro do servidor: ${event.data}`);
         }
@@ -95,6 +109,7 @@ export default function createHandleSubmit({
             return newMessages;
           });
           setCurrentProgressMessage("");
+          setPartialResponse("");
           setIsLoading(false);
 
           if (Array.isArray(data.links)) {

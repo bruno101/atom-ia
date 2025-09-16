@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import ChatHeader from "./components/ChatHeader/ChatHeader";
@@ -20,14 +20,22 @@ function App() {
   ]);
 
   const [input, setInput] = useState("");
+  const [selectedModel, setSelectedModel] = useState("flash");
   const [suggestedLinks, setSuggestedLinks] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentProgressMessage, setCurrentProgressMessage] = useState("");
+  const [partialResponse, setPartialResponse] = useState("");
   const [showSidebar, setShowSidebar] = useState(false);
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
 
-  const handleSubmit = createHandleSubmit({
+  const scrollToEnd = () => {
+    if (scrollAreaRef.current) {
+      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
+    }
+  };
+
+  const handleSubmit = useMemo(() => createHandleSubmit({
     messages,
     input,
     setMessages,
@@ -36,15 +44,14 @@ function App() {
     isLoading,
     setIsLoading,
     setCurrentProgressMessage,
+    setPartialResponse,
     setShowSidebar,
     abortControllerRef,
-  });
+    selectedModel,
+    scrollToEnd,
+  }), [messages, input, isLoading, selectedModel]);
 
-  useEffect(() => {
-    if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
-    }
-  }, [messages, currentProgressMessage]);
+
 
   const toggleSidebar = () => setShowSidebar(!showSidebar);
 
@@ -64,6 +71,7 @@ function App() {
               <MessageList
                 messages={messages}
                 streamedMessage={currentProgressMessage}
+                partialResponse={partialResponse}
                 isLoading={isLoading}
               />
             </div>
@@ -74,6 +82,8 @@ function App() {
                 setInput={setInput}
                 onSubmit={handleSubmit}
                 isLoading={isLoading}
+                selectedModel={selectedModel}
+                onModelChange={setSelectedModel}
               />
               <div className="footer-info">
                 <span>Chatbot SIAN • Dataprev © 2025</span>
