@@ -4,12 +4,18 @@ import formatTime from "../../utils/formatTime";
 import ReactMarkdown from "react-markdown";
 import styles from "./ChatMessage.module.css";
 
+/**
+ * Componente para exibir uma mensagem individual no chat
+ * Suporta mensagens do usuário e do assistente com metadados expansíveis
+ */
 const ChatMessage = ({ message }) => {
+  // Estado para controlar quais seções de metadados estão expandidas
   const [expandedSections, setExpandedSections] = useState({
     links: false,
     keywords: false,
   });
 
+  // Alterna a visibilidade de uma seção de metadados
   const toggleSection = (section) => {
     setExpandedSections((prev) => ({
       ...prev,
@@ -17,7 +23,7 @@ const ChatMessage = ({ message }) => {
     }));
   };
 
-  // Function to extract the slug from URL
+  // Extrai o slug/identificador de uma URL para exibição mais limpa
   const getSlug = (url) => {
     try {
       const parsed = new URL(url);
@@ -25,6 +31,7 @@ const ChatMessage = ({ message }) => {
       const slug = pathParts[pathParts.length - 1] || parsed.hostname;
       return slug + parsed.search;
     } catch {
+      // Fallback para URLs malformadas
       return (
         url
           .split("/")
@@ -34,6 +41,7 @@ const ChatMessage = ({ message }) => {
     }
   };
 
+  // Determina se a mensagem é do usuário ou do assistente
   const isUser = message.role === "user";
 
   return (
@@ -57,8 +65,20 @@ const ChatMessage = ({ message }) => {
         }`}
       >
         <div className={styles.messageContent}>
-          <ReactMarkdown>{message.content}</ReactMarkdown>
+          {/* Renderiza o conteúdo da mensagem com suporte a Markdown */}
+          <ReactMarkdown
+            components={{
+              a: ({ href, children }) => (
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  {children}
+                </a>
+              ),
+            }}
+          >
+            {message.content}
+          </ReactMarkdown>
 
+          {/* Seção de links analisados (expansível) */}
           {message.links_analisados && (
             <div className={styles.metadataSection}>
               <button
@@ -92,6 +112,7 @@ const ChatMessage = ({ message }) => {
             </div>
           )}
 
+          {/* Seção de palavras-chave/expressões pesquisadas (expansível) */}
           {message.palavras_chave && (
             <div className={styles.metadataSection}>
               <button
@@ -121,11 +142,13 @@ const ChatMessage = ({ message }) => {
             </div>
           )}
         </div>
+        {/* Timestamp da mensagem */}
         <div className={styles.messageTime}>
           <div className={styles.messageDot}></div>
           {formatTime(message.timestamp)}
         </div>
       </div>
+      {/* Avatar do usuário (apenas para mensagens do usuário) */}
       {isUser && (
         <div className={`${styles.messageAvatar} ${styles.messageAvatarUser}`}>
           <UserIcon />

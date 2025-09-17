@@ -8,7 +8,12 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import createHandleSubmit from "./logic/createHandleSubmit";
 import Footer from "./components/Footer/Footer";
 
+/**
+ * Componente principal da aplicação SIAN
+ * Gerencia o estado global e orquestra a comunicação entre componentes
+ */
 function App() {
+  // Estado das mensagens do chat com mensagem inicial de boas-vindas
   const [messages, setMessages] = useState([
     {
       id: "1",
@@ -19,22 +24,31 @@ function App() {
     },
   ]);
 
+  // Estados do formulário de entrada
   const [input, setInput] = useState("");
   const [selectedModel, setSelectedModel] = useState("flash");
+  
+  // Estados da sidebar e links sugeridos
   const [suggestedLinks, setSuggestedLinks] = useState([]);
+  const [showSidebar, setShowSidebar] = useState(false);
+  
+  // Estados de carregamento e streaming
   const [isLoading, setIsLoading] = useState(false);
   const [currentProgressMessage, setCurrentProgressMessage] = useState("");
   const [partialResponse, setPartialResponse] = useState("");
-  const [showSidebar, setShowSidebar] = useState(false);
+  
+  // Referências para controle de scroll e cancelamento de requisições
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
 
+  // Função para rolar automaticamente para o final do chat
   const scrollToEnd = () => {
     if (scrollAreaRef.current) {
       scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
     }
   };
 
+  // Memoiza a função de envio para evitar recriações desnecessárias
   const handleSubmit = useMemo(() => createHandleSubmit({
     messages,
     input,
@@ -51,21 +65,26 @@ function App() {
     scrollToEnd,
   }), [messages, input, isLoading, selectedModel]);
 
-
-
+  // Alterna a visibilidade da sidebar
   const toggleSidebar = () => setShowSidebar(!showSidebar);
 
   return (
     <div className="app">
+      {/* Cabeçalho institucional */}
       <Header />
+      
       <div className="main-container">
+        {/* Sidebar com links sugeridos */}
         <Sidebar
           showSidebar={showSidebar}
           toggleSidebar={toggleSidebar}
           suggestedLinks={suggestedLinks}
         />
+        
+        {/* Área principal do chat */}
         <div className="chat-section">
           <div className="chat-container">
+            {/* Área rolável do chat */}
             <div className="chat-scrollable" ref={scrollAreaRef}>
               <ChatHeader />
               <MessageList
@@ -76,6 +95,7 @@ function App() {
               />
             </div>
 
+            {/* Área de entrada fixa na parte inferior */}
             <div className="input-area">
               <InputForm
                 input={input}
@@ -92,6 +112,8 @@ function App() {
           </div>
         </div>
       </div>
+      
+      {/* Rodapé institucional */}
       <Footer />
     </div>
   );
