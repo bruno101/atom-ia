@@ -15,7 +15,7 @@ function App() {
       id: "1",
       role: "assistant",
       content:
-        "Olá! Eu sou **NISA**, uma IA especializada em busca arquivística.\n\nPosso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nO que você deseja pesquisar hoje?",
+        "Olá! Eu sou **NISA**, uma IA especializada em busca arquivística do S**IA**N.\n\nPosso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nO que você deseja pesquisar hoje?",
       timestamp: new Date(),
     },
   ]);
