@@ -1,0 +1,417 @@
+
+=== Execução de Teste: 2025-09-17 10:05:07 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 34.9847
+URL: https://atom-mhn.museus.gov.br/index.php/popular-do-brasil
+Trecho do texto: DID: <em>Popular</em> do <em>Brasil</em> | SM-SMar-SMar008 (112.076) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 2 ---
+Score: 28.5292
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000381
+Trecho do texto: Manifesto Liberal sobre a Questão <em>Religiosa</em>: Comprometo-me a arcar, mão por mão ou pé por pé, sem tréguas nem quartel, nessa questão <em>religiosa</em>, que se me afigura a maior ameaça que pesa sobre o país, ameaça contra todas as liberdades, pois em coisa alguma pode ser livre um povo que tem grilhões na consciência ... Crítica à Inação <em>Imperial</em> e ao Clero Ultramontano: Os padres ultramontanos estão arrastando o <em>Brasil</em> para a guerra civil e a anarquia. E enquanto lavram as desordens «Sua Alteza <em>Imperial</em> reza, e os ministros dizem uns aos outros — não a perturbemos»! ... Conflito <em>Religioso</em> em um Funeral: Falecendo, quiseram seus filhos armar a igreja, levantar a canga, consagrar sufrágios, mandar dizer missas....
+
+--- Resultado 3 ---
+Score: 27.5942
+URL: https://atom-mhn.museus.gov.br/index.php/familia-imperial
+Trecho do texto: Pedro a declarar a independência do <em>Brasil</em>, às margens do Ipiranga, em 7 de setembro de 1822. Foi aclamado Imperador e defensor perpétuo do <em>Brasil</em> (12 de outubro de 1822). ... Em 1824 outorgou uma constituição para o <em>Brasil</em> e, em 1826, outra a Portugal. No mesmo ano, abdicou da Coroa Portuguesa em favor de sua filha Maria da Glória. Em 1830 sofreu oposição liberal e reação <em>popular</em>, no <em>Brasil</em>, o que levou a abdicar em favor de seu filho D. Pedro II, em 7 de abril de 1831. ... Este foi republicado, em fascículos, em 1886, o que, para alguns autores, foi a primeira revista em quadrinhos com um personagem fixo a ser lançada no <em>Brasil</em>. | published | Saída de S.S.M.M. o Imperador e a Imperatriz do <em>Brasil</em> do porto do Rio de Janeiro no dia 25 de maio de 1871 / A. lith.; E. de Martino...
+
+--- Resultado 4 ---
+Score: 27.2954
+URL: https://dibrarq.arquivonacional.gov.br/index.php/secao-colonial
+Trecho do texto: DID: Seção <em>Colonial</em> | SC | 1605-1849 | 45,0m lineares de doc. textuais: 406 volumes. | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | <em>Brasil</em> | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... / | português do <em>Brasil</em> | Prevalece documentos de 1702-1849. ... SCOPECONTENT: SC/SG: Os documentos foram produzidos por autoridades do Reino, da <em>Colônia</em> e da Capitania de Minas Gerais....
+
+--- Resultado 5 ---
+Score: 25.2604
+URL: https://dibrarq.arquivonacional.gov.br/index.php/irma-zelia
+Trecho do texto: | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do <em>Brasil</em> | ARQUIVO NACIONAL (<em>Brasil</em>). ... Manuscritos de pensamentos filosóficos e <em>religiosos</em>. Caderno de traduções de hinos <em>religiosos</em>. Publicações em alemão e francês sobre a obra da titular. Correspondência sobre assuntos familiares e <em>religiosos</em>. Fotografias da titular, de familiares e outros. ... OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Relação de caixas do fundo Irmã Zélia. Rio de Janeiro, 1983. 16 p. dat. - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Relação do arquivo de Irmã Zélia....
+
+--- Resultado 6 ---
+Score: 25.1453
+URL: https://atom-mhn.museus.gov.br/index.php/material-religioso
+Trecho do texto: DID: Material <em>Religioso</em> | MR | 1897 - 1991 | Textual: metragem linear 0,02 (corresponde a 49 itens) | Iconografia: 02 fotografias, 09 gravuras, 358 santinhos (<em>religiosos</em>) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | ... Em duas galerias desse Pavilhão foi instalado o Museu Histórico Nacional, criado naquele ano pelo Presidente Epitácio Pessoa, dotando o <em>Brasil</em> de um museu dedicado à história nacional. ... ARRANGEMENT: 8 séries: Lembrança, Lembrança de Primeira Comunhão, Iconografia, Diversos, Publicação <em>Religiosa</em>, Orações e Mensagens, Lembrança Fúnebre, Indiana Miranda....
+
+--- Resultado 7 ---
+Score: 23.9746
+URL: https://dibrarq.arquivonacional.gov.br/index.php/casa-real-e-imperial-2
+Trecho do texto: Correspondência da Mordomia da Casa <em>Imperial</em> com as legações do <em>Brasil</em> no exterior e com as províncias sobre assuntos políticos, pedidos de auxílio, vencimentos de empregados. Instrução da Família <em>Imperial</em>. Registro do expediente da Mordomia da Casa <em>Imperial</em>. ... CONTROLACCESS: Casa Real (<em>Brasil</em>). Mordomia-Mor | Casa <em>Imperial</em> (<em>Brasil</em>). ... Casa <em>Imperial</em> (AN/SCO/SDE 27 e 27-A). - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Casa <em>Imperial</em>: decretos 1809-1928 e 1835-1839. (AN/SCO, ...) - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Casa <em>Imperial</em>: documentos permutados com a Biblioteca Nacional. - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>)....
+
+--- Resultado 8 ---
+Score: 23.7388
+URL: https://dibrarq.arquivonacional.gov.br/index.php/juventude-estudantil-catolica-do-brasil
+Trecho do texto: | português do <em>Brasil</em> | BETEATO, Mario Antônio. ... A JEC no <em>Brasil</em>. s.l., s.c.p., s.d. Fundo Juventude Estudantil Católica do <em>Brasil</em> (JECB). ... (Coleção Memória, Documentação e Pesquisa, 3) - Não definido | Inventários dos Fundos: Juventude Agrária Católica do <em>Brasil</em>, Juventude Estudantil Católica do <em>Brasil</em>, Juventude Independente Católica do <em>Brasil</em>/ CEDIC/ PUC-SP/ coord. Yara Aun Khoury. São Paulo: Imprensa Oficial do Estado, 1998. 172p....
+
+--- Resultado 9 ---
+Score: 23.6555
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000259
+Trecho do texto: Definição <em>Imperial</em> sobre a Eleição: A verdade da eleição é base essencial de nossa forma de governo, e quanto mais genuíno é o voto <em>popular</em>, tanto mais se refletem no seio da representação nacional os interesses e opiniões, que, por sua importância, devem influir na direção dos negócios públicos. ... Viagem de Dom Pedro II aos Estados Unidos: Boston, 15: Suas Majestades o Imperador e a Imperatriz do <em>Brasil</em> partiram desta cidade para Saratoga e Newport. Fanatismo <em>Religioso</em> em Caçapava: A Província de S. Paulo. ... Editorial a respeito de fatos que atualmente se estão dando no município de Caçapava onde o fanatismo <em>religioso</em> tem exibido cenas ridículas....
+
+--- Resultado 10 ---
+Score: 23.6482
+URL: https://dibrarq.arquivonacional.gov.br/index.php/teofilo-das-neves-leao
+Trecho do texto: DID: Teófilo das Neves Leão | SP | 1851 - 1874 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (<em>Brasil</em>) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... Lecionou  no  Colégio  São  Francisco  de  Paula  e  foi  sócio  da  <em>Imperial</em>  Sociedade  Amante  da  Instrução,  da  Sociedade  Literária  Auxiliadora  de  Instrução  <em>Popular</em>  e  sócio  correspondente  da  Sociedade  de  Geografia  de  Lisboa. ... Pertenceu  às  várias  instituições  <em>religiosas</em>  da  cidade  do  Rio  de  Janeiro. | Esta coleção recebeu anteriormente o código 57 CP 19.
+OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Teófilo das Neves Leão. In:_______....
+
+
+=== Execução de Teste: 2025-09-17 10:08:02 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 34.9847
+URL: https://atom-mhn.museus.gov.br/index.php/popular-do-brasil
+Trecho do texto: DID: <em>Popular</em> do <em>Brasil</em> | SM-SMar-SMar008 (112.076) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 2 ---
+Score: 28.5292
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000381
+Trecho do texto: Manifesto Liberal sobre a Questão <em>Religiosa</em>: Comprometo-me a arcar, mão por mão ou pé por pé, sem tréguas nem quartel, nessa questão <em>religiosa</em>, que se me afigura a maior ameaça que pesa sobre o país, ameaça contra todas as liberdades, pois em coisa alguma pode ser livre um povo que tem grilhões na consciência ... Crítica à Inação <em>Imperial</em> e ao Clero Ultramontano: Os padres ultramontanos estão arrastando o <em>Brasil</em> para a guerra civil e a anarquia. E enquanto lavram as desordens «Sua Alteza <em>Imperial</em> reza, e os ministros dizem uns aos outros — não a perturbemos»! ... Conflito <em>Religioso</em> em um Funeral: Falecendo, quiseram seus filhos armar a igreja, levantar a canga, consagrar sufrágios, mandar dizer missas....
+
+--- Resultado 3 ---
+Score: 27.5942
+URL: https://atom-mhn.museus.gov.br/index.php/familia-imperial
+Trecho do texto: Pedro a declarar a independência do <em>Brasil</em>, às margens do Ipiranga, em 7 de setembro de 1822. Foi aclamado Imperador e defensor perpétuo do <em>Brasil</em> (12 de outubro de 1822). ... Em 1824 outorgou uma constituição para o <em>Brasil</em> e, em 1826, outra a Portugal. No mesmo ano, abdicou da Coroa Portuguesa em favor de sua filha Maria da Glória. Em 1830 sofreu oposição liberal e reação <em>popular</em>, no <em>Brasil</em>, o que levou a abdicar em favor de seu filho D. Pedro II, em 7 de abril de 1831. ... Este foi republicado, em fascículos, em 1886, o que, para alguns autores, foi a primeira revista em quadrinhos com um personagem fixo a ser lançada no <em>Brasil</em>. | published | Saída de S.S.M.M. o Imperador e a Imperatriz do <em>Brasil</em> do porto do Rio de Janeiro no dia 25 de maio de 1871 / A. lith.; E. de Martino...
+
+--- Resultado 4 ---
+Score: 27.2954
+URL: https://dibrarq.arquivonacional.gov.br/index.php/secao-colonial
+Trecho do texto: DID: Seção <em>Colonial</em> | SC | 1605-1849 | 45,0m lineares de doc. textuais: 406 volumes. | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | <em>Brasil</em> | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... / | português do <em>Brasil</em> | Prevalece documentos de 1702-1849. ... SCOPECONTENT: SC/SG: Os documentos foram produzidos por autoridades do Reino, da <em>Colônia</em> e da Capitania de Minas Gerais....
+
+--- Resultado 5 ---
+Score: 25.2604
+URL: https://dibrarq.arquivonacional.gov.br/index.php/irma-zelia
+Trecho do texto: | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do <em>Brasil</em> | ARQUIVO NACIONAL (<em>Brasil</em>). ... Manuscritos de pensamentos filosóficos e <em>religiosos</em>. Caderno de traduções de hinos <em>religiosos</em>. Publicações em alemão e francês sobre a obra da titular. Correspondência sobre assuntos familiares e <em>religiosos</em>. Fotografias da titular, de familiares e outros. ... OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Relação de caixas do fundo Irmã Zélia. Rio de Janeiro, 1983. 16 p. dat. - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Relação do arquivo de Irmã Zélia....
+
+--- Resultado 6 ---
+Score: 25.1453
+URL: https://atom-mhn.museus.gov.br/index.php/material-religioso
+Trecho do texto: DID: Material <em>Religioso</em> | MR | 1897 - 1991 | Textual: metragem linear 0,02 (corresponde a 49 itens) | Iconografia: 02 fotografias, 09 gravuras, 358 santinhos (<em>religiosos</em>) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | ... Em duas galerias desse Pavilhão foi instalado o Museu Histórico Nacional, criado naquele ano pelo Presidente Epitácio Pessoa, dotando o <em>Brasil</em> de um museu dedicado à história nacional. ... ARRANGEMENT: 8 séries: Lembrança, Lembrança de Primeira Comunhão, Iconografia, Diversos, Publicação <em>Religiosa</em>, Orações e Mensagens, Lembrança Fúnebre, Indiana Miranda....
+
+--- Resultado 7 ---
+Score: 23.9746
+URL: https://dibrarq.arquivonacional.gov.br/index.php/casa-real-e-imperial-2
+Trecho do texto: Correspondência da Mordomia da Casa <em>Imperial</em> com as legações do <em>Brasil</em> no exterior e com as províncias sobre assuntos políticos, pedidos de auxílio, vencimentos de empregados. Instrução da Família <em>Imperial</em>. Registro do expediente da Mordomia da Casa <em>Imperial</em>. ... CONTROLACCESS: Casa Real (<em>Brasil</em>). Mordomia-Mor | Casa <em>Imperial</em> (<em>Brasil</em>). ... Casa <em>Imperial</em> (AN/SCO/SDE 27 e 27-A). - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Casa <em>Imperial</em>: decretos 1809-1928 e 1835-1839. (AN/SCO, ...) - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Casa <em>Imperial</em>: documentos permutados com a Biblioteca Nacional. - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>)....
+
+--- Resultado 8 ---
+Score: 23.7388
+URL: https://dibrarq.arquivonacional.gov.br/index.php/juventude-estudantil-catolica-do-brasil
+Trecho do texto: | português do <em>Brasil</em> | BETEATO, Mario Antônio. ... A JEC no <em>Brasil</em>. s.l., s.c.p., s.d. Fundo Juventude Estudantil Católica do <em>Brasil</em> (JECB). ... (Coleção Memória, Documentação e Pesquisa, 3) - Não definido | Inventários dos Fundos: Juventude Agrária Católica do <em>Brasil</em>, Juventude Estudantil Católica do <em>Brasil</em>, Juventude Independente Católica do <em>Brasil</em>/ CEDIC/ PUC-SP/ coord. Yara Aun Khoury. São Paulo: Imprensa Oficial do Estado, 1998. 172p....
+
+--- Resultado 9 ---
+Score: 23.6555
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000259
+Trecho do texto: Definição <em>Imperial</em> sobre a Eleição: A verdade da eleição é base essencial de nossa forma de governo, e quanto mais genuíno é o voto <em>popular</em>, tanto mais se refletem no seio da representação nacional os interesses e opiniões, que, por sua importância, devem influir na direção dos negócios públicos. ... Viagem de Dom Pedro II aos Estados Unidos: Boston, 15: Suas Majestades o Imperador e a Imperatriz do <em>Brasil</em> partiram desta cidade para Saratoga e Newport. Fanatismo <em>Religioso</em> em Caçapava: A Província de S. Paulo. ... Editorial a respeito de fatos que atualmente se estão dando no município de Caçapava onde o fanatismo <em>religioso</em> tem exibido cenas ridículas....
+
+--- Resultado 10 ---
+Score: 23.6482
+URL: https://dibrarq.arquivonacional.gov.br/index.php/teofilo-das-neves-leao
+Trecho do texto: DID: Teófilo das Neves Leão | SP | 1851 - 1874 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (<em>Brasil</em>) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... Lecionou  no  Colégio  São  Francisco  de  Paula  e  foi  sócio  da  <em>Imperial</em>  Sociedade  Amante  da  Instrução,  da  Sociedade  Literária  Auxiliadora  de  Instrução  <em>Popular</em>  e  sócio  correspondente  da  Sociedade  de  Geografia  de  Lisboa. ... Pertenceu  às  várias  instituições  <em>religiosas</em>  da  cidade  do  Rio  de  Janeiro. | Esta coleção recebeu anteriormente o código 57 CP 19.
+OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Teófilo das Neves Leão. In:_______....
+
+
+=== Execução de Teste: 2025-09-17 10:51:38 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 34.9847
+URL: https://atom-mhn.museus.gov.br/index.php/popular-do-brasil
+Trecho do texto: DID: <em>Popular</em> do <em>Brasil</em> | SM-SMar-SMar008 (112.076) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 2 ---
+Score: 28.5292
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000381
+Trecho do texto: Manifesto Liberal sobre a Questão <em>Religiosa</em>: Comprometo-me a arcar, mão por mão ou pé por pé, sem tréguas nem quartel, nessa questão <em>religiosa</em>, que se me afigura a maior ameaça que pesa sobre o país, ameaça contra todas as liberdades, pois em coisa alguma pode ser livre um povo que tem grilhões na consciência ... Crítica à Inação <em>Imperial</em> e ao Clero Ultramontano: Os padres ultramontanos estão arrastando o <em>Brasil</em> para a guerra civil e a anarquia. E enquanto lavram as desordens «Sua Alteza <em>Imperial</em> reza, e os ministros dizem uns aos outros — não a perturbemos»! ... Conflito <em>Religioso</em> em um Funeral: Falecendo, quiseram seus filhos armar a igreja, levantar a canga, consagrar sufrágios, mandar dizer missas....
+
+--- Resultado 3 ---
+Score: 27.5942
+URL: https://atom-mhn.museus.gov.br/index.php/familia-imperial
+Trecho do texto: Pedro a declarar a independência do <em>Brasil</em>, às margens do Ipiranga, em 7 de setembro de 1822. Foi aclamado Imperador e defensor perpétuo do <em>Brasil</em> (12 de outubro de 1822). ... Em 1824 outorgou uma constituição para o <em>Brasil</em> e, em 1826, outra a Portugal. No mesmo ano, abdicou da Coroa Portuguesa em favor de sua filha Maria da Glória. Em 1830 sofreu oposição liberal e reação <em>popular</em>, no <em>Brasil</em>, o que levou a abdicar em favor de seu filho D. Pedro II, em 7 de abril de 1831. ... Este foi republicado, em fascículos, em 1886, o que, para alguns autores, foi a primeira revista em quadrinhos com um personagem fixo a ser lançada no <em>Brasil</em>. | published | Saída de S.S.M.M. o Imperador e a Imperatriz do <em>Brasil</em> do porto do Rio de Janeiro no dia 25 de maio de 1871 / A. lith.; E. de Martino...
+
+--- Resultado 4 ---
+Score: 27.2954
+URL: https://dibrarq.arquivonacional.gov.br/index.php/secao-colonial
+Trecho do texto: DID: Seção <em>Colonial</em> | SC | 1605-1849 | 45,0m lineares de doc. textuais: 406 volumes. | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | <em>Brasil</em> | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... / | português do <em>Brasil</em> | Prevalece documentos de 1702-1849. ... SCOPECONTENT: SC/SG: Os documentos foram produzidos por autoridades do Reino, da <em>Colônia</em> e da Capitania de Minas Gerais....
+
+--- Resultado 5 ---
+Score: 25.2604
+URL: https://dibrarq.arquivonacional.gov.br/index.php/irma-zelia
+Trecho do texto: | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do <em>Brasil</em> | ARQUIVO NACIONAL (<em>Brasil</em>). ... Manuscritos de pensamentos filosóficos e <em>religiosos</em>. Caderno de traduções de hinos <em>religiosos</em>. Publicações em alemão e francês sobre a obra da titular. Correspondência sobre assuntos familiares e <em>religiosos</em>. Fotografias da titular, de familiares e outros. ... OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Relação de caixas do fundo Irmã Zélia. Rio de Janeiro, 1983. 16 p. dat. - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Relação do arquivo de Irmã Zélia....
+
+--- Resultado 6 ---
+Score: 25.1453
+URL: https://atom-mhn.museus.gov.br/index.php/material-religioso
+Trecho do texto: DID: Material <em>Religioso</em> | MR | 1897 - 1991 | Textual: metragem linear 0,02 (corresponde a 49 itens) | Iconografia: 02 fotografias, 09 gravuras, 358 santinhos (<em>religiosos</em>) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | ... Em duas galerias desse Pavilhão foi instalado o Museu Histórico Nacional, criado naquele ano pelo Presidente Epitácio Pessoa, dotando o <em>Brasil</em> de um museu dedicado à história nacional. ... ARRANGEMENT: 8 séries: Lembrança, Lembrança de Primeira Comunhão, Iconografia, Diversos, Publicação <em>Religiosa</em>, Orações e Mensagens, Lembrança Fúnebre, Indiana Miranda....
+
+--- Resultado 7 ---
+Score: 23.9746
+URL: https://dibrarq.arquivonacional.gov.br/index.php/casa-real-e-imperial-2
+Trecho do texto: Correspondência da Mordomia da Casa <em>Imperial</em> com as legações do <em>Brasil</em> no exterior e com as províncias sobre assuntos políticos, pedidos de auxílio, vencimentos de empregados. Instrução da Família <em>Imperial</em>. Registro do expediente da Mordomia da Casa <em>Imperial</em>. ... CONTROLACCESS: Casa Real (<em>Brasil</em>). Mordomia-Mor | Casa <em>Imperial</em> (<em>Brasil</em>). ... Casa <em>Imperial</em> (AN/SCO/SDE 27 e 27-A). - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Casa <em>Imperial</em>: decretos 1809-1928 e 1835-1839. (AN/SCO, ...) - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>). Casa <em>Imperial</em>: documentos permutados com a Biblioteca Nacional. - Não impressos | ARQUIVO NACIONAL (<em>Brasil</em>)....
+
+--- Resultado 8 ---
+Score: 23.7388
+URL: https://dibrarq.arquivonacional.gov.br/index.php/juventude-estudantil-catolica-do-brasil
+Trecho do texto: | português do <em>Brasil</em> | BETEATO, Mario Antônio. ... A JEC no <em>Brasil</em>. s.l., s.c.p., s.d. Fundo Juventude Estudantil Católica do <em>Brasil</em> (JECB). ... (Coleção Memória, Documentação e Pesquisa, 3) - Não definido | Inventários dos Fundos: Juventude Agrária Católica do <em>Brasil</em>, Juventude Estudantil Católica do <em>Brasil</em>, Juventude Independente Católica do <em>Brasil</em>/ CEDIC/ PUC-SP/ coord. Yara Aun Khoury. São Paulo: Imprensa Oficial do Estado, 1998. 172p....
+
+--- Resultado 9 ---
+Score: 23.6555
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000259
+Trecho do texto: Definição <em>Imperial</em> sobre a Eleição: A verdade da eleição é base essencial de nossa forma de governo, e quanto mais genuíno é o voto <em>popular</em>, tanto mais se refletem no seio da representação nacional os interesses e opiniões, que, por sua importância, devem influir na direção dos negócios públicos. ... Viagem de Dom Pedro II aos Estados Unidos: Boston, 15: Suas Majestades o Imperador e a Imperatriz do <em>Brasil</em> partiram desta cidade para Saratoga e Newport. Fanatismo <em>Religioso</em> em Caçapava: A Província de S. Paulo. ... Editorial a respeito de fatos que atualmente se estão dando no município de Caçapava onde o fanatismo <em>religioso</em> tem exibido cenas ridículas....
+
+--- Resultado 10 ---
+Score: 23.6482
+URL: https://dibrarq.arquivonacional.gov.br/index.php/teofilo-das-neves-leao
+Trecho do texto: DID: Teófilo das Neves Leão | SP | 1851 - 1874 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (<em>Brasil</em>) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... Lecionou  no  Colégio  São  Francisco  de  Paula  e  foi  sócio  da  <em>Imperial</em>  Sociedade  Amante  da  Instrução,  da  Sociedade  Literária  Auxiliadora  de  Instrução  <em>Popular</em>  e  sócio  correspondente  da  Sociedade  de  Geografia  de  Lisboa. ... Pertenceu  às  várias  instituições  <em>religiosas</em>  da  cidade  do  Rio  de  Janeiro. | Esta coleção recebeu anteriormente o código 57 CP 19.
+OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Teófilo das Neves Leão. In:_______....
+
+
+=== Execução de Teste: 2025-09-17 10:59:52 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 27.5942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 2 ---
+Score: 27.5942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 3 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 4 ---
+Score: 23.9746
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 6 ---
+Score: 22.4990
+URL: https://dibrarq.arquivonacional.gov.br/index.php/gaston-luis-do-rego-monteiro
+Trecho do texto: DID: Gaston Luis do Rego <em>Monteiro</em> | 02 | 1926 - 1984 | Textual(is) -sem especificação - 0,18 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Monteiro</em>, Gaston Luis do Rego
+BIOGHIST: Gaston  Luis  do  Rego  <em>Monteiro</em>  participou  do  movimento  integralista  (1934). | Um  dos  fundadores  da  Associação ... Gaston Luís do Rego <em>Monteiro</em> (OZ): instrumento provisório. In: ___________. Instrumentos provisórios. Rio de Janeiro, Arquivo Nacional, 2006. 4 p. digit. (AN/SCO/SDP 65, v.1) - Não impressos | ARQUIVO NACIONAL (Brasil). Relação de documentos identificados de Gaston Luís do Rego <em>Monteiro</em>....
+
+--- Resultado 7 ---
+Score: 21.6415
+URL: https://dibrarq.arquivonacional.gov.br/index.php/dermeval-jose-pimenta
+Trecho do texto: . | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+SCOPECONTENT: O fundo está organizado em seis séries ... Há, também, uma variedade de documentos produzidos ao longo de sua trajetória intelectual como <em>pesquisas</em> genealógicas e biográficas, memórias da atividade mineradora e de instituições culturais, como o Instituto Histórico e Geográfico de Minas Gerais e o Conselho Estadual de Cultura, e discursos pronunciados ... OTHERFINDAID: Inventário do Fundo Dermeval José Pimenta e sistema informatizado de <em>pesquisa</em> (SIAAPM).
+ODD: Publicado
+ODD: Parcial
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 21.4942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/instituto-de-pesquisa-economica-aplicada
+Trecho do texto: DID: Instituto de <em>Pesquisa</em> Econômica Aplicada | DO | 1975 - 1979 | Textual(is) -sem especificação - 10 m | Arquivo Nacional (Brasil). ... aplicadas  às  áreas  econômica  e  social;  promover  atividades  de  treinamento  para  o  planejamento  e  para  a  <em>pesquisa</em>  aplicada. ... CONTROLACCESS: Instituto de <em>Pesquisa</em> Econômica Aplicada | Arquivo Nacional 185 Anos
+ACQINFO: Instituto de <em>Pesquisa</em> Econômica Aplicada - 1980 - recolhimento - 2
+CUSTODHIST: A documentação foi transferida pelo próprio órgão em 1980.
+OTHERFINDAID: INSTITUTO DE <em>PESQUISA</em> ECONÔMICA APLICADA (IPEA)....
+
+--- Resultado 9 ---
+Score: 20.2480
+URL: https://dibrarq.arquivonacional.gov.br/index.php/centro-de-documentacao-e-pesquisa-vergueiro
+Trecho do texto: DID: Centro de Documentação e <em>Pesquisa</em> Vergueiro | CPV | 1970-1989 | Bibliográfico(s) -sem especificação - 9717 item(ns) | Filmográfico(s) -fita(s) videomagnética(s) - 347 item(ns) | Iconográfico(s) -cartaz(es) - 3500 item(ns) | Iconográfico(s) -diapositivo(s) - 3991 item(ns) | Iconográfico(s) -fotografia ... (s) - 1172 item(ns) | Iconográfico(s) -sem especificação - 119 item(ns) | Sonoro(s) -fita(s) audiomagnética(s) - 160 item(ns) | Textual(is) -sem especificação - 45,6 m | Centro de Documentação e <em>Pesquisa</em> Vergueiro | Rua São Domingos, 224 - Bela Vista | São Paulo | São Paulo | Brasil | 01326-000 | Telefone ... o sistema de organização, ver : Centro de Documentação e <em>Pesquisa</em> Vergueiro....
+
+--- Resultado 10 ---
+Score: 20.2285
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-dornas-filho
+Trecho do texto: SCOPECONTENT: A documentação textual compreende entrevistas, folhetos de propaganda política, poemas, recortes de jornais e correspondências com editores, revistas e particulares <em>sobre</em> assuntos literários, <em>pesquisas</em>, felicitações, convites e condolências. ... O acervo iconográfico é formado por fotografias de políticos, artistas, intelectuais, índios, obras de arte, aspectos do interior <em>mineiro</em> como rios, pontes, praças e monumentos. Possui outros documentos iconográficos como quadros, cartões postais, desenhos, litogravuras e mapas. ... OTHERFINDAID: * Inventário do Fundo João Dornas Filho | *  Sistema informatizado de <em>pesquisa</em> do acervo fotográfico
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> aos documentos textuais e iconográficos é feita através dos originais....
+
+
+=== Execução de Teste: 2025-09-17 11:10:43 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 27.5942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 2 ---
+Score: 27.5942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 3 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 4 ---
+Score: 23.9746
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 6 ---
+Score: 22.4990
+URL: https://dibrarq.arquivonacional.gov.br/index.php/gaston-luis-do-rego-monteiro
+Trecho do texto: DID: Gaston Luis do Rego <em>Monteiro</em> | 02 | 1926 - 1984 | Textual(is) -sem especificação - 0,18 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Monteiro</em>, Gaston Luis do Rego
+BIOGHIST: Gaston  Luis  do  Rego  <em>Monteiro</em>  participou  do  movimento  integralista  (1934). | Um  dos  fundadores  da  Associação ... Gaston Luís do Rego <em>Monteiro</em> (OZ): instrumento provisório. In: ___________. Instrumentos provisórios. Rio de Janeiro, Arquivo Nacional, 2006. 4 p. digit. (AN/SCO/SDP 65, v.1) - Não impressos | ARQUIVO NACIONAL (Brasil). Relação de documentos identificados de Gaston Luís do Rego <em>Monteiro</em>....
+
+--- Resultado 7 ---
+Score: 21.6415
+URL: https://dibrarq.arquivonacional.gov.br/index.php/dermeval-jose-pimenta
+Trecho do texto: . | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+SCOPECONTENT: O fundo está organizado em seis séries ... Há, também, uma variedade de documentos produzidos ao longo de sua trajetória intelectual como <em>pesquisas</em> genealógicas e biográficas, memórias da atividade mineradora e de instituições culturais, como o Instituto Histórico e Geográfico de Minas Gerais e o Conselho Estadual de Cultura, e discursos pronunciados ... OTHERFINDAID: Inventário do Fundo Dermeval José Pimenta e sistema informatizado de <em>pesquisa</em> (SIAAPM).
+ODD: Publicado
+ODD: Parcial
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 21.4942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/instituto-de-pesquisa-economica-aplicada
+Trecho do texto: DID: Instituto de <em>Pesquisa</em> Econômica Aplicada | DO | 1975 - 1979 | Textual(is) -sem especificação - 10 m | Arquivo Nacional (Brasil). ... aplicadas  às  áreas  econômica  e  social;  promover  atividades  de  treinamento  para  o  planejamento  e  para  a  <em>pesquisa</em>  aplicada. ... CONTROLACCESS: Instituto de <em>Pesquisa</em> Econômica Aplicada | Arquivo Nacional 185 Anos
+ACQINFO: Instituto de <em>Pesquisa</em> Econômica Aplicada - 1980 - recolhimento - 2
+CUSTODHIST: A documentação foi transferida pelo próprio órgão em 1980.
+OTHERFINDAID: INSTITUTO DE <em>PESQUISA</em> ECONÔMICA APLICADA (IPEA)....
+
+--- Resultado 9 ---
+Score: 20.2480
+URL: https://dibrarq.arquivonacional.gov.br/index.php/centro-de-documentacao-e-pesquisa-vergueiro
+Trecho do texto: DID: Centro de Documentação e <em>Pesquisa</em> Vergueiro | CPV | 1970-1989 | Bibliográfico(s) -sem especificação - 9717 item(ns) | Filmográfico(s) -fita(s) videomagnética(s) - 347 item(ns) | Iconográfico(s) -cartaz(es) - 3500 item(ns) | Iconográfico(s) -diapositivo(s) - 3991 item(ns) | Iconográfico(s) -fotografia ... (s) - 1172 item(ns) | Iconográfico(s) -sem especificação - 119 item(ns) | Sonoro(s) -fita(s) audiomagnética(s) - 160 item(ns) | Textual(is) -sem especificação - 45,6 m | Centro de Documentação e <em>Pesquisa</em> Vergueiro | Rua São Domingos, 224 - Bela Vista | São Paulo | São Paulo | Brasil | 01326-000 | Telefone ... o sistema de organização, ver : Centro de Documentação e <em>Pesquisa</em> Vergueiro....
+
+--- Resultado 10 ---
+Score: 20.2285
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-dornas-filho
+Trecho do texto: SCOPECONTENT: A documentação textual compreende entrevistas, folhetos de propaganda política, poemas, recortes de jornais e correspondências com editores, revistas e particulares <em>sobre</em> assuntos literários, <em>pesquisas</em>, felicitações, convites e condolências. ... O acervo iconográfico é formado por fotografias de políticos, artistas, intelectuais, índios, obras de arte, aspectos do interior <em>mineiro</em> como rios, pontes, praças e monumentos. Possui outros documentos iconográficos como quadros, cartões postais, desenhos, litogravuras e mapas. ... OTHERFINDAID: * Inventário do Fundo João Dornas Filho | *  Sistema informatizado de <em>pesquisa</em> do acervo fotográfico
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> aos documentos textuais e iconográficos é feita através dos originais....
+
+
+=== Execução de Teste: 2025-09-17 11:18:27 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 27.5942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 2 ---
+Score: 27.5942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 3 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 4 ---
+Score: 23.9746
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 6 ---
+Score: 22.4990
+URL: https://dibrarq.arquivonacional.gov.br/index.php/gaston-luis-do-rego-monteiro
+Trecho do texto: DID: Gaston Luis do Rego <em>Monteiro</em> | 02 | 1926 - 1984 | Textual(is) -sem especificação - 0,18 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Monteiro</em>, Gaston Luis do Rego
+BIOGHIST: Gaston  Luis  do  Rego  <em>Monteiro</em>  participou  do  movimento  integralista  (1934). | Um  dos  fundadores  da  Associação ... Gaston Luís do Rego <em>Monteiro</em> (OZ): instrumento provisório. In: ___________. Instrumentos provisórios. Rio de Janeiro, Arquivo Nacional, 2006. 4 p. digit. (AN/SCO/SDP 65, v.1) - Não impressos | ARQUIVO NACIONAL (Brasil). Relação de documentos identificados de Gaston Luís do Rego <em>Monteiro</em>....
+
+--- Resultado 7 ---
+Score: 21.6415
+URL: https://dibrarq.arquivonacional.gov.br/index.php/dermeval-jose-pimenta
+Trecho do texto: . | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+SCOPECONTENT: O fundo está organizado em seis séries ... Há, também, uma variedade de documentos produzidos ao longo de sua trajetória intelectual como <em>pesquisas</em> genealógicas e biográficas, memórias da atividade mineradora e de instituições culturais, como o Instituto Histórico e Geográfico de Minas Gerais e o Conselho Estadual de Cultura, e discursos pronunciados ... OTHERFINDAID: Inventário do Fundo Dermeval José Pimenta e sistema informatizado de <em>pesquisa</em> (SIAAPM).
+ODD: Publicado
+ODD: Parcial
+ODD: Final...
+
+--- Resultado 8 ---
+Score: 21.4942
+URL: https://dibrarq.arquivonacional.gov.br/index.php/instituto-de-pesquisa-economica-aplicada
+Trecho do texto: DID: Instituto de <em>Pesquisa</em> Econômica Aplicada | DO | 1975 - 1979 | Textual(is) -sem especificação - 10 m | Arquivo Nacional (Brasil). ... aplicadas  às  áreas  econômica  e  social;  promover  atividades  de  treinamento  para  o  planejamento  e  para  a  <em>pesquisa</em>  aplicada. ... CONTROLACCESS: Instituto de <em>Pesquisa</em> Econômica Aplicada | Arquivo Nacional 185 Anos
+ACQINFO: Instituto de <em>Pesquisa</em> Econômica Aplicada - 1980 - recolhimento - 2
+CUSTODHIST: A documentação foi transferida pelo próprio órgão em 1980.
+OTHERFINDAID: INSTITUTO DE <em>PESQUISA</em> ECONÔMICA APLICADA (IPEA)....
+
+--- Resultado 9 ---
+Score: 20.2480
+URL: https://dibrarq.arquivonacional.gov.br/index.php/centro-de-documentacao-e-pesquisa-vergueiro
+Trecho do texto: DID: Centro de Documentação e <em>Pesquisa</em> Vergueiro | CPV | 1970-1989 | Bibliográfico(s) -sem especificação - 9717 item(ns) | Filmográfico(s) -fita(s) videomagnética(s) - 347 item(ns) | Iconográfico(s) -cartaz(es) - 3500 item(ns) | Iconográfico(s) -diapositivo(s) - 3991 item(ns) | Iconográfico(s) -fotografia ... (s) - 1172 item(ns) | Iconográfico(s) -sem especificação - 119 item(ns) | Sonoro(s) -fita(s) audiomagnética(s) - 160 item(ns) | Textual(is) -sem especificação - 45,6 m | Centro de Documentação e <em>Pesquisa</em> Vergueiro | Rua São Domingos, 224 - Bela Vista | São Paulo | São Paulo | Brasil | 01326-000 | Telefone ... o sistema de organização, ver : Centro de Documentação e <em>Pesquisa</em> Vergueiro....
+
+--- Resultado 10 ---
+Score: 20.2285
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-dornas-filho
+Trecho do texto: SCOPECONTENT: A documentação textual compreende entrevistas, folhetos de propaganda política, poemas, recortes de jornais e correspondências com editores, revistas e particulares <em>sobre</em> assuntos literários, <em>pesquisas</em>, felicitações, convites e condolências. ... O acervo iconográfico é formado por fotografias de políticos, artistas, intelectuais, índios, obras de arte, aspectos do interior <em>mineiro</em> como rios, pontes, praças e monumentos. Possui outros documentos iconográficos como quadros, cartões postais, desenhos, litogravuras e mapas. ... OTHERFINDAID: * Inventário do Fundo João Dornas Filho | *  Sistema informatizado de <em>pesquisa</em> do acervo fotográfico
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> aos documentos textuais e iconográficos é feita através dos originais....
+

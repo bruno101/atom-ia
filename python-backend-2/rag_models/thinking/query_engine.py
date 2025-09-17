@@ -168,7 +168,7 @@ class RAGStringQueryEngine:
 
         # Formata o prompt final com contexto, consulta e histórico
         final_prompt = self.qa_prompt.format(context_str=context_str, query_str=query_str[:MAX_QUERY_CHARS], historico_str=historico_instrucoes)
-                
+        print("Tamanho da consulta: " + str(len(final_prompt)) + " caracteres")
         response = self.llm.complete(prompt=final_prompt)      
     
         return str(response)

@@ -26,7 +26,7 @@ load_dotenv()
 
 # Algoritmo de busca padrão (BM25)
 DEFAULT_SEARCH_ALGORITHM = elasticsearch_search
-EVALUATE_WITH_GEMINI = False
+EVALUATE_WITH_GEMINI = True
 
 def search_documents_by_text(queries, n_results_per_query=5):
     """Função principal de busca usando algoritmo BM25 padrão
@@ -45,7 +45,7 @@ def search_documents_by_text(queries, n_results_per_query=5):
         queries = [q.lower() if q else q for q in queries]
         print("Consultas:\n")
         print(queries)
-    return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query, url_elastic_search=URL_ELASTIC_SEARCH)
+    return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query, url_elastic_search=URL_ELASTIC_SEARCH, expand=True)
 
 
 def evaluate_with_gemini(query, all_results):
@@ -70,7 +70,14 @@ def evaluate_with_gemini(query, all_results):
         }
         
         for algo_name, results in all_results.items():
-            analysis_data["algorithms"][algo_name] = [
+            # Normaliza nome do algoritmo para exibição
+            display_name = algo_name
+            if 'elasticsearch_expand_True' in algo_name:
+                display_name = 'Elasticsearch (com expansão)'
+            elif 'elasticsearch_expand_False' in algo_name:
+                display_name = 'Elasticsearch (sem expansão)'
+            
+            analysis_data["algorithms"][display_name] = [
                 {
                     "rank": i+1,
                     "score": doc['relevance_score'],
@@ -135,6 +142,7 @@ Para CADA resultado dos top 10 de CADA algoritmo, atribua uma nota de relevânci
 - **Observações**: [insights sobre posicionamento]
 
 Avalie APENAS a relevância semântica para "{query}", ignorando scores técnicos dos algoritmos.
+Certifique-se de avaliar AMBAS as variantes do Elasticsearch separadamente quando disponíveis.
 """
         
         # Gera relatório
@@ -153,23 +161,17 @@ def test_all_algorithms():
     usando Gemini 2.5 Flash para avaliar a relevância dos resultados.
     """
     # Importa todos os algoritmos de busca disponíveis
-    from search_algorithms import (bm25_search, tfidf_search, simple_like_search, 
-                                 bm25p_search, lambdamart_search, 
+    from search_algorithms import (bm25_search, 
                                  elasticsearch_search, vector_search)
     
     # Consulta de teste padrão
-    test_queries = ['práticas religiosas populares Brasil colonial imperial']
+    test_queries = ['pesquise sobre monteiro lobato']
     query = test_queries[0]  # Usa primeira consulta para avaliação
     
     # Dicionário com todos os algoritmos disponíveis
     algorithms = {
         'bm25': bm25_search,           # BM25 clássico
-        'bm25p': bm25p_search,         # BM25 com proximidade
-        'lambdamart': lambdamart_search, # LambdaMART re-ranking
         'vector': vector_search,       # Busca vetorial semântica
-        'elasticsearch': elasticsearch_search, # Elasticsearch
-        'tfidf': tfidf_search,         # TF-IDF com similaridade cosseno
-        'simple_like': simple_like_search # Busca simples com LIKE
     }
     
     # Timestamp para identificar execução nos logs
@@ -182,7 +184,7 @@ def test_all_algorithms():
         
         try:
             # Executa busca com o algoritmo atual (top 10 para avaliação)
-            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=10, url_elastic_search=URL_ELASTIC_SEARCH)
+            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=10)
             all_results[algo_name] = results
             
             # Salva resultados em arquivo de log específico do algoritmo
@@ -204,6 +206,33 @@ def test_all_algorithms():
         except Exception as e:
             logger.error(f"Erro ao testar {algo_name}: {e}")
             all_results[algo_name] = []  # Lista vazia em caso de erro
+    
+    # Testa elasticsearch com expansão habilitada e desabilitada
+    for expand in [True, False]:
+        algo_name = f"elasticsearch_expand_{expand}"
+        logger.info(f"Testando {algo_name}...")
+        
+        try:
+            results = elasticsearch_search.search_documents_by_text(test_queries, n_results_per_query=10, url_elastic_search=URL_ELASTIC_SEARCH, expand=expand)
+            all_results[algo_name] = results
+            
+            log_filename = f"search_algorithms/{algo_name}_results.txt"
+            with open(log_filename, 'a', encoding='utf-8') as f:
+                f.write(f"\n=== Execução de Teste: {timestamp} ===\n")
+                f.write(f"Consultas: {test_queries}\n")
+                f.write(f"Total de resultados: {len(results)}\n\n")
+                
+                for i, doc in enumerate(results, 1):
+                    f.write(f"--- Resultado {i} ---\n")
+                    f.write(f"Score: {doc['relevance_score']:.4f}\n")
+                    f.write(f"URL: {doc['url']}\n")
+                    f.write(f"Trecho do texto: {doc['text']}...\n\n")
+            
+            logger.info(f"{algo_name}: {len(results)} resultados salvos em {log_filename}")
+            
+        except Exception as e:
+            logger.error(f"Erro ao testar {algo_name}: {e}")
+            all_results[algo_name] = []
     
     if EVALUATE_WITH_GEMINI:
         # Cria pasta para relatórios se não existir
@@ -238,7 +267,7 @@ def test_text_search():
         list[dict]: Lista de documentos encontrados
     """
     # Consulta de teste
-    test_queries = ["estou pesquisando sobre Monteiro Lobato"]
+    test_queries = ["pesquise sobre monteiro lobato"]
     logger.info(f"Testando algoritmo padrão com consultas: {test_queries}")
 
     # Executa busca com algoritmo padrão
@@ -262,4 +291,4 @@ if __name__ == "__main__":
     
     # Descomente a linha abaixo para testar apenas o algoritmo padrão
     #test_text_search()
-    test_text_search()
+    test_all_algorithms()
