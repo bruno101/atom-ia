@@ -78,7 +78,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         # Sistema de retry para lidar com falhas temporárias da API
         for attempt in range(max_attempts):
             try:
-                # Faz a chamada para o modelo LLM com timeout de 60s
+                # Faz a chamada para o modelo LLM com timeout de 300s
                 import threading
                 result = [None]
                 exception = [None]
@@ -92,7 +92,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
                 thread = threading.Thread(target=llm_call)
                 thread.daemon = True
                 thread.start()
-                thread.join(timeout=60)  # 60s timeout
+                thread.join(timeout=300)  # 300s timeout
                 
                 if thread.is_alive():
                     print(f"DEBUG: Timeout na chamada LLM (tentativa {attempt + 1}/{max_attempts})")

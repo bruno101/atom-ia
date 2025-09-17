@@ -1,0 +1,346 @@
+
+=== Execução de Teste: 2025-09-17 10:05:07 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 145.5753
+URL: https://atom-mhn.museus.gov.br/index.php/brasil
+Trecho do texto: DID: <em>Brasil</em> | SM-SMar-SMar003 (112.071) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/...
+
+--- Resultado 2 ---
+Score: 145.5427
+URL: https://atom-mhn.museus.gov.br/index.php/brasil-2
+Trecho do texto: DID: <em>Brasil</em> | SM-SMar-SMar004 (112.072) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/...
+
+--- Resultado 3 ---
+Score: 144.3326
+URL: https://atom-mhn.museus.gov.br/index.php/popular-do-brasil
+Trecho do texto: DID: <em>Popular</em> do <em>Brasil</em> | SM-SMar-SMar008 (112.076) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 4 ---
+Score: 137.2373
+URL: https://dibrarq.arquivonacional.gov.br/index.php/brasil-urgente
+Trecho do texto: de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do <em>Brasil</em> | Formulário do IPPDH respondido por | "O Jornal <em>Brasil</em>, Urgente e a revolução brasileira - Wellington Teodoro da Silva - PUC Minas / UFJF ... <em>Brasil</em> Urgente - Sociedade Anônima Veritas
+BIOGHIST: O jornal semanal <em>Brasil</em>, Urgente foi lançado no dia 17 de março de 1963 sob a direção do frei dominicano Carlos Josafá. ... que, <em>Brasil</em>, Urgente ‘não é porta-voz da Igreja, nem intérprete do clero nem da hierarquia’....
+
+--- Resultado 5 ---
+Score: 135.1744
+URL: https://atom-mhn.museus.gov.br/index.php/brasil-bahia
+Trecho do texto: DID: <em>Brasil</em>, Bahia | SM-SMar-SMar005 (112.073) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 6 ---
+Score: 129.5352
+URL: https://dibrarq.arquivonacional.gov.br/index.php/americo-brasil-donnici-2
+Trecho do texto: DID: Américo <em>Brasil</em> Donnici | OV | 1927 - 1955 | Textual(is) -sem especificação - 0,17 m | Arquivo Nacional (<em>Brasil</em>) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... /pt-br | português do <em>Brasil</em> | Responsável da descrição | Carlos Alfredo Linhares Fábio | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Donnici, Américo <em>Brasil</em>
+BIOGHIST: Américo <em>Brasil</em> Donnici, italiano, foi autor de peças teatrais e poesias por volta das décadas de 1920 e 1930. ... CONTROLACCESS: Donnici, Américo <em>Brasil</em> | Arquivo Nacional 185 Anos
+ACQINFO: Donnici, Adalgisa Lima <em>Brasil</em> - 1969 - doação - 24
+CUSTODHIST: Esta coleção recebeu anteriormente o código 22 CP 11.
+OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Inventário das coleções da Seção de Documentos Privados....
+
+--- Resultado 7 ---
+Score: 129.0523
+URL: https://dibrarq.arquivonacional.gov.br/index.php/fundacao-brasil-central-1968
+Trecho do texto: DID: Fundação <em>Brasil</em> Central | H3 | s/d | Dado não disponível. | Arquivo Nacional (<em>Brasil</em>). ... | português do <em>Brasil</em> | Unidade Custodiadora | Coordenação Regional do Arquivo Nacional do Distrito Federal - COREG | Fundação <em>Brasil</em> Central
+BIOGHIST: O  decreto-lei  n.  5878,  de  4  de  outubro  de  1943,  instituiu  a  Fundação  <em>Brasil</em>  Central,  destinada  a  desbravar  e  <em>colonizar</em>  as  zonas ... CONTROLACCESS: Fundação <em>Brasil</em> Central | Arquivo Nacional 185 Anos
+CUSTODHIST: Documentos originalmente recolhidos integrando o acervo da Superintendência do Desenvolvimento da Região Centro-Oeste....
+
+--- Resultado 8 ---
+Score: 128.1057
+URL: https://atom-mhn.museus.gov.br/index.php/panair-do-brasil
+Trecho do texto: Com capital americano, ela começou com o nome Nyrba do <em>Brasil</em>, referência à ligação entre as cidades de Nova York, Rio e Buenos Aires que seus aviões faziam. | Em 1930, a empresa Pan American absorve a Nyrba do <em>Brasil</em> e muda seu nome para Panair do <em>Brasil</em>. ... Com capital americano, ela começou com o nome Nyrba do <em>Brasil</em>, referência à ligação entre as cidades de Nova York, Rio e Buenos Aires que seus aviões faziam. | Em 1930, a empresa Pan American absorve a Nyrba do <em>Brasil</em> e muda seu nome para Panair do <em>Brasil</em>. ... Ao fundo, o logo da Panair do <em>Brasil</em>....
+
+--- Resultado 9 ---
+Score: 127.6630
+URL: https://dibrarq.arquivonacional.gov.br/index.php/brasil-nunca-mais
+Trecho do texto: DID: <em>Brasil</em> Nunca Mais | BNM | 1964 - 1979 | Iconográfico(s) -fotografia(s) - 249 item(ns) | Textual(is) -sem especificação - 175 m | Arquivo Edgard Leuenroth - Centro de Pesquisa e Documentação Social | Cidade Universitária Zeferino Vaz | Rua Cláudio Abramo, 377 | Campinas | São Paulo | <em>Brasil</em> | 13083 ... -856 | Telefone: 55 19 3521-1622 | Fax:55 19 3521-7060 | Email: secretar@unicamp.br | https://www.ael.ifch.unicamp.br/ | português do <em>Brasil</em> | A comparação entre os processos armazenados no AEL e os microfilmes em posse do Ministério Público Federal constatou que ambos são idênticos, portanto, as páginas ... Estudos sobre a tortura no <em>Brasil</em> e no mundo, com quadros estatísticos, além da transcrição de depoimentos sobre tortura com informações sobre os mortos e desaparecidos políticos.
+ARRANGEMENT: Os processos estão identificados individualmente....
+
+--- Resultado 10 ---
+Score: 123.2065
+URL: https://dibrarq.arquivonacional.gov.br/index.php/juventude-estudantil-catolica-do-brasil
+Trecho do texto: | português do <em>Brasil</em> | BETEATO, Mario Antônio. ... A JEC no <em>Brasil</em>. s.l., s.c.p., s.d. Fundo Juventude Estudantil Católica do <em>Brasil</em> (JECB). ... (Coleção Memória, Documentação e Pesquisa, 3) - Não definido | Inventários dos Fundos: Juventude Agrária Católica do <em>Brasil</em>, Juventude Estudantil Católica do <em>Brasil</em>, Juventude Independente Católica do <em>Brasil</em>/ CEDIC/ PUC-SP/ coord. Yara Aun Khoury. São Paulo: Imprensa Oficial do Estado, 1998. 172p....
+
+
+=== Execução de Teste: 2025-09-17 10:08:02 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 145.5753
+URL: https://atom-mhn.museus.gov.br/index.php/brasil
+Trecho do texto: DID: <em>Brasil</em> | SM-SMar-SMar003 (112.071) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/...
+
+--- Resultado 2 ---
+Score: 145.5427
+URL: https://atom-mhn.museus.gov.br/index.php/brasil-2
+Trecho do texto: DID: <em>Brasil</em> | SM-SMar-SMar004 (112.072) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/...
+
+--- Resultado 3 ---
+Score: 144.3326
+URL: https://atom-mhn.museus.gov.br/index.php/popular-do-brasil
+Trecho do texto: DID: <em>Popular</em> do <em>Brasil</em> | SM-SMar-SMar008 (112.076) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 4 ---
+Score: 137.2373
+URL: https://dibrarq.arquivonacional.gov.br/index.php/brasil-urgente
+Trecho do texto: de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do <em>Brasil</em> | Formulário do IPPDH respondido por | "O Jornal <em>Brasil</em>, Urgente e a revolução brasileira - Wellington Teodoro da Silva - PUC Minas / UFJF ... <em>Brasil</em> Urgente - Sociedade Anônima Veritas
+BIOGHIST: O jornal semanal <em>Brasil</em>, Urgente foi lançado no dia 17 de março de 1963 sob a direção do frei dominicano Carlos Josafá. ... que, <em>Brasil</em>, Urgente ‘não é porta-voz da Igreja, nem intérprete do clero nem da hierarquia’....
+
+--- Resultado 5 ---
+Score: 135.1744
+URL: https://atom-mhn.museus.gov.br/index.php/brasil-bahia
+Trecho do texto: DID: <em>Brasil</em>, Bahia | SM-SMar-SMar005 (112.073) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 6 ---
+Score: 129.5352
+URL: https://dibrarq.arquivonacional.gov.br/index.php/americo-brasil-donnici-2
+Trecho do texto: DID: Américo <em>Brasil</em> Donnici | OV | 1927 - 1955 | Textual(is) -sem especificação - 0,17 m | Arquivo Nacional (<em>Brasil</em>) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | <em>Brasil</em> | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional ... /pt-br | português do <em>Brasil</em> | Responsável da descrição | Carlos Alfredo Linhares Fábio | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Donnici, Américo <em>Brasil</em>
+BIOGHIST: Américo <em>Brasil</em> Donnici, italiano, foi autor de peças teatrais e poesias por volta das décadas de 1920 e 1930. ... CONTROLACCESS: Donnici, Américo <em>Brasil</em> | Arquivo Nacional 185 Anos
+ACQINFO: Donnici, Adalgisa Lima <em>Brasil</em> - 1969 - doação - 24
+CUSTODHIST: Esta coleção recebeu anteriormente o código 22 CP 11.
+OTHERFINDAID: ARQUIVO NACIONAL (<em>Brasil</em>). Inventário das coleções da Seção de Documentos Privados....
+
+--- Resultado 7 ---
+Score: 129.0523
+URL: https://dibrarq.arquivonacional.gov.br/index.php/fundacao-brasil-central-1968
+Trecho do texto: DID: Fundação <em>Brasil</em> Central | H3 | s/d | Dado não disponível. | Arquivo Nacional (<em>Brasil</em>). ... | português do <em>Brasil</em> | Unidade Custodiadora | Coordenação Regional do Arquivo Nacional do Distrito Federal - COREG | Fundação <em>Brasil</em> Central
+BIOGHIST: O  decreto-lei  n.  5878,  de  4  de  outubro  de  1943,  instituiu  a  Fundação  <em>Brasil</em>  Central,  destinada  a  desbravar  e  <em>colonizar</em>  as  zonas ... CONTROLACCESS: Fundação <em>Brasil</em> Central | Arquivo Nacional 185 Anos
+CUSTODHIST: Documentos originalmente recolhidos integrando o acervo da Superintendência do Desenvolvimento da Região Centro-Oeste....
+
+--- Resultado 8 ---
+Score: 128.1057
+URL: https://atom-mhn.museus.gov.br/index.php/panair-do-brasil
+Trecho do texto: Com capital americano, ela começou com o nome Nyrba do <em>Brasil</em>, referência à ligação entre as cidades de Nova York, Rio e Buenos Aires que seus aviões faziam. | Em 1930, a empresa Pan American absorve a Nyrba do <em>Brasil</em> e muda seu nome para Panair do <em>Brasil</em>. ... Com capital americano, ela começou com o nome Nyrba do <em>Brasil</em>, referência à ligação entre as cidades de Nova York, Rio e Buenos Aires que seus aviões faziam. | Em 1930, a empresa Pan American absorve a Nyrba do <em>Brasil</em> e muda seu nome para Panair do <em>Brasil</em>. ... Ao fundo, o logo da Panair do <em>Brasil</em>....
+
+--- Resultado 9 ---
+Score: 127.6630
+URL: https://dibrarq.arquivonacional.gov.br/index.php/brasil-nunca-mais
+Trecho do texto: DID: <em>Brasil</em> Nunca Mais | BNM | 1964 - 1979 | Iconográfico(s) -fotografia(s) - 249 item(ns) | Textual(is) -sem especificação - 175 m | Arquivo Edgard Leuenroth - Centro de Pesquisa e Documentação Social | Cidade Universitária Zeferino Vaz | Rua Cláudio Abramo, 377 | Campinas | São Paulo | <em>Brasil</em> | 13083 ... -856 | Telefone: 55 19 3521-1622 | Fax:55 19 3521-7060 | Email: secretar@unicamp.br | https://www.ael.ifch.unicamp.br/ | português do <em>Brasil</em> | A comparação entre os processos armazenados no AEL e os microfilmes em posse do Ministério Público Federal constatou que ambos são idênticos, portanto, as páginas ... Estudos sobre a tortura no <em>Brasil</em> e no mundo, com quadros estatísticos, além da transcrição de depoimentos sobre tortura com informações sobre os mortos e desaparecidos políticos.
+ARRANGEMENT: Os processos estão identificados individualmente....
+
+--- Resultado 10 ---
+Score: 123.2065
+URL: https://dibrarq.arquivonacional.gov.br/index.php/juventude-estudantil-catolica-do-brasil
+Trecho do texto: | português do <em>Brasil</em> | BETEATO, Mario Antônio. ... A JEC no <em>Brasil</em>. s.l., s.c.p., s.d. Fundo Juventude Estudantil Católica do <em>Brasil</em> (JECB). ... (Coleção Memória, Documentação e Pesquisa, 3) - Não definido | Inventários dos Fundos: Juventude Agrária Católica do <em>Brasil</em>, Juventude Estudantil Católica do <em>Brasil</em>, Juventude Independente Católica do <em>Brasil</em>/ CEDIC/ PUC-SP/ coord. Yara Aun Khoury. São Paulo: Imprensa Oficial do Estado, 1998. 172p....
+
+
+=== Execução de Teste: 2025-09-17 10:51:38 ===
+Consultas: ['práticas religiosas populares Brasil colonial imperial']
+Total de resultados: 9
+
+--- Resultado 1 ---
+Score: 35.4841
+URL: https://dibrarq.arquivonacional.gov.br/index.php/secao-colonial
+Trecho do texto: DID: Seção <em>Colonial</em> | SC | 1605-1849 | 45,0m lineares de doc. textuais: 406 volumes. | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | <em>Brasil</em> | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... / | português do <em>Brasil</em> | Prevalece documentos de 1702-1849. ... SCOPECONTENT: SC/SG: Os documentos foram produzidos por autoridades do Reino, da <em>Colônia</em> e da Capitania de Minas Gerais....
+
+--- Resultado 2 ---
+Score: 34.9847
+URL: https://atom-mhn.museus.gov.br/index.php/popular-do-brasil
+Trecho do texto: DID: <em>Popular</em> do <em>Brasil</em> | SM-SMar-SMar008 (112.076) | 1920 -1967 | Iconografia: lápis sobre papel; 63 x 49 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br...
+
+--- Resultado 3 ---
+Score: 28.5292
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000381
+Trecho do texto: Manifesto Liberal sobre a Questão <em>Religiosa</em>: Comprometo-me a arcar, mão por mão ou pé por pé, sem tréguas nem quartel, nessa questão <em>religiosa</em>, que se me afigura a maior ameaça que pesa sobre o país, ameaça contra todas as liberdades, pois em coisa alguma pode ser livre um povo que tem grilhões na consciência ... Crítica à Inação <em>Imperial</em> e ao Clero Ultramontano: Os padres ultramontanos estão arrastando o <em>Brasil</em> para a guerra civil e a anarquia. E enquanto lavram as desordens «Sua Alteza <em>Imperial</em> reza, e os ministros dizem uns aos outros — não a perturbemos»! ... Conflito <em>Religioso</em> em um Funeral: Falecendo, quiseram seus filhos armar a igreja, levantar a canga, consagrar sufrágios, mandar dizer missas....
+
+--- Resultado 4 ---
+Score: 27.5942
+URL: https://atom-mhn.museus.gov.br/index.php/familia-imperial
+Trecho do texto: Pedro a declarar a independência do <em>Brasil</em>, às margens do Ipiranga, em 7 de setembro de 1822. Foi aclamado Imperador e defensor perpétuo do <em>Brasil</em> (12 de outubro de 1822). ... Em 1824 outorgou uma constituição para o <em>Brasil</em> e, em 1826, outra a Portugal. No mesmo ano, abdicou da Coroa Portuguesa em favor de sua filha Maria da Glória. Em 1830 sofreu oposição liberal e reação <em>popular</em>, no <em>Brasil</em>, o que levou a abdicar em favor de seu filho D. Pedro II, em 7 de abril de 1831. ... Este foi republicado, em fascículos, em 1886, o que, para alguns autores, foi a primeira revista em quadrinhos com um personagem fixo a ser lançada no <em>Brasil</em>. | published | Saída de S.S.M.M. o Imperador e a Imperatriz do <em>Brasil</em> do porto do Rio de Janeiro no dia 25 de maio de 1871 / A. lith.; E. de Martino...
+
+--- Resultado 5 ---
+Score: 20.1163
+URL: https://atom-mhn.museus.gov.br/index.php/material-religioso
+Trecho do texto: DID: Material <em>Religioso</em> | MR | 1897 - 1991 | Textual: metragem linear 0,02 (corresponde a 49 itens) | Iconografia: 02 fotografias, 09 gravuras, 358 santinhos (<em>religiosos</em>) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | ... ARRANGEMENT: 8 séries: Lembrança, Lembrança de Primeira Comunhão, Iconografia, Diversos, Publicação <em>Religiosa</em>, Orações e Mensagens, Lembrança Fúnebre, Indiana Miranda....
+
+--- Resultado 6 ---
+Score: 18.7835
+URL: https://dibrarq.arquivonacional.gov.br/index.php/irma-zelia
+Trecho do texto: Desses,  nove  chegaram  à  idade  adulta,  tendo  todos  eles  ingressado  em  ordens  <em>religiosas</em>. | Após  o  falecimento  do  esposo  Jerônimo,  em  12  de  agosto  de  1909,  mudou-se  para  a  casa  do  pai  que,  também  viúvo  desde  1901,  veio  a  falecer  em  novembro  de  1913. | Em  22  de ... Manuscritos de pensamentos filosóficos e <em>religiosos</em>. Caderno de traduções de hinos <em>religiosos</em>. Publicações em alemão e francês sobre a obra da titular. Correspondência sobre assuntos familiares e <em>religiosos</em>. Fotografias da titular, de familiares e outros. ... foram doados à Paróquia de Nossa Senhora de Copacabana. | Segundo artigo publicado no Mensário do Arquivo Nacional (ano 4, n. 11, p. 21-33, nov. 1973) , o acervo não poderia ser entendido como arquivo "pois que este ela própria o destruíra, por espírito de humildade, quando se preparava para a vida <em>religiosa</em>...
+
+--- Resultado 7 ---
+Score: 17.4146
+URL: https://dibrarq.arquivonacional.gov.br/index.php/juventude-estudantil-catolica-do-brasil
+Trecho do texto: Num primeiro momento, sua atuação se restringiu às associações <em>religiosas</em>, tendo por finalidade a descoberta da Igreja pelos estudantes e a difusão do cristianismo dentro das escolas. | A partir de 1947, a JEC ganha um novo rumo com a elaboração de experiências para serem aplicadas no Brasil por Vera ... O meio estudantil é compreendido como fruto da sociedade em todos os aspectos (político, econômico, <em>religioso</em>), assim é também tido como centro para o debate de questões que refletem os problemas sociais. ... preparação de jornal, declarações de resoluções de eventos, relações de eventos, panfletos de campanhas <em>religiosas</em>, relatórios-síntese de comissões do movimento, resumos de conferências, cadernos de análise do método de trabalho, de atividades, esquemas, estatutos da JECB, estatutos de movimentos de...
+
+--- Resultado 8 ---
+Score: 16.7967
+URL: https://dibrarq.arquivonacional.gov.br/index.php/conselho-ultramarino-brasil-capitania-do-rio-de-janeiro
+Trecho do texto: | https://www.aperj.rj.gov.br/ | português do <em>Brasil</em> | Conselho Ultramarino
+BIOGHIST: A administração portuguesa para as <em>colônias</em> e conquistas iniciou-se com a Mesa de Fazenda, onde se reuniam os vedores, existindo para a área ultramarina o vedor da Índia, <em>Brasil</em> e Guiné. ... Destacam-se documentos relativos ao controle de contrabando; monopólio de produtos <em>coloniais</em>; <em>Colônia</em> do Sacramento; solicitação de cargos e ofícios por particulares; concessão de sesmarias; questões indígenas; guarnições militares; obras públicas. ... PROCESSINFO: 2014-03-25
+OTHERFINDAID: A documentação pode ser consultada em CD-ROM <em>BRASIL</em>. BIBLIOTECA NACIONAL. ANAIS: Inventário dos documentos relativos ao <em>Brasil</em>, existente no Arquivo da Marinha e Ultramar de Lisboa. Rio de Janeiro....
+
+--- Resultado 9 ---
+Score: 16.3600
+URL: https://atom-mhn.museus.gov.br/index.php/cama-colonial-tiradentes
+Trecho do texto: DID: Cama <em>colonial</em>, Tiradentes | NF-NF-NF149 (031.802) | Iconografia: Bico de pena: 27x22,7 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado...
+
+
+=== Execução de Teste: 2025-09-17 10:59:52 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 85.2373
+URL: https://dibrarq.arquivonacional.gov.br/index.php/alberto-do-rego-rangel-2
+Trecho do texto: Pedro I e sua época, cópias de correspondência diplomática e também do titular com <em>Monteiro Lobato</em>, Afonso Taunay, Roquete Pinto e outros. Impressos e recortes de jornais referentes ao titular, Euclides da Cunha, etc....
+
+--- Resultado 2 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 3 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 4 ---
+Score: 31.1670
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 6 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 7 ---
+Score: 23.3159
+URL: https://dibrarq.arquivonacional.gov.br/index.php/julio-prestes-de-albuquerque
+Trecho do texto: Cita em alguns deles o escritor <em>Monteiro Lobato</em>, o jurista e político Rui Barbosa, o poeta português Antonio Nobre e o francês Paul Verlaine. | Apesar de não participar como autor do movimento modernista1 na sua vertente paulista, tem entre seus amigos o escultor Victor Brecheret e o escritor Oswald...
+
+
+=== Execução de Teste: 2025-09-17 11:10:43 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 85.2373
+URL: https://dibrarq.arquivonacional.gov.br/index.php/alberto-do-rego-rangel-2
+Trecho do texto: Pedro I e sua época, cópias de correspondência diplomática e também do titular com <em>Monteiro Lobato</em>, Afonso Taunay, Roquete Pinto e outros. Impressos e recortes de jornais referentes ao titular, Euclides da Cunha, etc....
+
+--- Resultado 2 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 3 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 4 ---
+Score: 31.1670
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 6 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 7 ---
+Score: 23.3159
+URL: https://dibrarq.arquivonacional.gov.br/index.php/julio-prestes-de-albuquerque
+Trecho do texto: Cita em alguns deles o escritor <em>Monteiro Lobato</em>, o jurista e político Rui Barbosa, o poeta português Antonio Nobre e o francês Paul Verlaine. | Apesar de não participar como autor do movimento modernista1 na sua vertente paulista, tem entre seus amigos o escultor Victor Brecheret e o escritor Oswald...
+
+
+=== Execução de Teste: 2025-09-17 11:18:27 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 85.2373
+URL: https://dibrarq.arquivonacional.gov.br/index.php/alberto-do-rego-rangel-2
+Trecho do texto: Pedro I e sua época, cópias de correspondência diplomática e também do titular com <em>Monteiro Lobato</em>, Afonso Taunay, Roquete Pinto e outros. Impressos e recortes de jornais referentes ao titular, Euclides da Cunha, etc....
+
+--- Resultado 2 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 3 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 4 ---
+Score: 31.1670
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 6 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 7 ---
+Score: 23.3159
+URL: https://dibrarq.arquivonacional.gov.br/index.php/julio-prestes-de-albuquerque
+Trecho do texto: Cita em alguns deles o escritor <em>Monteiro Lobato</em>, o jurista e político Rui Barbosa, o poeta português Antonio Nobre e o francês Paul Verlaine. | Apesar de não participar como autor do movimento modernista1 na sua vertente paulista, tem entre seus amigos o escultor Victor Brecheret e o escritor Oswald...
+

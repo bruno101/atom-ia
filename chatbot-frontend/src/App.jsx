@@ -7,6 +7,7 @@ import MessageList from "./components/MessageList/MessageList";
 import Sidebar from "./components/Sidebar/Sidebar";
 import createHandleSubmit from "./logic/createHandleSubmit";
 import Footer from "./components/Footer/Footer";
+import { useProgressTimeout } from "./hooks/useProgressTimeout";
 
 /**
  * Componente principal da aplicação SIAN
@@ -36,12 +37,31 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [currentProgressMessage, setCurrentProgressMessage] = useState("");
   const [partialResponse, setPartialResponse] = useState("");
-  
-  // Referências para controle de scroll e cancelamento de requisições
+
+  // Debug logging para mudanças de estado
+  useEffect(() => {
+    console.log('🔄 APP: isLoading changed to:', isLoading);
+  }, [isLoading]);
+
+  useEffect(() => {
+    console.log('💬 APP: currentProgressMessage changed to:', currentProgressMessage);
+  }, [currentProgressMessage]);
+
+  useEffect(() => {
+    console.log('📝 APP: partialResponse changed, length:', partialResponse?.length || 0);
+  }, [partialResponse]);
+  const [showSidebar, setShowSidebar] = useState(false);
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
+  
 
-  // Função para rolar automaticamente para o final do chat
+
+  const { startProgressTimeout, updateProgressMessage, clearProgressTimeout } = useProgressTimeout(
+    isLoading, 
+    partialResponse, 
+    setCurrentProgressMessage
+  );
+
   const scrollToEnd = () => {
     if (scrollAreaRef.current) {
       scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
@@ -57,16 +77,25 @@ function App() {
     setSuggestedLinks,
     isLoading,
     setIsLoading,
-    setCurrentProgressMessage,
+    setCurrentProgressMessage: updateProgressMessage,
     setPartialResponse,
     setShowSidebar,
     abortControllerRef,
     selectedModel,
     scrollToEnd,
+    startProgressTimeout,
+    clearProgressTimeout,
   }), [messages, input, isLoading, selectedModel]);
 
   // Alterna a visibilidade da sidebar
   const toggleSidebar = () => setShowSidebar(!showSidebar);
+
+  // Cleanup do timeout quando o componente for desmontado
+  useEffect(() => {
+    return () => {
+      clearProgressTimeout();
+    };
+  }, []);
 
   return (
     <div className="app">
