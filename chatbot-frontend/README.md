@@ -92,7 +92,7 @@ src/
 - **Scroll Independente**: Chat e sidebar com rolagem separada
 - **Input Fixo**: Campo de entrada sempre visível
 - **Busca por Voz**: Botão de microfone integrado ao campo de entrada
-- **Leitura em Voz Alta**: Botão de áudio nas mensagens do assistente
+- **Leitura em Voz Alta**: Botão de áudio em todas as mensagens do chat
 - **Feedback Visual**: Indicadores de carregamento e progresso
 - **Design Adaptativo**: Layout otimizado para diferentes telas
 
@@ -124,9 +124,10 @@ A aplicação utiliza:
 #### 🔊 Leitura em Voz Alta
 - **Speech Synthesis API**: Síntese de voz nativa do navegador
 - **Idioma**: Configurado para português brasileiro (pt-BR)
-- **Interface**: Botão de áudio ao lado das mensagens do assistente
+- **Interface**: Botão de áudio em todas as mensagens (usuário e assistente)
 - **Limpeza de texto**: Remove formatação Markdown para leitura natural
 - **Estados visuais**: Animação durante reprodução
+- **Posicionamento**: Canto superior direito para todas as mensagens
 
 ### Customização
 - **Cores**: Modifique as variáveis CSS nos arquivos `.module.css`

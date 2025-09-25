@@ -76,10 +76,10 @@ const ChatMessage = ({ message }) => {
         }`}
       >
         <div className={styles.messageContent}>
-          {/* Botão de leitura em voz alta (apenas para mensagens do assistente) */}
-          {!isUser && isSupported && (
+          {/* Botão de leitura em voz alta (para todas as mensagens) */}
+          {isSupported && (
             <button
-              className={`${styles.speakButton} ${isSpeaking ? styles.speaking : ''}`}
+              className={`${styles.speakButton} ${isSpeaking ? styles.speaking : ''} ${isUser ? styles.speakButtonUser : ''}`}
               onClick={handleSpeakClick}
               title={isSpeaking ? "Parar leitura" : "Ler em voz alta"}
             >

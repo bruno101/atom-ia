@@ -65,6 +65,8 @@
   padding-right: 36px;
 }
 
+
+
 .speakButton {
   position: absolute;
   top: 4px;
@@ -86,6 +88,8 @@
   flex-shrink: 0;
 }
 
+
+
 .speakButton:hover {
   background-color: #007bff;
   color: white;
@@ -99,6 +103,25 @@
 }
 
 .speakButton.speaking:hover {
+  background-color: #c82333;
+}
+
+.speakButtonUser {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.speakButtonUser:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.speakButtonUser.speaking {
+  background-color: #dc3545;
+  color: white;
+}
+
+.speakButtonUser.speaking:hover {
   background-color: #c82333;
 }
 
