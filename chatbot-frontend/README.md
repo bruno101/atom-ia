@@ -1,10 +1,11 @@
-# 🤖 SIAN - Sistema Inteligente de Arquivos Nacionais
+# 🤖 SIAN - Sistema de Informações do Arquivo Nacional
 
-Uma interface moderna e intuitiva para consultas arquivísticas inteligentes, conectada ao banco de dados do AtoM (Access to Memory).
+Uma interface moderna e intuitiva para consultas arquivísticas inteligentes, conectada ao banco de dados Oracle.
 
 ## ✨ Características
 
 - 🔍 **Busca Inteligente**: IA especializada em consultas arquivísticas
+- 🎤 **Busca por Voz**: Reconhecimento de voz para consultas faladas
 - 💬 **Interface de Chat**: Conversação natural com o sistema
 - 📱 **Design Responsivo**: Funciona perfeitamente em desktop e mobile
 - 🔗 **Links Sugeridos**: Recursos relacionados exibidos dinamicamente
@@ -12,10 +13,18 @@ Uma interface moderna e intuitiva para consultas arquivísticas inteligentes, co
 
 ## 🚀 Tecnologias
 
+### Frontend
 - **React 18** - Framework principal
 - **Create React App** - Build tool e dev server
 - **CSS Modules** - Estilização modular
 - **Design System Gov.br** - Componentes governamentais
+- **Web Speech API** - Reconhecimento de voz nativo do navegador
+
+### Backend & IA
+- **Modelo LLM**: Google Gemini 2.5 Flash - Geração de respostas e processamento de linguagem natural
+- **Oracle Database** - Banco de dados principal para armazenamento de documentos
+- **Elasticsearch** - Motor de busca para consultas textuais e indexação
+- **FastAPI** - Framework web para APIs REST
 
 ## 📦 Instalação
 
@@ -44,18 +53,30 @@ npm run eject        # Ejetar configuração CRA
 
 ## 🏗️ Estrutura do Projeto
 
+### Frontend
 ```
 src/
 ├── components/          # Componentes React
 │   ├── Header/         # Cabeçalho da aplicação
 │   ├── ChatHeader/     # Cabeçalho do chat
 │   ├── MessageList/    # Lista de mensagens
-│   ├── InputForm/      # Formulário de entrada
+│   ├── InputForm/      # Formulário de entrada com busca por voz
 │   ├── Sidebar/        # Barra lateral com links
 │   └── Footer/         # Rodapé
+├── hooks/              # Hooks personalizados (useSpeechRecognition)
 ├── icons/              # Ícones SVG
 ├── logic/              # Lógica de negócio
 └── App.jsx            # Componente principal
+```
+
+### Backend (python-backend-2)
+```
+├── api/                 # Serviços da API
+├── rag_models/          # Modelos RAG (flash, thinking)
+├── search_algorithms/   # Algoritmos de busca e avaliação
+├── main.py             # Servidor FastAPI
+├── config.py           # Configurações globais
+└── requirements.txt    # Dependências Python
 ```
 
 ## 🎨 Funcionalidades
@@ -69,6 +90,7 @@ src/
 ### Experiência do Usuário
 - **Scroll Independente**: Chat e sidebar com rolagem separada
 - **Input Fixo**: Campo de entrada sempre visível
+- **Busca por Voz**: Botão de microfone integrado ao campo de entrada
 - **Feedback Visual**: Indicadores de carregamento e progresso
 - **Design Adaptativo**: Layout otimizado para diferentes telas
 
@@ -80,6 +102,22 @@ Crie um arquivo `.env` na raiz do projeto:
 ```env
 REACT_APP_API_URL=http://localhost:8000
 ```
+
+### Arquitetura do Backend
+A aplicação utiliza:
+- **Google Gemini 2.5 Flash**: Modelo de linguagem para geração de respostas contextuais
+- **Oracle Database**: Armazenamento principal dos documentos arquivísticos
+- **Elasticsearch**: Índice de busca textual com algoritmos avançados (BM25, TF-IDF)
+- **Algoritmos de Busca**: BM25, BM25+, TF-IDF, LambdaMART para recuperação de documentos
+
+### Funcionalidades Avançadas
+
+#### 🎤 Busca por Voz
+- **Web Speech API**: Reconhecimento de voz nativo do navegador
+- **Idioma**: Configurado para português brasileiro (pt-BR)
+- **Interface**: Botão de microfone no estilo WhatsApp
+- **Estados visuais**: Animação durante gravação
+- **Compatibilidade**: Funciona em navegadores modernos
 
 ### Customização
 - **Cores**: Modifique as variáveis CSS nos arquivos `.module.css`

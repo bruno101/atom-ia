@@ -1,11 +1,13 @@
-import { faBolt, faLightbulb, faSearch, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faLightbulb, faSearch, faChevronUp, faMicrophone, faStop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useRef, useEffect } from "react";
+import { useSpeechRecognition } from "../../hooks/useSpeechRecognition";
 import styles from "./InputForm.module.css"; 
 
 const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const { isListening, startListening, stopListening, isSupported } = useSpeechRecognition();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -26,6 +28,17 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
   const handleModelSelect = (model) => {
     onModelChange?.(model);
     setIsDropdownOpen(false);
+  };
+
+  // Manipula o clique no botão de voz
+  const handleVoiceClick = () => {
+    if (isListening) {
+      stopListening();
+    } else {
+      startListening((transcript) => {
+        setInput(transcript);
+      });
+    }
   };
 
   return (
@@ -63,10 +76,21 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Digite sua consulta..."
+        placeholder={isListening ? "Ouvindo..." : "Digite sua consulta..."}
         className={styles.inputField}
         disabled={isLoading}
       />
+      {isSupported && (
+        <button
+          type="button"
+          onClick={handleVoiceClick}
+          className={`${styles.voiceButton} ${isListening ? styles.listening : ''}`}
+          disabled={isLoading}
+          title={isListening ? "Parar gravação" : "Busca por voz"}
+        >
+          <FontAwesomeIcon icon={isListening ? faStop : faMicrophone} />
+        </button>
+      )}
     </div>
     <button
       type="submit"
