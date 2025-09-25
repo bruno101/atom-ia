@@ -236,7 +236,7 @@
   height: 32px;
   border: none;
   border-radius: 50%;
-  background-color: #25D366;
+  background-color: #0c94ad;
   color: white;
   cursor: pointer;
   display: flex;
@@ -247,7 +247,7 @@
 }
 
 .voiceButton:hover {
-  background-color: #128C7E;
+  background-color: #0C326F;
   transform: translateY(-50%) scale(1.05);
 }
 
