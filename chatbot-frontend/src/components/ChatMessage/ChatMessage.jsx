@@ -2,6 +2,9 @@ import { useState } from "react";
 import UserIcon from "../../icons/UserIcon";
 import formatTime from "../../utils/formatTime";
 import ReactMarkdown from "react-markdown";
+import { useTextToSpeech } from "../../hooks/useTextToSpeech";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVolumeUp, faStop } from "@fortawesome/free-solid-svg-icons";
 import styles from "./ChatMessage.module.css";
 
 /**
@@ -41,8 +44,16 @@ const ChatMessage = ({ message }) => {
     }
   };
 
+  // Hook para leitura em voz alta
+  const { isSpeaking, speak, isSupported } = useTextToSpeech();
+
   // Determina se a mensagem é do usuário ou do assistente
   const isUser = message.role === "user";
+
+  // Manipula o clique no botão de leitura
+  const handleSpeakClick = () => {
+    speak(message.content);
+  };
 
   return (
     <div
@@ -65,6 +76,17 @@ const ChatMessage = ({ message }) => {
         }`}
       >
         <div className={styles.messageContent}>
+          {/* Botão de leitura em voz alta (apenas para mensagens do assistente) */}
+          {!isUser && isSupported && (
+            <button
+              className={`${styles.speakButton} ${isSpeaking ? styles.speaking : ''}`}
+              onClick={handleSpeakClick}
+              title={isSpeaking ? "Parar leitura" : "Ler em voz alta"}
+            >
+              <FontAwesomeIcon icon={isSpeaking ? faStop : faVolumeUp} />
+            </button>
+          )}
+          
           {/* Renderiza o conteúdo da mensagem com suporte a Markdown */}
           <ReactMarkdown
             components={{

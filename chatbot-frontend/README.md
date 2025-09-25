@@ -6,6 +6,7 @@ Uma interface moderna e intuitiva para consultas arquivísticas inteligentes, co
 
 - 🔍 **Busca Inteligente**: IA especializada em consultas arquivísticas
 - 🎤 **Busca por Voz**: Reconhecimento de voz para consultas faladas
+- 🔊 **Leitura em Voz Alta**: Síntese de voz para respostas do chatbot
 - 💬 **Interface de Chat**: Conversação natural com o sistema
 - 📱 **Design Responsivo**: Funciona perfeitamente em desktop e mobile
 - 🔗 **Links Sugeridos**: Recursos relacionados exibidos dinamicamente
@@ -18,7 +19,7 @@ Uma interface moderna e intuitiva para consultas arquivísticas inteligentes, co
 - **Create React App** - Build tool e dev server
 - **CSS Modules** - Estilização modular
 - **Design System Gov.br** - Componentes governamentais
-- **Web Speech API** - Reconhecimento de voz nativo do navegador
+- **Web Speech API** - Reconhecimento de voz e síntese de voz nativos do navegador
 
 ### Backend & IA
 - **Modelo LLM**: Google Gemini 2.5 Flash - Geração de respostas e processamento de linguagem natural
@@ -63,7 +64,7 @@ src/
 │   ├── InputForm/      # Formulário de entrada com busca por voz
 │   ├── Sidebar/        # Barra lateral com links
 │   └── Footer/         # Rodapé
-├── hooks/              # Hooks personalizados (useSpeechRecognition)
+├── hooks/              # Hooks personalizados (useSpeechRecognition, useTextToSpeech)
 ├── icons/              # Ícones SVG
 ├── logic/              # Lógica de negócio
 └── App.jsx            # Componente principal
@@ -91,6 +92,7 @@ src/
 - **Scroll Independente**: Chat e sidebar com rolagem separada
 - **Input Fixo**: Campo de entrada sempre visível
 - **Busca por Voz**: Botão de microfone integrado ao campo de entrada
+- **Leitura em Voz Alta**: Botão de áudio nas mensagens do assistente
 - **Feedback Visual**: Indicadores de carregamento e progresso
 - **Design Adaptativo**: Layout otimizado para diferentes telas
 
@@ -118,6 +120,13 @@ A aplicação utiliza:
 - **Interface**: Botão de microfone no estilo WhatsApp
 - **Estados visuais**: Animação durante gravação
 - **Compatibilidade**: Funciona em navegadores modernos
+
+#### 🔊 Leitura em Voz Alta
+- **Speech Synthesis API**: Síntese de voz nativa do navegador
+- **Idioma**: Configurado para português brasileiro (pt-BR)
+- **Interface**: Botão de áudio ao lado das mensagens do assistente
+- **Limpeza de texto**: Remove formatação Markdown para leitura natural
+- **Estados visuais**: Animação durante reprodução
 
 ### Customização
 - **Cores**: Modifique as variáveis CSS nos arquivos `.module.css`
