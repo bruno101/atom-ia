@@ -15,7 +15,6 @@ import json
 
 load_dotenv()
 URL_ELASTIC_SEARCH = os.getenv("URL_ELASTIC_SEARCH")
-print("url encontrada:", URL_ELASTIC_SEARCH)
 
 # Configuração do sistema de logging
 logging.basicConfig(level=logging.INFO)
@@ -24,12 +23,12 @@ logger = logging.getLogger(__name__)
 # Carrega variáveis de ambiente
 load_dotenv()
 
-# Algoritmo de busca padrão (BM25)
+# Algoritmo de busca padrão (elastic search - variação do bm25)
 DEFAULT_SEARCH_ALGORITHM = elasticsearch_search
 EVALUATE_WITH_GEMINI = True
 
-def search_documents_by_text(queries, n_results_per_query=5):
-    """Função principal de busca usando algoritmo BM25 padrão
+def search_documents_by_text(queries, n_results_per_query=5, expand=True):
+    """Função principal de busca usando algoritmo padrão
     
     Args:
         queries (list[str]): Lista de consultas textuais
@@ -45,7 +44,11 @@ def search_documents_by_text(queries, n_results_per_query=5):
         queries = [q.lower() if q else q for q in queries]
         print("Consultas:\n")
         print(queries)
-    return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query, url_elastic_search=URL_ELASTIC_SEARCH, expand=True)
+    # Handle different algorithm signatures
+    if DEFAULT_SEARCH_ALGORITHM == elasticsearch_search:
+        return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query, url_elastic_search=URL_ELASTIC_SEARCH, expand=expand)
+    else:
+        return DEFAULT_SEARCH_ALGORITHM.search_documents_by_text(queries, n_results_per_query)
 
 
 def evaluate_with_gemini(query, all_results):
@@ -84,7 +87,7 @@ def evaluate_with_gemini(query, all_results):
                     "url": doc['url'],
                     "text_preview": doc['text'][:5000] + "..."
                 }
-                for i, doc in enumerate(results[:10])
+                for i, doc in enumerate(results)
             ]
         
         # Prompt para Gemini
@@ -101,7 +104,7 @@ Gere um relatório estruturado em markdown seguindo EXATAMENTE este formato:
 
 ## Avaliação Detalhada por Resultado
 
-Para CADA resultado dos top 10 de CADA algoritmo, atribua uma nota de relevância:
+Para CADA resultado de CADA algoritmo (total de {len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]])} resultados por algoritmo), atribua uma nota de relevância:
 - **Nota 3**: Altamente relevante para "{query}"
 - **Nota 2**: Moderadamente relevante
 - **Nota 1**: Pouco relevante
@@ -113,16 +116,16 @@ Para CADA resultado dos top 10 de CADA algoritmo, atribua uma nota de relevânci
 | 1        | X                | X.X                    | ... | [justificativa] |
 | 2        | X                | X.X                    | ... | [justificativa] |
 | ...      | ...              | ...                    | ... | ... |
-| 10       | X                | X.X                    | ... | [justificativa] |
+| {len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]])}       | X                | X.X                    | ... | [justificativa] |
 **Score Final**: X.XX (média das notas com peso)
 
 [Repita para todos os algoritmos]
 
 ## Cálculo de Scores
-**Fórmula**: Nota com Peso = Nota Relevância × (1 + (11 - posição) × 0.1)
-- Posição 1: multiplicador 2.0 (100% bônus)
-- Posição 5: multiplicador 1.6 (60% bônus)
-- Posição 10: multiplicador 1.1 (10% bônus)
+**Fórmula**: Nota com Peso = Nota Relevância × (1 + ({len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]]) + 1} - posição) × 0.1)
+- Posição 1: multiplicador {1 + len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]]) * 0.1:.1f} ({len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]]) * 10}% bônus)
+- Posição {len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]]) // 2}: multiplicador {1 + (len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]]) // 2) * 0.1:.1f} ({(len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]]) // 2) * 10}% bônus)
+- Posição {len(analysis_data['algorithms'][list(analysis_data['algorithms'].keys())[0]])}: multiplicador 1.1 (10% bônus)
 
 ## Ranking Final dos Algoritmos
 | Posição | Algoritmo | Score Final | Melhor Resultado |
@@ -165,8 +168,14 @@ def test_all_algorithms():
                                  elasticsearch_search, vector_search)
     
     # Consulta de teste padrão
-    test_queries = ['pesquise sobre monteiro lobato']
+    test_queries = ['práticas religiosas populares Brasil colonial imperial']
     query = test_queries[0]  # Usa primeira consulta para avaliação
+    
+    # Primeiro, determina quantos resultados o Elasticsearch expandido retorna
+    logger.info("Determinando número de resultados do Elasticsearch expandido...")
+    elasticsearch_expanded_results = elasticsearch_search.search_documents_by_text(test_queries, n_results_per_query=10, url_elastic_search=URL_ELASTIC_SEARCH, expand=True)
+    n_results = len(elasticsearch_expanded_results)
+    logger.info(f"Elasticsearch expandido retornou {n_results} resultados. Usando este número para todos os algoritmos.")
     
     # Dicionário com todos os algoritmos disponíveis
     algorithms = {
@@ -183,8 +192,8 @@ def test_all_algorithms():
         logger.info(f"Testando algoritmo {algo_name}...")
         
         try:
-            # Executa busca com o algoritmo atual (top 10 para avaliação)
-            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=10)
+            # Executa busca com o algoritmo atual usando o número dinâmico de resultados
+            results = algo_module.search_documents_by_text(test_queries, n_results_per_query=n_results)
             all_results[algo_name] = results
             
             # Salva resultados em arquivo de log específico do algoritmo
@@ -213,7 +222,12 @@ def test_all_algorithms():
         logger.info(f"Testando {algo_name}...")
         
         try:
-            results = elasticsearch_search.search_documents_by_text(test_queries, n_results_per_query=10, url_elastic_search=URL_ELASTIC_SEARCH, expand=expand)
+            if expand:
+                # Usa os resultados já obtidos para expansão habilitada
+                results = elasticsearch_expanded_results
+            else:
+                # Executa busca sem expansão usando o mesmo número de resultados
+                results = elasticsearch_search.search_documents_by_text(test_queries, n_results_per_query=n_results, url_elastic_search=URL_ELASTIC_SEARCH, expand=expand)
             all_results[algo_name] = results
             
             log_filename = f"search_algorithms/{algo_name}_results.txt"
@@ -258,16 +272,16 @@ def test_all_algorithms():
             logger.warning("⚠️ Não foi possível gerar relatório com Gemini")
 
 def test_text_search():
-    """Testa o algoritmo BM25 padrão
+    """Testa o algoritmo padrão
     
-    Executa uma busca de teste usando apenas o algoritmo padrão (BM25)
+    Executa uma busca de teste usando apenas o algoritmo padrão
     e exibe os resultados no console para verificação rápida.
     
     Returns:
         list[dict]: Lista de documentos encontrados
     """
     # Consulta de teste
-    test_queries = ["pesquise sobre monteiro lobato"]
+    test_queries = ["Encontre documentos sobre Antônio Conselheiro e Canudos"]
     logger.info(f"Testando algoritmo padrão com consultas: {test_queries}")
 
     # Executa busca com algoritmo padrão
@@ -291,4 +305,4 @@ if __name__ == "__main__":
     
     # Descomente a linha abaixo para testar apenas o algoritmo padrão
     #test_text_search()
-    test_all_algorithms()
+    test_text_search()

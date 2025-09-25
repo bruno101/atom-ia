@@ -344,3 +344,520 @@ Score: 23.3159
 URL: https://dibrarq.arquivonacional.gov.br/index.php/julio-prestes-de-albuquerque
 Trecho do texto: Cita em alguns deles o escritor <em>Monteiro Lobato</em>, o jurista e político Rui Barbosa, o poeta português Antonio Nobre e o francês Paul Verlaine. | Apesar de não participar como autor do movimento modernista1 na sua vertente paulista, tem entre seus amigos o escultor Victor Brecheret e o escritor Oswald...
 
+
+=== Execução de Teste: 2025-09-17 14:39:01 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 8
+
+--- Resultado 1 ---
+Score: 190.7078
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: causados pelas chuvas no encanamento geral de <em>gás</em>, colocação de lampião <em>nas</em> ruas <em>da</em> corte, etc. ... Surgiram, assim, <em>as</em> séries funcionais, que classificam parte <em>da</em> documentação <em>da</em> administração central dos ministérios, <em>e</em> de órgãos <em>a</em> eles pertencentes, de acordo <em>com</em> <em>a</em> função ou atividade ministerial principal, subdividindo-<em>a</em>, ainda, em atividades secundárias, específicas de determinado serviço. ... Assim, <em>Iluminação</em> <em>e</em> <em>gás</em>, por exemplo, corresponde <em>a</em> uma subsérie <em>da</em> atividade principal, representada <em>na</em> SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 2 ---
+Score: 86.0216
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000710
+Trecho do texto: A Chegada da Iluminação a <em>Gás</em> em São Paulo: A companhia do sr. Guilherme da Silveira, que vai à corte representar a «Viagem ao redor do mundo», de Jules Verne, começa a fazer exercícios práticos, dando voltas pela província, indo a Campinas, voltando a S. ... Paulo, partindo para a corte, de onde há de vir, para nestes tempos de 'globo-<em>gás</em>' e de queixas contra a companhia do <em>gás</em>, dar-nos a «lâmpada Maravilhosa»....
+
+--- Resultado 3 ---
+Score: 77.6794
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=70d1c934-fe9b-4c63-a01d-ae7282f333d6
+Trecho do texto: Modernização da <em>Iluminação</em> Pública a Gás na Capital: A inovar, sob as bases apresentadas, por parte da empresa da <em>iluminação</em> a gás, a cláusula 10ª do respectivo contrato....
+
+--- Resultado 4 ---
+Score: 70.1703
+URL: https://dibrarq.arquivonacional.gov.br/index.php/proveniencia-desconhecida-2
+Trecho do texto: marítimo e terrestre, prédios públicos e de urbanismo, com destaque à <em>cidade</em> do Rio de Janeiro. | Gravuras e desenhos referentes à personalidades da história do Brasil, vistas da Cachoeira de Paulo Afonso e das <em>cidades</em> do Rio de Janeiro e Paris, porto de Amsterdã, homenagens ao Exército <em>Brasileiro</em> e ... cenas relacionadas com a história da França e Espanha. | Fotografias referentes à vistas de <em>cidades brasileiras</em>, obras oficiais nos estados <em>brasileiros</em>, Fundação Brasil Central e produção agrícola e industrial <em>brasileira</em>. ... [Rio de Janeiro]: Arquivo Nacional, s.d. ... p. - Não impressos | GUIA <em>Brasileiro</em> de fontes para a história da África, da escravidão negra e do negro na sociedade atual: frente arquivística. Coord. por Arquivo Nacional....
+
+--- Resultado 5 ---
+Score: 66.3136
+URL: https://atom-mhn.museus.gov.br/index.php/angela-cardoso-guedes-3
+Trecho do texto: . | Angela Cardoso Guedes
+BIOGHIST: Angela Cardoso Guedes, nasceu dia 27/03/1958, na <em>cidade</em> do Rio de Janeiro, possui graduação em Jornalismo (1980), mestrado em Ciência da Informação (1991), doutorado em Ciência da Informação (2004), todos os títulos obtidos pela Universidade Federal do Rio de Janeiro ... Nos últimos vinte anos vem atuando no Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN) e no Instituto <em>Brasileiro</em> de Museus (IBRAM), na elaboração de projetos culturais, organização de eventos, assessoria de imprensa, marketing, promoções, relações públicas, comissões, administração; atualmente ... SCOPECONTENT: Documentos pessoais da titular, cartões postais que têm como principal tema <em>cidades brasileiras</em> (paisagens e monumentos), fotos ( são basicamente do Rio de Janeiro ) e cartões festivos que referem-se as comemorações de  natal e ano-novo....
+
+--- Resultado 6 ---
+Score: 61.0179
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000118-d011246
+Trecho do texto: <em>A Chegada</em> de Getúlio Vargas <em>a</em> São Paulo: Getúlio Vargas, dentro de algumas horas, deverá descer em São Paulo. É o triunfo das armas revolucionárias que se confirma. De Norte ao Sul do país, todos os espíritos pediam <em>a</em> paz para <em>a</em> família brasileira com <em>a</em> vitória da Revolução. E ela veio. ... <em>Chegada</em> da Vanguarda Revolucionária <em>a</em> São Paulo: <em>Chegaram</em>, hoje, <em>a</em> esta capital, desembarcando no desvio da Água Branca, da E. F. Sorocabana, um contingente de tropa que constitui <em>a</em> vanguarda da força comandada pelo general Miguel Costa. ... Galeno e Braz de Revorêdo, à rua Líbero Badaró, 36, <em>a</em> fim de se tratar das homenagens aos chefes e soldados gaúchos que <em>chegam</em> <em>a</em> São Paulo....
+
+--- Resultado 7 ---
+Score: 53.7171
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=50f4ac17-9446-4327-b9f4-71fd80f14de7
+Trecho do texto: <em>A Chegada</em> da Polícia e o Erro Estratégico: <em>A</em> polícia chegou, e, como ela vinha para garantir o serviço da baleeira da Escola, única que trabalhava, foi colocar-se <em>a</em> mais de 100 metros do ponto do desembarque. Deste erro inexplicável resultou toda <em>a</em> desgraça. ... Escalada do Conflito: O Armamento Improvisado dos Grevistas: <em>Chegando</em> as forças, alguns catraeiros foram se armar, para falar <em>a</em> linguagem da Mensagem trouxeram achas de lenha e arcos de barril que <em>a</em> Mensagem chama – barras de ferro. ... <em>A</em> Carga da Cavalaria: Violência contra os Trabalhadores: O comandante vira-os e disse para o oficial que comandava <em>a</em> cavalaria: é tempo de vs. irem <em>chegando</em>....
+
+--- Resultado 8 ---
+Score: 49.9361
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado <em>a</em> sustentar <em>as</em> ideias livres, proteger <em>a</em> causa <em>da</em> justiça, <em>e</em> propugnar pela fiel observância <em>da</em> lei <em>e</em> interesses locais. ... <em>Chegada</em> <em>da</em> <em>Iluminação</em> <em>a</em> <em>Gás</em> em Recife: No dia 26 de fevereiro principiou esta <em>cidade</em> <em>a</em> ser iluminada <em>a</em> <em>gás</em>, <em>mas</em> somente <em>nos</em> bairros de S. Antônio <em>e</em> S. ... Carestia <em>e</em> Especulação <em>com</em> o Preço <em>da</em> Carne: o alto preço <em>da</em> carne é devido ao grande número de atravessadores para <em>as</em> compras dos gados, desde <em>a</em> porteira do curral dos fazendeiros até esta <em>cidade</em>; <em>e</em> sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente...
+
+
+=== Execução de Teste: 2025-09-17 14:54:12 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 36
+
+--- Resultado 1 ---
+Score: 190.7078
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: causados pelas chuvas no encanamento geral de <em>gás</em>, colocação de lampião <em>nas</em> ruas <em>da</em> corte, etc. ... Surgiram, assim, <em>as</em> séries funcionais, que classificam parte <em>da</em> documentação <em>da</em> administração central dos ministérios, <em>e</em> de órgãos <em>a</em> eles pertencentes, de acordo <em>com</em> <em>a</em> função ou atividade ministerial principal, subdividindo-<em>a</em>, ainda, em atividades secundárias, específicas de determinado serviço. ... Assim, <em>Iluminação</em> <em>e</em> <em>gás</em>, por exemplo, corresponde <em>a</em> uma subsérie <em>da</em> atividade principal, representada <em>na</em> SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 2 ---
+Score: 137.6345
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000710
+Trecho do texto: <em>A</em> Vida Cultural <em>e</em> Teatral em São Paulo: O teatro São José fecha <em>as</em> suas portas; reinam <em>a</em> escuridão <em>e</em> o silêncio naquele âmbito triste, onde não mais ecoarão <em>as</em> canções <em>da</em> sra. Montani, <em>as</em> vozes <em>da</em> sra. Ismenia <em>e</em> do sr. Dias Braga. ... Tecem <em>as</em> aranhas, suas teias, por entre <em>as</em> cadeiras, de onde, sentados, apreciávamos <em>as</em> peças, que <em>nos</em> pregava <em>a</em> companhia; fazendo-<em>nos</em> ouvir dramas do mais requintado romantismo, cheios de peripécias rocambolescas. <em>A</em> <em>Chegada</em> <em>da</em> <em>Iluminação</em> <em>a</em> <em>Gás</em> em São Paulo: <em>A</em> companhia do sr. ... <em>A</em> Seca <em>e</em> <em>a</em> Miséria no Império: Quando uma parte importantíssima do Império estorce-se <em>nas</em> angústias <em>da</em> miséria <em>e</em> <em>da</em> fome; <em>as</em> <em>cidades</em> se despovoam, <em>as</em> populações se dizimam ante o medonho flagelo <em>da</em> seca....
+
+--- Resultado 3 ---
+Score: 133.5799
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=70d1c934-fe9b-4c63-a01d-ae7282f333d6
+Trecho do texto: Preferência <em>a</em> Veteranos <em>da</em> Guerra do Paraguai em Empregos Públicos: Os oficiais <em>e</em> praças <em>da</em> província, que tiverem estado <em>na</em> campanha contra o Paraguai, voltando, terão preferência <em>nos</em> empregos provinciais que forem vagando, sempre que concorrerem <em>com</em> outros, <em>e</em> reunirem <em>as</em> habilitações exigidas para ... Modernização <em>da</em> <em>Iluminação</em> Pública <em>a</em> <em>Gás</em> <em>na</em> Capital: <em>A</em> inovar, sob <em>as</em> bases apresentadas, por parte <em>da</em> empresa <em>da</em> <em>iluminação</em> <em>a</em> <em>gás</em>, <em>a</em> cláusula 10ª do respectivo contrato. ... Criação do Cargo de Diretor <em>da</em> Instrução Pública <em>e</em> do Liceu: Fica criado o lugar de diretor <em>da</em> instrução pública <em>e</em> do liceu, <em>com</em> o ordenado de um conto <em>e</em> oitocentos mil réis <em>e</em> <em>a</em> gratificação de seiscentos mil réis anuais, não podendo exercê-lo lente ou substituto daquela repartição....
+
+--- Resultado 4 ---
+Score: 122.0974
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado <em>a</em> sustentar <em>as</em> ideias livres, proteger <em>a</em> causa <em>da</em> justiça, <em>e</em> propugnar pela fiel observância <em>da</em> lei <em>e</em> interesses locais. ... <em>Chegada</em> <em>da</em> <em>Iluminação</em> <em>a</em> <em>Gás</em> em Recife: No dia 26 de fevereiro principiou esta <em>cidade</em> <em>a</em> ser iluminada <em>a</em> <em>gás</em>, <em>mas</em> somente <em>nos</em> bairros de S. Antônio <em>e</em> S. ... Carestia <em>e</em> Especulação <em>com</em> o Preço <em>da</em> Carne: o alto preço <em>da</em> carne é devido ao grande número de atravessadores para <em>as</em> compras dos gados, desde <em>a</em> porteira do curral dos fazendeiros até esta <em>cidade</em>; <em>e</em> sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente...
+
+--- Resultado 5 ---
+Score: 92.3027
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000622
+Trecho do texto: Nova Tecnologia de <em>Iluminação</em> a Gás em São Paulo: À mais remota antiguidade que se extraía o óleo de carvão das minas de Zinte. ... Este corpo que em definitivo é um composto de hidrogênio e de carbono, como todos os betumes em geral, e a cuja classe pertence, produz chama quando se queima, servindo por isso à <em>iluminação</em>. Dele se extrai também o nafta, que produz ainda mais bela....
+
+--- Resultado 6 ---
+Score: 79.9762
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-gabinete-do-ministro-iv1
+Trecho do texto: Pagamento de despesas com obras e consumo de gás na <em>iluminação</em> pública, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto....
+
+--- Resultado 7 ---
+Score: 79.3232
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000118-d011246
+Trecho do texto: <em>A</em> <em>Chegada</em> de Getúlio Vargas <em>a</em> São Paulo: Getúlio Vargas, dentro de algumas horas, deverá descer em São Paulo. É o triunfo <em>das</em> armas revolucionárias que se confirma. De Norte ao Sul do país, todos os espíritos pediam <em>a</em> paz para <em>a</em> família <em>brasileira</em> <em>com</em> <em>a</em> vitória <em>da</em> Revolução. <em>E</em> ela veio. ... <em>Chegada</em> <em>da</em> Vanguarda Revolucionária <em>a</em> São Paulo: <em>Chegaram</em>, hoje, <em>a</em> esta capital, desembarcando no desvio <em>da</em> Água Branca, <em>da</em> <em>E</em>. F. Sorocabana, um contingente de tropa que constitui <em>a</em> vanguarda <em>da</em> força comandada pelo general Miguel Costa. ... Oficiais <em>da</em> Revolução <em>na</em> Capital Paulista: Desde esta manhã estão em São Paulo alguns oficiais, <em>chegados</em> <em>das</em> linhas <em>da</em> frente, que operavam <em>nas</em> divisas do Paraná <em>com</em> São Paulo, <em>a</em> fim de darem providências para o alojamento <em>da</em> tropa que vem em demanda desta Capital....
+
+--- Resultado 8 ---
+Score: 74.4816
+URL: https://dibrarq.arquivonacional.gov.br/index.php/conselho-nacional-do-petroleo
+Trecho do texto: Suas  atribuições  atuais,  dispostas  no  decreto  n.  95729,  de  12/02/1988,  são  as  seguintes:  superintender  o  abastecimento  nacional  do  petróleo  de  poço  ou  de  xisto  e  seus  derivados,  <em>gás</em>  natural,  gases  raros,  hidrocarbonetos  fluidos  e  do  carvão  mineral  e  seus  produtos ... CONTROLACCESS: Conselho Nacional do Petróleo (Brasil) | Arquivo Nacional 185 Anos
+ACQINFO: Agência Nacional do Petróleo, <em>Gás</em> Natural e Biocombustíveis (Brasil) - 2013 - recolhimento - 1 | Conselho Nacional do Petróleo (Brasil) - 1965 - recolhimento - 1 | Conselho Nacional do Petróleo (Brasil) - 1966...
+
+--- Resultado 9 ---
+Score: 74.1070
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=858f6db8-4e4f-4e57-90b2-87119bf2d378
+Trecho do texto: <em>As</em> atenções, até hoje absorvidas <em>na</em> contemplação <em>da</em> luta, que se travou entre os <em>dois</em> campos adversos, se volvem agora para outro lado: pensa-se geralmente no papel, que vai assumir <em>a</em> nova legislatura diante <em>da</em> província <em>e</em> <em>depois</em> de tão longa experiência. ... , <em>mas</em> entretidas <em>a</em> expensas <em>da</em> província; por toda parte <em>e</em> em tudo o luxo, <em>a</em> vaidade, <em>e</em> um certo sentimento de superioridade, estabelecem entre <em>a</em> nossa Capital <em>e</em> <em>as</em> <em>cidades</em> do interior tamanha diferença, que um estranho não diria pertencer à mesma província tão atrasada, que morre de miséria. ... <em>A</em> Condição do Sertanejo <em>e</em> o Atraso do Interior: Ali o luxo <em>e</em> todos os cômodos <em>da</em> vida, no interior <em>da</em> província <em>a</em> miséria, um atraso, que se aproxima do estado primitivo....
+
+--- Resultado 10 ---
+Score: 70.1703
+URL: https://dibrarq.arquivonacional.gov.br/index.php/proveniencia-desconhecida-2
+Trecho do texto: marítimo e terrestre, prédios públicos e de urbanismo, com destaque à <em>cidade</em> do Rio de Janeiro. | Gravuras e desenhos referentes à personalidades da história do Brasil, vistas da Cachoeira de Paulo Afonso e das <em>cidades</em> do Rio de Janeiro e Paris, porto de Amsterdã, homenagens ao Exército <em>Brasileiro</em> e ... cenas relacionadas com a história da França e Espanha. | Fotografias referentes à vistas de <em>cidades brasileiras</em>, obras oficiais nos estados <em>brasileiros</em>, Fundação Brasil Central e produção agrícola e industrial <em>brasileira</em>. ... [Rio de Janeiro]: Arquivo Nacional, s.d. ... p. - Não impressos | GUIA <em>Brasileiro</em> de fontes para a história da África, da escravidão negra e do negro na sociedade atual: frente arquivística. Coord. por Arquivo Nacional....
+
+--- Resultado 11 ---
+Score: 66.3136
+URL: https://atom-mhn.museus.gov.br/index.php/angela-cardoso-guedes-3
+Trecho do texto: . | Angela Cardoso Guedes
+BIOGHIST: Angela Cardoso Guedes, nasceu dia 27/03/1958, na <em>cidade</em> do Rio de Janeiro, possui graduação em Jornalismo (1980), mestrado em Ciência da Informação (1991), doutorado em Ciência da Informação (2004), todos os títulos obtidos pela Universidade Federal do Rio de Janeiro ... Nos últimos vinte anos vem atuando no Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN) e no Instituto <em>Brasileiro</em> de Museus (IBRAM), na elaboração de projetos culturais, organização de eventos, assessoria de imprensa, marketing, promoções, relações públicas, comissões, administração; atualmente ... SCOPECONTENT: Documentos pessoais da titular, cartões postais que têm como principal tema <em>cidades brasileiras</em> (paisagens e monumentos), fotos ( são basicamente do Rio de Janeiro ) e cartões festivos que referem-se as comemorações de  natal e ano-novo....
+
+--- Resultado 12 ---
+Score: 64.9571
+URL: https://dibrarq.arquivonacional.gov.br/index.php/arnaldo-guimaraes
+Trecho do texto: Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, Arnaldo
+SCOPECONTENT: Recortes de jornais colecionados por Arnaldo Guimarães sobre energia elétrica e combustíveis, com dados sobre o racionamento, horário de verão, blecaute, custos, acidentes fatais, capacidade de represas, <em>iluminação</em>...
+
+--- Resultado 13 ---
+Score: 62.2799
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000012
+Trecho do texto: O Efeito <em>da</em> Música Popular <em>Brasileira</em> (Lundu) <em>nos</em> Salões: <em>E</em> se ela canta <em>depois</em> um lundu! meu bom Jesus, que <em>fio</em> <em>elétrico</em>! Que movimento risonho vai <em>na</em> sala! Os meninos <em>chegam</em>-se para o piano, os velhos babam-se de gosto, os moços ficam perdidos, <em>e</em> <em>como</em> que enfeitiçada fica toda <em>a</em> reunião! ... fôlego <em>e</em> crescendo à medida que <em>a</em> menina emprega mais força <em>na</em> execução... ... <em>A</em> <em>Chegada</em> de Tecidos <em>e</em> Modas Internacionais ao Brasil: <em>A</em> casa de Wallerstein <em>a</em> Masset recebeu pelo Tay uma caixa de verdadeiras preciosidades! são <em>as</em> vaporosas cassas chinesas....
+
+--- Resultado 14 ---
+Score: 62.1636
+URL: https://dibrarq.arquivonacional.gov.br/index.php/conselho-deliberativo-de-belo-horizonte
+Trecho do texto: Correspondências referentes a parecer e projetos do Conselho sobre orçamento do Estado, decretos, concessões, congratulações, vencimentos, gratificação e efetivação de cargos dos servidores públicos e doações de prédios e terrenos, informações sobre <em>iluminação</em> pública, autorizações para construção, impostos...
+
+--- Resultado 15 ---
+Score: 61.2740
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000065
+Trecho do texto: Há uma certa atenção em termos, um cuidado especial em guardar religiosamente certos <em>e</em> determinados princípios de educação, certas <em>e</em> determinadas conveniências que só dizem respeito às crianças, <em>e</em> que <em>as</em> conservam sempre <em>como</em> crianças, <em>mas</em> <em>com</em> um tal qual privilégio <em>e</em> senhorio aos seus divertimentos, ... que elas, ao chegarem aos seis anos de <em>idade</em>, sabem logo que lhes pertencem, contam <em>com</em> eles todos os anos, alegram-se à sua <em>chegada</em>, <em>e</em> brincam, brincam, <em>a</em> não poder mais. ... <em>A</em> <em>Chegada</em> <em>da</em> Realeza <em>e</em> Dignitários ao Baile: Essa apresentação teve <em>com</em> efeito lugar às nove horas, no palácio <em>das</em> Tulherias....
+
+--- Resultado 16 ---
+Score: 60.5980
+URL: https://dibrarq.arquivonacional.gov.br/index.php/afonso-pena
+Trecho do texto: , gêneros alimentícios, greves, Guarda Nacional, Igreja, imigração, indústrias, inundações, limites territoriais, Marinha <em>brasileira</em>, migrações, minerações, orçamentos públicos, polícia, portos, proclamação da República, reforma bancária, relações exteriores, revoltas e revoluções, salários, serviço ... militar e várias questões sobre as articulações políticas da época. | Fotografias e gravuras referentes à vistas de <em>cidades brasileiras</em>, a estradas de ferro, a obras federais, a áreas assistidas pela Comissão de Açudes e Irrigação e retratos de Afonso Pena com autoridades e em visita a estados <em>brasileiros</em> ... Rio de Janeiro, 2008. 56 p. - Não impressos | GUIA <em>Brasileiro</em> de fontes para a história da África, da escravidão negra e do negro na sociedade atual: frente arquivística. Coord. por Arquivo Nacional. Rio de Janeiro: Arquivo Nacional; Brasília: Departamento de Imprensa Nacional, 1988. 2v....
+
+--- Resultado 17 ---
+Score: 57.0054
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=efa94344-e11b-4e83-9931-8cd6ff474055
+Trecho do texto: Modernidades do Palacete da Fênix Caixeiral: ...a sua pintura que está feita com esmero e gosto, em sua iluminação a <em>gás</em> incandescente que transmuda a noite em um dia claro, tudo, tudo enfim diz bem alto que soma de trabalho que conjunto de esforços não foram precisos para se chegar a tão esplêndido...
+
+--- Resultado 18 ---
+Score: 55.0600
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000972
+Trecho do texto: Tecnologias de <em>Iluminação</em> Doméstica no Século XIX: A vela ordinária, de sebo ou de carnaúba, é hoje geralmente desprezada pela vela estearina, cujo preço, reduzido, se acha ao alcance de todas as bolsas....
+
+--- Resultado 19 ---
+Score: 55.0600
+URL: https://dibrarq.arquivonacional.gov.br/index.php/obras-publicas
+Trecho do texto: A documentação trata dos seguintes assuntos: elaboração de mapas e plantas, construção e fiscalização de obras de estradas de rodagem, de igrejas, de rede de <em>iluminação</em> pública, água e esgoto, teatros e de pontes....
+
+--- Resultado 20 ---
+Score: 53.7171
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=50f4ac17-9446-4327-b9f4-71fd80f14de7
+Trecho do texto: <em>A Chegada</em> da Polícia e o Erro Estratégico: <em>A</em> polícia chegou, e, como ela vinha para garantir o serviço da baleeira da Escola, única que trabalhava, foi colocar-se <em>a</em> mais de 100 metros do ponto do desembarque. Deste erro inexplicável resultou toda <em>a</em> desgraça. ... Escalada do Conflito: O Armamento Improvisado dos Grevistas: <em>Chegando</em> as forças, alguns catraeiros foram se armar, para falar <em>a</em> linguagem da Mensagem trouxeram achas de lenha e arcos de barril que <em>a</em> Mensagem chama – barras de ferro. ... <em>A</em> Carga da Cavalaria: Violência contra os Trabalhadores: O comandante vira-os e disse para o oficial que comandava <em>a</em> cavalaria: é tempo de vs. irem <em>chegando</em>....
+
+--- Resultado 21 ---
+Score: 52.6343
+URL: https://dibrarq.arquivonacional.gov.br/index.php/salgado-filho
+Trecho do texto: Documentos referentes às funções do titular quando advogado e nos cargos públicos de chefe da Polícia do Distrito Federal, ministro da Aeronáutica, da Educação e Saúde Pública, do Trabalho, do Supremo Tribunal Militar, da Aeronáutica e membro do Partido Trabalhista <em>Brasileiro</em>. ... Documentos cartográficos referentes a países europeus, estados e <em>cidades brasileiras</em>, tráfego aéreo e cartas náuticas. Diapositivo e fotografias do titular e outros. ... Catálogo dos documentos cartográficos dos fundos privados Academia <em>Brasileira</em> de Letras, Afonso Vasconcelos Várzea, Correio da Manhã, Francisco Lobo Leite Pereira, Ilone Starec, Luiz da Silva Oliveira, Marcos Carneiro de Mendonça, Salgado Filho....
+
+--- Resultado 22 ---
+Score: 48.6925
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=e54b3618-748c-42e8-9838-ceb9355dc8ba
+Trecho do texto: <em>A</em> vinda de Frei Carlos, missionário enviado pelo bispo D. Estêvão Brioso, <em>a</em> instâncias do Padre Loubato, está indicando que esta entrada sucedeu de 1678 <em>a</em> 1683. ... <em>A Chegada</em> de João Correia Arnaud: <em>A</em> terceira entrada finalmente foi <em>a</em> que fez João Correia Arnaud, enviado da casa da Torre, de quem tinha recebido uma doação dos terrenos do Carité, Buriti-Grande e Caxoeira. ... Pela idade com que ele morreu e pela data de seu falecimento, encontrada nos registros da matriz de Missão-Velha, se obteve <em>a</em> certeza de ter sido <em>a sua chegada</em> ao Cariri de 1706 <em>a</em> 1707....
+
+--- Resultado 23 ---
+Score: 48.5026
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000046
+Trecho do texto: <em>Chegada</em> das Novidades da Moda Europeia ao Rio de Janeiro: Com <em>a chegada</em> do paquete inglês Teviot recebemos os nossos jornais e figurinos do mês de setembro, e alguns de 3 de outubro publicados em Paris. ... Brevemente os nossos armazéns de primeira ordem nos apresentarão esses majestosos estofos para produzirem também o seu belo efeito nos salões fluminenses, quando <em>a</em> nossa nova estação dos bailes <em>chegar</em>. ... <em>a</em> prata, o ouro e os escudos, formavam os primeiros fastígios da moda....
+
+--- Resultado 24 ---
+Score: 48.1681
+URL: https://dibrarq.arquivonacional.gov.br/index.php/decretos-do-executivo-periodo-imperial
+Trecho do texto: gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Eleições, polícia, iluminação a <em>gás</em>...
+
+--- Resultado 25 ---
+Score: 45.6171
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000033
+Trecho do texto: <em>A Chegada</em> da Família Imperial ao Baile: Neste momento as girândolas, os clarins, o hino imperial tocado por duas bandas de música ao mesmo tempo, e <em>a</em> inquietação de todos, certificaram-me que eram <em>chegados</em> os Augustos Convidados para quem brilhava tanto esplendor. Beijei <em>a</em> mão <em>a</em> S. ... M. <em>a</em> Imperatriz; olhei com todo o amor e respeito para ela, e depois disse comigo: eis aqui <em>a</em> rainha e <em>a</em> majestade de toda parte. ... <em>A</em> Tendência dos Trajes Idênticos em Baile: Ambas trajavam vestidos no mesmo gosto, iguais em tudo, porém um era azul e o outro cor-de-rosa, de tafetás glacé, com três saias guarnecidas de franjas, e <em>a</em> última apanhada por um laço de fita muito larga; cabeção igualmente enfeitado com as mesmas franjas...
+
+--- Resultado 26 ---
+Score: 45.0316
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000973
+Trecho do texto: Crise Política da Falência do Banco Nacional: Colocada no pé em que foi pelo governo, <em>a</em> questão da falência do Banco Nacional afetou de morte não só o gabinete 5 de Janeiro mas ainda <em>a</em> situação, que apregoava como seu precisaríssimo chefe o sr. conselheiro Sinimbu. ... aquele honrado magistrado com <em>a</em> revogação do decreto que o nomeou desembargador. ... Sessão Espírita em Homenagem <em>a</em> Político: Para solenizarem <em>a chegada</em> do sr. dr. Bonifácio à corte resolveram os seus amigos políticos celebrar uma sessão espiritista em honra e com assistência do dito conselheiro senador....
+
+--- Resultado 27 ---
+Score: 45.0194
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=af124e38-cb8a-4e8c-8d60-9f8f9f018260
+Trecho do texto: Propósito do Jornal O Araripe: O Araripe é destinado <em>a</em> sustentar as ideias livres, proteger <em>a</em> causa da justiça, e propugnar pela fiel observância da lei e interesses locais. ... Alívio Popular com <em>a Chegada</em> das Chuvas: As chuvas têm sido abundantes desde 5 do corrente, o povo já vive sem receio da seca que o ameaçava. É de crer que nos sertões vizinhos também tenham aparecido as chuvas. ... Relato dos Estragos da Seca na Pecuária: <em>A</em> seca tem feito estragos, creio que o Inhamum já não tem um quinto do gado que tinha, e sobretudo na freguesia de cima, onde só o capitão-mor tem perdido cinco mil e tantas reses....
+
+--- Resultado 28 ---
+Score: 44.4507
+URL: https://dibrarq.arquivonacional.gov.br/index.php/sindicato-avulso-em-capatazias-e-arrumadores-no-comercio-armazenador-do-municipio-do-rio-de-janeiro-2
+Trecho do texto: A entidade era composta, em grande número, por <em>brasileiros</em> e negros. ... , Lloyd <em>Brasileiro</em>, Comércio e Navegação. ... SCOPECONTENT: Fotos de <em>cidades brasileiras</em> (principalmente capitais); foto registrando comemoração no sindicato (sem identificação); fotos dos presidentes do sindicato; livros de ponto das mensalidades; livros de presenças; livro de receita; livro de índice do arquivo; atas de reunião de diretoria; ata...
+
+--- Resultado 29 ---
+Score: 44.1583
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=e7074700-b4fe-4e26-9d8e-ec7900117e38
+Trecho do texto: <em>A Chegada</em> da Bandeira de João Correia Arnaud: <em>Chegados</em> à fazenda da Várzea, onde foram bem recebidos, mandou o senhor da Torre uma bandeira de 200 homens em auxílio dos Cariris. ... Esta força comandada por João Correia Arnaud, da família de Diogo Alves Correia o Caramuru, <em>chegando</em> aqui, acampou na Cachoeira de Missão-velha, onde nada fez, em consequência de nessa época encontrar toda <em>a</em> tribo em anarquia. ... Isto feito, subiram de rio Salgado acima em companhia dos Calabaças, que já nessa época auxiliavam <em>a</em> aqueles, e, <em>chegando</em> <em>a</em> Missão-velha, fizeram junção com os Cariris, que igualmente receberam o batismo e se fizeram comunicáveis....
+
+--- Resultado 30 ---
+Score: 37.0179
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=987f5df1-1935-45b6-b010-931135590818
+Trecho do texto: Uma medida é certa em face do movimento dos povos balcânicos: é o esfacelamento <em>da</em> Turquia. <em>A</em> Crise <em>da</em> Borracha <em>na</em> Amazônia: Os últimos telegramas do Rio <em>noticiam</em> <em>a</em> descida <em>da</em> borracha <em>nos</em> mercados consumidores, onde foram apreendidos os respetivos aparelhos. [...] ... O colapso financeiro, <em>com</em> todas <em>as</em> suas consequências terríveis, abateu-se sobre o alto comércio exportador <em>e</em> importador, devido à baixa do produto que forma <em>a</em> base <em>da</em> vida econômica <em>da</em> Amazônia. ... <em>Chegada</em> do Circo Val Paraíso: Ontem, desembarcou nesta <em>cidade</em> o Sr. Stringliny diretor do conhecido circo "Val Paraíso", acompanhado de sua trupe. Os trabalhos do diretor Stringliny já <em>nos</em> são familiares <em>pois</em> <em>com</em> esta é <em>a</em> terceira vez que <em>nos</em> visita este criterioso circo....
+
+--- Resultado 31 ---
+Score: 35.7632
+URL: https://dibrarq.arquivonacional.gov.br/index.php/assessoria-de-seguranca-e-informacoes-da-eletrobras-centrais-eletricas-brasileiras-sociedade-anonima
+Trecho do texto: DID: Assessoria de Segurança <em>e</em> Informações <em>da</em> Eletrobrás (Centrais <em>Elétricas</em> <em>Brasileiras</em> Sociedade Anônima) | AAD | 1964 - 1990 | Textual(is) -sem especificação - 0,13 m | Arquivo Nacional (Brasil). ... Nacional do Distrito Federal - COREG | Centrais <em>Elétricas</em> <em>Brasileiras</em> Sociedade Anônima
+SCOPECONTENT: Documentos relativos <em>a</em> pessoal, tais <em>como</em> portarias de suspensão de servidor, inquéritos administrativos, penas disciplinares de repressão, inquéritos para apurar irregularidades, prestações de contas ... Regulamenta <em>a</em> lei n. 12.527, de 18 de novembro de 2011, que dispõe sobre o acesso <em>a</em> informações previsto no inciso XXXIII do caput do art. 5º, no inciso II do § 3º do art. 37 <em>e</em> no § 2º do art. 216 <em>da</em> Constituição....
+
+--- Resultado 32 ---
+Score: 33.1581
+URL: https://dibrarq.arquivonacional.gov.br/index.php/ministerio-da-justica-e-negocios-interiores
+Trecho do texto: . | Documentos cartográficos (plantas e mapas) referentes à urbanização de <em>cidades brasileiras</em>, monumentos históricos, prédios públicos, lotes de terrenos, instituições penais, tribunais, escolas correcionais e do Arquivo Nacional, no período 1908-1957....
+
+--- Resultado 33 ---
+Score: 15.4718
+URL: https://atom-mhn.museus.gov.br/index.php/ministros-brasileiros
+Trecho do texto: DID: Ministros <em>Brasileiros</em> | MB | XIX | Iconografia: 333 fotogravuras, 06 fotografias, 01 litografia | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br ... Militar - processo 02/24
+CUSTODHIST: Havia a informação de que 01 retrato dessa coleção foi doado no ano de 1933 por Maria Paranaguá Moniz e que não foram localizados os registros de entrada do restante dessa coleção, então, optou-se por formar uma coleção tendo como base um assunto "Ministros <em>Brasileiros</em>...
+
+--- Resultado 34 ---
+Score: 15.3171
+URL: https://atom-mhn.museus.gov.br/index.php/patria-brasileira
+Trecho do texto: DID: Pátria <em>Brasileira</em> | SM-SMaa-SMaa007 (112.125) | [1940-1949] | Iconografia: guache e purpurina sobre papel : 51 x 34 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br |...
+
+--- Resultado 35 ---
+Score: 15.2362
+URL: https://dibrarq.arquivonacional.gov.br/index.php/instituto-dos-advogados-brasileiros-2
+Trecho do texto: DID: Instituto dos Advogados <em>Brasileiros</em> | IAB | 1843 | Documentação Textual: 2,39 m | Fotografias: 50 <em>unidades</em> | Tridimensionais: dado não disponível | Instituto dos Advogados <em>Brasileiros</em> | Av. ... <em>Brasileiros</em> foi criado em 7 de agosto de 1843, na Capital do Império. ... Participaram do Instituto ilustres juristas vinculados à formação do pensamento jurídico <em>brasileiro</em> e de nossas instituições públicas, dentre eles, Teixeira de Freitas, Rui Barbosa, Nabuco de Araújo e Clovis Bevilacqua....
+
+--- Resultado 36 ---
+Score: 14.7865
+URL: https://dibrarq.arquivonacional.gov.br/index.php/telecomunicacoes-brasileiras-sociedade-anonima
+Trecho do texto: Sociedade Anônima | Telecomunicações <em>Brasileiras</em> Sociedade Anônima. ... CONTROLACCESS: Telecomunicações <em>Brasileiras</em> Sociedade Anônima | Telecomunicações <em>Brasileiras</em> Sociedade Anônima. ... OTHERFINDAID: TELECOMUNICAÇÕES <em>BRASILEIRAS</em>. Listagem de fitas magnéticas. Brasília, 2000. 16 p. dig. - Não impressos | TELECOMUNICAÇÕES <em>BRASILEIRAS</em>. Listagem de microfilmes. Brasília, 2000. 120 p. dig. - Não impressos | TELECOMUNICAÇÕES <em>BRASILEIRAS</em>....
+
+
+=== Execução de Teste: 2025-09-17 14:55:40 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 8
+
+--- Resultado 1 ---
+Score: 190.7078
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: causados pelas chuvas no encanamento geral de <em>gás</em>, colocação de lampião <em>nas</em> ruas <em>da</em> corte, etc. ... Surgiram, assim, <em>as</em> séries funcionais, que classificam parte <em>da</em> documentação <em>da</em> administração central dos ministérios, <em>e</em> de órgãos <em>a</em> eles pertencentes, de acordo <em>com</em> <em>a</em> função ou atividade ministerial principal, subdividindo-<em>a</em>, ainda, em atividades secundárias, específicas de determinado serviço. ... Assim, <em>Iluminação</em> <em>e</em> <em>gás</em>, por exemplo, corresponde <em>a</em> uma subsérie <em>da</em> atividade principal, representada <em>na</em> SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 2 ---
+Score: 86.0216
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000710
+Trecho do texto: A Chegada da Iluminação a <em>Gás</em> em São Paulo: A companhia do sr. Guilherme da Silveira, que vai à corte representar a «Viagem ao redor do mundo», de Jules Verne, começa a fazer exercícios práticos, dando voltas pela província, indo a Campinas, voltando a S. ... Paulo, partindo para a corte, de onde há de vir, para nestes tempos de 'globo-<em>gás</em>' e de queixas contra a companhia do <em>gás</em>, dar-nos a «lâmpada Maravilhosa»....
+
+--- Resultado 3 ---
+Score: 77.6794
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=70d1c934-fe9b-4c63-a01d-ae7282f333d6
+Trecho do texto: Modernização da <em>Iluminação</em> Pública a Gás na Capital: A inovar, sob as bases apresentadas, por parte da empresa da <em>iluminação</em> a gás, a cláusula 10ª do respectivo contrato....
+
+--- Resultado 4 ---
+Score: 70.1703
+URL: https://dibrarq.arquivonacional.gov.br/index.php/proveniencia-desconhecida-2
+Trecho do texto: marítimo e terrestre, prédios públicos e de urbanismo, com destaque à <em>cidade</em> do Rio de Janeiro. | Gravuras e desenhos referentes à personalidades da história do Brasil, vistas da Cachoeira de Paulo Afonso e das <em>cidades</em> do Rio de Janeiro e Paris, porto de Amsterdã, homenagens ao Exército <em>Brasileiro</em> e ... cenas relacionadas com a história da França e Espanha. | Fotografias referentes à vistas de <em>cidades brasileiras</em>, obras oficiais nos estados <em>brasileiros</em>, Fundação Brasil Central e produção agrícola e industrial <em>brasileira</em>. ... [Rio de Janeiro]: Arquivo Nacional, s.d. ... p. - Não impressos | GUIA <em>Brasileiro</em> de fontes para a história da África, da escravidão negra e do negro na sociedade atual: frente arquivística. Coord. por Arquivo Nacional....
+
+--- Resultado 5 ---
+Score: 66.3136
+URL: https://atom-mhn.museus.gov.br/index.php/angela-cardoso-guedes-3
+Trecho do texto: . | Angela Cardoso Guedes
+BIOGHIST: Angela Cardoso Guedes, nasceu dia 27/03/1958, na <em>cidade</em> do Rio de Janeiro, possui graduação em Jornalismo (1980), mestrado em Ciência da Informação (1991), doutorado em Ciência da Informação (2004), todos os títulos obtidos pela Universidade Federal do Rio de Janeiro ... Nos últimos vinte anos vem atuando no Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN) e no Instituto <em>Brasileiro</em> de Museus (IBRAM), na elaboração de projetos culturais, organização de eventos, assessoria de imprensa, marketing, promoções, relações públicas, comissões, administração; atualmente ... SCOPECONTENT: Documentos pessoais da titular, cartões postais que têm como principal tema <em>cidades brasileiras</em> (paisagens e monumentos), fotos ( são basicamente do Rio de Janeiro ) e cartões festivos que referem-se as comemorações de  natal e ano-novo....
+
+--- Resultado 6 ---
+Score: 61.0179
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000118-d011246
+Trecho do texto: <em>A Chegada</em> de Getúlio Vargas <em>a</em> São Paulo: Getúlio Vargas, dentro de algumas horas, deverá descer em São Paulo. É o triunfo das armas revolucionárias que se confirma. De Norte ao Sul do país, todos os espíritos pediam <em>a</em> paz para <em>a</em> família brasileira com <em>a</em> vitória da Revolução. E ela veio. ... <em>Chegada</em> da Vanguarda Revolucionária <em>a</em> São Paulo: <em>Chegaram</em>, hoje, <em>a</em> esta capital, desembarcando no desvio da Água Branca, da E. F. Sorocabana, um contingente de tropa que constitui <em>a</em> vanguarda da força comandada pelo general Miguel Costa. ... Galeno e Braz de Revorêdo, à rua Líbero Badaró, 36, <em>a</em> fim de se tratar das homenagens aos chefes e soldados gaúchos que <em>chegam</em> <em>a</em> São Paulo....
+
+--- Resultado 7 ---
+Score: 53.7171
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=50f4ac17-9446-4327-b9f4-71fd80f14de7
+Trecho do texto: <em>A Chegada</em> da Polícia e o Erro Estratégico: <em>A</em> polícia chegou, e, como ela vinha para garantir o serviço da baleeira da Escola, única que trabalhava, foi colocar-se <em>a</em> mais de 100 metros do ponto do desembarque. Deste erro inexplicável resultou toda <em>a</em> desgraça. ... Escalada do Conflito: O Armamento Improvisado dos Grevistas: <em>Chegando</em> as forças, alguns catraeiros foram se armar, para falar <em>a</em> linguagem da Mensagem trouxeram achas de lenha e arcos de barril que <em>a</em> Mensagem chama – barras de ferro. ... <em>A</em> Carga da Cavalaria: Violência contra os Trabalhadores: O comandante vira-os e disse para o oficial que comandava <em>a</em> cavalaria: é tempo de vs. irem <em>chegando</em>....
+
+--- Resultado 8 ---
+Score: 49.9361
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado <em>a</em> sustentar <em>as</em> ideias livres, proteger <em>a</em> causa <em>da</em> justiça, <em>e</em> propugnar pela fiel observância <em>da</em> lei <em>e</em> interesses locais. ... <em>Chegada</em> <em>da</em> <em>Iluminação</em> <em>a</em> <em>Gás</em> em Recife: No dia 26 de fevereiro principiou esta <em>cidade</em> <em>a</em> ser iluminada <em>a</em> <em>gás</em>, <em>mas</em> somente <em>nos</em> bairros de S. Antônio <em>e</em> S. ... Carestia <em>e</em> Especulação <em>com</em> o Preço <em>da</em> Carne: o alto preço <em>da</em> carne é devido ao grande número de atravessadores para <em>as</em> compras dos gados, desde <em>a</em> porteira do curral dos fazendeiros até esta <em>cidade</em>; <em>e</em> sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente...
+
+
+=== Execução de Teste: 2025-09-17 15:01:15 ===
+Consultas: ['O que há sobre Antônio Conselheiro e Canudos?']
+Total de resultados: 9
+
+--- Resultado 1 ---
+Score: 63.7492
+URL: https://atom-mhn.museus.gov.br/index.php/fotografia-de-quatro-pessoas-dois-homens-e-duas-mulheres-sendo-que-uma-delas-usa-faixa-da-rainha-das-aeroviarias-de-1947
+Trecho do texto: DID: Fotografia de quatro pessoas, dois homens e duas mulheres, sendo <em>que</em> uma delas usa faixa da Rainha das Aeroviárias de 1947 | PB-PBf-PBf02 (309.699) | 1947 | 17 x 12,5 cm; p&b | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299 ... -0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Bom
+SCOPECONTENT: Fotografia de quatro pessoas, dois homens e duas mulheres, sendo <em>que</em> uma delas usa faixa da Rainha das Aeroviárias de 1947....
+
+--- Resultado 2 ---
+Score: 59.6415
+URL: https://atom-mhn.museus.gov.br/index.php/canudos
+Trecho do texto: Esse movimento era a guerra entre <em>o</em> exército da Republica do Brasil <em>e</em> mulheres de sertanejos, camponeses, índios, <em>e</em> ex-escravos em busca de salvação da miséria da fome <em>e</em> da falta de trabalho, liderada por <em>Antonio</em> <em>Conselheiro</em>. Estima-se <em>que</em> 5.000 pessoas morreram <em>e</em> houve a destruição de <em>Canudos</em>. ... Flavio de Barros, chegando na Guerra dos <em>Canudos</em> em 26 de setembro de 1897,  fotografou os batalhões <em>e</em> seus comandantes, fazendo várias tomadas do Arraial, Igrejas novas <em>e</em> velhas, <em>e</em> as prisioneiras <em>e</em> de <em>Antonio</em>  <em>Conselheiro</em>, um dos maiores líderes sociais brasileiro. ... Não foram localizados os registros de entrada dessas fotos <em>e</em> do restante de itens da coleção no MHN, então, optou-se por formar a coleção tendo como base <em>o</em> assunto. | Em 1997, ano de centenário da Guerra de <em>Canudos</em>,  foi publicado <em>o</em> livro "<em>Canudos</em> Imagens da Guerra" pelo Museu da República/RJ <em>e</em> Lacerda...
+
+--- Resultado 3 ---
+Score: 44.3037
+URL: https://atom-mhn.museus.gov.br/index.php/estudo-para-o-quadro-o-noviciado
+Trecho do texto: DID: Estudo para <em>o</em> quadro <em>O</em> Noviciado | PA-PA03 (039.003) | [1984] | Iconografia: Desenho a bico de pena e a lápis, p&b, 15,2x11 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br...
+
+--- Resultado 4 ---
+Score: 43.3079
+URL: https://atom-mhn.museus.gov.br/index.php/o-forro
+Trecho do texto: DID: <em>O</em> Forró | NC-NC02 (039.015) | [1981] | Iconografia: água forte e água tinta , p&b, 35 x 50 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/...
+
+--- Resultado 5 ---
+Score: 33.7166
+URL: https://atom-mhn.museus.gov.br/index.php/o-nao-ha-de-casar
+Trecho do texto: DID: <em>O</em> Não <em>Há</em> de Casar | AV-A-69A | [18??] ... id=HqpLAQAAIAAJ&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false  (página 501) <em>O</em> Não <em>Há</em> de Casar
+SCOPECONTENT: tipo popular do Rio de Janeiro em fins do séc. XIX; retrato caricatural. | Publicada no livro Festas <em>e</em> Tradições Populares do Brazil de Mello Moraes Filho. ... Rio de Janeiro <em>e</em> Paris: H. Garnier – Livreiro <em>e</em> Editor, 1901.
+ACQINFO: doação de Carlos Torres de Figueiredo em 1944
+PROCESSINFO: Inserido por Daniella Gomes
+ODD: published
+ODD: Integral
+ODD: Final...
+
+--- Resultado 6 ---
+Score: 28.0646
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000458
+Trecho do texto: Crítica à Apatia Política <em>e</em> Convocação à Ação: Precisamos de reação, da necessidade de entrarmos em um período mais ativo de agitação; <em>e</em> este só obterá pelo esforço dos homens instruídos <em>que</em> atuem <em>sobre</em> a imaginação <em>e</em> a razão das massas, mais ou menos esclarecidas, provocando nelas <em>o</em> entusiasmo pelas ... Paulo», de hoje em diante adotamos <em>o</em> mesmo sistema, de não darmos publicidade a anúncios <em>e</em> artigos, <em>quer</em> da capital, <em>quer</em> do interior, uma vez <em>que</em> não venham acompanhados das respectivas importâncias, <em>e</em> isto em vista das dificuldades <em>que</em> encontramos em efetuar a cobrança de quantias muitas vezes insignificantes ... Sucesso da Peça '<em>O</em> Milagre de Santo <em>Antonio</em>' no Teatro S....
+
+--- Resultado 7 ---
+Score: 26.7394
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-ihgspcom-hemeteca-s001-b000605-d000074-bib-jor-imp
+Trecho do texto: Debate Senatorial <em>sobre</em> a Emancipação dos Escravos: <em>O</em> <em>nobre</em> senador por São Paulo pronunciou então um importante discurso <em>e</em> indicou os pontos <em>que</em> podiam ser reformados, <em>e</em> foi então <em>que</em> <em>o</em> convidou para uma conferência. Se houve transação foi em plena câmara. ... Posicionamento <em>sobre</em> a Ilegalidade da Escravidão: Se <em>há</em> provado até a saciedade <em>que</em> nenhum título poderá jamais legalizar a escravidão no Brasil; <em>que</em> os cativos foram pessoas livres reduzidas a essa triste condição; <em>e</em>, por isso, causa-nos assombro, <em>que</em> os tribunais, os promotores, os homens da lei, conservem ... — Entretanto, diz Joana, não <em>há</em> dia em <em>que</em> Dinah não unte de pomada a sua carapinha!...
+
+--- Resultado 8 ---
+Score: 18.7516
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-carvalho-soares-brandao
+Trecho do texto: de Carvalho Soares
+BIOGHIST: <em>Antônio</em>  Carlos  de  Arruda  Botelho,  conde  de  Pinhal,  nasceu  em  São  Paulo  em  1827,  <em>e</em>  faleceu  em  1901. ... terra, introdução do trabalho assalariado, questões financeiras junto aos bancos <em>e</em> o financiamento <em>e</em> construção da Estrada de Ferro São Carlos do Pinhal; relações do <em>conselheiro</em> Francisco Carvalho Soares Brandão com a Família Imperial, com a nobreza, com Joaquim Nabuco <em>e</em> com o monsenhor Joaquim Arcoverde ... Neto para Heitor Lyra, ele teria doado as cartas políticas do <em>conselheiro</em> ao Instituto Histórico <em>e</em> Geográfico Brasileiro <em>e</em> as diplomáticas ao Arquivo Histórico do Itamarati....
+
+--- Resultado 9 ---
+Score: 9.0229
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000159
+Trecho do texto: A Indiferença do Povo Brasileiro com a Política: Fique sabendo a Província de São Paulo <em>que</em> contra o péssimo sistema de neutralidades fala mais alto do <em>que</em> nós essa mesma indiferença com <em>que</em> o povo brasileiro olha para a política do seu país, indiferença contra a qual já se pronunciou o contemporâneo ... Estabeleceis premissas e sempre vos esqueceis de chegar à conclusão; achais <em>que</em> a palavra república já não assusta ninguém, mas evitais notavelmente pronunciá-la com todo o desembaraço. Por <em>quê</em>? Ou o povo prefere a todo o transe a monarquia, ou não entende bem o <em>que</em> <em>quer</em> dizer república. ... O <em>que</em> nós todos temos visto....
+
+
+=== Execução de Teste: 2025-09-17 15:13:31 ===
+Consultas: ['O que há sobre Antônio Conselheiro e Canudos?']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 268.5657
+URL: https://atom-mhn.museus.gov.br/index.php/canudos
+Trecho do texto: Esse movimento era a guerra entre <em>o</em> exército da Republica do Brasil <em>e</em> mulheres de sertanejos, camponeses, índios, <em>e</em> ex-escravos em busca de salvação da miséria da fome <em>e</em> da falta de trabalho, liderada por <em>Antonio</em> <em>Conselheiro</em>. Estima-se <em>que</em> 5.000 pessoas morreram <em>e</em> houve a destruição de <em>Canudos</em>. ... Flavio de Barros, chegando na Guerra dos <em>Canudos</em> em 26 de setembro de 1897,  fotografou os batalhões <em>e</em> seus comandantes, fazendo várias tomadas do Arraial, Igrejas novas <em>e</em> velhas, <em>e</em> as prisioneiras <em>e</em> de <em>Antonio</em>  <em>Conselheiro</em>, um dos maiores líderes sociais brasileiro. ... Não foram localizados os registros de entrada dessas fotos <em>e</em> do restante de itens da coleção no MHN, então, optou-se por formar a coleção tendo como base <em>o</em> assunto. | Em 1997, ano de centenário da Guerra de <em>Canudos</em>,  foi publicado <em>o</em> livro "<em>Canudos</em> Imagens da Guerra" pelo Museu da República/RJ <em>e</em> Lacerda...
+
+--- Resultado 2 ---
+Score: 76.4626
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=15e27319-5870-4128-872d-9374a4ebb78c
+Trecho do texto: Conflito no Paraná e Comparação com <em>Canudos</em>: O reduto dos fanáticos em Taquaruçu foi atacado pela força do exército, que fez nutrido fogo de artilharia sobre os sitiados, incendiando a casa do chefe Praxedes e a igreja, onde se entrincheiravam. ... As tropas legais fizeram horrenda chacina nos prisioneiros, compostos de mulheres e crianças, exatamente como em <em>Canudos</em>....
+
+--- Resultado 3 ---
+Score: 76.4626
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=bb08cf8f-2267-48c8-a4c7-72ea3378119b
+Trecho do texto: Uma Visão Crítica sobre a Guerra de <em>Canudos</em>: Para enfraquecer o Exército, <em>Canudos</em> foi caminho e na luta, brasileiros e brasileiros trocaram tiros, matando-se afinal a dentes, numa fúria de canibais. Era o governo de Prudente de Moraes o mandante da matança....
+
+--- Resultado 4 ---
+Score: 36.4839
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000458
+Trecho do texto: Crítica à Apatia Política <em>e</em> Convocação à Ação: Precisamos de reação, da necessidade de entrarmos em um período mais ativo de agitação; <em>e</em> este só obterá pelo esforço dos homens instruídos <em>que</em> atuem <em>sobre</em> a imaginação <em>e</em> a razão das massas, mais ou menos esclarecidas, provocando nelas <em>o</em> entusiasmo pelas ... Paulo», de hoje em diante adotamos <em>o</em> mesmo sistema, de não darmos publicidade a anúncios <em>e</em> artigos, <em>quer</em> da capital, <em>quer</em> do interior, uma vez <em>que</em> não venham acompanhados das respectivas importâncias, <em>e</em> isto em vista das dificuldades <em>que</em> encontramos em efetuar a cobrança de quantias muitas vezes insignificantes ... Sucesso da Peça '<em>O</em> Milagre de Santo <em>Antonio</em>' no Teatro S....
+
+--- Resultado 5 ---
+Score: 33.7166
+URL: https://atom-mhn.museus.gov.br/index.php/o-nao-ha-de-casar
+Trecho do texto: DID: <em>O</em> Não <em>Há</em> de Casar | AV-A-69A | [18??] ... id=HqpLAQAAIAAJ&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false  (página 501) <em>O</em> Não <em>Há</em> de Casar
+SCOPECONTENT: tipo popular do Rio de Janeiro em fins do séc. XIX; retrato caricatural. | Publicada no livro Festas <em>e</em> Tradições Populares do Brazil de Mello Moraes Filho. ... Rio de Janeiro <em>e</em> Paris: H. Garnier – Livreiro <em>e</em> Editor, 1901.
+ACQINFO: doação de Carlos Torres de Figueiredo em 1944
+PROCESSINFO: Inserido por Daniella Gomes
+ODD: published
+ODD: Integral
+ODD: Final...
+
+--- Resultado 6 ---
+Score: 26.7394
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-ihgspcom-hemeteca-s001-b000605-d000074-bib-jor-imp
+Trecho do texto: Debate Senatorial <em>sobre</em> a Emancipação dos Escravos: <em>O</em> <em>nobre</em> senador por São Paulo pronunciou então um importante discurso <em>e</em> indicou os pontos <em>que</em> podiam ser reformados, <em>e</em> foi então <em>que</em> <em>o</em> convidou para uma conferência. Se houve transação foi em plena câmara. ... Posicionamento <em>sobre</em> a Ilegalidade da Escravidão: Se <em>há</em> provado até a saciedade <em>que</em> nenhum título poderá jamais legalizar a escravidão no Brasil; <em>que</em> os cativos foram pessoas livres reduzidas a essa triste condição; <em>e</em>, por isso, causa-nos assombro, <em>que</em> os tribunais, os promotores, os homens da lei, conservem ... — Entretanto, diz Joana, não <em>há</em> dia em <em>que</em> Dinah não unte de pomada a sua carapinha!...
+
+--- Resultado 7 ---
+Score: 18.3421
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-carvalho-soares-brandao
+Trecho do texto: de Carvalho Soares
+BIOGHIST: <em>Antônio</em>  Carlos  de  Arruda  Botelho,  conde  de  Pinhal,  nasceu  em  São  Paulo  em  1827,  e  faleceu  em  1901. ... Neto para Heitor Lyra, ele teria doado as cartas políticas do <em>conselheiro</em> ao Instituto Histórico e Geográfico Brasileiro e as diplomáticas ao Arquivo Histórico do Itamarati. ... [Nota: documentos do <em>conselheiro</em> Francisco de Carvalho Soares Brandão] - Impressos, em periódicos...
+
+
+=== Execução de Teste: 2025-09-17 15:16:35 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 54.7856
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: causados pelas chuvas no encanamento geral de <em>gás</em>, colocação de lampião <em>nas</em> ruas <em>da</em> corte, etc. ... Surgiram, assim, <em>as</em> séries funcionais, que classificam parte <em>da</em> documentação <em>da</em> administração central dos ministérios, <em>e</em> de órgãos <em>a</em> eles pertencentes, de acordo <em>com</em> <em>a</em> função ou atividade ministerial principal, subdividindo-<em>a</em>, ainda, em atividades secundárias, específicas de determinado serviço. ... Assim, <em>Iluminação</em> <em>e</em> <em>gás</em>, por exemplo, corresponde <em>a</em> uma subsérie <em>da</em> atividade principal, representada <em>na</em> SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 2 ---
+Score: 49.9361
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado <em>a</em> sustentar <em>as</em> ideias livres, proteger <em>a</em> causa <em>da</em> justiça, <em>e</em> propugnar pela fiel observância <em>da</em> lei <em>e</em> interesses locais. ... <em>Chegada</em> <em>da</em> <em>Iluminação</em> <em>a</em> <em>Gás</em> em Recife: No dia 26 de fevereiro principiou esta <em>cidade</em> <em>a</em> ser iluminada <em>a</em> <em>gás</em>, <em>mas</em> somente <em>nos</em> bairros de S. Antônio <em>e</em> S. ... Carestia <em>e</em> Especulação <em>com</em> o Preço <em>da</em> Carne: o alto preço <em>da</em> carne é devido ao grande número de atravessadores para <em>as</em> compras dos gados, desde <em>a</em> porteira do curral dos fazendeiros até esta <em>cidade</em>; <em>e</em> sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente...
+
+--- Resultado 3 ---
+Score: 47.4704
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000710
+Trecho do texto: <em>A</em> Vida Cultural <em>e</em> Teatral em São Paulo: O teatro São José fecha <em>as</em> suas portas; reinam <em>a</em> escuridão <em>e</em> o silêncio naquele âmbito triste, onde não mais ecoarão <em>as</em> canções <em>da</em> sra. Montani, <em>as</em> vozes <em>da</em> sra. Ismenia <em>e</em> do sr. Dias Braga. ... Tecem <em>as</em> aranhas, suas teias, por entre <em>as</em> cadeiras, de onde, sentados, apreciávamos <em>as</em> peças, que <em>nos</em> pregava <em>a</em> companhia; fazendo-<em>nos</em> ouvir dramas do mais requintado romantismo, cheios de peripécias rocambolescas. <em>A</em> <em>Chegada</em> <em>da</em> <em>Iluminação</em> <em>a</em> <em>Gás</em> em São Paulo: <em>A</em> companhia do sr. ... <em>A</em> Seca <em>e</em> <em>a</em> Miséria no Império: Quando uma parte importantíssima do Império estorce-se <em>nas</em> angústias <em>da</em> miséria <em>e</em> <em>da</em> fome; <em>as</em> <em>cidades</em> se despovoam, <em>as</em> populações se dizimam ante o medonho flagelo <em>da</em> seca....
+
+--- Resultado 4 ---
+Score: 41.2257
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000118-d011246
+Trecho do texto: <em>A</em> <em>Chegada</em> de Getúlio Vargas <em>a</em> São Paulo: Getúlio Vargas, dentro de algumas horas, deverá descer em São Paulo. É o triunfo <em>das</em> armas revolucionárias que se confirma. De Norte ao Sul do país, todos os espíritos pediam <em>a</em> paz para <em>a</em> família <em>brasileira</em> <em>com</em> <em>a</em> vitória <em>da</em> Revolução. <em>E</em> ela veio. ... <em>Chegada</em> <em>da</em> Vanguarda Revolucionária <em>a</em> São Paulo: <em>Chegaram</em>, hoje, <em>a</em> esta capital, desembarcando no desvio <em>da</em> Água Branca, <em>da</em> <em>E</em>. F. Sorocabana, um contingente de tropa que constitui <em>a</em> vanguarda <em>da</em> força comandada pelo general Miguel Costa. ... Oficiais <em>da</em> Revolução <em>na</em> Capital Paulista: Desde esta manhã estão em São Paulo alguns oficiais, <em>chegados</em> <em>das</em> linhas <em>da</em> frente, que operavam <em>nas</em> divisas do Paraná <em>com</em> São Paulo, <em>a</em> fim de darem providências para o alojamento <em>da</em> tropa que vem em demanda desta Capital....
+
+--- Resultado 5 ---
+Score: 40.3493
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=858f6db8-4e4f-4e57-90b2-87119bf2d378
+Trecho do texto: <em>As</em> atenções, até hoje absorvidas <em>na</em> contemplação <em>da</em> luta, que se travou entre os <em>dois</em> campos adversos, se volvem agora para outro lado: pensa-se geralmente no papel, que vai assumir <em>a</em> nova legislatura diante <em>da</em> província <em>e</em> <em>depois</em> de tão longa experiência. ... , <em>mas</em> entretidas <em>a</em> expensas <em>da</em> província; por toda parte <em>e</em> em tudo o luxo, <em>a</em> vaidade, <em>e</em> um certo sentimento de superioridade, estabelecem entre <em>a</em> nossa Capital <em>e</em> <em>as</em> <em>cidades</em> do interior tamanha diferença, que um estranho não diria pertencer à mesma província tão atrasada, que morre de miséria. ... <em>A</em> Condição do Sertanejo <em>e</em> o Atraso do Interior: Ali o luxo <em>e</em> todos os cômodos <em>da</em> vida, no interior <em>da</em> província <em>a</em> miséria, um atraso, que se aproxima do estado primitivo....
+
+--- Resultado 6 ---
+Score: 38.7161
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=70d1c934-fe9b-4c63-a01d-ae7282f333d6
+Trecho do texto: Preferência <em>a</em> Veteranos <em>da</em> Guerra do Paraguai em Empregos Públicos: Os oficiais <em>e</em> praças <em>da</em> província, que tiverem estado <em>na</em> campanha contra o Paraguai, voltando, terão preferência <em>nos</em> empregos provinciais que forem vagando, sempre que concorrerem <em>com</em> outros, <em>e</em> reunirem <em>as</em> habilitações exigidas para ... Modernização <em>da</em> <em>Iluminação</em> Pública <em>a</em> <em>Gás</em> <em>na</em> Capital: <em>A</em> inovar, sob <em>as</em> bases apresentadas, por parte <em>da</em> empresa <em>da</em> <em>iluminação</em> <em>a</em> <em>gás</em>, <em>a</em> cláusula 10ª do respectivo contrato. ... Criação do Cargo de Diretor <em>da</em> Instrução Pública <em>e</em> do Liceu: Fica criado o lugar de diretor <em>da</em> instrução pública <em>e</em> do liceu, <em>com</em> o ordenado de um conto <em>e</em> oitocentos mil réis <em>e</em> <em>a</em> gratificação de seiscentos mil réis anuais, não podendo exercê-lo lente ou substituto daquela repartição....
+
+--- Resultado 7 ---
+Score: 38.5763
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000012
+Trecho do texto: O Efeito <em>da</em> Música Popular <em>Brasileira</em> (Lundu) <em>nos</em> Salões: <em>E</em> se ela canta <em>depois</em> um lundu! meu bom Jesus, que <em>fio</em> <em>elétrico</em>! Que movimento risonho vai <em>na</em> sala! Os meninos <em>chegam</em>-se para o piano, os velhos babam-se de gosto, os moços ficam perdidos, <em>e</em> <em>como</em> que enfeitiçada fica toda <em>a</em> reunião! ... fôlego <em>e</em> crescendo à medida que <em>a</em> menina emprega mais força <em>na</em> execução... ... <em>A</em> <em>Chegada</em> de Tecidos <em>e</em> Modas Internacionais ao Brasil: <em>A</em> casa de Wallerstein <em>a</em> Masset recebeu pelo Tay uma caixa de verdadeiras preciosidades! são <em>as</em> vaporosas cassas chinesas....
+
+--- Resultado 8 ---
+Score: 37.0179
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=987f5df1-1935-45b6-b010-931135590818
+Trecho do texto: Uma medida é certa em face do movimento dos povos balcânicos: é o esfacelamento <em>da</em> Turquia. <em>A</em> Crise <em>da</em> Borracha <em>na</em> Amazônia: Os últimos telegramas do Rio <em>noticiam</em> <em>a</em> descida <em>da</em> borracha <em>nos</em> mercados consumidores, onde foram apreendidos os respetivos aparelhos. [...] ... O colapso financeiro, <em>com</em> todas <em>as</em> suas consequências terríveis, abateu-se sobre o alto comércio exportador <em>e</em> importador, devido à baixa do produto que forma <em>a</em> base <em>da</em> vida econômica <em>da</em> Amazônia. ... <em>Chegada</em> do Circo Val Paraíso: Ontem, desembarcou nesta <em>cidade</em> o Sr. Stringliny diretor do conhecido circo "Val Paraíso", acompanhado de sua trupe. Os trabalhos do diretor Stringliny já <em>nos</em> são familiares <em>pois</em> <em>com</em> esta é <em>a</em> terceira vez que <em>nos</em> visita este criterioso circo....
+
+--- Resultado 9 ---
+Score: 36.6835
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000065
+Trecho do texto: Há uma certa atenção em termos, um cuidado especial em guardar religiosamente certos <em>e</em> determinados princípios de educação, certas <em>e</em> determinadas conveniências que só dizem respeito às crianças, <em>e</em> que <em>as</em> conservam sempre <em>como</em> crianças, <em>mas</em> <em>com</em> um tal qual privilégio <em>e</em> senhorio aos seus divertimentos, ... que elas, ao chegarem aos seis anos de <em>idade</em>, sabem logo que lhes pertencem, contam <em>com</em> eles todos os anos, alegram-se à sua <em>chegada</em>, <em>e</em> brincam, brincam, <em>a</em> não poder mais. ... <em>A</em> <em>Chegada</em> <em>da</em> Realeza <em>e</em> Dignitários ao Baile: Essa apresentação teve <em>com</em> efeito lugar às nove horas, no palácio <em>das</em> Tulherias....
+
+--- Resultado 10 ---
+Score: 35.7632
+URL: https://dibrarq.arquivonacional.gov.br/index.php/assessoria-de-seguranca-e-informacoes-da-eletrobras-centrais-eletricas-brasileiras-sociedade-anonima
+Trecho do texto: DID: Assessoria de Segurança <em>e</em> Informações <em>da</em> Eletrobrás (Centrais <em>Elétricas</em> <em>Brasileiras</em> Sociedade Anônima) | AAD | 1964 - 1990 | Textual(is) -sem especificação - 0,13 m | Arquivo Nacional (Brasil). ... Nacional do Distrito Federal - COREG | Centrais <em>Elétricas</em> <em>Brasileiras</em> Sociedade Anônima
+SCOPECONTENT: Documentos relativos <em>a</em> pessoal, tais <em>como</em> portarias de suspensão de servidor, inquéritos administrativos, penas disciplinares de repressão, inquéritos para apurar irregularidades, prestações de contas ... Regulamenta <em>a</em> lei n. 12.527, de 18 de novembro de 2011, que dispõe sobre o acesso <em>a</em> informações previsto no inciso XXXIII do caput do art. 5º, no inciso II do § 3º do art. 37 <em>e</em> no § 2º do art. 216 <em>da</em> Constituição....
+
+
+=== Execução de Teste: 2025-09-17 15:19:23 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 85.2373
+URL: https://dibrarq.arquivonacional.gov.br/index.php/alberto-do-rego-rangel-2
+Trecho do texto: Pedro I e sua época, cópias de correspondência diplomática e também do titular com <em>Monteiro Lobato</em>, Afonso Taunay, Roquete Pinto e outros. Impressos e recortes de jornais referentes ao titular, Euclides da Cunha, etc....
+
+--- Resultado 2 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/goes-monteiro
+Trecho do texto: -Impressos, em periódicos | Variações de título | Gois <em>Monteiro</em> | Pedro Aurélio de Góes <em>Monteiro</em> | Pedro Aurélio de Góis <em>Monteiro</em> | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos ... - CODES | <em>Monteiro</em>, Pedro Aurélio de Góis
+BIOGHIST: Pedro  Aurélio  de  Góis  [Góes]  <em>Monteiro</em>  nasceu  em  Alagoas,  em  1889,  e  faleceu  no  Rio  de  Janeiro,  em  1956. ... Centro de <em>Pesquisa</em> e Documentação em História Contemporânea do Brasil - -Góis <em>Monteiro</em> -...
+
+--- Resultado 3 ---
+Score: 35.8725
+URL: https://dibrarq.arquivonacional.gov.br/index.php/mario-monteiro
+Trecho do texto: DID: Mário <em>Monteiro</em> | MM | [1930? - 1940?] ... ARRANGEMENT: Em fase de organização | Identificado
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: <em>Monteiro</em>, Maria Elizabeth Brea - 2006 - doação - 20
+CUSTODHIST: <em>Monteiro</em>, Mário - 1921 - 2005 | História administrativa / biografia | Nascido  na  freguesia  de  Socorro  em  Lisboa,  Portugal,  em  2 ... trabalhou  na  Empresa  Gráfica  Carioca. | Em  1954,  mudou-se  para  o  Rio  de  Janeiro  e  foi  trabalhar  na  Mesbla  S.A.,  à  Rua  do  Passeio,  no  setor  de  equipamentos  fotográficos. | Mário  <em>Monteiro</em>  foi  casado  com  Antônia  da  Conceição  Durão  Brêa  <em>Monteiro</em>  e  faleceu  em  18...
+
+--- Resultado 4 ---
+Score: 31.1670
+URL: https://dibrarq.arquivonacional.gov.br/index.php/jose-bernardes-monteiro-guimaraes-2
+Trecho do texto: /arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, José Bernardes <em>Monteiro</em>
+BIOGHIST: osé  Bernardes  <em>Monteiro</em>  Guimarães  foi  tenente  da  4ª  Companhia  do  2º  Regimento  de ... José Bernardes <em>Monteiro</em> Guimarães. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 441-446. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. II. ... Rio de Janeiro, 1992, p. 146, dat. - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: Guimarães, José Bernardes <em>Monteiro</em>
+ODD: BR RJANRIO...
+
+--- Resultado 5 ---
+Score: 26.0842
+URL: https://dibrarq.arquivonacional.gov.br/index.php/familia-donato-donati
+Trecho do texto: DID: Família <em>Donato</em> Donati | FDD | 1887-1924 | Textual: 0,08m lineares – 3 fotografias | Arquivo Público <em>Mineiro</em> | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br ... Os documentos da atual coleção foram inseridos em 2002, na Coleção Arquivo Público <em>Mineiro</em>, e em 2011 a Diretoria de Arquivos Permanentes resolveu criar a Coleção Família <em>Donato</em> Donati. ... OTHERFINDAID: Inventário Analítico da Coleção Família <em>Donato</em> Donati
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A <em>pesquisa</em> é feita através dos originais e pelo sistema informatizado de <em>pesquisa</em> (SIAAPM)....
+
+--- Resultado 6 ---
+Score: 23.3996
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: /pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | <em>Lobato</em>, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  <em>Lobato</em>  faleceu  no  Rio  de  Janeiro,  em  1836. ... SCOPECONTENT: Públicas-forma e certidões <em>sobre</em> assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e <em>porteiro</em> imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica. ... João Valentin de Faria Sousa <em>Lobato</em>. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I....
+
+--- Resultado 7 ---
+Score: 23.3159
+URL: https://dibrarq.arquivonacional.gov.br/index.php/julio-prestes-de-albuquerque
+Trecho do texto: Cita em alguns deles o escritor <em>Monteiro Lobato</em>, o jurista e político Rui Barbosa, o poeta português Antonio Nobre e o francês Paul Verlaine. | Apesar de não participar como autor do movimento modernista1 na sua vertente paulista, tem entre seus amigos o escultor Victor Brecheret e o escritor Oswald...
+

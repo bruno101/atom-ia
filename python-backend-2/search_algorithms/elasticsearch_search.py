@@ -5,9 +5,17 @@ Elasticsearch search algorithm implementation
 import logging
 from elasticsearch import Elasticsearch
 import spacy
+import google.generativeai as genai
+import asyncio
+import os
+import time
+from concurrent.futures import ThreadPoolExecutor, TimeoutError
 
 nlp = spacy.load("pt_core_news_lg")
 logger = logging.getLogger(__name__)
+
+# Configure Gemini
+genai.configure(api_key=os.getenv('GEMINI_API'))
 
 def _connect_elasticsearch(url):
     """Connect to Elasticsearch and return client"""
@@ -21,24 +29,60 @@ def _connect_elasticsearch(url):
         logger.error(f"Cannot connect to Elasticsearch: {e}")
         return None
 
-def _expand_query(query, max_expansions):
-    """Expand query using NLP noun phrases"""
+def _expand_query_with_gemini(query, max_expansions):
+    """Expand query using Gemini-2.0-flash for entity extraction"""
+    try:
+        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        prompt = f"""Extract entities and their name variations from this query for lexical search, ordered by importance:
+
+Query: "{query}"
+
+Return only a comma-separated list of terms (max {max_expansions}), starting with the entities and variations from most to least important. No explanations."""
+        
+        response = model.generate_content(prompt)
+        entities = [query] + [term.strip() for term in response.text.split(',') if term.strip()]
+        return entities[:max_expansions + 1] if entities else [query]
+    except Exception as e:
+        logger.error(f"Gemini API error: {e}")
+        raise
+
+def _expand_query_with_nlp(query, max_expansions):
+    """Fallback: Expand query using NLP noun phrases"""
     doc = nlp(query)
     seen = set()
     expanded = [query]
     
-    for chunk in doc.noun_chunks:
-        key = chunk.text.strip().lower()
+    for ent in doc.ents:
+        key = ent.text.strip().lower()
         if key not in seen and len(expanded) <= max_expansions:
             seen.add(key)
             expanded.append(key)
     
     return expanded
 
-def _build_search_body(query, size):
+def _expand_query(query, max_expansions):
+    """Expand query using Gemini with NLP fallback"""
+    start_time = time.time()
+    try:
+        with ThreadPoolExecutor() as executor:
+            future = executor.submit(_expand_query_with_gemini, query, max_expansions)
+            expanded = future.result(timeout=10)
+            gemini_time = time.time() - start_time
+            print(f"Consulta expandida (Gemini) - {gemini_time:.2f}s")
+            print(expanded)
+            return expanded
+    except (TimeoutError, Exception) as e:
+        gemini_time = time.time() - start_time
+        logger.warning(f"Gemini timeout/error after {gemini_time:.2f}s, using NLP fallback: {e}")
+        expanded = _expand_query_with_nlp(query, max_expansions)
+        print("Consulta expandida (NLP)")
+        print(expanded)
+        return expanded
+
+def _build_search_body(query, size, is_main_query=True):
     """Build Elasticsearch search body"""
-    return {
-        "query": {
+    if is_main_query:
+        query_body = {
             "bool": {
                 "should": [
                     {
@@ -60,7 +104,15 @@ def _build_search_body(query, size):
                     }
                 ]
             }
-        },
+        }
+    else:
+        query_body = {
+        "match_phrase": {
+            "text": query.lower()
+        }}
+    
+    return {
+        "query": query_body,
         "size": size,
         "highlight": {
             "fields": {
@@ -90,13 +142,17 @@ def _process_search_hit(hit, is_main_query=True):
 def _search_with_fallback(es, query, size, is_main_query=True):
     """Execute search with fallback to simple match"""
     try:
-        response = es.search(index="documents", body=_build_search_body(query, size))
+        response = es.search(index="documents_folded", body=_build_search_body(query, size, is_main_query))
+        print("Consulta")
+        print(query)
+        print("Resultado")
+        print([_process_search_hit(hit, is_main_query) for hit in response['hits']['hits']][0:2])
         return [_process_search_hit(hit, is_main_query) for hit in response['hits']['hits']]
     except Exception as e:
         logger.error(f"Elasticsearch search error: {e}")
         try:
             simple_search = {"query": {"match": {"text": query.lower()}}, "size": size}
-            response = es.search(index="documents", body=simple_search)
+            response = es.search(index="documents_folded", body=simple_search)
             return [_process_search_hit(hit, is_main_query) for hit in response['hits']['hits']]
         except Exception as e2:
             logger.error(f"Fallback search failed: {e2}")
@@ -137,7 +193,10 @@ def search_documents_by_text(queries, n_results_per_query=5, url_elastic_search=
         if not query or not query.strip():
             continue
         
-        expanded_queries = _expand_query(query, n_results_per_query // 2) if expand else [query]
+        expanded_queries = _expand_query(query, 2) if expand else [query]
+        print("Expandindo consultas")
+        print(expand)
+        print(expanded_queries)
         results_per_query = n_results_per_query // len(expanded_queries)
         
         for i, expanded in enumerate(expanded_queries):
@@ -145,6 +204,17 @@ def search_documents_by_text(queries, n_results_per_query=5, url_elastic_search=
             is_main = i == 0
             documents = _search_with_fallback(es, expanded, size, is_main)
             all_documents.extend(documents)
+        
+        # Complement with more results from main query if needed
+        unique_docs = _remove_duplicates(all_documents)
+        if len(unique_docs) < n_results_per_query:
+            existing_urls = {doc['url'] for doc in unique_docs}
+            additional_size = n_results_per_query * 2  # Get more to account for duplicates
+            additional_docs = _search_with_fallback(es, query, additional_size, True)
+            for doc in additional_docs:
+                if doc['url'] not in existing_urls and len(unique_docs) < n_results_per_query:
+                    unique_docs.append(doc)
+        
+        all_documents = unique_docs
     
-    unique_docs = _remove_duplicates(all_documents)
-    return sorted(unique_docs, key=lambda x: x['relevance_score'], reverse=True)
+    return sorted(all_documents, key=lambda x: x['relevance_score'], reverse=True)

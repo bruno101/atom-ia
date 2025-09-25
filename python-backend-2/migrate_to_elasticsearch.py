@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Migrate documents from Oracle to Elasticsearch
+Migrate documents_folded from Oracle to Elasticsearch
 """
 import os
 import logging
@@ -44,25 +44,35 @@ def create_elasticsearch_index():
 
     
     mapping = {
-        "mappings": {
-            "properties": {
-                "text": {"type": "text", "analyzer": "standard"},
-                "url": {"type": "keyword"},
-                "title": {"type": "text", "analyzer": "standard"}
+    "settings": {
+        "analysis": {
+            "analyzer": {
+                "folding_analyzer": {
+                    "tokenizer": "standard",
+                    "filter": ["lowercase", "asciifolding"]
+                }
             }
         }
+    },
+    "mappings": {
+        "properties": {
+            "text": {"type": "text", "analyzer": "folding_analyzer"},
+            "url": {"type": "keyword"},
+            "title": {"type": "text", "analyzer": "folding_analyzer"}
+        }
     }
+}
     
     try:
-        if es.indices.exists(index="documents"):
-            es.indices.delete(index="documents")
+        if es.indices.exists(index="documents_folded"):
+            es.indices.delete(index="documents_folded")
             logger.info("Deleted existing index")
     except Exception as e:
         logger.info(f"Index doesn't exist or error checking: {e}")
     
     try:
-        es.indices.create(index="documents", body=mapping)
-        logger.info("Created Elasticsearch index 'documents'")
+        es.indices.create(index="documents_folded", body=mapping)
+        logger.info("Created Elasticsearch index 'documents_folded'")
     except Exception as e:
         logger.error(f"Error creating index: {e}")
         raise
@@ -70,7 +80,7 @@ def create_elasticsearch_index():
     return es
 
 def fetch_documents_from_oracle():
-    """Fetch all documents from Oracle database"""
+    """Fetch all documents_folded from Oracle database"""
     try:
         with oracledb.connect(user=DB_USER, password=DB_PASSWORD, dsn=DB_DSN) as conn:
             with conn.cursor() as cursor:
@@ -92,43 +102,43 @@ def fetch_documents_from_oracle():
         logger.error(f"Error fetching from Oracle: {e}")
         return []
 
-def migrate_documents():
-    """Migrate documents from Oracle to Elasticsearch"""
+def migrate_documents_folded():
+    """Migrate documents_folded from Oracle to Elasticsearch"""
     if not wait_for_elasticsearch():
         logger.error("Elasticsearch not ready")
         return
     
     es = create_elasticsearch_index()
-    documents = fetch_documents_from_oracle()
+    documents_folded = fetch_documents_from_oracle()
     
-    if not documents:
-        logger.error("No documents to migrate")
+    if not documents_folded:
+        logger.error("No documents_folded to migrate")
         return
     
-    # Prepare documents for bulk indexing
+    # Prepare documents_folded for bulk indexing
     actions = []
-    for i, doc in enumerate(documents):
+    for i, doc in enumerate(documents_folded):
         action = {
-            "_index": "documents",
+            "_index": "documents_folded",
             "_id": i,
             "_source": doc
         }
         actions.append(action)
     
-    # Bulk index documents
+    # Bulk index documents_folded
     try:
         result = bulk(es, actions)
         logger.info(f"Bulk indexing result: {result}")
-        logger.info(f"Successfully indexed documents")
+        logger.info(f"Successfully indexed documents_folded")
     except Exception as e:
         logger.error(f"Error during bulk indexing: {e}")
         # Try individual indexing as fallback
-        for action in actions[:5]:  # Try first 5 documents
+        for action in actions[:5]:  # Try first 5 documents_folded
             try:
-                es.index(index="documents", id=action["_id"], body=action["_source"])
+                es.index(index="documents_folded", id=action["_id"], body=action["_source"])
                 logger.info(f"Indexed document {action['_id']}")
             except Exception as idx_error:
                 logger.error(f"Error indexing document {action['_id']}: {idx_error}")
 
 if __name__ == "__main__":
-    migrate_documents()
+    migrate_documents_folded()

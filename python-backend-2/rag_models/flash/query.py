@@ -1,15 +1,20 @@
 # Módulo principal de consulta - inicializa e configura todos os componentes
 # Ponto de entrada para processamento de consultas do usuário
-from .config import GEMINI_API, LLM_MODEL
-from llama_index.llms.google_genai import GoogleGenAI
-from llama_index.core import Settings
+from .config import GEMINI_API, LLM_MODEL, GEMINI_API_PROVIDER, PROJECT_ID, LOCATION
 from .pipeline import pipeline_stream
-# Inicializa o modelo de linguagem Google Gemini
-llm = GoogleGenAI(model=LLM_MODEL, api_key=GEMINI_API)
-# Configura as definições globais do LlamaIndex
-Settings.llm = llm
+import vertexai
+from vertexai.generative_models import GenerativeModel
+import google.generativeai as genai
 
-print("Modelo LLM carregado:", llm.model)
+# Inicializa o modelo baseado no provider configurado
+if GEMINI_API_PROVIDER == "vertex":
+    vertexai.init(project=PROJECT_ID, location=LOCATION)
+    llm = GenerativeModel(LLM_MODEL)
+    print(f"Modelo Vertex AI carregado: {LLM_MODEL}")
+else:
+    genai.configure(api_key=GEMINI_API)
+    llm = genai.GenerativeModel(LLM_MODEL)
+    print(f"Modelo Google AI Studio carregado: {LLM_MODEL}")
 
 def handle_query_flash(consulta, historico):
     """Função principal para processar consultas do usuário

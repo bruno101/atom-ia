@@ -81,7 +81,7 @@ class RAGStringQueryEngine:
         """
         nos = []
         # Busca documentos no Elasticsearch usando consultas tradicionais
-        resultados = search_documents_by_text(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY)
+        resultados = search_documents_by_text(consultas_tradicionais, NODES_PER_TRADITIONAL_QUERY, expand=False)
         print("Consulta tradicional achou: " + str(len(resultados)))
         
         for resultado in resultados:

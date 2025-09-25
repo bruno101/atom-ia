@@ -1489,3 +1489,783 @@ URL: https://atom-mhn.museus.gov.br/index.php/paiol-da-polvora-ao-fundo-o-morro-
 Trecho do texto: DID: Paiol da Pólvora. Ao fundo o morro do Croata | RC-RC03 (039.036) | Iconografia: Desenho a lápis: 19,5 x 29 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
 ODD: published...
 
+
+=== Execução de Teste: 2025-09-17 14:39:01 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8760
+URL: https://atom-mhn.museus.gov.br/index.php/6-58-045-778-pavilhao-da-bahia-noite
+Trecho do texto: DID: Pavilhão da Bahia -  à noite | MC-MCab-MCab06-MCab06.58 (045.778) | 1908 | Iconografia: 01 fotografia, p&b, 13,2x23,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8752
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: DID: Série Viação - Iluminação e Gás – (IV8) | DH | 1861 - 1863 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | Outras | Fichário 03 (gav. 5). | Fichário 89 (gav. 2). | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Registro de correspondência expedida pela Diretoria de Obras Públicas e Navegação sobre estragos causados pelas chuvas no encanamento geral de gás, colocação de lampião nas ruas da corte, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Iluminação e gás, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 3 ---
+Score: 0.8729
+URL: https://atom-mhn.museus.gov.br/index.php/6-57-045-777-pavilhao-das-industrias-noite
+Trecho do texto: DID: Pavilhão das Indústrias - à noite | MC-MCab-MCab06-MCab06.57 (045.777) | 1908 | Iconografia: 01 fotografia, p&b, 12,9x22,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-64-045-784-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.64  (045.784) | 1908 | Iconografia: 01 fotografia, p&b, 10,9x22,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-66-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.66 (045.786) | 1908 | Iconografia: 01 fotografia, p&b, 11x14cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-65-045-785-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.65 (045.785) | 1908 | Iconografia: 01 fotografia, p&b, 10x18,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8701
+URL: https://atom-mhn.museus.gov.br/index.php/6-62-045-782-vista-geral-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista Geral da Exposição Nacional de 1908 - à noite | MC-MCab-MCab06-MCab06.62 (045.782) | 1908 | Iconografia: 01 fotografia, p&b, 18x29,2cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8700
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado a sustentar as ideias livres, proteger a causa da justiça, e propugnar pela fiel observância da lei e interesses locais. Chegada da Iluminação a Gás em Recife: No dia 26 de fevereiro principiou esta cidade a ser iluminada a gás, mas somente nos bairros de S. Antônio e S. José, grande foi a afluência de povo que percorria as ruas destes bairros, para apreciar a brilhante luz de tantos astros, filhos da indústria e trabalho humano, que tem de dissipar as trevas produzidas pela ausência do «rei dos astros», fazendo desta sorte desaparecer os velhos e já bem caducos lampiões. Carestia e Especulação com o Preço da Carne: o alto preço da carne é devido ao grande número de atravessadores para as compras dos gados, desde a porteira do curral dos fazendeiros até esta cidade; e sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente a fim de haver pouca carne no mercado, e eles a poderem vender pelo preço que lhes convier. Concurso na Faculdade de Direito de Recife: Teve efetivamente lugar o concurso da Faculdade de Direito... foi brilhante a discussão entre os candidatos, sobressaindo entre eles pela precisão e força de lógica com que argumentavam os Drs. Pinto Junior e Apprigio Guimarães, foram todos aprovados, a proposta que tem de submetê-los à escolha do governo imperial, foi feita da maneira seguinte: Pinto Junior em 1.º lugar, Apprigio 2.º e Pinto Pessoa 3.º. Guerra do Piemonte e França contra a Áustria: Já há tempos profetizavam que o Piemonte, não obstante ser fraco pela sua pequenez, desembainharia todavia, animado pelo instinto de liberdade, e proteção de alguns países, a sua espada contra Áustria: realizaram-se pois agora estas profecias, e eis o destino da Europa entregue ao cego azar dos combates. A guerra está pois declarada, do Piemonte socorrido pela França contra Áustria....
+
+--- Resultado 9 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-59-045-779-cascata-tomada-noite
+Trecho do texto: DID: Palácio das Indústrias - à noite | MC-MCab-MCab06-MCab06.59 (045.779) | 1908 | Iconografia: 01 fotografia, p&b, 22,2x28,9cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Chateau d"Eau, Luz Elétrica.
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-56-045-776-pavilhao-de-portugal-noite
+Trecho do texto: DID: Pavilhão de Portugal - à noite | MC-MCab-MCab06-MCab06.56 (045.776) | 1908 | Iconografia: 01 fotografia, p&b, 11x21,5cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-17 14:54:12 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 36
+
+--- Resultado 1 ---
+Score: 0.8760
+URL: https://atom-mhn.museus.gov.br/index.php/6-58-045-778-pavilhao-da-bahia-noite
+Trecho do texto: DID: Pavilhão da Bahia -  à noite | MC-MCab-MCab06-MCab06.58 (045.778) | 1908 | Iconografia: 01 fotografia, p&b, 13,2x23,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8752
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: DID: Série Viação - Iluminação e Gás – (IV8) | DH | 1861 - 1863 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | Outras | Fichário 03 (gav. 5). | Fichário 89 (gav. 2). | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Registro de correspondência expedida pela Diretoria de Obras Públicas e Navegação sobre estragos causados pelas chuvas no encanamento geral de gás, colocação de lampião nas ruas da corte, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Iluminação e gás, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 3 ---
+Score: 0.8729
+URL: https://atom-mhn.museus.gov.br/index.php/6-57-045-777-pavilhao-das-industrias-noite
+Trecho do texto: DID: Pavilhão das Indústrias - à noite | MC-MCab-MCab06-MCab06.57 (045.777) | 1908 | Iconografia: 01 fotografia, p&b, 12,9x22,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-64-045-784-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.64  (045.784) | 1908 | Iconografia: 01 fotografia, p&b, 10,9x22,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-66-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.66 (045.786) | 1908 | Iconografia: 01 fotografia, p&b, 11x14cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-65-045-785-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.65 (045.785) | 1908 | Iconografia: 01 fotografia, p&b, 10x18,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8701
+URL: https://atom-mhn.museus.gov.br/index.php/6-62-045-782-vista-geral-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista Geral da Exposição Nacional de 1908 - à noite | MC-MCab-MCab06-MCab06.62 (045.782) | 1908 | Iconografia: 01 fotografia, p&b, 18x29,2cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8700
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado a sustentar as ideias livres, proteger a causa da justiça, e propugnar pela fiel observância da lei e interesses locais. Chegada da Iluminação a Gás em Recife: No dia 26 de fevereiro principiou esta cidade a ser iluminada a gás, mas somente nos bairros de S. Antônio e S. José, grande foi a afluência de povo que percorria as ruas destes bairros, para apreciar a brilhante luz de tantos astros, filhos da indústria e trabalho humano, que tem de dissipar as trevas produzidas pela ausência do «rei dos astros», fazendo desta sorte desaparecer os velhos e já bem caducos lampiões. Carestia e Especulação com o Preço da Carne: o alto preço da carne é devido ao grande número de atravessadores para as compras dos gados, desde a porteira do curral dos fazendeiros até esta cidade; e sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente a fim de haver pouca carne no mercado, e eles a poderem vender pelo preço que lhes convier. Concurso na Faculdade de Direito de Recife: Teve efetivamente lugar o concurso da Faculdade de Direito... foi brilhante a discussão entre os candidatos, sobressaindo entre eles pela precisão e força de lógica com que argumentavam os Drs. Pinto Junior e Apprigio Guimarães, foram todos aprovados, a proposta que tem de submetê-los à escolha do governo imperial, foi feita da maneira seguinte: Pinto Junior em 1.º lugar, Apprigio 2.º e Pinto Pessoa 3.º. Guerra do Piemonte e França contra a Áustria: Já há tempos profetizavam que o Piemonte, não obstante ser fraco pela sua pequenez, desembainharia todavia, animado pelo instinto de liberdade, e proteção de alguns países, a sua espada contra Áustria: realizaram-se pois agora estas profecias, e eis o destino da Europa entregue ao cego azar dos combates. A guerra está pois declarada, do Piemonte socorrido pela França contra Áustria....
+
+--- Resultado 9 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-59-045-779-cascata-tomada-noite
+Trecho do texto: DID: Palácio das Indústrias - à noite | MC-MCab-MCab06-MCab06.59 (045.779) | 1908 | Iconografia: 01 fotografia, p&b, 22,2x28,9cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Chateau d"Eau, Luz Elétrica.
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-56-045-776-pavilhao-de-portugal-noite
+Trecho do texto: DID: Pavilhão de Portugal - à noite | MC-MCab-MCab06-MCab06.56 (045.776) | 1908 | Iconografia: 01 fotografia, p&b, 11x21,5cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 11 ---
+Score: 0.8660
+URL: https://atom-mhn.museus.gov.br/index.php/6-60-045-780-entrada-da-exposicao-nacional-de-1908
+Trecho do texto: DID: Entrada da Exposição Nacional de 1908 | MC-MCab-MCab06-MCab06.60 (045.780) | 1908 | Iconografia: 01 fotografia, p&b, 16,1x19,3cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Porta Monumental à noite. Luz elétrica.
+ODD: published...
+
+--- Resultado 12 ---
+Score: 0.8660
+URL: https://atom-mhn.museus.gov.br/index.php/6-61-045-781-entrada-da-exposicao-nacional-de-1908
+Trecho do texto: DID: Entrada da Exposição Nacional de 1908 | MC-MCab-MCab06-MCab06.61 (045.781) | 1908 | Iconografia: 01 fotografia, p&b, 12,5x16,9cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Porta Monumental à noite. Luz elétrica.
+ODD: published...
+
+--- Resultado 13 ---
+Score: 0.8648
+URL: https://atom-mhn.museus.gov.br/index.php/6-63-045-784-pavilhao-de-minas-gerais-noite
+Trecho do texto: DID: Pavilhão de Minas Gerais à noite | MC-MCab-MCab06-MCab06.63 (045.783) | 1908 | Iconografia: 01 fotografia, p&b, 15x22cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Observa-se grande número de visitantes e também carro dos bombeiros. | Luz elétrica.
+ODD: published...
+
+--- Resultado 14 ---
+Score: 0.8632
+URL: https://atom-mhn.museus.gov.br/index.php/image-21
+Trecho do texto: DID: Jornal da Exposição | MC-MCab-MCab07-MCab07.08 (045.795) | 1908 | Iconografia: 01 fotografia, 17,4x23,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Observa-se [propaganda?] de Ferreira de Araujo e Evaristo da Vei?
+ODD: published...
+
+--- Resultado 15 ---
+Score: 0.8601
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-ihgspcom-hemeteca-s001-b003413-d000001-bib-jor-imp
+Trecho do texto: Morte do Presidente de Minas Gerais, Olegário Maciel: O passamento do presidente Olegário Maciel foi a nota melancólica da última semana. De fato, o vulto de mineiro que vem de desaparecer se encontrava envolvido num prestígio político e social incomum. O país inteiro rendia um verdadeiro culto de admiração a esse octogenário de têmpera de aço e em cujo caráter se refletia a tradicional honestidade do povo montanhês. Política de Desarmamento em Porto Alegre: O gabinete do chefe de Polícia de Porto Alegre forneceu à imprensa a seguinte nota: «A chefia de polícia avisa que está procedendo, com rigor ao desarmamento geral e que todo aquele que for encontrado com arma, sem a necessária licença ou que a tenha com o visto do atual chefe de Polícia, será desarmado e autuado na forma da lei». Comércio Internacional de Cristal de Rocha: Segundo uma informação do adido comercial em Londres, o Tesouro britânico resolveu incluir o cristal de rocha na lista dos produtos cuja entrada no Reino Unido é livre de direitos. Essa disposição entrou em vigor no dia 7 do mês de julho passado findo. Crescimento e Progresso da Cidade de Piratininga: Antes, supúnhamos a vizinha cidade um povoado, à semelhança de muitos outros, sem estética, sem movimento, à noite, mergulhado na escuridão e, durante o dia, modorrando. Agora, não. ... A cidade é servida pela Cia. Paulista de Estradas de Ferro. Enfim, Piratininga é formosa e próspera. O povo é trabalhador, bom e educado. Publicidade de Tecnologia Doméstica em 1933: A nova máquina de costura General Electric é perfeitamente portátil e é provida de motor elétrico, farol e regulador de velocidade. Funciona com agulhas comuns e possui uma lançadeira rotativa aperfeiçoada que não embaraça a linha....
+
+--- Resultado 16 ---
+Score: 0.8590
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000398
+Trecho do texto: Visita do Imperador Dom Pedro II ao Egito: Telegramas — A agência Havas obsequiou-nos com as seguintes comunicações telegráficas que agradecemos: CAIRO, 10 de Dezembro. Suas Majestades o Imperador e a Imperatriz do Brasil receberam a visita do Khedive. Desenvolvimento da Estância Hidromineral de Caxambu: Por ordem do governo foram as águas submetidas a um exame químico, e então dessa data em diante, se tornaram conhecidas pelos seguintes nomes: Gazosa-alcalina - D. Pedro. Gazosa-férrea - Thereza. Gazosa-conde d'Eu. Férrea-gazosa-sulfurosa D. Izabel. Magnesiana gazosa - Leopoldina. Sulfídrica-gazosa - Duque de Saxe. Relato de Assalto e Violência Urbana em São Paulo: Voltava anteontem às 9 horas da noite da casa do subdelegado de Santa Efigênia em direção à sua casa, e ao atravessar o aterrado, na altura do antigo chafariz do Miguel Carlos, saíram inopinadamente dois vultos de trás de algumas tulhas de tijolos aí existentes e agarraram-no pelo braço bradando que lhes desse o que trazia. (...) Acrescenta que, pela fala, persuade-se que seus agressores pertencem à nacionalidade italiana. Emissão de Apólices da Província de São Paulo: Diário de S. Paulo - Parte oficial na qual vem publicado o regulamento expedido pela presidência desta província para emissão de apólices provinciais, conforme a autorização da lei de 7 de julho de 1875. Aviso aos Assinantes do Correio Paulistano para o Ano de 1877: Estando a findar-se o ano de 1876, pedimos aos nossos assinantes que se acham em débito, o obséquio de mandarem satisfazer a importância de suas assinaturas, a fim de poderem continuar a receber a folha no ano próximo vindouro....
+
+--- Resultado 17 ---
+Score: 0.8589
+URL: https://dibrarq.arquivonacional.gov.br/index.php/arnaldo-guimaraes
+Trecho do texto: DID: Arnaldo Guimarães | P2 | 1922 - 1954 | Textual(is) -sem especificação - 0,17 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Guimarães, Arnaldo
+SCOPECONTENT: Recortes de jornais colecionados por Arnaldo Guimarães sobre energia elétrica e combustíveis, com dados sobre o racionamento, horário de verão, blecaute, custos, acidentes fatais, capacidade de represas, iluminação de logradouros, corte no fornecimento a domicílio e outras questões referentes à Light S.A.
+ARRANGEMENT: Organizado totalmente | Cronológica.
+CONTROLACCESS: Guimarães, Arnaldo | Arquivo Nacional 185 Anos
+CUSTODHIST: Esta coleção recebeu anteriormente o código 73 CP 30.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Arnaldo Guimarães. In: _________. Inventário das coleções. Rio de Janeiro, 2005, p. 52-141 dig. (AN/SCO/SDP 064, v. 1) - Não impressos
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 18 ---
+Score: 0.8575
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000972
+Trecho do texto: A Crise do Gabinete Imperial: Consta que o sr. Jojoca, antes de deixar a presidência e à última hora, lavrou diversas demissões, que não foram ainda publicadas pelo jornal contratado, e que irão aos poucos aparecendo. Celebração da Imaculada Conceição no Império: Foi ontem dia de gala na Igreja e no Estado, por ser o da comemoração solene da Imaculada Conceição de Mãe de Deus, proclamada dogma da fé pelo imortal pontífice Pio IX, em 1854, com indisível júbilo do mundo católico. A Exposição Industrial Fluminense de 1878: No dia 5, como já sabem os seus leitores, inaugurou-se a Exposição Industrial Fluminense, com os discursos do estilo, achando-se presentes Suas Majestades Imperiais, que continuam a visitá-la mostrando-se satisfeitos com o que ali se observa. Ontem a Exposição regurgitou de povo que não se fartava de percorrer as suas seções observando, criticando e admirando o que ali há de bom, de útil e de prometedor para o nosso futuro. A Saúde do Imperador Dom Pedro II: Começam no próximo janeiro no Imperial Colégio D. Pedro II os exames, nos quais Sua Majestade o Imperador D. Pedro II e os alunos do colégio estão sofrendo muito com o excessivo calor, em salas apertadas onde funcionam as aulas, e que se sucedem sem interrupção. Tecnologias de Iluminação Doméstica no Século XIX: A vela ordinária, de sebo ou de carnaúba, é hoje geralmente desprezada pela vela estearina, cujo preço, reduzido, se acha ao alcance de todas as bolsas. Entretanto, como aquela é ainda mais barata do que esta, é ela usada em muitas habitações para o serviço da cozinha, não obstante o inconveniente que tem de deitar mau cheiro e derreter-se com o calor do fogão, onde é muito comum colocarem-na os criados....
+
+--- Resultado 19 ---
+Score: 0.8575
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-ihgspcom-hemeteca-s001-b001184-d000031-bib-jor-imp
+Trecho do texto: Propaganda do governo federal sobre a situação em São Paulo: A ditadura continua a mentir sobre a situação de São Paulo. As suas últimas balelas são as seguintes: Que foi decretada a lei marcial; que o general Klinger é o ditador absoluto; que continuam as agitações populares; que se sucedem os fuzilamentos. Manifestação popular no Rio de Janeiro e recusa de estudantes em combater os paulistas: O povo carioca arrancou as placas da rua Demétrio Ribeiro, escrevendo, no respectivo lugar, o nome do sr. Pedro de Toledo. 300 acadêmicos pernambucanos que, iludidos, vinham combater o movimento constitucionalista, ao serem elucidados pelos seus colegas cariocas, recusaram-se a pegar em armas, sendo presos na Ilha Grande. Invenção para economizar combustível para as tropas constitucionalistas: O dr. Alfredo Jordão, segundo anuncia a 'Folha da Noite', inventou um aparelho que economizará 50% de gasolina, adiantando que esse aparelho será usado em todos os carros que servem às tropas constitucionalistas. Mobilização popular e religiosa em Bauru para o alistamento de voluntários: O grande comício popular de ontem, presidido pelo sr. bispo da nossa diocese. O ilustre prelado teve, da população bauruense, entusiástica recepção. Enorme multidão, calculada em vários milhares de pessoas, enchia literalmente a gare da Noroeste e imediações, ao chegar o trem que conduzia sua excelência reverendíssima, d. Carlos Duarte Costa, bispo de Botucatu. Relato de combate no setor de Três Lagoas, Mato Grosso: O major Dutra, comandante do setor de Três Lagoas, comunica que ontem, das 14 às 15 horas e 20 minutos, houve ali disparos de artilharia. À noite, das 20h10 às 20h50, houve ataque, sendo o inimigo rechaçado, e deixando em nosso poder um caminhão, duas armas automáticas, vários fuzis e mosquetões, munições de infantaria, peças de equipamento, etc....
+
+--- Resultado 20 ---
+Score: 0.8559
+URL: https://atom-mhn.museus.gov.br/index.php/image-32
+Trecho do texto: DID: Pavilhões de Minas Gerais e Bahia | MC-MCab-MCab07-MCab07.09 (045.796) | 1908 | Iconografia: 01 fotografia, 17,2x23cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 21 ---
+Score: 0.8558
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b001071-d000052
+Trecho do texto: Surgimento de um Jornal Escrito por Mulheres no Brasil: ...foi nesse ano que pela primeira vez apareceu no Brasil um JORNAL ESCRITO POR SENHORAS ILUSTRADAS, que não duvidaram assinar seu nome, empregar seus esforços à testa de uma tão útil empresa. A Família Imperial e a Elite em Petrópolis no Verão de 1853: A risonha e florida Petrópolis... hoje festeja viçosa e cheia de seus perfumes a feliz chegada de Suas Majestades Imperiais, seus Augustos Hóspedes, sob cuja proteção tudo ela deve. Muitas famílias, hóspedes de todas as classes para lá foram também passar a festa ao abrigo da estação calmosa; os hotéis estão cheios; muito prazer, muita vida em tudo. Costumes de Verão da Sociedade Carioca em 1853: Estamos no mês da nossa mais férvida estação. O mês de janeiro, cujo ar é tão lindo, tão poético... seus dias abafam de calor, a cidade despovoa-se, todos fogem do ar abrasador de entre paredes ardentes a respirar a brisa pura do campo. Debate sobre a Identidade de Gênero da Cronista: Umas dizem que moro no Catete, outras em Botafogo, na Glória, na Lapa... onde bem vos parecer; mas sempre vos direi, que afinal foram as primeiras as que acertaram; porque os homens ainda continuam a dizer que eu sou homem!... Santo Deus, que aleive tão persistente! Moda Nupcial da Elite em 1853: VESTUÁRIO DE NOIVA. - Vestido de nobreza lisa com barra de aplicação em veludo branco. Esta barra é de um trabalho admirável; consiste em uma delicada guarnição de folhos e caixinhos de uvas abertos e talhados em veludo: são os vestidos atualmente de mais novidade e distinção para casamento....
+
+--- Resultado 22 ---
+Score: 0.8556
+URL: https://atom-mhn.museus.gov.br/index.php/casa-dos-contos-tiradentes
+Trecho do texto: DID: Casa dos Contos, Tiradentes | NF-NF-NF040 (031.693) | 01/09/1921 | Iconografia: 01 aquarela: 22,4 x 30,1 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 23 ---
+Score: 0.8545
+URL: https://dibrarq.arquivonacional.gov.br/index.php/companhia-radiotelegrafica-brasileira
+Trecho do texto: DID: Companhia Radiotelegráfica Brasileira | PF | 1925 - 1970 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Carta e ata da inauguração de estação radiotelegráfica ultrapotente. Álbum de visitantes às instalações da companhia. Radiogramas de felicitações assinados por Washington Luís.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+ACQINFO: Luperine, Franco - 1970 - doação - 3
+CUSTODHIST: A coleção foi doada por Franco Luperine, presidente da RADIOBRÁS Agrícola, em 1970. | Este fundo/coleção recebeu anteriormente o código 54 CP 18.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Coordenação de Documentos Escritos. Equipe de Documentos Privados. Companhia Radiotelegráfica Brasileira. In: ________. Inventário das coleções. Rio de Janeiro, 2005, p. 240-242. dig. (AN/SCO/SDP 064, v. 1) - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 24 ---
+Score: 0.8535
+URL: https://atom-mhn.museus.gov.br/index.php/caete-minas-gerais-2
+Trecho do texto: DID: Caeté, Minas Gerais | NF-NF-NF007 (031.660) | 1921 | Iconografia: 01 aquarela: 24 x 30,3 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada. | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+SCOPECONTENT: Ruínas de um solar.
+ODD: published...
+
+--- Resultado 25 ---
+Score: 0.8531
+URL: https://atom-mhn.museus.gov.br/index.php/6-34-045-754-pavilhoes-de-minas-gerais-e-sao-paulo
+Trecho do texto: DID: Pavilhões de Minas Gerais e São Paulo | MC-MCab-MCab06-MCab06.34 (045.754) | 1908 | Iconografia: 01 fotografia, p&b, 21,128,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Observa-se um grande balão, sendo inflado no Pavilhão de São Paulo, preso por um cabo, e com uma pessoa segura por cordas; Centenas de pessoas observando o balão.
+ODD: published...
+
+--- Resultado 26 ---
+Score: 0.8528
+URL: https://atom-mhn.museus.gov.br/index.php/vista-de-tiradentes
+Trecho do texto: DID: Vista de Tiradentes | NF-NF-NF043 (031.696) | 18/01/1921 | Iconografia: 01 aquarela: 22,3 x 29,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 27 ---
+Score: 0.8523
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=833ec402-cb9a-44e5-95a8-d8acc01c657f
+Trecho do texto: Anúncio do Jornal do Ceará em 1868: O Jornal do Ceará publica-se diariamente, à exceção dos dias imediatos aos domingos e dias santos de guarda; à Rua Formosa n. 89. Promulgação de Resolução Provincial: Resolução, n. 1233, de 5 de dezembro de 1867. Aprovando as contas das câmaras municipais da província, no ano financeiro de 1868. O bacharel Pedro Leão Velloso, presidente da província do Ceará etc. Faço saber a todos os seus habitantes que a assembleia legislativa provincial decretou o seguinte: Orçamento para Saúde Pública em Baturité: § 15 Medicamentos aos pobres. Verba para Serviços Prisionais em Baturité: § 13 Água e luzes para prisões civis. Investimento em Educação Primária em Quixeramobim: § 13 Suprimento às escolas primárias. Orçamento para Obra Pública em Cascavel: § 13 Uma calçada, do bairro da matriz para S. Antônio....
+
+--- Resultado 28 ---
+Score: 0.8523
+URL: https://atom-mhn.museus.gov.br/index.php/vista-de-ouro-preto
+Trecho do texto: DID: Vista de Ouro Preto | NF-NF-NF017 (031.670) | 24/01/1921 | Iconografia: 01 aquarela: 22,1 x 29,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada. | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 29 ---
+Score: 0.8521
+URL: https://atom-mhn.museus.gov.br/index.php/image-01
+Trecho do texto: DID: Pavilhão dos Correios e Telégrafos | MC-MCab-MCab07-MCab07.25 (045.812) | 1908 | Iconografia: 01 fotografia, 17,4x23cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Pavilhão dos Correios e Telegraphos
+ODD: published...
+
+--- Resultado 30 ---
+Score: 0.8519
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-ihgspcom-hemeteca-s001-b004296-d000009-bib-jor-imp
+Trecho do texto: Comércio no Rio de Janeiro em 1915: RIO. CASA J. BERTO CIRIO, rua do Ouvidor, 183. DROGARIA BERRINI, rua do Hospício, 18. DROGARIA ARAÚJO FREITAS, rua dos Ourives, 88. DROGARIA J. M. PACHECO, rua dos Andradas, 43, 45 e 47. Preços de Anúncios em 1915: Na nossa folha só podem ser anunciados produtos não similares aos da nossa casa. O preço dos anúncios é para cada vez: Uma página 200$000, 1/2 página 120$000, 1/4 de página 70$000, 1/8 de página 40$000. Debate Científico sobre a Luz Ultravioleta: As lâmpadas elétricas, que são muito ricas de raios ultravioletas, assim como as lâmpadas de arco e as modernas lâmpadas de mercúrio, gozam de péssima reputação. Acusam-nas de exercer sobre a vista uma ação prejudicial. Os doutores alemães Volge e Axmann, que estudaram profundamente a questão, apoiados em experimentos inúmeros, concluíram, ao contrário, que a lenda dos males produzidos pela luz elétrica não repousava em nenhuma base séria. O Poder Germicida da Luz Ultravioleta: Em nota apresentada à Academia das Ciências de França os doutores Courmont e Nogier estabeleceram que se se mergulha em um reservatório de água uma lâmpada de vapores de mercúrio... depois de um ou dois minutos não resta mais um só gérmen vivo numa zona de 20 a 30 centímetros em torno ao raio luminoso. Poema de Vicente de Carvalho: «Lembrança!» diz-me o passado: «Eu sou a aurora e a primavera, o olhar que se enamora de quanto vê pelo caminho em flor; para o teu coração cansado e triste é recordar-me o único bem que existe... Eu sou a mocidade, eu sou o amor»....
+
+--- Resultado 31 ---
+Score: 0.8518
+URL: https://atom-mhn.museus.gov.br/index.php/lampada-de-prata-santa-barbara-2
+Trecho do texto: DID: Lâmpada de prata, Santa Bárbara | NF-NF-NF133 (031.786) | Iconografia: Desenho a lápis: 22,4x15,5 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Sem assinatura
+SCOPECONTENT: Minas Gerais
+ODD: published...
+
+--- Resultado 32 ---
+Score: 0.8518
+URL: https://atom-mhn.museus.gov.br/index.php/lampada-de-prata-santa-barbara-3
+Trecho do texto: DID: Lâmpada de prata, Santa Bárbara | NF-NF-NF134 (031.787) | Iconografia: Desenho a lápis: 22,5x15,6 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado
+SCOPECONTENT: Minas Gerais
+ODD: published...
+
+--- Resultado 33 ---
+Score: 0.8518
+URL: https://atom.arquivoestado.sp.gov.br/br-spapesp-hemapesp-s001-b000366-d000923
+Trecho do texto: Debate sobre a Dívida Municipal de São Paulo: O modo desleal porque a Tribuna argumenta com os dados que publicamos, relativos à dívida municipal, não deixará de ter incorrido na censura daqueles que acima do interesse político põem a verdade e a honra. Não nos podendo mais conter diante dos despropósitos da folha oficial concernentes ao empréstimo contraído pela municipalidade para com o Barão de Itapetininga, resolvemo-nos a orientar os discutidores do governo. Detalhes de Empréstimo Municipal para Infraestrutura Urbana em 1874: Importância tomada por empréstimo em 9 de 1874 para calçamento de várias ruas e fatura do novo matadouro, no valor de 250.000$000. Juros de 9% em 10 anos que se juntou ao capital para ser contemplado nas letras, no valor de 118.125$000. Tal foi o valor do compromisso tomado pela câmara transata ao contrair esse empréstimo. Criação de Cursos Noturnos para Adultos no Império do Brasil: As encomiásticas e repetidas saudações que certos escritores dirigem ao sr. ministro do império pelo decreto de 6 de Setembro, que mandou abrir aulas noturnas, para adultos, nas escolas públicas, provam apenas que neste país o poder é uma grande fascinação. Legislação Pioneira sobre Escolas Noturnas no Rio de Janeiro em 1872: Este projeto, que foi unanimemente aprovado pela assembleia legislativa, é lei da província do Rio de Janeiro e produz desde 1872 os mais benéficos resultados. Em virtude, pois, dessa lei, têm todas as cidades da província do Rio de Janeiro escolas públicas noturnas. O Casamento como Saída da Miséria em Folhetim de Época: — Francamente, meu pai — redarguiu Anna com uma placidez bastante imprópria das circunstâncias — nunca me sorriu a miséria, e para evitá-la sinto-me disposta a qualquer sacrifício. Não ignorava de todo o mau estado de nossa casa, mas estava longe de saber que era tão precária a nossa situação. Que devo fazer?...
+
+--- Resultado 34 ---
+Score: 0.8517
+URL: https://atom-mhn.museus.gov.br/index.php/6-54-045-774-pavilhao-santa-catharina-mostruario-de-madeiras
+Trecho do texto: DID: Assistência Municipal | MC-MCab-MCab06-MCab06.54 (045.774) | 1908 | Iconografia: 01 fotografia, p&b, 12,1x17,4cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 35 ---
+Score: 0.8517
+URL: https://atom-mhn.museus.gov.br/index.php/image-34
+Trecho do texto: DID: Pavilhão das Máquinas | MC-MCab-MCab07-MCab07.07 (045.794) | 1908 | Iconografia: 01 fotografia, 17,4x23cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Pavilhão das Machinas
+ODD: published...
+
+--- Resultado 36 ---
+Score: 0.8517
+URL: https://atom-mhn.museus.gov.br/index.php/solar-antigo-santa-barbara
+Trecho do texto: DID: Solar antigo, Santa Bárbara | NF-NF-NF126 (031.779) | 07/02/1921 | Iconografia: Bico de pena: 13,4x20,8 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado | Possui negativo de 35mm, p&b, por Hugo Leal.
+SCOPECONTENT: Minas Gerais
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-17 14:55:40 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 8
+
+--- Resultado 1 ---
+Score: 0.8760
+URL: https://atom-mhn.museus.gov.br/index.php/6-58-045-778-pavilhao-da-bahia-noite
+Trecho do texto: DID: Pavilhão da Bahia -  à noite | MC-MCab-MCab06-MCab06.58 (045.778) | 1908 | Iconografia: 01 fotografia, p&b, 13,2x23,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8752
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: DID: Série Viação - Iluminação e Gás – (IV8) | DH | 1861 - 1863 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | Outras | Fichário 03 (gav. 5). | Fichário 89 (gav. 2). | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Registro de correspondência expedida pela Diretoria de Obras Públicas e Navegação sobre estragos causados pelas chuvas no encanamento geral de gás, colocação de lampião nas ruas da corte, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Iluminação e gás, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 3 ---
+Score: 0.8729
+URL: https://atom-mhn.museus.gov.br/index.php/6-57-045-777-pavilhao-das-industrias-noite
+Trecho do texto: DID: Pavilhão das Indústrias - à noite | MC-MCab-MCab06-MCab06.57 (045.777) | 1908 | Iconografia: 01 fotografia, p&b, 12,9x22,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-64-045-784-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.64  (045.784) | 1908 | Iconografia: 01 fotografia, p&b, 10,9x22,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-66-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.66 (045.786) | 1908 | Iconografia: 01 fotografia, p&b, 11x14cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-65-045-785-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.65 (045.785) | 1908 | Iconografia: 01 fotografia, p&b, 10x18,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8701
+URL: https://atom-mhn.museus.gov.br/index.php/6-62-045-782-vista-geral-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista Geral da Exposição Nacional de 1908 - à noite | MC-MCab-MCab06-MCab06.62 (045.782) | 1908 | Iconografia: 01 fotografia, p&b, 18x29,2cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8700
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado a sustentar as ideias livres, proteger a causa da justiça, e propugnar pela fiel observância da lei e interesses locais. Chegada da Iluminação a Gás em Recife: No dia 26 de fevereiro principiou esta cidade a ser iluminada a gás, mas somente nos bairros de S. Antônio e S. José, grande foi a afluência de povo que percorria as ruas destes bairros, para apreciar a brilhante luz de tantos astros, filhos da indústria e trabalho humano, que tem de dissipar as trevas produzidas pela ausência do «rei dos astros», fazendo desta sorte desaparecer os velhos e já bem caducos lampiões. Carestia e Especulação com o Preço da Carne: o alto preço da carne é devido ao grande número de atravessadores para as compras dos gados, desde a porteira do curral dos fazendeiros até esta cidade; e sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente a fim de haver pouca carne no mercado, e eles a poderem vender pelo preço que lhes convier. Concurso na Faculdade de Direito de Recife: Teve efetivamente lugar o concurso da Faculdade de Direito... foi brilhante a discussão entre os candidatos, sobressaindo entre eles pela precisão e força de lógica com que argumentavam os Drs. Pinto Junior e Apprigio Guimarães, foram todos aprovados, a proposta que tem de submetê-los à escolha do governo imperial, foi feita da maneira seguinte: Pinto Junior em 1.º lugar, Apprigio 2.º e Pinto Pessoa 3.º. Guerra do Piemonte e França contra a Áustria: Já há tempos profetizavam que o Piemonte, não obstante ser fraco pela sua pequenez, desembainharia todavia, animado pelo instinto de liberdade, e proteção de alguns países, a sua espada contra Áustria: realizaram-se pois agora estas profecias, e eis o destino da Europa entregue ao cego azar dos combates. A guerra está pois declarada, do Piemonte socorrido pela França contra Áustria....
+
+
+=== Execução de Teste: 2025-09-17 15:01:15 ===
+Consultas: ['O que há sobre Antônio Conselheiro e Canudos?']
+Total de resultados: 9
+
+--- Resultado 1 ---
+Score: 0.8653
+URL: https://atom-mhn.museus.gov.br/index.php/caricatura-do-senador-antonio-azeredo
+Trecho do texto: DID: Caricatura do Senador Antônio Azeredo | NT-NT20 (032.257) | Iconografia aquarela e guache; color; 60,4x38 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado sob pseudônimo Rian
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8637
+URL: https://atom-mhn.museus.gov.br/index.php/canudos
+Trecho do texto: DID: Canudos | CN | 1897 - 1897 | Textual: metragem linear 0,01 (correspondente a 2 itens) | Iconografia: 51 fotografias, 02 gravuras. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Bom | Antônio Flávio de Barros foi citado como produtor dessa coleção, mas ele é produtor de 49 fotos. Que é a maior parte dessa coleção. Não identificamos os produtores do restante dos itens. | Antônio Flávio de Barros
+BIOGHIST: Flavio de Barros era retratista-pintor, fazia retratos com crayon, aquarela e porcelana e como outros companheiros de profissão passou a utilizar, também, a fotografia como se afirmava a fotografia na época, era “o relógio de ver” (“A Camara Clara, Roland Barthes”). Retratou a Guerra dos Canudos que aconteceu entre 1896 a 1897, na cidade de Canudos, um pequeno vilarejo ao Nordeste, no sertão da Bahia. Esse movimento era a guerra entre o exército da Republica do Brasil e mulheres de sertanejos, camponeses, índios, e ex-escravos em busca de salvação da miséria da fome e da falta de trabalho, liderada por Antonio Conselheiro. Estima-se que 5.000 pessoas morreram e houve a destruição de Canudos. Flavio de Barros, chegando na Guerra dos Canudos em 26 de setembro de 1897,  fotografou os batalhões e seus comandantes, fazendo várias tomadas do Arraial, Igrejas novas e velhas, e as prisioneiras e de Antonio  Conselheiro, um dos maiores líderes sociais brasileiro.  Não sabe se ele foi para lá a pedido do governo ou como voluntário.
+SCOPECONTENT: Documentação e iconografia sobre a guerra de Canudos, com imagens dos soldados em acampamentos, nas trincheiras, oficiais posando para foto, ruínas de igrejas bombardeadas. E dois itens documentais, um com uma ordem do dia com mençoes honrosas postumas e uma relação de nomes com detalhes da preparação e combates ocorridos em Canudos.
+ARRANGEMENT: Série Iconografias e Itens textuais
+CONTROLACCESS: Guerra de Canudos
+CUSTODHIST: Do total de 51 fotografias dessa coleção, 49 são reproduções dos originais que estão no Museu da República/RJ. Destas 49 reproduções, 14 são imagens duplicatas, de modo que são 35 as imagens da câmera de Flávio de Barros disponíveis nesta coleção. Os originais fazem parte de um álbum com 68 fotografias.  Não foram localizados os registros de entrada dessas fotos e do restante de itens da coleção no MHN, então, optou-se por formar a coleção tendo como base o assunto. | Em 1997, ano de centenário da Guerra de Canudos,  foi publicado o livro "Canudos Imagens da Guerra" pelo Museu da República/RJ e Lacerda Editores, com textos de Cícero Antônio F. de Almeida e Maria Isabel R. Lenzi  e as fotos de Flávio de Barros , que compõe esta coleção.
+PROCESSINFO: Organizada em 2009/2010. | Organizado por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves, Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ALTFORMAVAIL: 49 das 51 fotografias tem seus originais no Museu da República/RJ
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 3 ---
+Score: 0.8594
+URL: https://dibrarq.arquivonacional.gov.br/index.php/alcides-huet-de-bacellar
+Trecho do texto: DID: Alcides Huet de Bacellar | KZ | s/d | Dado não disponivel. | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Bacellar, Alcides Huet de
+CONTROLACCESS: Bacellar, Alcides Huet de | Arquivo Nacional 185 Anos
+CUSTODHIST: Doado ao Arquivo Nacional em 20 de dezembro de 1974, ficou sob a guarda da Biblioteca da instituição até 23 de maio de 2018, quando foi decidido o seu encaminhamento à Iconográfica para divulgação mais adequada. | Doador: Alcides Huet de Bacellar. Album adquirido em Londres.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 4 ---
+Score: 0.8583
+URL: https://atom-mhn.museus.gov.br/index.php/antonio-mendes-barreto-3
+Trecho do texto: DID: Antônio Mendes Barreto | AB | 1909 - 1939 | Textual: metragem linear 0,01 (corresponde a 11 itens) | Iconografia: 1 santinho (religioso), 3 cartões postais | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Regular | Antônio Mendes Barreto
+BIOGHIST: Antonio Mendes Barreto viveu no estado da Bahia. Possuía relações com a família imperial.
+SCOPECONTENT: Correspondências entre o titular e nobres, dentre os quais, membros da família real; além de fotografias em formato de cartão postal, da família imperial para o titular.
+ARRANGEMENT: Duas séries: Correspondências e Cartões Postais.
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto.
+PROCESSINFO: Organizada em 2009/2010 | Organizada por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves, Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 5 ---
+Score: 0.8575
+URL: https://dibrarq.arquivonacional.gov.br/index.php/aristides-de-araujo-maia
+Trecho do texto: DID: Aristides de Araújo Maia | AAM | 1867-1899 | 0,10 metros lineares | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+ARRANGEMENT: * Os documentos estão organizados de acordo com o quadro de arranjo abaixo: | *  Série 1: Vida pessoal | *  Série 2: Cargos públicos
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A pesquisa é realizada por meio dos originais....
+
+--- Resultado 6 ---
+Score: 0.8572
+URL: https://atom-mhn.museus.gov.br/index.php/antonio-simoes-silva-3
+Trecho do texto: DID: Antônio Simões da Silva | AS | 1849 - 1869 | Textual: metragem linear 0,01 (corresponde a 9 itens) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Bom | Antônio Simões Silva
+BIOGHIST: Antônio Simões da Silva foi Chefe de Polícia na cidade de Salvador, Bahia. Viveu na época do Segundo Reinado.  Teria um suposto parentesco com Domitila de Castro Canto e Melo, Marquesa de Santos.
+SCOPECONTENT: Fragata Príncipe, Passaporte no Brasil Império, Salário de Africanos Livres e Escravidão no Brasil Império.
+ARRANGEMENT: Duas séries intituladas: Correspondências, Documentos Pessoais. E um item documental
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto.
+PROCESSINFO: Organizada em 2009/2010 | Organizado por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves, Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 7 ---
+Score: 0.8572
+URL: https://atom-mhn.museus.gov.br/index.php/agostinho-ermelino-de-leao-3
+Trecho do texto: DID: Agostinho Ermelino de Leão | AT | 1825-1832 | Textual: 0,05 metros lineares, metragem aproximada (4 itens) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Regular | Agostinho Ermelino de Leão
+BIOGHIST: Bacharel, exerceu os cargos de Juiz de Fora e de Provedor da Fazenda dos Defuntos e Ausentes da Vila de Paranaguá (1825/?) e de Ouvidor de Itu (1832/?).
+SCOPECONTENT: Documentos públicos (alvará, cartas imperiais e portaria) envolvendo o titular.
+ARRANGEMENT: A coleção está organizada em série única e em ordem cronológica.
+ACQINFO: Não localizada.
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto. Coleção toda tombada pelo IPHAN (processo de tombamento nº1392-T-1997).
+PROCESSINFO: Coleção organizada em novembro de 1984. | Organizada por Ana Luce Girão Soares de Lima (estagiária) sob supervisão de Helena Ferrez.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Restrito. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 8 ---
+Score: 0.8565
+URL: https://atom-mhn.museus.gov.br/index.php/antonio-teixeira-de-carvalho-3
+Trecho do texto: DID: Antônio Teixeira De Carvalho | AX | 1871-1894 | Textual: metragem linear 0,01 (corresponde a 6 itens) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Bom | Antônio Teixeira De Carvalho
+BIOGHIST: Antônio Teixeira de Carvalho nasceu em Barbacena, MG. Não foram encontradas informações sobre sua data de nascimento e sobre local e data de falecimento. Foi Coronel da Guarda Nacional e recebeu o título de barão do Rio Pomba por decreto de 03/08/1889.
+SCOPECONTENT: Brasil Império: Política, eleições, senado, partidos políticos e pagamentos a jornais referente ao trabalho escravo. Medalhas das exposições de Hamburgo.
+ARRANGEMENT: Série: Correspondências
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto.
+PROCESSINFO: Organizada em 2009/2010 | Organizado por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves e Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 9 ---
+Score: 0.8546
+URL: https://atom-mhn.museus.gov.br/index.php/estudo-para-o-quadro-paz-e-concordia-4
+Trecho do texto: DID: Estudo para o quadro Paz e Concórdia | PA-PA12 (039.012) | ?/12/1895 | Iconografia: Desenho a grafite, p&b, 17,3x20,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-17 15:13:31 ===
+Consultas: ['O que há sobre Antônio Conselheiro e Canudos?']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 0.8653
+URL: https://atom-mhn.museus.gov.br/index.php/caricatura-do-senador-antonio-azeredo
+Trecho do texto: DID: Caricatura do Senador Antônio Azeredo | NT-NT20 (032.257) | Iconografia aquarela e guache; color; 60,4x38 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinado sob pseudônimo Rian
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8637
+URL: https://atom-mhn.museus.gov.br/index.php/canudos
+Trecho do texto: DID: Canudos | CN | 1897 - 1897 | Textual: metragem linear 0,01 (correspondente a 2 itens) | Iconografia: 51 fotografias, 02 gravuras. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Bom | Antônio Flávio de Barros foi citado como produtor dessa coleção, mas ele é produtor de 49 fotos. Que é a maior parte dessa coleção. Não identificamos os produtores do restante dos itens. | Antônio Flávio de Barros
+BIOGHIST: Flavio de Barros era retratista-pintor, fazia retratos com crayon, aquarela e porcelana e como outros companheiros de profissão passou a utilizar, também, a fotografia como se afirmava a fotografia na época, era “o relógio de ver” (“A Camara Clara, Roland Barthes”). Retratou a Guerra dos Canudos que aconteceu entre 1896 a 1897, na cidade de Canudos, um pequeno vilarejo ao Nordeste, no sertão da Bahia. Esse movimento era a guerra entre o exército da Republica do Brasil e mulheres de sertanejos, camponeses, índios, e ex-escravos em busca de salvação da miséria da fome e da falta de trabalho, liderada por Antonio Conselheiro. Estima-se que 5.000 pessoas morreram e houve a destruição de Canudos. Flavio de Barros, chegando na Guerra dos Canudos em 26 de setembro de 1897,  fotografou os batalhões e seus comandantes, fazendo várias tomadas do Arraial, Igrejas novas e velhas, e as prisioneiras e de Antonio  Conselheiro, um dos maiores líderes sociais brasileiro.  Não sabe se ele foi para lá a pedido do governo ou como voluntário.
+SCOPECONTENT: Documentação e iconografia sobre a guerra de Canudos, com imagens dos soldados em acampamentos, nas trincheiras, oficiais posando para foto, ruínas de igrejas bombardeadas. E dois itens documentais, um com uma ordem do dia com mençoes honrosas postumas e uma relação de nomes com detalhes da preparação e combates ocorridos em Canudos.
+ARRANGEMENT: Série Iconografias e Itens textuais
+CONTROLACCESS: Guerra de Canudos
+CUSTODHIST: Do total de 51 fotografias dessa coleção, 49 são reproduções dos originais que estão no Museu da República/RJ. Destas 49 reproduções, 14 são imagens duplicatas, de modo que são 35 as imagens da câmera de Flávio de Barros disponíveis nesta coleção. Os originais fazem parte de um álbum com 68 fotografias.  Não foram localizados os registros de entrada dessas fotos e do restante de itens da coleção no MHN, então, optou-se por formar a coleção tendo como base o assunto. | Em 1997, ano de centenário da Guerra de Canudos,  foi publicado o livro "Canudos Imagens da Guerra" pelo Museu da República/RJ e Lacerda Editores, com textos de Cícero Antônio F. de Almeida e Maria Isabel R. Lenzi  e as fotos de Flávio de Barros , que compõe esta coleção.
+PROCESSINFO: Organizada em 2009/2010. | Organizado por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves, Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ALTFORMAVAIL: 49 das 51 fotografias tem seus originais no Museu da República/RJ
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 3 ---
+Score: 0.8594
+URL: https://dibrarq.arquivonacional.gov.br/index.php/alcides-huet-de-bacellar
+Trecho do texto: DID: Alcides Huet de Bacellar | KZ | s/d | Dado não disponivel. | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Bacellar, Alcides Huet de
+CONTROLACCESS: Bacellar, Alcides Huet de | Arquivo Nacional 185 Anos
+CUSTODHIST: Doado ao Arquivo Nacional em 20 de dezembro de 1974, ficou sob a guarda da Biblioteca da instituição até 23 de maio de 2018, quando foi decidido o seu encaminhamento à Iconográfica para divulgação mais adequada. | Doador: Alcides Huet de Bacellar. Album adquirido em Londres.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 4 ---
+Score: 0.8583
+URL: https://atom-mhn.museus.gov.br/index.php/antonio-mendes-barreto-3
+Trecho do texto: DID: Antônio Mendes Barreto | AB | 1909 - 1939 | Textual: metragem linear 0,01 (corresponde a 11 itens) | Iconografia: 1 santinho (religioso), 3 cartões postais | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Regular | Antônio Mendes Barreto
+BIOGHIST: Antonio Mendes Barreto viveu no estado da Bahia. Possuía relações com a família imperial.
+SCOPECONTENT: Correspondências entre o titular e nobres, dentre os quais, membros da família real; além de fotografias em formato de cartão postal, da família imperial para o titular.
+ARRANGEMENT: Duas séries: Correspondências e Cartões Postais.
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto.
+PROCESSINFO: Organizada em 2009/2010 | Organizada por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves, Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 5 ---
+Score: 0.8575
+URL: https://dibrarq.arquivonacional.gov.br/index.php/aristides-de-araujo-maia
+Trecho do texto: DID: Aristides de Araújo Maia | AAM | 1867-1899 | 0,10 metros lineares | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+ARRANGEMENT: * Os documentos estão organizados de acordo com o quadro de arranjo abaixo: | *  Série 1: Vida pessoal | *  Série 2: Cargos públicos
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: A pesquisa é realizada por meio dos originais....
+
+--- Resultado 6 ---
+Score: 0.8572
+URL: https://atom-mhn.museus.gov.br/index.php/antonio-simoes-silva-3
+Trecho do texto: DID: Antônio Simões da Silva | AS | 1849 - 1869 | Textual: metragem linear 0,01 (corresponde a 9 itens) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Bom | Antônio Simões Silva
+BIOGHIST: Antônio Simões da Silva foi Chefe de Polícia na cidade de Salvador, Bahia. Viveu na época do Segundo Reinado.  Teria um suposto parentesco com Domitila de Castro Canto e Melo, Marquesa de Santos.
+SCOPECONTENT: Fragata Príncipe, Passaporte no Brasil Império, Salário de Africanos Livres e Escravidão no Brasil Império.
+ARRANGEMENT: Duas séries intituladas: Correspondências, Documentos Pessoais. E um item documental
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto.
+PROCESSINFO: Organizada em 2009/2010 | Organizado por Ana Carolina de Azevedo Guedes, Daniel de Abreu Brazil, Dhiego de Moura Mapa, Gian Luigi Toscano Machado, Leandro Fernandes Corrêa, João Henrique do Nascimento, Lourence Cristine Alves, Priscila Lopes d’Ávila Borges, Thayane Vicente Vam de Berg e Vitor Manuel Neto Cabral, sob orientação de Rosângela de Almeida Costa Bandeira.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Com restrição. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+--- Resultado 7 ---
+Score: 0.8572
+URL: https://atom-mhn.museus.gov.br/index.php/agostinho-ermelino-de-leao-3
+Trecho do texto: DID: Agostinho Ermelino de Leão | AT | 1825-1832 | Textual: 0,05 metros lineares, metragem aproximada (4 itens) | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Estado de Conservação: Regular | Agostinho Ermelino de Leão
+BIOGHIST: Bacharel, exerceu os cargos de Juiz de Fora e de Provedor da Fazenda dos Defuntos e Ausentes da Vila de Paranaguá (1825/?) e de Ouvidor de Itu (1832/?).
+SCOPECONTENT: Documentos públicos (alvará, cartas imperiais e portaria) envolvendo o titular.
+ARRANGEMENT: A coleção está organizada em série única e em ordem cronológica.
+ACQINFO: Não localizada.
+CUSTODHIST: Não foram localizados os registros de entrada de todos os documentos do MHN e essa Coleção é um desses casos. Fomos informados, por uma ex-funcionária, de que em 1982 foi decidido que seriam formadas coleções com esses documentos para que eles não ficassem desmembrados, tendo como base um titular, o gênero documental ou um assunto. Coleção toda tombada pelo IPHAN (processo de tombamento nº1392-T-1997).
+PROCESSINFO: Coleção organizada em novembro de 1984. | Organizada por Ana Luce Girão Soares de Lima (estagiária) sob supervisão de Helena Ferrez.
+OTHERFINDAID: Inventário
+ODD: published
+ODD: Integral
+ODD: Final
+ACCESSRESTRICT: Restrito. Necessidade de prévio aviso.
+USERESTRICT: Resolução Normativa IBRAM no. 15/2022....
+
+
+=== Execução de Teste: 2025-09-17 15:16:35 ===
+Consultas: ['Como foi noticiada a chegada da iluminação a gás e depois elétrica nas cidades brasileiras?']
+Total de resultados: 10
+
+--- Resultado 1 ---
+Score: 0.8760
+URL: https://atom-mhn.museus.gov.br/index.php/6-58-045-778-pavilhao-da-bahia-noite
+Trecho do texto: DID: Pavilhão da Bahia -  à noite | MC-MCab-MCab06-MCab06.58 (045.778) | 1908 | Iconografia: 01 fotografia, p&b, 13,2x23,7cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 2 ---
+Score: 0.8752
+URL: https://dibrarq.arquivonacional.gov.br/index.php/serie-viacao-iluminacao-e-gas-iv8
+Trecho do texto: DID: Série Viação - Iluminação e Gás – (IV8) | DH | 1861 - 1863 | Textual(is) -sem especificação - 0,05 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | Outras | Fichário 03 (gav. 5). | Fichário 89 (gav. 2). | Responsável da descrição | Cyntia Mendes Aguiar | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES
+SCOPECONTENT: Registro de correspondência expedida pela Diretoria de Obras Públicas e Navegação sobre estragos causados pelas chuvas no encanamento geral de gás, colocação de lampião nas ruas da corte, etc.
+ARRANGEMENT: Organizado totalmente | Organização | Assunto.
+CONTROLACCESS: Arquivo Nacional 185 Anos
+CUSTODHIST: Na década de 1960, o Arquivo Nacional contou com a colaboração técnica do professor francês Henri Boullier de Branche, diretor dos arquivos de Sarthe (Le Mans), que dirigiu um grupo de trabalho encarregado de estabelecer um quadro de arranjo do acervo textual. Surgiram, assim, as séries funcionais, que classificam parte da documentação da administração central dos ministérios, e de órgãos a eles pertencentes, de acordo com a função ou atividade ministerial principal, subdividindo-a, ainda, em atividades secundárias, específicas de determinado serviço. Assim, Iluminação e gás, por exemplo, corresponde a uma subsérie da atividade principal, representada na SÉRIE VIAÇÃO.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 3 ---
+Score: 0.8729
+URL: https://atom-mhn.museus.gov.br/index.php/6-57-045-777-pavilhao-das-industrias-noite
+Trecho do texto: DID: Pavilhão das Indústrias - à noite | MC-MCab-MCab06-MCab06.57 (045.777) | 1908 | Iconografia: 01 fotografia, p&b, 12,9x22,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-64-045-784-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.64  (045.784) | 1908 | Iconografia: 01 fotografia, p&b, 10,9x22,1cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 5 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-66-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.66 (045.786) | 1908 | Iconografia: 01 fotografia, p&b, 11x14cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8715
+URL: https://atom-mhn.museus.gov.br/index.php/6-65-045-785-vistas-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista da Exposição Nacional de 1908 à noite | MC-MCab-MCab06-MCab06.65 (045.785) | 1908 | Iconografia: 01 fotografia, p&b, 10x18,8cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8701
+URL: https://atom-mhn.museus.gov.br/index.php/6-62-045-782-vista-geral-da-exposicao-nacional-de-1908-noite
+Trecho do texto: DID: Vista Geral da Exposição Nacional de 1908 - à noite | MC-MCab-MCab06-MCab06.62 (045.782) | 1908 | Iconografia: 01 fotografia, p&b, 18x29,2cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica.
+ODD: published...
+
+--- Resultado 8 ---
+Score: 0.8700
+URL: https://acervo.fortaleza.ce.gov.br/download-file/documentById?id=67c1561e-4413-49d2-9574-2b6536625034
+Trecho do texto: Linha Editorial do Jornal O Araripe: O ARARIPE é destinado a sustentar as ideias livres, proteger a causa da justiça, e propugnar pela fiel observância da lei e interesses locais. Chegada da Iluminação a Gás em Recife: No dia 26 de fevereiro principiou esta cidade a ser iluminada a gás, mas somente nos bairros de S. Antônio e S. José, grande foi a afluência de povo que percorria as ruas destes bairros, para apreciar a brilhante luz de tantos astros, filhos da indústria e trabalho humano, que tem de dissipar as trevas produzidas pela ausência do «rei dos astros», fazendo desta sorte desaparecer os velhos e já bem caducos lampiões. Carestia e Especulação com o Preço da Carne: o alto preço da carne é devido ao grande número de atravessadores para as compras dos gados, desde a porteira do curral dos fazendeiros até esta cidade; e sabem tudo, pela especulação que fazem aqui os marchantes, matando de propósito poucas reses diariamente a fim de haver pouca carne no mercado, e eles a poderem vender pelo preço que lhes convier. Concurso na Faculdade de Direito de Recife: Teve efetivamente lugar o concurso da Faculdade de Direito... foi brilhante a discussão entre os candidatos, sobressaindo entre eles pela precisão e força de lógica com que argumentavam os Drs. Pinto Junior e Apprigio Guimarães, foram todos aprovados, a proposta que tem de submetê-los à escolha do governo imperial, foi feita da maneira seguinte: Pinto Junior em 1.º lugar, Apprigio 2.º e Pinto Pessoa 3.º. Guerra do Piemonte e França contra a Áustria: Já há tempos profetizavam que o Piemonte, não obstante ser fraco pela sua pequenez, desembainharia todavia, animado pelo instinto de liberdade, e proteção de alguns países, a sua espada contra Áustria: realizaram-se pois agora estas profecias, e eis o destino da Europa entregue ao cego azar dos combates. A guerra está pois declarada, do Piemonte socorrido pela França contra Áustria....
+
+--- Resultado 9 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-59-045-779-cascata-tomada-noite
+Trecho do texto: DID: Palácio das Indústrias - à noite | MC-MCab-MCab06-MCab06.59 (045.779) | 1908 | Iconografia: 01 fotografia, p&b, 22,2x28,9cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Chateau d"Eau, Luz Elétrica.
+ODD: published...
+
+--- Resultado 10 ---
+Score: 0.8671
+URL: https://atom-mhn.museus.gov.br/index.php/6-56-045-776-pavilhao-de-portugal-noite
+Trecho do texto: DID: Pavilhão de Portugal - à noite | MC-MCab-MCab06-MCab06.56 (045.776) | 1908 | Iconografia: 01 fotografia, p&b, 11x21,5cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+SCOPECONTENT: Luz elétrica
+ODD: published...
+
+
+=== Execução de Teste: 2025-09-17 15:19:23 ===
+Consultas: ['pesquise sobre monteiro lobato']
+Total de resultados: 7
+
+--- Resultado 1 ---
+Score: 0.8852
+URL: https://dibrarq.arquivonacional.gov.br/index.php/francisco-lobo-leite-pereira
+Trecho do texto: DID: Francisco Lobo Leite Pereira | QD | 1809 - 1928 | Cartográfico(s) -mapa(s) - 28 itens | Cartográfico(s) -planta(s) - 2 itens | Cartográfico(s) -tabela(s) - 1 itens | Iconográfico(s) -fotografia(s) - 1 itens | Textual(is) -sem especificação - 4,9 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Variações de título | Lobo Leite Pereira | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos - CODES | Pereira, Francisco Lobo Leite
+BIOGHIST: Francisco  Lobo  Leite  Pereira  nasceu  em  4  de  dezembro  de  1843,  em  Campanha  (MG)  e  faleceu  em  8  de  fevereiro  de  1920.  Bacharel  em  ciências  físicas  e  matemáticas  pela  Escola  Central  do  Império.  Foi  chefe  da  fiscalização  da  Rede  de  Viação  Sul-Mineira  (1910),  chefe  de  distrito  da  Inspetoria  Federal  das  Estradas  de  Ferro  (1911),  chefe  da  comissão  encarregada  da  aquisição  de  material  necessário  para  as  estradas  de  ferro  da  República  na  Europa  e  Estados  Unidos,  superintendente-geral  das  Obras  Públicas  do  Estado  de  Minas  Gerais  e  outros  cargos.  Sócio  correspondente  da  Academia  de  Ciências  de  Lisboa,  escreveu  Descobrimento  de  Minas  Gerais,  Em  busca  das  esmeraldas,  Itinerário  da  expedição  Espinosa  e  trabalhos  técnicos  referentes  à  construção  e  prolongamento  de  estradas  de  ferro.
+SCOPECONTENT: Apontamentos sobre o antigo caminho de São Paulo para Minas Gerais. Estudos e documentos diversos sobre estradas de ferro, história e geografia humana, principalmente de Minas Gerais. Documentos diversos sobre eleições provinciais, geologia e mineração. Informações sobre a construção do Balneário de Águas Virtuosas de Campanha, bandeiras paulistas e limites provinciais. Legislação sobre a liberdade dos indígenas. Documento sobre a aclimatação do dromedário nos sertões do norte brasileiro. Estudos sobre navegabilidade do rio das Velhas. Correspondência da Comissão de Compras do Ministério da Agricultura, Comércio e Obras Públicas encarregada da aquisição de material ferroviário na Europa e nos Estados Unidos., Documentos cartográficos referentes às estradas de ferro de Minas Gerais e à alguns municípios mineiros., Publicações sobre diversos assuntos. Fotografia de Fernando Lobo Leite Pereira.
+ARRANGEMENT: Organizado parcialmente | Organização | Assunto, cronológica, autor, alfanumérica, procedência.
+CONTROLACCESS: Pereira, Francisco Lobo Leite | Arquivo Nacional 185 Anos
+ACQINFO: Pereira, Alice Lobo Leite - 1952 - doação - 49
+CUSTODHIST: Este fundo recebeu anteriormente o código AP 5.
+PROCESSINFO: Crédito | Equipe de Documentos Iconográficos: Maria Lúcia Cerutti Miguel, Nilda Sampaio Barbosa Sobrosa e Sérgio Lima.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Catálogo de documentos cartográficos dos fundos privados: Afonso Pena Júnior e outros. Rio de Janeiro, 2000. dat. - Não impressos | ARQUIVO NACIONAL (Brasil). Catálogo dos doc. ico. dos fundos Afonso Pena, Afonso Pena Júnior, Antônio Ferreira Viana, Barão Homem de Melo, Duque de Caxias, Família Bicalho, Família Lobo Leite Pereira, Família Vieira Tosta, Família Werneck, Floriano Peixoto, Henrique Oswald, Luís Gastão d´ Escragnolle Dória, Paulo de Assis Ribeiro, Percival Farquhar, Plínio Doyle, Polidoro da Fonseca Quintanilha Jordão, Prudente de Morais e Virgílio Várzea. Rio de Janeiro, 1998. 291 p. dat. (AN/SCO/CODAC/SDI 4) - Não impressos | ARQUIVO NACIONAL (Brasil). Catálogo dos documentos cartográficos do fundo privado Francisco Lobo Leite Pereira. Rio de Janeiro, 2000. (AN/SCO/CODAC/SDC 12) - Não impressos | ARQUIVO NACIONAL (Brasil). Catálogo dos documentos cartográficos dos fundos privados Academia Brasileira de Letras, Afonso Vasconcelos Várzea, Correio da Manhã, Francisco Lobo Leite Pereira, Ilone Starec, Luiz da Silva Oliveira, Marcos Carneiro de Mendonça, Salgado Filho. Rio de Janeiro, 2008. 140 p. - Não impressos | ARQUIVO NACIONAL (Brasil). Relação das caixas do fundo Francisco Lobo Leite Pereira. Rio de Janeiro, s.d. 37 p. dat. - Não impressos | GUIA Brasileiro de fontes para a história da África, da escravidão negra e do negro na sociedade atual: frente arquivística. Coord. por Arquivo Nacional. Rio de Janeiro: Arquivo Nacional; Brasília: Departamento de Imprensa Nacional, 1988. 2v. (Guia de Fontes para História das Nações, 8: África, 11: Brasil) - Impressos, em livros e folhetos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+
+--- Resultado 2 ---
+Score: 0.8763
+URL: https://dibrarq.arquivonacional.gov.br/index.php/manoel-basilio-furtado
+Trecho do texto: DID: Manoel Basílio Furtado | MBF | 1873-1953 | 0,10 metros lineares | Arquivo Público Mineiro | Avenida João Pinheiro, nº 372 - Funcionários | Belo Horizonte | Minas Gerais | Brasil | 30130-180 | Telefone: 55 31 9152-2989 | Email: apm@secult.mg.gov.br | https://www.arquivopublico.mg.gov.br/ | português do Brasil
+ARRANGEMENT: * Os documentos estão organizados de acordo com o quadro de arranjo abaixo: | *  SÉRIE 1: Naturalista | *  SÉRIE 2: Diversos
+PROCESSINFO: A documentação foi doada ao Arquivo Público Mineiro por Amélia Terezinha Furtado
+ODD: Publicado
+ODD: Parcial
+ODD: Final
+ACCESSRESTRICT: O acesso é por meio dos originais....
+
+--- Resultado 3 ---
+Score: 0.8755
+URL: https://atom-mhn.museus.gov.br/index.php/estudo
+Trecho do texto: DID: Estudo | PA-PA13 (039.013) | Iconografia: Desenho a grafite, p&b, 32,7x21,8 cm | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/
+ODD: published...
+
+--- Resultado 4 ---
+Score: 0.8747
+URL: https://dibrarq.arquivonacional.gov.br/index.php/eulalia-maria-lahmeyer-lobo
+Trecho do texto: DID: Eulalia Maria Lahmeyer Lobo | GE | 1898 - 2005 | Cartográfico(s) -mapa(s) - 3 item(ns) | Iconográfico(s) -cartão(ões)-postal(is) - 2182 item(ns) | Iconográfico(s) -cartaz(es) - 3 item(ns) | Iconográfico(s) -diapositivo(s) - 1520 item(ns) | Iconográfico(s) -fotografia(s) - 4486 item(ns) | Iconográfico(s) -gravura(s) - 3 item(ns) | Iconográfico(s) -ilustração(ões) - 53 item(ns) | Iconográfico(s) -negativo(s) fotográfico(s) - 760 item(ns) | Sonoro(s) -disco(s) ótico(s) - cd(s) - 10 item(ns) | Sonoro(s) -fita(s) audiomagnética(s) - 85 item(ns) | Tridimensional(is) -sem especificação - 4 item(ns) | Textual(is) -sem especificação - 15,82 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | alemão | espanhol | inglês | francês | Dimensões | Fitas audiomagnéticas (documentos sonoros): correspondem a 22 fitas-cassete e 63 mini-cassetes (14 ago. 2014). | Outras | O acervo sob a custódia da Universidade Federal Fluminense é composto basicamente de material bibliográfico impresso. | Outras | Registro atualizado conforme informação encaminhada pela DIDOP em 21 agosto 2024. | Coordenação de Documentos Audiovisuais e Cartográficos - CODAC | Coordenação de Documentos Escritos - CODES | Lobo, Eulalia Maria Lahmeyer | Companhia de Fiação e Tecidos Corcovado | Companhia Luz Stearica | Lobo, Bruno Alípio | Lobo, Bruno Álvares da Silva | Sindicato dos Metalúrgicos do Rio de Janeiro | Sindicato dos Trabalhadores das Indústrias Metalúrgicas, Mecânica e de Material Elétrico do Estado da Guanabara
+BIOGHIST: Eulália  Maria  Lahmeyer  Lobo  nasceu  em  17  de  julho  de  1924,  no  Rio  de  Janeiro,  e  faleceu  em  31  de  maio  de  2011,  na  mesma  cidade. | Começou  a  cursar  Geografia  e  História  em  1941,  na  Universidade  do  Brasil.  Doutora  em  História  da  América  com  a  tese  Administração  colonial  luso-espanhola  nas  Américas  pela  Universidade  do  Brasil  (1953)  ,  livre-docente  com  o  trabalho  Caminho  de  Chiquitos  às  migrações  Guaranis  (1958)  pela  mesma  universidade,  no  ano  de  1967  ingressou  por  concurso  no  cargo  de  professora  titular  de  História  das  Américas  da  Universidade  Federal  do  Rio  de  Janeiro  (UFRJ),  antiga  Universidade  do  Brasil. | Professora  visitante  em  inúmeras  universidades  estrangeiras,  entre  elas  a  Universidade  da  Carolina  do  Norte  (University  of  North  Carolina)  e  Universidade  de  Bordeaux,  foi  aposentada  compulsoriamente  em  1968,  prosseguindo  em  suas  pesquisas  com  financiamento  da  Fundação  Ford  e,  posteriormente,  do  Instituto  Brasileiro  de  Mercado  de  Capitais  (  IBMEC). | Presa  por  uma  semana  em  1969,  durante  a  visita  do  empresário  Nelson  Rockefeller  ao  Brasil,  após  a  anistia  retornou  à  UFRJ. | Lecionou  na  graduação  e  pós-graduação  das  universidades  Federal  Fluminense  e Federal  do  Rio  de  Janeiro,  publicou  inúmeros  livros,  capítulos  de  livros,  artigos.  Participou de  bancas  examinadoras  de  dissertações  e  teses  e  de  comissões  examinadoras  de concursos  públicos.
+SCOPECONTENT: Documentos textuais, sonoros, cartográficos, bibliográficos e iconográficos produzidos e/ou acumulados por Bruno Álvares da Silva Lobo, Eulália Maria Lahneyer Lobo e Francisco Alípio Bruno Lobo. Constam documentos originais da Companhia de Luz Steárica e da Companhia Corcovado (Companhia de Fiação e Tecidos Corcovado). | Especificamente da titular, encontram-se: estudos e pesquisas; originais de publicações e publicações; originais e cópias de fontes utilizadas nas pesquisas; informações sobre a trajetória acadêmica; participação em seminários, colóquios e congressos de História; aulas e cursos ministrados; correspondência.
+ARRANGEMENT: Identificado
+CONTROLACCESS: Lobo, Eulalia Maria Lahmeyer | Companhia de Fiação e Tecidos Corcovado | Companhia Luz Stearica | Lobo, Bruno Alípio | Lobo, Bruno Álvares da Silva | Sindicato dos Metalúrgicos do Rio de Janeiro | Sindicato dos Trabalhadores das Indústrias Metalúrgicas, Mecânica e de Material Elétrico do Estado da Guanabara | Arquivo Nacional 185 Anos | Memorias Reveladas
+ACQINFO: Lobo, Gian Bruno Lanz Boccardo Lahmeyer - 2011 - doação - 7 | Lobo, Lúcia Lahmeyer - 2011 - doação - 7 | Lobo, Luiza Leite Bruno - 2011 - doação - 7
+CUSTODHIST: Documentos doados por Lucia Lahmeyer Lobo, Luiza Leite Bruno Lobo e Gian Bruno Lanz Boccardo Lahmeyer Lobo, as duas primeiras filhas da titular e o terceiro neto da mesma. O termo de doação foi assinado em 13 de novembro de 2012 e o extrato do termo foi publicado no Diário Oficial da União, n. 221, Seção 3, p. 177-178, de 16 de novembro de 2012 (cf. processo 08060.000406/2011-51, de 30 de agosto de 2011). | Os documentos deram entrada em agosto de 2011.
+PROCESSINFO: 21 agosto 2024.
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO
+RELATEDMATERIAL: Universidade Federal Fluminense - -Eulália Lobo...
+
+--- Resultado 5 ---
+Score: 0.8746
+URL: https://atom-mhn.museus.gov.br/index.php/lavabo-de-pedra-ouro-preto-2
+Trecho do texto: DID: Lavabo de Pedra, Ouro Preto | NF-NF-NF157 (235.711) | Iconografia: 01 fotografia: color; 21 x 16 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Corresponde a aquarela original NF 21.
+ODD: published...
+
+--- Resultado 6 ---
+Score: 0.8746
+URL: https://atom-mhn.museus.gov.br/index.php/lavabo-de-pedra-ouro-preto
+Trecho do texto: DID: Lavabo de Pedra, Ouro Preto | NF-NF-NF021 (031.674) | Iconografia: 01 aquarela: 29,3 x 22 cm. | Museu Histórico Nacional | Praça Marechal Âncora s/n | Rio de Janeiro | Rio de Janeiro | 20021-200 | Telefone: 55 21 3299-0368 | Email: mhn.arquivo.historico@museus.gov.br | http://mhn.museus.gov.br/ | Assinada. | Possui negativo colorido, 6x6 cm, tirado por Hugo Leal em janeiro/1983.
+ODD: published...
+
+--- Resultado 7 ---
+Score: 0.8732
+URL: https://dibrarq.arquivonacional.gov.br/index.php/joao-valentim-de-faria-sousa-lobato
+Trecho do texto: DID: João Valentim de Faria Sousa Lobato | QV | 1835 | Textuais -sem especificação - 0,15 m | Arquivo Nacional (Brasil) - Sede | Praça da República, 173 | Rio de Janeiro | Rio de Janeiro | Brasil | 202111-350 | Telefone: 55 21 3952-4300 | Email: direcaogeral@gestao.an.gov.br | https://www.gov.br/arquivonacional/pt-br | português do Brasil | Responsável da descrição | Debora Pereira Crespo | Unidade Custodiadora | Coordenação de Documentos Escritos - CODES | Lobato, João Valentim de Faria e Sousa
+BIOGHIST: João  Valentim  de  Faria  Sousa  Lobato  faleceu  no  Rio  de  Janeiro,  em  1836.  Vogal  do  Conselho  Supremo  Militar  de  Justiça  (1829-1833)  e  oficial  do  Exército,  chegou  a  brigadeiro  graduado.  Exerceu,  também,  funções  nas  Casas  Real  e  Imperial.
+SCOPECONTENT: Públicas-forma e certidões sobre assuntos militares. Promoção do titular à grande dignitário da Ordem da Rosa, guarda jóias do Tesouro Imperial e porteiro imperial.
+ARRANGEMENT: Organizado totalmente | Organização | Cronológica.
+CONTROLACCESS: Lobato, João Valentim de Faria e Sousa | Arquivo Nacional 185 Anos
+CUSTODHIST: O acervo recebeu anteriormente o código 58 CP 20. Reclassificado como fundo em junho de 2017.
+OTHERFINDAID: ARQUIVO NACIONAL (Brasil). Coordenação de Documentos Escritos. Equipe de Documentos Privados. João Valentin de Faria Sousa Lobato. In:_______. Inventário das coleções. Rio de Janeiro, 2005. p. 407-411. dig. (AN/SCO/SDP 064, v. 2) - Não impressos | ARQUIVO NACIONAL (Brasil). Inventário das coleções da Seção de Documentos Privados. Vol. I. Rio de Janeiro, 1990, p. 136-138, dat - Não impressos
+ODD: Publicado
+ODD: Completo
+ODD: Final
+ODD: BR RJANRIO...
+

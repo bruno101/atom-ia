@@ -43,5 +43,12 @@ def llm_query(llm, consulta, historico_str, nos):
         "*   **Título da página GHI.**\n    [Comentário sobre página GHI, que pode, por exemplo, explicar a sua utilidade para a busca].\n    [Texto do link para a página GHI](Link para a página GHI, copiado exatamente como aparece no campo "url")\n\n"
         '''
     print("prompt é " + prompt)
-    for chunk in llm.stream_complete(prompt=prompt):
-        yield f"PARTIAL_RESPONSE:{chunk.delta}"
+    
+    
+    response = llm.generate_content(prompt, stream=True)
+    for chunk in response:
+        yield f"PARTIAL_RESPONSE:{chunk.text}"
+
+    print("Acabou o stream")
+    
+    return

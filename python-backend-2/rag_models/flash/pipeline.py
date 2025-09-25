@@ -38,7 +38,9 @@ async def pipeline_stream(consulta, historico=None, llm=None):
             resposta = ''.join(resposta_parts)
             if resposta and len(resposta.strip()) > 10:
                 break
+            print("Tentando de novo")
         except Exception:
+            print("Ocorreu exceção")
             if i == len(retry_intervals):
                 resposta = "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos."
     

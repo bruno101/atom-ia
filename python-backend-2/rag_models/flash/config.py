@@ -6,8 +6,15 @@ from dotenv import load_dotenv
 # Carrega variáveis de ambiente do arquivo .env
 load_dotenv()
 
-# Chave da API do Google Gemini
+# Chave da API do Google Gemini - Google AI Studio
 GEMINI_API = os.getenv("GEMINI_API")
+
+# Chave da API do Google Gemini - Vertex
+PROJECT_ID = "chatbot-atom"
+LOCATION = "us-central1"
+GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+GEMINI_API_PROVIDER = "vertex"
 
 # Modelos utilizados no sistema
 LLM_MODEL = "gemini-2.5-flash"  # Modelo de linguagem do Google

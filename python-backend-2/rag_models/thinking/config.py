@@ -13,14 +13,14 @@ GEMINI_API = os.getenv("GEMINI_API")
 LLM_MODEL = "gemini-2.5-flash"  # Modelo de linguagem do Google
 
 # Parâmetros para consultas vetoriais
-NUMBER_OF_VECTOR_QUERIES = 10     # Número de consultas vetoriais por busca
+NUMBER_OF_VECTOR_QUERIES = 5     # Número de consultas vetoriais por busca
 NODES_PER_VECTOR_QUERY = 3       # Nós retornados por consulta vetorial
-MAX_NODES_VECTOR_QUERY = 25       # Máximo de nós vetoriais totais
+MAX_NODES_VECTOR_QUERY = 15       # Máximo de nós vetoriais totais
 
 # Parâmetros para consultas tradicionais (Elasticsearch)
 NUMBER_OF_TRADITIONAL_QUERIES = 20  # Número de consultas tradicionais
 NODES_PER_TRADITIONAL_QUERY = 3     # Nós retornados por consulta tradicional
-MAX_NODES_TRADITIONAL_QUERY = 40    # Máximo de nós tradicionais totais
+MAX_NODES_TRADITIONAL_QUERY = 30    # Máximo de nós tradicionais totais
 
 # Limitações de tamanho para otimização
 MAX_CHARS_PER_NODE = 2500  # Caracteres máximos por nó (controle de tokens)
