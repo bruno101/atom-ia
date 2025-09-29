@@ -1,11 +1,15 @@
-import { faBolt, faLightbulb, faSearch, faChevronUp, faMicrophone, faStop } from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faLightbulb, faSearch, faChevronUp, faMicrophone, faStop, faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useRef, useEffect } from "react";
 import { useSpeechRecognition } from "../../hooks/useSpeechRecognition";
+import { FileUploadArea } from "../../features/fileUpload";
+import FileThumbnail from "./FileThumbnail";
 import styles from "./InputForm.module.css"; 
 
 const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [showFileUpload, setShowFileUpload] = useState(false);
+  const [attachedFile, setAttachedFile] = useState(null);
   const dropdownRef = useRef(null);
   const { isListening, startListening, stopListening, isSupported } = useSpeechRecognition();
 
@@ -41,8 +45,48 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     }
   };
 
+  // Manipula o resultado do processamento de arquivo
+  const handleFileProcessed = (result, file) => {
+    setInput(result);
+    setAttachedFile(file);
+    setShowFileUpload(false);
+  };
+
+  // Remove arquivo anexado
+  const handleRemoveFile = () => {
+    setAttachedFile(null);
+    setInput('');
+  };
+
+  // Manipula clique no ícone de clipe
+  // Manipula clique no ícone de clipe
+  const handleClipClick = () => {
+    setShowFileUpload(!showFileUpload);
+  };
+
+  // Manipula drag over no input para mostrar área de upload
+  const handleInputDragOver = (e) => {
+    e.preventDefault();
+    if (!isLoading) {
+      setShowFileUpload(true);
+    }
+  };
+
   return (
-    <form onSubmit={onSubmit} className={styles.inputForm}>
+    <div className={styles.inputContainer}>
+      {attachedFile && (
+        <FileThumbnail 
+          file={attachedFile}
+          onRemove={handleRemoveFile}
+        />
+      )}
+      {showFileUpload && (
+        <FileUploadArea 
+          onFileProcessed={handleFileProcessed}
+          disabled={isLoading}
+        />
+      )}
+      <form onSubmit={onSubmit} className={styles.inputForm}>
       <div className={styles.modelSelector} ref={dropdownRef}>
         <button
           type="button"
@@ -71,15 +115,27 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
           </div>
         )}
       </div>
-    <div className={styles.inputContainer}>
+    <div 
+      className={styles.inputField}
+      onDragOver={handleInputDragOver}
+    >
       <input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder={isListening ? "Ouvindo..." : "Digite sua consulta..."}
-        className={styles.inputField}
+        className={styles.textInput}
         disabled={isLoading}
       />
+      <button
+        type="button"
+        onClick={handleClipClick}
+        className={styles.clipButton}
+        disabled={isLoading}
+        title="Anexar arquivo"
+      >
+        <FontAwesomeIcon icon={faPaperclip} />
+      </button>
       {isSupported && (
         <button
           type="button"
@@ -99,7 +155,8 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     >
       <FontAwesomeIcon icon={faSearch} />
     </button>
-    </form>
+      </form>
+    </div>
   );
 };
 
