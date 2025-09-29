@@ -62,8 +62,8 @@ def test_vector_search():
     
     try:
         # Teste com consulta simples sobre tema histórico
-        test_query = "escravidão"
-        results = search_similar_documents(test_query, n_results=3)
+        test_query = "como se vestia a elite brasileira no século XIX"
+        results = search_similar_documents(test_query, n_results=10)
         
         logger.info(f"Teste executado com sucesso!")
         logger.info(f"Consulta de teste: '{test_query}'")
@@ -73,8 +73,8 @@ def test_vector_search():
         for i, doc in enumerate(results, 1):
             logger.info(f"\n--- Resultado {i} ---")
             logger.info(f"URL: {doc['url']}")
-            text_preview = doc['text'][:100] if doc['text'] else 'Sem texto'
-            logger.info(f"Texto (primeiros 100 chars): {text_preview}...")
+            text_preview = doc['text'] if doc['text'] else 'Sem texto'
+            logger.info(f"Texto: {text_preview}...")
         
         return True
         

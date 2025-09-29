@@ -2,7 +2,8 @@
 # Processa requisições de chat e streaming de respostas
 from rag_models.thinking.query import handle_query
 from rag_models.flash.query import handle_query_flash
-from api.models import ConsultaRequest, ConsultaResponse
+from rag_models.multimodal.query import handle_query_multimodal
+from api.models import ConsultaRequest, ConsultaMultimodalRequest, ConsultaResponse
 from fastapi import HTTPException, Request
 import logging
 
@@ -26,6 +27,8 @@ async def handle_stream(request: Request, req: ConsultaRequest, model_name: str)
         # Inicia o pipeline de processamento com streaming
         if model_name == "flash":
             message_stream = handle_query_flash(req.consulta, historico_str)
+        elif model_name == "multimodal":
+            message_stream = handle_query_multimodal(req.consulta, historico_str, req.tipo_de_arquivo, req.texto_arquivo)
         else:
             message_stream = handle_query(req.consulta, historico_str)
         
@@ -95,3 +98,37 @@ def handle_error(e):
     # Outros erros retornam 500 (Internal Server Error)
     logger.exception("Erro inesperado")
     raise HTTPException(status_code=500, detail="Erro interno")
+
+async def handle_multimodal_stream(request: Request, req: ConsultaMultimodalRequest):
+    """Processa consulta multimodal com streaming de progresso em tempo real"""
+    try:
+        historico_str = format_history(req.historico)
+        message_stream = handle_query_multimodal(req.consulta, historico_str, req.tipo_de_arquivo, req.texto_arquivo)
+        
+        async for message in message_stream:
+            if await request.is_disconnected():
+                logger.info("Client disconnected")
+                break
+            
+            if message.startswith("FINAL_RESULT::"):
+                yield {
+                    "event": "done",
+                    "data": message.replace("FINAL_RESULT::", "")
+                }
+            elif message.startswith("PARTIAL_RESPONSE:"):
+                yield {
+                    "event": "partial",
+                    "data": message.replace("PARTIAL_RESPONSE:", "")
+                }
+            else:
+                yield {
+                    "event": "progress",
+                    "data": message
+                }
+                
+    except Exception as e:
+        logger.exception("Multimodal stream error")
+        yield {
+            "event": "error",
+            "data": f"Server error: {str(e)}"
+        }

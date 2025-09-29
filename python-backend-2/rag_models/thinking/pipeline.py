@@ -12,7 +12,7 @@ import os
 from dotenv import load_dotenv
 import time
 
-async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None, urls_validas=None):
+async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None):
     """Pipeline principal para processamento de consultas com streaming de progresso
     
     Args:
@@ -20,7 +20,6 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         historico (str, optional): Histórico da conversa
         query_engine: Motor de consulta RAG
         llm: Modelo de linguagem
-        urls_validas (list): Lista de urls válidas do banco
         
     Yields:
         str: Mensagens de progresso e resultado final
@@ -133,6 +132,7 @@ async def pipeline_stream(consulta, historico=None, query_engine=None, llm=None,
         
         nos = query_engine.custom_global_query(raw_output, consulta)
         num_documentos = len(nos) 
+        urls_validas = [no["url"] for no in nos]
         if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
             yield messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS.format(num_documentos=num_documentos)
         

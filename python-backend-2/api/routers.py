@@ -2,8 +2,8 @@
 # Implementa endpoints para chat síncrono e streaming
 from fastapi import APIRouter, HTTPException, Request
 from sse_starlette.sse import EventSourceResponse
-from .models import ConsultaRequest, ConsultaResponse
-from .api_service import handle_stream
+from .models import ConsultaRequest, ConsultaMultimodalRequest, ConsultaResponse
+from .api_service import handle_stream, handle_multimodal_stream
 import logging
 
 # Configura roteador com prefixo vazio e tag para documentação
@@ -40,5 +40,21 @@ async def ask_stream(request: Request, req: ConsultaRequest):
     """
     # Cria gerador de eventos para streaming
     event_generator = handle_stream(request, req, "flash")
+    # Retorna resposta SSE (Server-Sent Events)
+    return EventSourceResponse(event_generator)
+
+@router.post("/ask-stream-multimodal") 
+async def ask_stream_multimodal(request: Request, req: ConsultaMultimodalRequest):
+    """Endpoint para consultas multimodais com streaming de progresso (SSE)
+    
+    Args:
+        request (Request): Requisição HTTP para controle de conexão
+        req (ConsultaMultimodalRequest): Dados da consulta multimodal
+        
+    Returns:
+        EventSourceResponse: Stream de eventos SSE com progresso
+    """
+    # Cria gerador de eventos para streaming
+    event_generator = handle_multimodal_stream(request, req)
     # Retorna resposta SSE (Server-Sent Events)
     return EventSourceResponse(event_generator)

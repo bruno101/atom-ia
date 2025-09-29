@@ -16,6 +16,16 @@ class ConsultaRequest(BaseModel):
         description="Histórico opcional da conversa"
     )
 
+class ConsultaMultimodalRequest(BaseModel):
+    """Modelo para requisições multimodais ao chatbot"""
+    consulta: str = Field(..., min_length=3, description="Consulta do usuário (mínimo 3 caracteres)")
+    historico: Optional[List[MensagemHistorico]] = Field(
+        default=None, 
+        description="Histórico opcional da conversa"
+    )
+    tipo_de_arquivo: str = Field(..., description="Tipo do arquivo (ex: PDF, imagem, áudio)")
+    texto_arquivo: str = Field(..., description="Transcrição ou texto extraído do arquivo")
+
 class Link(BaseModel):
     """Representa um link recomendado na resposta"""
     url: str = Field(..., description="URL completa da página")

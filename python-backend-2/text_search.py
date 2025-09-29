@@ -281,7 +281,7 @@ def test_text_search():
         list[dict]: Lista de documentos encontrados
     """
     # Consulta de teste
-    test_queries = ["Encontre documentos sobre Antônio Conselheiro e Canudos"]
+    test_queries = ["Encontre documentos sobre alforria"]
     logger.info(f"Testando algoritmo padrão com consultas: {test_queries}")
 
     # Executa busca com algoritmo padrão

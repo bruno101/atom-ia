@@ -21,11 +21,11 @@ load_dotenv()
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_DSN = os.getenv("DB_DSN")
-
+URL_ELASTICSEARCH = os.getenv("URL_ELASTICSEARCH")
 
 def wait_for_elasticsearch():
     """Wait for Elasticsearch to be ready"""
-    es = Elasticsearch("http://localhost:9200")
+    es = Elasticsearch(URL_ELASTICSEARCH)
     print(es.ping())
     for i in range(30):
         try:
@@ -40,7 +40,7 @@ def wait_for_elasticsearch():
 
 def create_elasticsearch_index():
     """Create Elasticsearch index with proper mapping"""
-    es = Elasticsearch("http://localhost:9200")
+    es = Elasticsearch(URL_ELASTICSEARCH)
 
     
     mapping = {

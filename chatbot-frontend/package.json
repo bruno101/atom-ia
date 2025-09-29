@@ -16,9 +16,8 @@
     "rehype-raw": "^7.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=3002 react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "xcopy /E /Y /I build ..\\..\\atom\\plugins\\arDominionB5Plugin\\modules\\chatbot\\webapp\\",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +42,7 @@
   "devDependencies": {
     "@govbr-ds-testing/webcomponents": "^1.23.5",
     "@govbr-ds-testing/webcomponents-react": "^1.23.5",
-    "@govbr-ds/core": "^3.6.2"
+    "@govbr-ds/core": "^3.6.2",
+    "cross-env": "^10.0.0"
   }
 }

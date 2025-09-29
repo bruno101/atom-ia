@@ -120,15 +120,22 @@ def search_documents_by_text(queries, n_results_per_query=5):
                     # Etapa 2: Converter para formato Oracle VECTOR
                     vector_str = '[' + ','.join(map(str, query_vector.astype(np.float32))) + ']'
                     
-                    # Etapa 3: Executar busca vetorial no Oracle
+                    # Etapa 3: Executar busca vetorial no Oracle (chunks)
                     sql = """
-                    SELECT text, url, title, VECTOR_DISTANCE(vector, VECTOR(:1)) as distance
-                    FROM documents 
-                    ORDER BY VECTOR_DISTANCE(vector, VECTOR(:2))
-                    FETCH FIRST :3 ROWS ONLY
+                    SELECT c.chunk_text as text, d.url, d.title, VECTOR_DISTANCE(c.vector, VECTOR(:1)) as distance
+                    FROM chunks c
+                    JOIN documents d ON c.document_id = d.id
+                    WHERE (d.url, VECTOR_DISTANCE(c.vector, VECTOR(:2))) IN (
+                        SELECT url, MIN(VECTOR_DISTANCE(c2.vector, VECTOR(:3)))
+                        FROM chunks c2
+                        JOIN documents d2 ON c2.document_id = d2.id
+                        GROUP BY url
+                    )
+                    ORDER BY VECTOR_DISTANCE(c.vector, VECTOR(:4))
+                    FETCH FIRST :5 ROWS ONLY
                     """
                     
-                    cursor.execute(sql, (vector_str, vector_str, n_results_per_query))
+                    cursor.execute(sql, (vector_str, vector_str, vector_str, vector_str, n_results_per_query))
                     results = cursor.fetchall()
                     
                     # Etapa 4: Formatar resultados
