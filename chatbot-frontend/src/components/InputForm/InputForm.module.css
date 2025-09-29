@@ -8,12 +8,17 @@
   color: #333;
 }
 
-.inputForm {
+.inputContainer {
   display: flex;
-  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.inputContainer {
+.inputForm {
+  display: flex;
+}
+
+.inputField {
   flex: 1;
   position: relative;
   display: flex;
@@ -28,10 +33,10 @@
   color: #6c757d;
 }
 
-.inputField {
+.textInput {
   width: 100%;
   height: 44px;
-  padding: 0 50px 0 10px;
+  padding: 0 90px 0 10px;
   border: 1px solid #ced4da;
   font-size: 14px;
   background-color: #ffffff;
@@ -39,19 +44,19 @@
   transition: border-color 0.2s ease;
 }
 
-.inputField:focus {
+.textInput:focus {
   outline: none;
   border-color: #80bdff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
-.inputField:disabled {
+.textInput:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   background-color: #f8f9fa;
 }
 
-.inputField::placeholder {
+.textInput::placeholder {
   color: #6c757d;
 }
 
@@ -227,6 +232,36 @@
   
 }
 
+.clipButton {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #6c757d;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.clipButton:hover {
+  background-color: #495057;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.clipButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: translateY(-50%);
+}
+
 .voiceButton {
   position: absolute;
   right: 8px;
@@ -279,10 +314,17 @@
 }
 
 @media (max-width: 480px) {
-  .inputField {
+  .textInput {
     font-size: 13px;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 90px;
+  }
+
+  .clipButton {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    right: 44px;
   }
 
   .inputIcon {
