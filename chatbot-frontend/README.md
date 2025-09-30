@@ -7,6 +7,7 @@ Uma interface moderna e intuitiva para consultas arquivísticas inteligentes, co
 - 🔍 **Busca Inteligente**: IA especializada em consultas arquivísticas
 - 🎤 **Busca por Voz**: Reconhecimento de voz para consultas faladas
 - 🔊 **Leitura em Voz Alta**: Síntese de voz para respostas do chatbot
+- 📎 **Upload de Arquivos**: Anexe PDF, MP3 e MP4 com drag & drop
 - 💬 **Interface de Chat**: Conversação natural com o sistema
 - 📱 **Design Responsivo**: Funciona perfeitamente em desktop e mobile
 - 🔗 **Links Sugeridos**: Recursos relacionados exibidos dinamicamente
@@ -61,9 +62,11 @@ src/
 │   ├── Header/         # Cabeçalho da aplicação
 │   ├── ChatHeader/     # Cabeçalho do chat
 │   ├── MessageList/    # Lista de mensagens
-│   ├── InputForm/      # Formulário de entrada com busca por voz
+│   ├── InputForm/      # Formulário com voz e upload de arquivos
 │   ├── Sidebar/        # Barra lateral com links
 │   └── Footer/         # Rodapé
+├── features/           # Funcionalidades organizadas
+│   └── fileUpload/     # Sistema de upload de arquivos
 ├── hooks/              # Hooks personalizados (useSpeechRecognition, useTextToSpeech)
 ├── icons/              # Ícones SVG
 ├── logic/              # Lógica de negócio
@@ -92,6 +95,8 @@ src/
 - **Scroll Independente**: Chat e sidebar com rolagem separada
 - **Input Fixo**: Campo de entrada sempre visível
 - **Busca por Voz**: Botão de microfone integrado ao campo de entrada
+- **Upload de Arquivos**: Ícone de clipe para anexar PDF, MP3 e MP4
+- **Miniaturas de Arquivo**: Preview dos arquivos anexados no campo de input
 - **Leitura em Voz Alta**: Botão de áudio em todas as mensagens do chat
 - **Feedback Visual**: Indicadores de carregamento e progresso
 - **Design Adaptativo**: Layout otimizado para diferentes telas
@@ -128,6 +133,15 @@ A aplicação utiliza:
 - **Limpeza de texto**: Remove formatação Markdown para leitura natural
 - **Estados visuais**: Animação durante reprodução
 - **Posicionamento**: Canto superior direito para todas as mensagens
+
+#### 📎 Upload de Arquivos
+- **Formatos suportados**: PDF, MP3, MP4
+- **Drag & Drop**: Arraste arquivos diretamente para o campo de input
+- **Ícone de clipe**: Botão dedicado para seleção de arquivos
+- **Miniaturas**: Preview dos arquivos com ícones coloridos por tipo
+- **Processamento**: Métodos específicos para cada formato de arquivo
+- **Interface oculta**: Área de upload aparece apenas quando necessário
+- **Remoção fácil**: Botão X para remover arquivos anexados
 
 ### Customização
 - **Cores**: Modifique as variáveis CSS nos arquivos `.module.css`

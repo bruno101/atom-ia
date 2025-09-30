@@ -1,6 +1,6 @@
-# 🤖 Chatbot ModestIA - Backend Python
+# 🤖 SIAN - Backend Python
 
-Sistema avançado de chatbot com RAG (Retrieval-Augmented Generation) e múltiplos algoritmos de busca para consultas históricas e documentais.
+Sistema Inteligente de Arquivos Nacionais com RAG (Retrieval-Augmented Generation) e múltiplos algoritmos de busca para consultas arquivísticas e documentais.
 
 ## 📋 Índice
 
@@ -16,13 +16,14 @@ Sistema avançado de chatbot com RAG (Retrieval-Augmented Generation) e múltipl
 
 ## 🎯 Visão Geral
 
-O **Chatbot ModestIA** é um sistema inteligente de recuperação de informações que combina:
+O **SIAN (Sistema Inteligente de Arquivos Nacionais)** é um sistema avançado de recuperação de informações arquivísticas que combina:
 
-- **RAG (Retrieval-Augmented Generation)**: Busca contextual em documentos históricos
-- **Múltiplos Algoritmos de Busca**: 7 diferentes estratégias de busca implementadas
-- **Busca Semântica**: Utilizando embeddings vetoriais no Oracle 23ai
-- **API RESTful**: Interface FastAPI para integração com frontend
-- **Suporte ao Português**: Otimizado para documentos em português brasileiro
+- **RAG (Retrieval-Augmented Generation)**: Busca contextual em documentos arquivísticos
+- **Múltiplos Algoritmos de Busca**: 6 diferentes estratégias de busca implementadas
+- **Busca Semântica**: Utilizando embeddings vetoriais no Oracle Database
+- **API RESTful**: Interface FastAPI para integração com frontend React
+- **Suporte ao Português**: Otimizado para documentos arquivísticos brasileiros
+- **Integração AtoM**: Conectado ao sistema Access to Memory
 
 ## 🏗️ Arquitetura
 
@@ -31,20 +32,23 @@ graph TB
     A[Frontend React] --> B[FastAPI Backend]
     B --> C[RAG Engine]
     B --> D[Search Algorithms]
-    C --> E[Oracle 23ai Database]
+    C --> E[Oracle Database]
     D --> E
     D --> F[Elasticsearch]
     E --> G[Vector Search]
     E --> H[Text Search]
+    B --> I[AtoM Integration]
 ```
 
 ### Componentes Principais
 
 - **FastAPI Application**: Servidor web principal (`main.py`)
-- **RAG Models**: Modelos de geração aumentada por recuperação
+- **RAG Models**: Modelos flash e thinking para diferentes tipos de consulta
 - **Search Algorithms**: Múltiplos algoritmos de busca implementados
 - **Vector Search**: Busca semântica com embeddings
-- **Database Layer**: Integração com Oracle 23ai
+- **Oracle Database**: Armazenamento principal de documentos arquivísticos
+- **Elasticsearch**: Índice de busca textual avançada
+- **AtoM Integration**: Conexão com sistema Access to Memory
 
 ## 🔍 Algoritmos de Busca
 
@@ -58,27 +62,22 @@ graph TB
 - Favorece documentos onde termos da consulta aparecem próximos
 - Melhor para consultas com múltiplas palavras relacionadas
 
-### 3. **Fuzzy BM25** (`fuzzy_bm25_search.py`)
-- BM25 com correspondência aproximada de strings
-- Trata erros de digitação e variações ortográficas
-- Útil para consultas com possíveis erros ou grafias antigas
-
-### 4. **LambdaMART** (`lambdamart_search.py`)
+### 3. **LambdaMART** (`lambdamart_search.py`)
 - Re-ranking baseado em machine learning
 - Combina múltiplas features: BM25, TF-IDF, tamanho do documento
 - Aprendizado de ranking para melhor ordenação
 
-### 5. **Elasticsearch** (`elasticsearch_search.py`)
+### 4. **Elasticsearch** (`elasticsearch_search.py`)
 - Busca profissional com índices invertidos
 - Fuzzy matching automático e boosting de campos
 - Escalável para grandes volumes de dados
 
-### 6. **TF-IDF** (`tfidf_search.py`)
+### 5. **TF-IDF** (`tfidf_search.py`)
 - Similaridade cosseno com vetores TF-IDF
 - Boa para análise de similaridade de documentos
 - Complementa outros algoritmos
 
-### 7. **LIKE Simples** (`simple_like_search.py`)
+### 6. **LIKE Simples** (`simple_like_search.py`)
 - Busca básica com SQL LIKE
 - Fallback para casos simples
 - Rápida para consultas diretas
@@ -88,9 +87,11 @@ graph TB
 ### Pré-requisitos
 
 - Python 3.8+
-- Oracle 23ai Database
+- Oracle Database (19c ou superior)
 - Oracle Instant Client
+- Elasticsearch 8.x
 - Docker (opcional, para Elasticsearch)
+- Chave API do Google Gemini
 
 ### 1. Clone o Repositório
 
@@ -143,14 +144,15 @@ GEMINI_API_KEY=sua_chave_gemini
 
 ### 2. Configuração do Banco
 
-Certifique-se de que o Oracle 23ai está rodando e acessível:
+Certifique-se de que o Oracle Database está rodando e acessível:
 
 ```sql
 -- Teste de conexão
 SELECT 1 FROM dual;
 
--- Verificar tabela de documentos
-SELECT COUNT(*) FROM documents;
+-- Verificar tabelas do AtoM
+SELECT COUNT(*) FROM information_object;
+SELECT COUNT(*) FROM information_object_i18n;
 ```
 
 ## 🎮 Uso
@@ -237,16 +239,21 @@ python-backend-2/
 │   ├── models.py               # Modelos Pydantic
 │   └── routers.py              # Rotas da API
 ├── 📁 rag_models/              # Modelos RAG
-│   └── model5/                 # Modelo RAG atual
+│   ├── flash/                  # Modelo rápido
+│   │   ├── config.py           # Configurações do modelo
+│   │   ├── messages.py         # Mensagens de progresso
+│   │   ├── pipeline.py         # Pipeline de processamento
+│   │   ├── query_engine.py     # Engine de consultas
+│   │   └── utils.py            # Utilitários
+│   └── thinking/               # Modelo avançado
 │       ├── config.py           # Configurações do modelo
-│       ├── messages.py         # Gerenciamento de mensagens
+│       ├── messages.py         # Mensagens de progresso
+│       ├── pipeline.py         # Pipeline de processamento
 │       ├── query_engine.py     # Engine de consultas
-│       ├── query.py            # Processamento de consultas
 │       └── validation.py       # Validação de entrada
 ├── 📁 search_algorithms/       # Algoritmos de busca
 │   ├── bm25_search.py          # BM25 clássico
 │   ├── bm25p_search.py         # BM25 com proximidade
-│   ├── fuzzy_bm25_search.py    # BM25 fuzzy
 │   ├── lambdamart_search.py    # LambdaMART re-ranking
 │   ├── elasticsearch_search.py # Elasticsearch
 │   ├── tfidf_search.py         # TF-IDF
@@ -336,4 +343,6 @@ python main.py
 
 ---
 
-**Desenvolvido com ❤️ para preservação da história e cultura brasileira**
+**SIAN** • *Sistema Inteligente de Arquivos Nacionais* • Dataprev © 2025
+
+**Desenvolvido com ❤️ para democratizar o acesso à informação arquivística brasileira**
