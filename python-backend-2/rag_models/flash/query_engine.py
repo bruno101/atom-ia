@@ -23,6 +23,18 @@ def global_query(consulta):
 
 
 def llm_query(llm, consulta, historico_str, nos):
+    """Gera resposta usando LLM baseada nos documentos recuperados
+    
+    Args:
+        llm: Instância do modelo de linguagem (Gemini)
+        consulta (str): Consulta original do usuário
+        historico_str (str): Histórico da conversa para contexto
+        nos (list[dict]): Lista de documentos recuperados
+        
+    Yields:
+        str: Chunks da resposta em streaming com prefixo PARTIAL_RESPONSE:
+    """
+    # Constrói prompt estruturado para o LLM
     prompt = f'''
         Você é um assistente que recomenda páginas para ajudar na pesquisa.\n
 
@@ -42,6 +54,9 @@ def llm_query(llm, consulta, historico_str, nos):
         "*   **Título da página DEF.**\n    [Comentário sobre página DEF, que pode, por exemplo, explicar a sua utilidade para a busca].\n    [Texto do link para a página DEF](Link para a página DEF, copiado exatamente como aparece no campo "url")\n\n"
         "*   **Título da página GHI.**\n    [Comentário sobre página GHI, que pode, por exemplo, explicar a sua utilidade para a busca].\n    [Texto do link para a página GHI](Link para a página GHI, copiado exatamente como aparece no campo "url")\n\n"
         '''
+    # Debug: imprime o prompt construído
     print("prompt é " + prompt)
+    
+    # Executa streaming do LLM e retorna chunks com prefixo
     for chunk in llm.stream_complete(prompt=prompt):
         yield f"PARTIAL_RESPONSE:{chunk.delta}"

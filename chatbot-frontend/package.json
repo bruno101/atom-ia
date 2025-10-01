@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@govbr-ds/react-components": "^2.1.0",
     "event-source-polyfill": "^1.0.31",
+    "pdfjs-dist": "^3.11.174",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^10.1.0",

@@ -28,7 +28,7 @@ async def ask_stream(request: Request, req: ConsultaRequest):
     return EventSourceResponse(event_generator)
 
 @router.post("/ask-stream-flash") 
-async def ask_stream(request: Request, req: ConsultaRequest):
+async def ask_stream_flash(request: Request, req: ConsultaRequest):
     """Endpoint para consultas com streaming de progresso (SSE)
     
     Args:
@@ -39,6 +39,22 @@ async def ask_stream(request: Request, req: ConsultaRequest):
         EventSourceResponse: Stream de eventos SSE com progresso
     """
     # Cria gerador de eventos para streaming
+    event_generator = handle_stream(request, req, "flash")
+    # Retorna resposta SSE (Server-Sent Events)
+    return EventSourceResponse(event_generator)
+
+@router.post("/ask-pdf-stream")
+async def ask_pdf_stream(request: Request, req: ConsultaRequest):
+    """Endpoint para consultas geradas a partir de PDF anexado com streaming
+    
+    Args:
+        request (Request): Requisição HTTP para controle de conexão
+        req (ConsultaRequest): Dados da consulta gerada do PDF
+        
+    Returns:
+        EventSourceResponse: Stream de eventos SSE com progresso
+    """
+    # Cria gerador de eventos para streaming usando modelo flash (rápido)
     event_generator = handle_stream(request, req, "flash")
     # Retorna resposta SSE (Server-Sent Events)
     return EventSourceResponse(event_generator)
