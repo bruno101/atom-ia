@@ -25,5 +25,5 @@ app.include_router(routers.router)
 # Executa o servidor se o arquivo for chamado diretamente
 if __name__ == "__main__":
     import uvicorn
-    # Inicia o servidor na porta 7860 com hot reload desabilitado
-    uvicorn.run("main:app", host="localhost", port=7860, reload=False)
+    # Inicia o servidor na porta 8000 com hot reload desabilitado
+    uvicorn.run("main:app", host="localhost", port=8000, reload=False)

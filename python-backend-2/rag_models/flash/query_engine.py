@@ -22,7 +22,7 @@ def global_query(consulta):
     return nos_sem_duplicatas
 
 
-def llm_query(llm, consulta, historico_str, nos):
+def llm_query(llm, consulta, historico_str, nos, pdf_metadata=None):
     """Gera resposta usando LLM baseada nos documentos recuperados
     
     Args:
@@ -30,12 +30,36 @@ def llm_query(llm, consulta, historico_str, nos):
         consulta (str): Consulta original do usuário
         historico_str (str): Histórico da conversa para contexto
         nos (list[dict]): Lista de documentos recuperados
+        pdf_metadata (dict, optional): Metadados do PDF se consulta baseada em PDF
         
     Yields:
         str: Chunks da resposta em streaming com prefixo PARTIAL_RESPONSE:
     """
-    # Constrói prompt estruturado para o LLM
-    prompt = f'''
+    # Verifica se é consulta baseada em PDF
+    if pdf_metadata:
+        # Prompt especializado para consultas de PDF
+        prompt = f'''
+            Você é um assistente especializado em pesquisa acadêmica que analisa documentos PDF anexados.\n
+            {f"Contexto da conversa anterior: {historico_str}." if historico_str else ""}
+            
+            O usuário anexou um documento PDF com as seguintes características:
+            - Assunto Principal: {pdf_metadata.get('filters', {}).get('main_subject', 'N/A')}
+            - Autores: {', '.join(pdf_metadata.get('filters', {}).get('author_names', []))}
+            - Palavras-chave: {', '.join(pdf_metadata.get('filters', {}).get('keywords_must_contain', []))}
+            - Resumo: {pdf_metadata.get('resumo', 'N/A')}
+            
+            Consulta: "{consulta}"
+            
+            Com base no documento anexado e neste JSON de resultados:
+            {json.dumps(nos, ensure_ascii=False, indent=2)}
+            
+            Primeiro, faça um breve comentário sobre o documento PDF anexado e sua relevância para a pesquisa.
+            
+            Em seguida, recomende as páginas mais relevantes encontradas, explicando como elas se relacionam com o documento anexado.
+            '''
+    else:
+        # Prompt padrão para consultas normais
+        prompt = f'''
         Você é um assistente que recomenda páginas para ajudar na pesquisa.\n
 
         {f"Atenção às mensagens anteriores do usuário para que você entenda o contexto da conversa. Histórico de Conversa: {historico_str}." if historico_str else ""}
