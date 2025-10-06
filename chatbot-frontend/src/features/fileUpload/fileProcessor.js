@@ -3,15 +3,56 @@
  * Cada formato tem seu método específico de processamento
  */
 
+
+/**
+ * Envia arquivo PDF para processamento no backend
+ * @param {File} file - Arquivo PDF
+ * @returns {Promise<string>} - Query gerada pelo backend
+ */
+const processPDFBackend = async (file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  const response = await fetch('http://localhost:8000/process-pdf', {
+    method: 'POST',
+    body: formData
+  });
+  
+  if (!response.ok) {
+    throw new Error(`Erro ao processar PDF: ${response.statusText}`);
+  }
+  
+  const result = await response.json();
+  return result.query;
+};
+
 /**
  * Processa arquivos PDF
  * @param {File} file - Arquivo PDF
- * @returns {Promise<string>} - Texto extraído ou consulta gerada
+ * @returns {Promise<string>} - Query gerada pelo backend
  */
 export const processPDF = async (file) => {
-  // TODO: Implementar extração de texto do PDF
-  console.log('Processando PDF:', file.name);
-  return "Pesquise sobre beija-flores";
+  console.log('\n🔄 Iniciando processamento do PDF:', file.name);
+  
+  try {
+    // Verifica se é um arquivo PDF válido
+    if (!file.type.includes('pdf') && !file.name.toLowerCase().endsWith('.pdf')) {
+      throw new Error('Arquivo deve ser um PDF válido');
+    }
+    
+    // Envia arquivo para processamento no backend
+    const query = await processPDFBackend(file);
+    
+    console.log('✅ PDF processado com sucesso\n');
+    console.log('Query gerada:', query);
+    
+    // Retorna a query gerada pelo backend
+    return query;
+    
+  } catch (error) {
+    console.error('❌ Erro ao processar PDF:', error.message);
+    throw error;
+  }
 };
 
 /**

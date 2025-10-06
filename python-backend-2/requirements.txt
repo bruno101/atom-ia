@@ -13,3 +13,4 @@ elasticsearch==8.11.0
 google.generativeai
 spacy
 llama_index.llms.vertex
+python-multipart

@@ -12,6 +12,10 @@ const fetchSse = (
   const processStream = async () => {
     try {
       console.log(url)
+      const timeoutId = setTimeout(() => {
+        controller.abort();
+      }, 30000); // 30 segundos timeout
+      
       const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -22,6 +26,8 @@ const fetchSse = (
         body: JSON.stringify(options.body),
         signal: controller.signal,
       });
+      
+      clearTimeout(timeoutId);
 
       if (!response.ok) {
         const errorText = await response.text();
@@ -90,7 +96,12 @@ const fetchSse = (
         }
       }
     } catch (e) {
-      if (onError) onError(e);
+      console.error('Erro na comunicação SSE:', e);
+      if (e.name === 'AbortError') {
+        if (onError) onError(new Error('Timeout na comunicação com o servidor'));
+      } else {
+        if (onError) onError(e);
+      }
     }
   };
 

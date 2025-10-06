@@ -19,9 +19,10 @@ async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=No
     if messages.MENSAGEM_PIPELINE_INICIALIZANDO:
         yield messages.MENSAGEM_PIPELINE_INICIALIZANDO
         
+    file_summary = None
     if tipo_de_arquivo and texto_arquivo:
         logger.info(f"Processing multimodal query with file type: {tipo_de_arquivo}")
-        expanded_queries = expand_multimodal_query(consulta, tipo_de_arquivo, texto_arquivo)
+        expanded_queries, file_summary = expand_multimodal_query(consulta, tipo_de_arquivo, texto_arquivo)
         logger.info(f"Executing queries for {len(expanded_queries)} expanded queries")
         all_nos = []
         for i, query in enumerate(expanded_queries):
@@ -31,6 +32,7 @@ async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=No
             logger.debug(f"Query {i+1} returned {len(query_nos)} documents")
         nos = list({no['url']: no for no in all_nos}.values())  # Remove duplicates by URL
         logger.info(f"Total unique documents after expansion: {len(nos)}")
+        logger.info(f"File summary: {file_summary[:100]}...")
     else:
         logger.info("Processing standard query (no multimodal context)")
         nos = global_query(consulta)
@@ -48,7 +50,7 @@ async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=No
         
         try:
             resposta_parts = []
-            for chunk in llm_query(llm, consulta, historico_str, nos):
+            for chunk in llm_query(llm, consulta, historico_str, nos, file_summary):
                 yield chunk
                 if chunk.startswith("PARTIAL_RESPONSE:"):
                     resposta_parts.append(chunk[17:])  # Remove "PARTIAL_RESPONSE:" prefix

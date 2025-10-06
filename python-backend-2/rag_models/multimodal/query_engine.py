@@ -40,26 +40,43 @@ def global_query(consulta):
 def expand_multimodal_query(user_query, file_type, transcription, n=NUMBER_OF_MULTIMODAL_QUERY_EXPANSIONS):
     logger.info(f"Expanding multimodal query: '{user_query[:100]}...' for file type: {file_type}")
     
-    prompt = f'''Gere {n} consultas equivalentes em linguagem natural baseadas na consulta original e contexto do arquivo.
+    combined_prompt = f'''Baseado na consulta e arquivo, faça duas tarefas:
+
+1. Gere {n} consultas de busca equivalentes em português que incorporem o contexto do arquivo
+2. Crie um resumo conciso de 2-3 frases sobre o conteúdo do arquivo
 
 Consulta original: "{user_query[:1000]}"
 Tipo de arquivo: {file_type}
-Transcrição: {transcription[:2000]}
+Transcrição: {transcription[:2500]}
 
-Gere {n} variações da consulta que mantenham o mesmo significado mas incorporem o contexto do arquivo. Responda apenas com as consultas, uma por linha, sem numeração ou formatação adicional.'''
+Responda EXATAMENTE no formato abaixo, sem usar markdown ou formatação especial:
+
+QUERIES:
+Computadores após a Segunda Guerra Mundial
+Evolução dos computadores após 1945
+Expansão do uso de computadores no pós-guerra
+
+SUMMARY:
+O arquivo trata sobre a evolução da tecnologia de computadores após a Segunda Guerra Mundial.'''
     
-    logger.debug(f"Expansion prompt: {prompt[:200]}...")
-    response = expansion_llm.generate_content(prompt)
-    queries = [q.strip() for q in response.text.strip().split('\n') if q.strip()]
-    logger.info(f"Generated {len(queries)} expanded queries: {queries}")
-    return queries[:n]
+    response = expansion_llm.generate_content(combined_prompt)
+    text = response.text.strip()
+    
+    queries_section = text.split('SUMMARY:')[0].replace('QUERIES:', '').strip()
+    summary_section = text.split('SUMMARY:')[1].strip() if 'SUMMARY:' in text else ""
+    queries = [q.strip() for q in queries_section.split('\n') if q.strip() and not q.startswith('```') and len(q.strip()) > 3]
+    file_summary = summary_section
+    
+    logger.info(f"Generated {len(queries)} expanded queries and file summary")
+    return queries[:n], file_summary
 
 
-def llm_query(llm, consulta, historico_str, nos):
+def llm_query(llm, consulta, historico_str, nos, file_summary=None):
     prompt = f'''
         Você é um assistente que recomenda páginas para ajudar na pesquisa.\n
 
         {f"Atenção às mensagens anteriores do usuário para que você entenda o contexto da conversa. Histórico de Conversa: {historico_str}." if historico_str else ""}
+        {f"\nContexto de um arquivo anexado à consulta: {file_summary}" if file_summary else ""}
         \nSegue a consulta que deve ser respondida. Consulta: "{consulta}".\n
 
         Com base neste JSON:

@@ -23,7 +23,7 @@ LLM_EXPANSIONS_MODEL = "gemini-2.0-flash-lite"
 NUMBER_OF_MULTIMODAL_QUERY_EXPANSIONS = 5
 
 MAX_NODES_VECTOR_QUERY = 2       # Máximo de nós vetoriais totais
-MAX_NODES_TRADITIONAL_QUERY = 4    # Máximo de nós tradicionais totais
+MAX_NODES_TRADITIONAL_QUERY = 2    # Máximo de nós tradicionais totais
 
 # Limitações de tamanho para otimização
 MAX_CHARS_PER_NODE = 2500  # Caracteres máximos por nó (controle de tokens)

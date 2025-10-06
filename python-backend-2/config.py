@@ -17,10 +17,8 @@ def configure_app(app):
     # Configura CORS para permitir requisições do frontend e sistema AtoM
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[
-            os.getenv('URL_FRONTEND', 'http://localhost:3000')     # Frontend React
-        ],
-        allow_credentials=True,  # Permite cookies e autenticação
+        allow_origins=["*"],     # Permite todas as origens temporariamente
+        allow_credentials=False, # Desabilita credentials para debug
         allow_methods=["*"],     # Permite todos os métodos HTTP
         allow_headers=["*"],     # Permite todos os headers
     )

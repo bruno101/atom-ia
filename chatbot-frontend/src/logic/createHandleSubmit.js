@@ -72,8 +72,8 @@ export default function createHandleSubmit({
     };
 
     const url = selectedModel === 'flash' 
-      ? process.env.REACT_APP_API_URL_FLASH 
-      : process.env.REACT_APP_API_URL_THINKING;
+      ? 'http://localhost:8000/ask-stream-flash'
+      : 'http://localhost:8000/ask-stream';
     console.log("HANDLER LOG: 🚀 Enviando requisição SSE:", url);
 
     abortControllerRef.current = fetchSse(
