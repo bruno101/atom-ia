@@ -78,6 +78,60 @@ export const processMP4 = async (file) => {
 };
 
 /**
+ * Processa URL de página web
+ * @param {string} url - URL da página web
+ * @returns {Promise<Object>} - JSON estruturado para consulta
+ */
+export const processURL = async (url) => {
+  console.log('\n🔄 Iniciando processamento da URL:', url);
+  
+  // Barra de progresso
+  const progress = {
+    current: 0,
+    total: 4,
+    update(step, message) {
+      this.current = step;
+      const percent = Math.round((this.current / this.total) * 100);
+      const bar = '█'.repeat(Math.floor(percent / 5)) + '░'.repeat(20 - Math.floor(percent / 5));
+      console.log(`📊 [${bar}] ${percent}% - ${message}`);
+    }
+  };
+  
+  try {
+    progress.update(1, 'Enviando URL para processamento...');
+    
+    const response = await fetch('http://localhost:8000/process-url', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ url })
+    });
+    
+    progress.update(2, 'Recebendo resposta do servidor...');
+    
+    if (!response.ok) {
+      throw new Error(`Erro ao processar URL: ${response.statusText}`);
+    }
+    
+    progress.update(3, 'Processando dados com LLM...');
+    
+    const result = await response.json();
+    
+    progress.update(4, 'Processamento concluído!');
+    
+    console.log('✅ URL processada com sucesso\n');
+    console.log('Query estruturada:', result);
+    
+    return result;
+    
+  } catch (error) {
+    console.error('❌ Erro ao processar URL:', error.message);
+    throw error;
+  }
+};
+
+/**
  * Processa arquivo baseado no tipo
  * @param {File} file - Arquivo a ser processado
  * @returns {Promise<string>} - Resultado do processamento
