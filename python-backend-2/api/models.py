@@ -41,6 +41,10 @@ class Link(BaseModel):
     justificativa: Optional[str] = Field(None, description="Justificativa da recomendação")
     descricao: Optional[str] = Field(None, description="Descrição do conteúdo")
 
+class URLRequest(BaseModel):
+    """Modelo para requisições de processamento de URL"""
+    url: str = Field(..., description="URL a ser processada")
+
 class ConsultaResponse(BaseModel):
     """Modelo para respostas do chatbot"""
     resposta: str = Field(..., description="Resposta textual do bot")

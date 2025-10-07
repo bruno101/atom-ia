@@ -46,7 +46,7 @@ def analyze_pdf_with_llm(text):
 
         Extraia e formate as seguintes informações em JSON:
         1. Assunto Principal: Área principal
-        2. Termos-Chave: 3-5 termos essenciais para a busca
+        2. Termos-Chave: 3-5 termos essenciais para a busca de arquivos relacionados
         3. Resumo: Resumo detalhado com introdução sobre os assuntos tratados (5-7 frases)
 
         Responda APENAS com um JSON válido no seguinte formato:

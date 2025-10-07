@@ -74,14 +74,16 @@ export default function createHandleSubmit({
     if (isUrlOnly) {
       // Process URL first, then make the streaming request
       try {
+        setCurrentProgressMessage("Analisando URL...");
         console.log("HANDLER LOG: 🌐 Detectada URL, processando:", input.trim());
         
         const processedData = await processURL(input.trim());
+        setCurrentProgressMessage("Pesquisando sobre " + processedData["assunto_principal"]);
         console.log("HANDLER LOG: ✅ URL processada com sucesso");
 
         // Use the processed query for the streaming request
         const payload = {
-          consulta: processedData.input_busca,
+          consulta: "Encontre documentos relacionadas a: " + input.trim(),
           metadata: processedData
         };
 

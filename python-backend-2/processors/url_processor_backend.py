@@ -15,7 +15,7 @@ class URLProcessor:
     
     def extract_info(self, scraped_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Usa LLM para extrair informações acadêmicas do conteúdo web
+        Usa LLM para extrair informações do conteúdo web
         """
         content = scraped_data.get('content', '')
         title = scraped_data.get('title', '')
@@ -78,7 +78,7 @@ class URLProcessor:
         
         print("🤖 Extraindo informações com LLM...")
         # Extrai informações usando LLM
-        extracted_info = self.extract_academic_info(scraped_data)
+        extracted_info = self.extract_info(scraped_data)
         print("✅ Extração LLM concluída")
         
         # Gera ID único com data atual
@@ -89,10 +89,10 @@ class URLProcessor:
         # Monta JSON estruturado
         structured_query = {
             "query_id": query_id,
-            "resumo": metadata["resumo"],
+            "resumo": extracted_info["resumo"],
             "input_busca": "",
-            "assunto_principal": metadata["assunto_principal"],
-            "termos_chave": metadata["termos_chave"]
+            "assunto_principal": extracted_info["assunto_principal"],
+            "termos_chave": extracted_info["termos_chave"]
         }
         print("✅ JSON estruturado criado com sucesso")
         

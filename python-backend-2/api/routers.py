@@ -2,7 +2,7 @@
 # Implementa endpoints para chat síncrono e streaming
 from fastapi import APIRouter, HTTPException, Request, UploadFile, File
 from sse_starlette.sse import EventSourceResponse
-from .models import ConsultaRequest, ConsultaMultimodalRequest, ConsultaResponse
+from .models import ConsultaRequest, ConsultaMultimodalRequest, ConsultaResponse, URLRequest
 from .api_service import handle_stream, handle_multimodal_stream
 import logging
 
@@ -108,36 +108,67 @@ async def ask_file_stream(request: Request, req: ConsultaMultimodalRequest):
     return EventSourceResponse(event_generator)
 
 @router.post("/process-url")
-async def process_url(request: dict):
+async def process_url(request: URLRequest):
     """Endpoint para processamento de URL de página web
     
     Args:
-        request (dict): JSON com a URL a ser processada
+        request (URLRequest): JSON com a URL a ser processada
         
     Returns:
         dict: JSON estruturado para consulta acadêmica
     """
     try:
-        url = request.get('url')
-        if not url:
-            raise HTTPException(status_code=400, detail="URL é obrigatória")
+        url = request.url
         
         # Executa web scraping
         import subprocess
         import json
+        import os
+        
+        env = os.environ.copy()
+        env['PYTHONIOENCODING'] = 'utf-8'
+        env['PYTHONHTTPSVERIFY'] = '0'
+        env['CURL_CA_BUNDLE'] = ''
+        
+        # Adiciona proxy se configurado no .env
+        if 'PROXY' in os.environ:
+            env['HTTP_PROXY'] = os.environ['PROXY']
+            env['HTTPS_PROXY'] = os.environ['PROXY']
+            env['http_proxy'] = os.environ['PROXY']
+            env['https_proxy'] = os.environ['PROXY']
         
         result = subprocess.run(
-            ['python', 'web_scraper.py', url],
+            ['python', '-c', 'import ssl; ssl._create_default_https_context = ssl._create_unverified_context; exec(open("web_scraper.py", encoding="utf-8").read())', url],
             capture_output=True,
             text=True,
             cwd='.',
-            encoding='utf-8'
+            encoding='utf-8',
+            env=env
         )
         
         if result.returncode != 0:
             raise Exception(f"Erro no scraping: {result.stderr}")
         
-        scraped_data = json.loads(result.stdout)
+        if not result.stdout.strip():
+            raise Exception(f"Web scraper retornou saída vazia. stderr: {result.stderr}")
+        
+        # Extrai apenas a parte JSON do output (ignora mensagens de debug)
+        output_lines = result.stdout.strip().split('\n')
+        json_start = -1
+        for i, line in enumerate(output_lines):
+            if line.strip().startswith('{'):
+                json_start = i
+                break
+        
+        if json_start == -1:
+            raise Exception(f"Nenhum JSON encontrado no output: {result.stdout[:200]}...")
+        
+        json_output = '\n'.join(output_lines[json_start:])
+        
+        try:
+            scraped_data = json.loads(json_output)
+        except json.JSONDecodeError as e:
+            raise Exception(f"Erro ao parsear JSON: '{json_output[:200]}...'. Erro: {str(e)}")
         
         # Processa com LLM
         from processors.url_processor_backend import process_url_data
@@ -148,8 +179,8 @@ async def process_url(request: dict):
         print("🌐 JSON ESTRUTURADO GERADO PARA CONSULTA ACADÊmica")
         print("="*80)
         print(f"🔗 URL Processada: {url}")
-        print(f"🎯 Assunto Principal: {structured_query['filters']['main_subject']}")
-        print(f"🔍 Termos de Busca: {structured_query['input_busca']}")
+        print(f"🎯 Assunto Principal: {structured_query['assunto_principal']}")
+        print(f"🔍 Termos de Busca: {structured_query['termos_chave']}")
         print(f"📅 Query ID: {structured_query['query_id']}")
         print("-" * 80)
         print("JSON COMPLETO:")
