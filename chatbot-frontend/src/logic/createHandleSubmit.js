@@ -179,7 +179,7 @@ export default function createHandleSubmit({
     if (fileMetadata) {
       const payload = {
         consulta: input.trim(),
-        fileMetadata: fileMetadata,
+        metadata: fileMetadata,
         ...(historico.length > 0 && { historico }),
       };
       
