@@ -10,7 +10,7 @@ import styles from './FileUploadArea.module.css';
 const FileUploadArea = ({ onFileProcessed, disabled }) => {
   const [isDragOver, setIsDragOver] = useState(false);
   const fileInputRef = useRef(null);
-  const { isProcessing, uploadedFile, handleFileUpload, clearFile, isValidFile } = useFileUpload();
+  const { isProcessing, uploadedFile, handleFileUpload, clearFile } = useFileUpload();
 
   // Manipula drag over
   const handleDragOver = (e) => {

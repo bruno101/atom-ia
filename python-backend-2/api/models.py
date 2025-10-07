@@ -16,6 +16,14 @@ class ConsultaRequest(BaseModel):
         description="Histórico opcional da conversa"
     )
 
+class FileMetadata(BaseModel):
+    """Metadados do arquivo processado"""
+    query_id: str = Field(..., description="ID único da consulta")
+    resumo: str = Field(..., description="Resumo do conteúdo do arquivo")
+    input_busca: str = Field(..., description="Consulta de busca processada")
+    assunto_principal: str = Field(..., description="Assunto principal do arquivo")
+    termos_chave: List[str] = Field(..., description="Termos-chave extraídos")
+
 class ConsultaMultimodalRequest(BaseModel):
     """Modelo para requisições multimodais ao chatbot"""
     consulta: str = Field(..., min_length=3, description="Consulta do usuário (mínimo 3 caracteres)")
@@ -23,8 +31,7 @@ class ConsultaMultimodalRequest(BaseModel):
         default=None, 
         description="Histórico opcional da conversa"
     )
-    tipo_de_arquivo: str = Field(..., description="Tipo do arquivo (ex: PDF, imagem, áudio)")
-    texto_arquivo: str = Field(..., description="Transcrição ou texto extraído do arquivo")
+    metadata: FileMetadata = Field(..., description="Metadados do arquivo processado")
 
 class Link(BaseModel):
     """Representa um link recomendado na resposta"""

@@ -4,12 +4,12 @@ import logging
 from .config import MAX_QUERY_CHARS
 from .utils import extrair_links_corrigidos
 from . import messages
-from .query_engine import global_query, llm_query, expand_multimodal_query
+from .query_engine import global_query, llm_query
 
 logger = logging.getLogger(__name__)
 
 
-async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=None, texto_arquivo=None):
+async def pipeline_stream(consulta, historico=None, llm=None, file_metadata=None):
     
     # Calcula o tamanho máximo do histórico baseado no limite de caracteres
     tamanho_maximo_historico = max(MAX_QUERY_CHARS - len(consulta), 0)
@@ -18,24 +18,8 @@ async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=No
         
     if messages.MENSAGEM_PIPELINE_INICIALIZANDO:
         yield messages.MENSAGEM_PIPELINE_INICIALIZANDO
-        
-    file_summary = None
-    if tipo_de_arquivo and texto_arquivo:
-        logger.info(f"Processing multimodal query with file type: {tipo_de_arquivo}")
-        expanded_queries, file_summary = expand_multimodal_query(consulta, tipo_de_arquivo, texto_arquivo)
-        logger.info(f"Executing queries for {len(expanded_queries)} expanded queries")
-        all_nos = []
-        for i, query in enumerate(expanded_queries):
-            logger.debug(f"Query {i+1}: {query}")
-            query_nos = global_query(query)
-            all_nos.extend(query_nos)
-            logger.debug(f"Query {i+1} returned {len(query_nos)} documents")
-        nos = list({no['url']: no for no in all_nos}.values())  # Remove duplicates by URL
-        logger.info(f"Total unique documents after expansion: {len(nos)}")
-        logger.info(f"File summary: {file_summary[:100]}...")
-    else:
-        logger.info("Processing standard query (no multimodal context)")
-        nos = global_query(consulta)
+
+    nos = global_query(consulta, file_metadata)
     num_documentos = len(nos)
     
     if messages.MENSAGEM_DOCUMENTOS_ENCONTRADOS:
@@ -50,7 +34,7 @@ async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=No
         
         try:
             resposta_parts = []
-            for chunk in llm_query(llm, consulta, historico_str, nos, file_summary):
+            for chunk in llm_query(llm, consulta, historico_str, nos, file_metadata):
                 yield chunk
                 if chunk.startswith("PARTIAL_RESPONSE:"):
                     resposta_parts.append(chunk[17:])  # Remove "PARTIAL_RESPONSE:" prefix
@@ -58,8 +42,8 @@ async def pipeline_stream(consulta, historico=None, llm=None, tipo_de_arquivo=No
             if resposta and len(resposta.strip()) > 10:
                 break
             print("Tentando de novo")
-        except Exception:
-            print("Ocorreu exceção")
+        except Exception as e:
+            logger.exception(f"Erro na tentativa {i+1}: {str(e)}")
             if i == len(retry_intervals):
                 resposta = "Desculpe, ocorreu um erro na requisição da API. Tente novamente em alguns minutos."
     

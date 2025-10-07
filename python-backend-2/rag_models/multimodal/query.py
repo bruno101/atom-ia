@@ -19,7 +19,7 @@ else:
     llm = genai.GenerativeModel(LLM_MODEL)
     print(f"Modelo Google AI Studio carregado: {LLM_MODEL}")
 
-def handle_query_multimodal(consulta, historico, tipo_de_arquivo, texto_arquivo):
+def handle_query_multimodal(consulta, historico, file_metadata):
     """Função principal para processar consultas multimodais do usuário
     
     Args:
@@ -32,5 +32,4 @@ def handle_query_multimodal(consulta, historico, tipo_de_arquivo, texto_arquivo)
         Generator: Stream de mensagens de progresso e resultado final
     """
     logger.info(f"Starting multimodal query processing: '{consulta[:100]}...'")
-    logger.info(f"File type: {tipo_de_arquivo}, Text length: {len(texto_arquivo)} chars")
-    return pipeline_stream(consulta, historico, llm, tipo_de_arquivo, texto_arquivo)
+    return pipeline_stream(consulta, historico, llm, file_metadata)

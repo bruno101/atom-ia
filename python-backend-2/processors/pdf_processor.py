@@ -45,15 +45,15 @@ def analyze_pdf_with_llm(text):
         {text[:4000]}  # Limita para evitar excesso de tokens
 
         Extraia e formate as seguintes informações em JSON:
-        1. Assunto Principal: Área de estudo principal
-        2. Termos-Chave: 3-5 termos técnicos essenciais
-        3. Summary: Resumo detalhado com introdução sobre os assuntos tratados (5-7 frases)
+        1. Assunto Principal: Área principal
+        2. Termos-Chave: 3-5 termos essenciais para a busca
+        3. Resumo: Resumo detalhado com introdução sobre os assuntos tratados (5-7 frases)
 
         Responda APENAS com um JSON válido no seguinte formato:
         {{
             "assunto_principal": "área de estudo",
             "termos_chave": ["termo1", "termo2", "termo3"],
-            "summary": "Este documento aborda [assunto principal] e apresenta [principais tópicos]. O trabalho explora [metodologia/abordagem] e discute [resultados/conclusões]. Os autores analisam [aspectos relevantes] e propõem [contribuições]. O estudo é relevante para [área de aplicação] e oferece insights sobre [tema central]."
+            "resumo": "Este documento aborda [assunto principal] e apresenta [principais tópicos]."
         }}
         """
         
@@ -86,7 +86,7 @@ def analyze_pdf_with_llm(text):
         return {
             "assunto_principal": titulo,
             "termos_chave": termos_chave,
-            "summary": f"Este documento aborda {titulo} e apresenta informações relevantes sobre o tema. O trabalho explora conceitos fundamentais e discute aspectos importantes da área. Os autores analisam diferentes perspectivas e propõem contribuições para o campo de estudo. O documento é relevante para pesquisadores e profissionais interessados no assunto. Oferece insights valiosos sobre {', '.join(termos_chave[:3])} e temas relacionados."
+            "resumo": f"Este documento aborda {titulo} e apresenta informações relevantes sobre o tema. O trabalho explora conceitos fundamentais e discute aspectos importantes da área. Os autores analisam diferentes perspectivas e propõem contribuições para o campo de estudo. O documento é relevante para pesquisadores e profissionais interessados no assunto. Oferece insights valiosos sobre {', '.join(termos_chave[:3])} e temas relacionados."
         }
 
 def create_search_json(metadata):
@@ -100,12 +100,10 @@ def create_search_json(metadata):
     
     search_json = {
         "query_id": f"AUTO_AUDIT_QUERY-{current_date}",
-        "summary": metadata["summary"],
+        "resumo": metadata["resumo"],
         "input_busca": input_busca,
-        "filters": {
-            "main_subject": metadata["assunto_principal"],
-            "keywords_must_contain": metadata["termos_chave"]
-        }
+        "assunto_principal": metadata["assunto_principal"],
+        "termos_chave": metadata["termos_chave"]
     }
     
     return search_json
@@ -143,8 +141,6 @@ def processPDFBackend(pdf_file):
             "query_id": f"ERROR_QUERY-{datetime.now().strftime('%Y%m%d')}",
             "resumo": "Erro no processamento do PDF",
             "input_busca": "Pesquise sobre o documento anexado",
-            "filters": {
-                "main_subject": "Documento PDF",
-                "keywords_must_contain": ["documento", "pdf", "pesquisa"]
-            },
+            "assunto_principal": "Documento PDF",
+            "termos_chave": ["documento", "pdf", "pesquisa"]
         }

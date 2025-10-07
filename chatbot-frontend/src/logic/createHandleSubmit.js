@@ -1,5 +1,6 @@
 import buildHistorico from "./buildHistorico";
 import fetchSse from "./fetchSse";
+import { processURL } from "../features/fileUpload/fileProcessor";
 
 export default function createHandleSubmit({
   messages,
@@ -17,6 +18,7 @@ export default function createHandleSubmit({
   scrollToEnd,
   startProgressTimeout,
   clearProgressTimeout,
+  fileMetadata
 }) {
   const fallbackError = (content) => {
     clearProgressTimeout();
@@ -65,15 +67,213 @@ export default function createHandleSubmit({
     }, 100);
     setSuggestedLinks([]);
 
+    // Check if input is only a URL
+    const urlRegex = /^https?:\/\/[^\s]+$/;
+    const isUrlOnly = urlRegex.test(input.trim());
+
+    if (isUrlOnly) {
+      // Process URL first, then make the streaming request
+      try {
+        console.log("HANDLER LOG: 🌐 Detectada URL, processando:", input.trim());
+        
+        const processedData = await processURL(input.trim());
+        console.log("HANDLER LOG: ✅ URL processada com sucesso");
+
+        // Use the processed query for the streaming request
+        const payload = {
+          consulta: processedData.input_busca,
+          metadata: processedData
+        };
+
+        const url = process.env.REACT_APP_API_URL_MULTIMODAL;
+        console.log("HANDLER LOG: 🚀 Enviando requisição SSE para URL:", url);
+
+        abortControllerRef.current = fetchSse(
+          url,
+          { body: payload },
+          (event) => {
+            //onMessage
+            console.log("HANDLER LOG: 📨 Evento recebido:", event.type, event.data);
+            if (event.type === "progress") {
+              console.log('📊 SUBMIT: Progress event received, calling updateProgressMessage');
+              setCurrentProgressMessage(event.data);
+            } else if (event.type === "partial") {
+              console.log("HANDLER LOG: 🔄 Resposta parcial:", event.data);
+              console.log('📝 SUBMIT: Partial response received, should stop auto progress');
+              setPartialResponse(prev => prev + event.data);
+            } else if (event.type === "error") {
+              fallbackError(`Erro do servidor: ${event.data}`);
+            }
+          },
+          (error) => {
+            //onError
+            console.error("HANDLER LOG: 🚫 Erro na conexão SSE (fetch):", error);
+            fallbackError(
+              "Ocorreu um erro na comunicação com o servidor. Tente novamente."
+            );
+          },
+          (event) => {
+            //onDone
+            try {
+              const data = JSON.parse(event.data);
+              const botMessage = {
+                id: (Date.now() + 1).toString(),
+                role: "assistant",
+                content: data.resposta || "Resposta final indisponível.",
+                palavras_chave: data.palavras_chave,
+                links_analisados: data.links_analisados,
+                timestamp: new Date(),
+              };
+
+              setMessages((prev) => {
+                const newMessages = [...prev, botMessage];
+                return newMessages;
+              });
+              clearProgressTimeout();
+              setCurrentProgressMessage("");
+              setPartialResponse("");
+              setIsLoading(false);
+
+              if (Array.isArray(data.links)) {
+                setSuggestedLinks(data.links);
+                if (window.innerWidth <= 768) setShowSidebar(true);
+              }
+            } catch (err) {
+              console.error(
+                "HANDLER LOG: ❌ Erro ao parsear resposta do evento 'done':",
+                err
+              );
+              fallbackError("Erro ao processar a resposta final.");
+            } finally {
+              clearProgressTimeout();
+              abortControllerRef.current = null;
+            }
+          },
+          () => {
+            // onOpen
+            console.log("HANDLER LOG: 🔌 Conexão SSE estabelecida.");
+          },
+          () => {
+            // onClose
+            console.log("HANDLER LOG: Stream da API concluído.");
+            clearProgressTimeout();
+            if (isLoading) {
+              fallbackError(
+                "A conexão com o servidor foi encerrada inesperadamente."
+              );
+            }
+            abortControllerRef.current = null;
+          }
+        );
+        return;
+      } catch (error) {
+        console.error("HANDLER LOG: ❌ Erro ao processar URL:", error);
+        fallbackError(`Erro ao processar URL: ${error.message}`);
+        return;
+      }
+    }
+
     const historico = buildHistorico(messages);
+    
+    // Check if fileMetadata is not null to determine endpoint and payload
+    if (fileMetadata) {
+      const payload = {
+        consulta: input.trim(),
+        fileMetadata: fileMetadata,
+        ...(historico.length > 0 && { historico }),
+      };
+      
+      const url = process.env.REACT_APP_API_URL_MULTIMODAL;
+      console.log("HANDLER LOG: 🚀 Enviando requisição SSE para arquivo:", url);
+      
+      abortControllerRef.current = fetchSse(
+        url,
+        { body: payload },
+        (event) => {
+          //onMessage
+          console.log("HANDLER LOG: 📨 Evento recebido:", event.type, event.data);
+          if (event.type === "progress") {
+            console.log('📊 SUBMIT: Progress event received, calling updateProgressMessage');
+            setCurrentProgressMessage(event.data);
+          } else if (event.type === "partial") {
+            console.log("HANDLER LOG: 🔄 Resposta parcial:", event.data);
+            console.log('📝 SUBMIT: Partial response received, should stop auto progress');
+            setPartialResponse(prev => prev + event.data);
+          } else if (event.type === "error") {
+            fallbackError(`Erro do servidor: ${event.data}`);
+          }
+        },
+        (error) => {
+          //onError
+          console.error("HANDLER LOG: 🚫 Erro na conexão SSE (fetch):", error);
+          fallbackError(
+            "Ocorreu um erro na comunicação com o servidor. Tente novamente."
+          );
+        },
+        (event) => {
+          //onDone
+          try {
+            const data = JSON.parse(event.data);
+            const botMessage = {
+              id: (Date.now() + 1).toString(),
+              role: "assistant",
+              content: data.resposta || "Resposta final indisponível.",
+              palavras_chave: data.palavras_chave,
+              links_analisados: data.links_analisados,
+              timestamp: new Date(),
+            };
+
+            setMessages((prev) => {
+              const newMessages = [...prev, botMessage];
+              return newMessages;
+            });
+            clearProgressTimeout();
+            setCurrentProgressMessage("");
+            setPartialResponse("");
+            setIsLoading(false);
+
+            if (Array.isArray(data.links)) {
+              setSuggestedLinks(data.links);
+              if (window.innerWidth <= 768) setShowSidebar(true);
+            }
+          } catch (err) {
+            console.error(
+              "HANDLER LOG: ❌ Erro ao parsear resposta do evento 'done':",
+              err
+            );
+            fallbackError("Erro ao processar a resposta final.");
+          } finally {
+            clearProgressTimeout();
+            abortControllerRef.current = null;
+          }
+        },
+        () => {
+          // onOpen
+          console.log("HANDLER LOG: 🔌 Conexão SSE estabelecida.");
+        },
+        () => {
+          // onClose
+          console.log("HANDLER LOG: Stream da API concluído.");
+          clearProgressTimeout();
+          if (isLoading) {
+            fallbackError(
+              "A conexão com o servidor foi encerrada inesperadamente."
+            );
+          }
+          abortControllerRef.current = null;
+        }
+      );
+      return;
+    }
+    
     const payload = {
       consulta: input.trim(),
       ...(historico.length > 0 && { historico }),
     };
 
     const url = selectedModel === 'flash' 
-      ? 'http://localhost:8000/ask-stream-flash'
-      : 'http://localhost:8000/ask-stream';
+      ? process.env.REACT_APP_API_URL_FLASH
+      : process.env.REACT_APP_API_URL_THINKING;
     console.log("HANDLER LOG: 🚀 Enviando requisição SSE:", url);
 
     abortControllerRef.current = fetchSse(

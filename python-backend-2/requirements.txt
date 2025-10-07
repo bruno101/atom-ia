@@ -14,3 +14,5 @@ google.generativeai
 spacy
 llama_index.llms.vertex
 python-multipart
+requests
+beautifulsoup4

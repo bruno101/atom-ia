@@ -3,7 +3,7 @@
 from rag_models.thinking.query import handle_query
 from rag_models.flash.query import handle_query_flash
 from rag_models.multimodal.query import handle_query_multimodal
-from api.models import ConsultaRequest, ConsultaMultimodalRequest, ConsultaResponse
+from api.models import ConsultaRequest, ConsultaResponse, ConsultaMultimodalRequest
 from fastapi import HTTPException, Request
 import logging
 
@@ -103,7 +103,7 @@ async def handle_multimodal_stream(request: Request, req: ConsultaMultimodalRequ
     """Processa consulta multimodal com streaming de progresso em tempo real"""
     try:
         historico_str = format_history(req.historico)
-        message_stream = handle_query_multimodal(req.consulta, historico_str, req.tipo_de_arquivo, req.texto_arquivo)
+        message_stream = handle_query_multimodal(req.consulta, historico_str, req.metadata)
         
         async for message in message_stream:
             if await request.is_disconnected():

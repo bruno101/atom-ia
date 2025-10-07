@@ -6,7 +6,7 @@ import { FileUploadArea } from "../../features/fileUpload";
 import FileThumbnail from "./FileThumbnail";
 import styles from "./InputForm.module.css"; 
 
-const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange }) => {
+const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showFileUpload, setShowFileUpload] = useState(false);
   const [attachedFile, setAttachedFile] = useState(null);
@@ -47,7 +47,8 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
 
   // Manipula o resultado do processamento de arquivo
   const handleFileProcessed = (result, file) => {
-    setInput(result);
+    setInput(result.query);
+    setFileMetadata(result.metadata);
     setAttachedFile(file);
     setShowFileUpload(false);
   };
@@ -55,6 +56,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
   // Remove arquivo anexado
   const handleRemoveFile = () => {
     setAttachedFile(null);
+    setFileMetadata(null);
     setInput('');
   };
 
