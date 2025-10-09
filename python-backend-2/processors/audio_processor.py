@@ -1,0 +1,131 @@
+import json
+import tempfile
+import os
+from datetime import datetime
+import google.generativeai as genai
+from dotenv import load_dotenv
+
+load_dotenv()
+
+def show_progress(current, total, step):
+    """Exibe barra de progresso no terminal"""
+    percentage = round((current / total) * 100)
+    bar = '█' * (percentage // 5) + '░' * (20 - percentage // 5)
+    print(f"\r[{bar}] {percentage}% - {step}", end='', flush=True)
+
+def analyze_audio_with_gemini(audio_file):
+    """Analisa áudio diretamente com Gemini e gera JSON estruturado"""
+    print(f"🤖 Analisando áudio diretamente com Gemini...")
+    
+    show_progress(1, 3, 'Configurando Gemini...')
+    
+    try:
+        genai.configure(api_key=os.getenv("GEMINI_API"))
+        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        
+        show_progress(2, 3, 'Enviando áudio para análise...')
+        
+        # Criar arquivo temporário para o Gemini
+        with tempfile.NamedTemporaryFile(suffix=".m4a", delete=False) as temp_file:
+            temp_file.write(audio_file)
+            temp_path = temp_file.name
+        
+        # Upload do arquivo para o Gemini
+        audio_upload = genai.upload_file(temp_path)
+        
+        prompt = """
+        Analise este arquivo de áudio e extraia as informações solicitadas:
+
+        Extraia e formate as seguintes informações em JSON:
+        1. Assunto Principal: Área principal do áudio
+        2. Termos-Chave: 3-5 termos essenciais para a busca de conteúdo relacionado
+        3. Resumo: Resumo detalhado sobre o que foi discutido no áudio (5-7 frases)
+
+        Responda APENAS com um JSON válido no seguinte formato:
+        {
+            "assunto_principal": "área de estudo",
+            "termos_chave": ["termo1", "termo2", "termo3"],
+            "resumo": "Este áudio aborda [assunto principal] e apresenta [principais tópicos]."
+        }
+        """
+        
+        response = model.generate_content([prompt, audio_upload])
+        
+        # Limpar arquivo temporário
+        os.unlink(temp_path)
+        
+        json_text = response.text.strip()
+        if json_text.startswith('```json'):
+            json_text = json_text[7:-3]
+        elif json_text.startswith('```'):
+            json_text = json_text[3:-3]
+        
+        return json.loads(json_text)
+        
+    except Exception as e:
+        print(f"❌ Erro na análise com Gemini: {e}")
+        if 'temp_path' in locals():
+            os.unlink(temp_path)
+        
+        return {
+            "assunto_principal": "Arquivo de áudio",
+            "termos_chave": ["áudio", "conteúdo", "análise"],
+            "resumo": "Arquivo de áudio processado. Não foi possível extrair conteúdo detalhado para análise."
+        }
+
+def create_search_json(metadata):
+    """Cria JSON estruturado para busca"""
+    print(f"🔍 Criando JSON. Metadata válida: {metadata is not None}")
+    
+    show_progress(3, 3, 'Gerando JSON de busca...')
+    
+    if not metadata:
+        raise ValueError("Metadata é None ou vazia")
+    
+    current_date = datetime.now().strftime("%Y%m%d")
+    
+    assunto = metadata.get('assunto_principal', 'Áudio processado')
+    termos = metadata.get('termos_chave', ['áudio'])
+    resumo = metadata.get('resumo', 'Áudio processado sem resumo disponível')
+    
+    input_busca = f"Procure informações sobre {assunto} relacionadas aos termos {', '.join(termos)}."
+    
+    search_json = {
+        "query_id": f"AUTO_AUDIO_QUERY-{current_date}",
+        "resumo": resumo,
+        "input_busca": input_busca,
+        "assunto_principal": assunto,
+        "termos_chave": termos
+    }
+    
+    return search_json
+
+def processAudioBackend(audio_file):
+    """Processa arquivo de áudio e retorna JSON estruturado para busca"""
+    print("\n🔄 Iniciando processamento do áudio no backend...")
+    print(f"📊 Tamanho do arquivo: {len(audio_file) if audio_file else 'None'} bytes")
+    
+    try:
+        # Etapa 1: Analisar áudio diretamente com Gemini
+        print("🤖 Analisando áudio com Gemini...")
+        metadata = analyze_audio_with_gemini(audio_file)
+        print(f"📋 Metadata gerada: {metadata}")
+        
+        # Etapa 2: Criar JSON de busca
+        print("🔍 Criando JSON de busca...")
+        search_json = create_search_json(metadata)
+        
+        print("\n✅ Áudio processado com sucesso\n")
+        return search_json
+        
+    except Exception as error:
+        import traceback
+        print(f"\n❌ Erro ao processar áudio: {str(error)}")
+        print(f"🔍 Traceback completo: {traceback.format_exc()}")
+        return {
+            "query_id": f"ERROR_AUDIO_QUERY-{datetime.now().strftime('%Y%m%d')}",
+            "resumo": "Erro no processamento do áudio",
+            "input_busca": "Pesquise sobre o áudio anexado",
+            "assunto_principal": "Arquivo de áudio",
+            "termos_chave": ["áudio", "transcrição", "pesquisa"]
+        }

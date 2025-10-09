@@ -91,6 +91,64 @@ async def process_pdf(file: UploadFile = File(...)):
         
         return error_response
 
+@router.post("/process-audio")
+async def process_audio(file: UploadFile = File(...)):
+    """Endpoint para processamento de arquivo de áudio
+    
+    Args:
+        file (UploadFile): Arquivo de áudio enviado
+        
+    Returns:
+        dict: JSON estruturado para busca
+    """
+    try:
+        print(f"🎵 Recebido arquivo: {file.filename if file else 'None'}")
+        print(f"📊 Tipo do arquivo: {file.content_type if file else 'None'}")
+        
+        # Lê o conteúdo do arquivo de áudio
+        audio_content = await file.read()
+        print(f"📦 Conteúdo lido: {len(audio_content) if audio_content else 'None'} bytes")
+        
+        if not audio_content:
+            raise ValueError("Arquivo de áudio vazio ou não foi possível ler o conteúdo")
+        
+        # Processa áudio com Whisper e LLM
+        from processors.audio_processor import processAudioBackend
+        print("🚀 Chamando processAudioBackend...")
+        result = processAudioBackend(audio_content)
+        print(f"✅ Resultado do processamento: {result}")
+        
+        response_json = {"query": result["input_busca"], "metadata": result}
+        
+        # Log detalhado do JSON gerado
+        print("\n" + "="*50)
+        print("🎵 JSON GERADO PARA UPLOAD DE ÁUDIO")
+        print("="*50)
+        import json
+        print(json.dumps(response_json, ensure_ascii=False, indent=2))
+        print("="*50 + "\n")
+        
+        return response_json
+        
+    except Exception as e:
+        import traceback
+        print(f"💥 Erro capturado no router: {str(e)}")
+        print(f"🔍 Traceback completo: {traceback.format_exc()}")
+        logger.error(f"Erro ao processar áudio: {str(e)}")
+        error_response = {
+            "query": "Procure informações sobre o áudio anexado",
+            "metadata": {"status": "error"}
+        }
+        
+        print("\n" + "="*50)
+        print("❌ ERRO NO PROCESSAMENTO DE ÁUDIO")
+        print("="*50)
+        import json
+        print(json.dumps(error_response, ensure_ascii=False, indent=2))
+        print("="*50 + "\n")
+        
+        return error_response
+
 @router.post("/ask-file-stream")
 async def ask_file_stream(request: Request, req: ConsultaMultimodalRequest):
     """Endpoint para consultas geradas a partir de PDF anexado com streaming

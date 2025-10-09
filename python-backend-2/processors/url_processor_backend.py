@@ -5,6 +5,7 @@ from typing import Dict, List, Any
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
+from processors.youtube_url_processor import process_youtube_url_data
 
 load_dotenv()
 
@@ -102,6 +103,13 @@ def process_url_data(scraped_json: str) -> Dict[str, Any]:
     """
     Função principal para processar dados de URL
     """
-    processor = URLProcessor()
     scraped_data = json.loads(scraped_json) if isinstance(scraped_json, str) else scraped_json
+    url = scraped_data.get('url', '')
+    
+    # Verifica se é URL do YouTube
+    if 'youtube.com/watch?' in url or 'youtu.be/' in url:
+        return process_youtube_url_data(url)
+    
+    # Processa URLs normais
+    processor = URLProcessor()
     return processor.process_scraped_data(scraped_data)

@@ -56,25 +56,58 @@ export const processPDF = async (file) => {
 };
 
 /**
- * Processa arquivos de áudio MP3
- * @param {File} file - Arquivo MP3
- * @returns {Promise<string>} - Texto transcrito ou consulta gerada
+ * Envia arquivo de áudio para processamento no backend
+ * @param {File} file - Arquivo de áudio
+ * @returns {Promise<Object>} - Query gerada pelo backend
  */
-export const processMP3 = async (file) => {
-  // TODO: Implementar transcrição de áudio
-  console.log('Processando MP3:', file.name);
-  return "Pesquise sobre beija-flores";
+const processAudioBackend = async (file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  const response = await fetch('http://localhost:8000/process-audio', {
+    method: 'POST',
+    body: formData
+  });
+  
+  if (!response.ok) {
+    throw new Error(`Erro ao processar áudio: ${response.statusText}`);
+  }
+  
+  const result = await response.json();
+  return result;
 };
 
 /**
- * Processa arquivos de vídeo MP4
- * @param {File} file - Arquivo MP4
- * @returns {Promise<string>} - Texto transcrito ou consulta gerada
+ * Processa arquivos de áudio (MP3, MP4, M4A)
+ * @param {File} file - Arquivo de áudio
+ * @returns {Promise<Object>} - Query gerada pelo backend
  */
-export const processMP4 = async (file) => {
-  // TODO: Implementar transcrição de vídeo
-  console.log('Processando MP4:', file.name);
-  return "Pesquise sobre beija-flores";
+export const processAudio = async (file) => {
+  console.log('\n🔄 Iniciando processamento do áudio:', file.name);
+  
+  try {
+    // Verifica se é um arquivo de áudio válido
+    const validTypes = ['audio/mp3', 'audio/mpeg', 'audio/mp4', 'video/mp4'];
+    const validExtensions = ['.mp3', '.mp4', '.m4a'];
+    const fileName = file.name.toLowerCase();
+    
+    if (!validTypes.includes(file.type) && !validExtensions.some(ext => fileName.endsWith(ext))) {
+      throw new Error('Arquivo deve ser um áudio válido (MP3, MP4 ou M4A)');
+    }
+    
+    // Envia arquivo para processamento no backend
+    const query = await processAudioBackend(file);
+    
+    console.log('✅ Áudio processado com sucesso\n');
+    console.log('Query gerada:', query);
+    
+    // Retorna a query gerada pelo backend
+    return query;
+    
+  } catch (error) {
+    console.error('❌ Erro ao processar áudio:', error.message);
+    throw error;
+  }
 };
 
 /**
@@ -142,10 +175,9 @@ export const processFile = async (file) => {
 
   if (fileType === 'application/pdf' || fileName.endsWith('.pdf')) {
     return await processPDF(file);
-  } else if (fileType === 'audio/mp3' || fileType === 'audio/mpeg' || fileName.endsWith('.mp3')) {
-    return await processMP3(file);
-  } else if (fileType === 'video/mp4' || fileName.endsWith('.mp4')) {
-    return await processMP4(file);
+  } else if (fileType === 'audio/mp3' || fileType === 'audio/mpeg' || fileType === 'audio/mp4' || 
+             fileName.endsWith('.mp3') || fileName.endsWith('.mp4') || fileName.endsWith('.m4a')) {
+    return await processAudio(file);
   } else {
     throw new Error(`Formato de arquivo não suportado: ${fileType || 'desconhecido'}`);
   }

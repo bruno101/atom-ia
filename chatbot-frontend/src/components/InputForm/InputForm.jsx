@@ -6,10 +6,9 @@ import { FileUploadArea } from "../../features/fileUpload";
 import FileThumbnail from "./FileThumbnail";
 import styles from "./InputForm.module.css"; 
 
-const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata }) => {
+const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata, attachedFile, setAttachedFile }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showFileUpload, setShowFileUpload] = useState(false);
-  const [attachedFile, setAttachedFile] = useState(null);
   const dropdownRef = useRef(null);
   const { isListening, startListening, stopListening, isSupported } = useSpeechRecognition();
 

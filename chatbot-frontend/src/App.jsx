@@ -27,6 +27,7 @@ function App() {
   const [currentProgressMessage, setCurrentProgressMessage] = useState("");
   const [partialResponse, setPartialResponse] = useState("");
   const [fileMetadata, setFileMetadata] = useState(null);
+  const [attachedFile, setAttachedFile] = useState(null);
  
   // Debug logging para mudanças de estado
   useEffect(() => {
@@ -74,7 +75,8 @@ function App() {
     scrollToEnd,
     startProgressTimeout,
     clearProgressTimeout,
-    fileMetadata
+    fileMetadata,
+    setAttachedFile
   }), [messages, input, isLoading, selectedModel]);
  
  
@@ -118,6 +120,8 @@ function App() {
                 selectedModel={selectedModel}
                 onModelChange={setSelectedModel}
                 setFileMetadata={setFileMetadata}
+                attachedFile={attachedFile}
+                setAttachedFile={setAttachedFile}
               />
               <div className="footer-info">
                 <span>Chatbot SIAN • Dataprev © 2025</span>

@@ -18,7 +18,8 @@ export default function createHandleSubmit({
   scrollToEnd,
   startProgressTimeout,
   clearProgressTimeout,
-  fileMetadata
+  fileMetadata,
+  setAttachedFile
 }) {
   const fallbackError = (content) => {
     clearProgressTimeout();
@@ -42,6 +43,8 @@ export default function createHandleSubmit({
       abortControllerRef.current.abort();
       abortControllerRef.current = null;
     }
+
+    setAttachedFile(null);
     
     clearProgressTimeout();
 
