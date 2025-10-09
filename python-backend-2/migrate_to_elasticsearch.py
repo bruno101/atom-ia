@@ -21,7 +21,7 @@ load_dotenv()
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_DSN = os.getenv("DB_DSN")
-URL_ELASTICSEARCH = os.getenv("URL_ELASTICSEARCH")
+URL_ELASTICSEARCH = os.getenv("URL_ELASTIC_SEARCH")
 
 def wait_for_elasticsearch():
     """Wait for Elasticsearch to be ready"""
