@@ -149,6 +149,64 @@ async def process_audio(file: UploadFile = File(...)):
         
         return error_response
 
+@router.post("/process-image")
+async def process_image(file: UploadFile = File(...)):
+    """Endpoint para processamento de arquivo de imagem
+    
+    Args:
+        file (UploadFile): Arquivo de imagem enviado
+        
+    Returns:
+        dict: JSON estruturado para busca
+    """
+    try:
+        print(f"🖼️ Recebido arquivo: {file.filename if file else 'None'}")
+        print(f"📊 Tipo do arquivo: {file.content_type if file else 'None'}")
+        
+        # Lê o conteúdo do arquivo de imagem
+        image_content = await file.read()
+        print(f"📦 Conteúdo lido: {len(image_content) if image_content else 'None'} bytes")
+        
+        if not image_content:
+            raise ValueError("Arquivo de imagem vazio ou não foi possível ler o conteúdo")
+        
+        # Processa imagem com Gemini
+        from processors.image_processor import processImageBackend
+        print("🚀 Chamando processImageBackend...")
+        result = processImageBackend(image_content)
+        print(f"✅ Resultado do processamento: {result}")
+        
+        response_json = {"query": result["input_busca"], "metadata": result}
+        
+        # Log detalhado do JSON gerado
+        print("\n" + "="*50)
+        print("🖼️ JSON GERADO PARA UPLOAD DE IMAGEM")
+        print("="*50)
+        import json
+        print(json.dumps(response_json, ensure_ascii=False, indent=2))
+        print("="*50 + "\n")
+        
+        return response_json
+        
+    except Exception as e:
+        import traceback
+        print(f"💥 Erro capturado no router: {str(e)}")
+        print(f"🔍 Traceback completo: {traceback.format_exc()}")
+        logger.error(f"Erro ao processar imagem: {str(e)}")
+        error_response = {
+            "query": "Procure informações sobre a imagem anexada",
+            "metadata": {"status": "error"}
+        }
+        
+        print("\n" + "="*50)
+        print("❌ ERRO NO PROCESSAMENTO DE IMAGEM")
+        print("="*50)
+        import json
+        print(json.dumps(error_response, ensure_ascii=False, indent=2))
+        print("="*50 + "\n")
+        
+        return error_response
+
 @router.post("/ask-file-stream")
 async def ask_file_stream(request: Request, req: ConsultaMultimodalRequest):
     """Endpoint para consultas geradas a partir de PDF anexado com streaming

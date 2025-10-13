@@ -13,7 +13,11 @@ export const useFileUpload = () => {
     'application/pdf': '.pdf',
     'audio/mp3': '.mp3',
     'audio/mpeg': '.mp3',
-    'video/mp4': '.mp4'
+    'video/mp4': '.mp4',
+    'image/jpeg': '.jpg',
+    'image/jpg': '.jpg',
+    'image/png': '.png',
+    'image/webp': '.webp'
   };
 
   // Verifica se o arquivo é válido
@@ -25,14 +29,19 @@ export const useFileUpload = () => {
       Object.keys(acceptedFormats).includes(fileType) ||
       fileName.endsWith('.pdf') ||
       fileName.endsWith('.mp3') ||
-      fileName.endsWith('.mp4')
+      fileName.endsWith('.mp4') ||
+      fileName.endsWith('.m4a') ||
+      fileName.endsWith('.jpg') ||
+      fileName.endsWith('.jpeg') ||
+      fileName.endsWith('.png') ||
+      fileName.endsWith('.webp')
     );
   }, []);
 
   // Processa o arquivo e retorna o texto
   const handleFileUpload = useCallback(async (file, onResult) => {
     if (!isValidFile(file)) {
-      throw new Error('Formato de arquivo não suportado. Use PDF, MP3 ou MP4.');
+      throw new Error('Formato de arquivo não suportado. Use PDF, MP3, MP4, M4A, JPG, PNG ou WEBP.');
     }
 
     setIsProcessing(true);

@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import createHandleSubmit from "./logic/createHandleSubmit";
 import Footer from "./components/Footer/Footer";
 import { useProgressTimeout } from "./hooks/useProgressTimeout";
+import VLibras from "@djpfs/react-vlibras";
  
 function App() {
   const [messages, setMessages] = useState([

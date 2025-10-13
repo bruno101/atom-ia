@@ -111,6 +111,61 @@ export const processAudio = async (file) => {
 };
 
 /**
+ * Envia arquivo de imagem para processamento no backend
+ * @param {File} file - Arquivo de imagem
+ * @returns {Promise<Object>} - Query gerada pelo backend
+ */
+const processImageBackend = async (file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  const response = await fetch('http://localhost:8000/process-image', {
+    method: 'POST',
+    body: formData
+  });
+  
+  if (!response.ok) {
+    throw new Error(`Erro ao processar imagem: ${response.statusText}`);
+  }
+  
+  const result = await response.json();
+  return result;
+};
+
+/**
+ * Processa arquivos de imagem (JPG, PNG, WEBP)
+ * @param {File} file - Arquivo de imagem
+ * @returns {Promise<Object>} - Query gerada pelo backend
+ */
+export const processImage = async (file) => {
+  console.log('\n🔄 Iniciando processamento da imagem:', file.name);
+  
+  try {
+    // Verifica se é um arquivo de imagem válido
+    const validTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
+    const validExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
+    const fileName = file.name.toLowerCase();
+    
+    if (!validTypes.includes(file.type) && !validExtensions.some(ext => fileName.endsWith(ext))) {
+      throw new Error('Arquivo deve ser uma imagem válida (JPG, PNG ou WEBP)');
+    }
+    
+    // Envia arquivo para processamento no backend
+    const query = await processImageBackend(file);
+    
+    console.log('✅ Imagem processada com sucesso\n');
+    console.log('Query gerada:', query);
+    
+    // Retorna a query gerada pelo backend
+    return query;
+    
+  } catch (error) {
+    console.error('❌ Erro ao processar imagem:', error.message);
+    throw error;
+  }
+};
+
+/**
  * Processa URL de página web
  * @param {string} url - URL da página web
  * @returns {Promise<Object>} - JSON estruturado para consulta
@@ -172,12 +227,16 @@ export const processURL = async (url) => {
 export const processFile = async (file) => {
   const fileType = file.type.toLowerCase();
   const fileName = file.name.toLowerCase();
+  console.log(fileName, fileType)
 
   if (fileType === 'application/pdf' || fileName.endsWith('.pdf')) {
     return await processPDF(file);
   } else if (fileType === 'audio/mp3' || fileType === 'audio/mpeg' || fileType === 'audio/mp4' || 
              fileName.endsWith('.mp3') || fileName.endsWith('.mp4') || fileName.endsWith('.m4a')) {
     return await processAudio(file);
+  } else if (fileType === 'image/jpeg' || fileType === 'image/jpg' || fileType === 'image/png' || fileType === 'image/webp' ||
+             fileName.endsWith('.jpg') || fileName.endsWith('.jpeg') || fileName.endsWith('.png') || fileName.endsWith('.webp')) {
+    return await processImage(file);
   } else {
     throw new Error(`Formato de arquivo não suportado: ${fileType || 'desconhecido'}`);
   }
