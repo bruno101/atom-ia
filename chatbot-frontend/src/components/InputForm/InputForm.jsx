@@ -127,6 +127,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         placeholder={isListening ? "Ouvindo..." : "Digite sua consulta..."}
         className={styles.textInput}
         disabled={isLoading}
+        aria-label="Digite seu nome completo"
       />
       <button
         type="button"

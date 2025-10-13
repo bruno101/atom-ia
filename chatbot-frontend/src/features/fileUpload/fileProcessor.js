@@ -1,169 +1,28 @@
-/**
- * Processador de arquivos para diferentes formatos
- * Cada formato tem seu método específico de processamento
- */
+const formatosTexto = process.env.REACT_APP_FORMATOS_SUPORTADOS_TEXTO?.split(',') || [];
+const formatosAudio = process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.split(',') || [];
+const formatosVideo = process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || [];
+const formatosImagem = process.env.REACT_APP_FORMATOS_SUPORTADOS_IMAGEM?.split(',') || [];
 
-
-/**
- * Envia arquivo PDF para processamento no backend
- * @param {File} file - Arquivo PDF
- * @returns {Promise<string>} - Query gerada pelo backend
- */
-const processPDFBackend = async (file) => {
+const sendToBackend = async (file, endpoint) => {
   const formData = new FormData();
   formData.append('file', file);
   
-  const response = await fetch(process.env.REACT_APP_API_PROCESSAMENTO_PDF, {
+  const response = await fetch(endpoint, {
     method: 'POST',
     body: formData
   });
   
   if (!response.ok) {
-    throw new Error(`Erro ao processar PDF: ${response.statusText}`);
+    throw new Error(`Erro ao processar arquivo: ${response.statusText}`);
   }
   
-  const result = await response.json();
-  return result;
+  return await response.json();
 };
 
-/**
- * Processa arquivos PDF
- * @param {File} file - Arquivo PDF
- * @returns {Promise<string>} - Query gerada pelo backend
- */
-export const processPDF = async (file) => {
-  console.log('\n🔄 Iniciando processamento do PDF:', file.name);
-  
-  try {
-    // Verifica se é um arquivo PDF válido
-    if (!file.type.includes('pdf') && !file.name.toLowerCase().endsWith('.pdf')) {
-      throw new Error('Arquivo deve ser um PDF válido');
-    }
-    
-    // Envia arquivo para processamento no backend
-    const query = await processPDFBackend(file);
-    
-    console.log('✅ PDF processado com sucesso\n');
-    console.log('Query gerada:', query);
-    
-    // Retorna a query gerada pelo backend
-    return query;
-    
-  } catch (error) {
-    console.error('❌ Erro ao processar PDF:', error.message);
-    throw error;
-  }
-};
-
-/**
- * Envia arquivo de áudio para processamento no backend
- * @param {File} file - Arquivo de áudio
- * @returns {Promise<Object>} - Query gerada pelo backend
- */
-const processAudioBackend = async (file) => {
-  const formData = new FormData();
-  formData.append('file', file);
-  
-  const response = await fetch('http://localhost:8000/process-audio', {
-    method: 'POST',
-    body: formData
-  });
-  
-  if (!response.ok) {
-    throw new Error(`Erro ao processar áudio: ${response.statusText}`);
-  }
-  
-  const result = await response.json();
-  return result;
-};
-
-/**
- * Processa arquivos de áudio (MP3, MP4, M4A)
- * @param {File} file - Arquivo de áudio
- * @returns {Promise<Object>} - Query gerada pelo backend
- */
-export const processAudio = async (file) => {
-  console.log('\n🔄 Iniciando processamento do áudio:', file.name);
-  
-  try {
-    // Verifica se é um arquivo de áudio válido
-    const validTypes = ['audio/mp3', 'audio/mpeg', 'audio/mp4', 'video/mp4'];
-    const validExtensions = ['.mp3', '.mp4', '.m4a'];
-    const fileName = file.name.toLowerCase();
-    
-    if (!validTypes.includes(file.type) && !validExtensions.some(ext => fileName.endsWith(ext))) {
-      throw new Error('Arquivo deve ser um áudio válido (MP3, MP4 ou M4A)');
-    }
-    
-    // Envia arquivo para processamento no backend
-    const query = await processAudioBackend(file);
-    
-    console.log('✅ Áudio processado com sucesso\n');
-    console.log('Query gerada:', query);
-    
-    // Retorna a query gerada pelo backend
-    return query;
-    
-  } catch (error) {
-    console.error('❌ Erro ao processar áudio:', error.message);
-    throw error;
-  }
-};
-
-/**
- * Envia arquivo de imagem para processamento no backend
- * @param {File} file - Arquivo de imagem
- * @returns {Promise<Object>} - Query gerada pelo backend
- */
-const processImageBackend = async (file) => {
-  const formData = new FormData();
-  formData.append('file', file);
-  
-  const response = await fetch('http://localhost:8000/process-image', {
-    method: 'POST',
-    body: formData
-  });
-  
-  if (!response.ok) {
-    throw new Error(`Erro ao processar imagem: ${response.statusText}`);
-  }
-  
-  const result = await response.json();
-  return result;
-};
-
-/**
- * Processa arquivos de imagem (JPG, PNG, WEBP)
- * @param {File} file - Arquivo de imagem
- * @returns {Promise<Object>} - Query gerada pelo backend
- */
-export const processImage = async (file) => {
-  console.log('\n🔄 Iniciando processamento da imagem:', file.name);
-  
-  try {
-    // Verifica se é um arquivo de imagem válido
-    const validTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
-    const validExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
-    const fileName = file.name.toLowerCase();
-    
-    if (!validTypes.includes(file.type) && !validExtensions.some(ext => fileName.endsWith(ext))) {
-      throw new Error('Arquivo deve ser uma imagem válida (JPG, PNG ou WEBP)');
-    }
-    
-    // Envia arquivo para processamento no backend
-    const query = await processImageBackend(file);
-    
-    console.log('✅ Imagem processada com sucesso\n');
-    console.log('Query gerada:', query);
-    
-    // Retorna a query gerada pelo backend
-    return query;
-    
-  } catch (error) {
-    console.error('❌ Erro ao processar imagem:', error.message);
-    throw error;
-  }
-};
+export const processPDF = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_PDF);
+export const processAudio = (file) => sendToBackend(file, 'http://localhost:8000/process-audio');
+export const processImage = (file) => sendToBackend(file, 'http://localhost:8000/process-image');
+export const processVideo = (file) => sendToBackend(file, 'http://localhost:8000/process-video');
 
 /**
  * Processa URL de página web
@@ -219,23 +78,17 @@ export const processURL = async (url) => {
   }
 };
 
-/**
- * Processa arquivo baseado no tipo
- * @param {File} file - Arquivo a ser processado
- * @returns {Promise<string>} - Resultado do processamento
- */
 export const processFile = async (file) => {
-  const fileType = file.type.toLowerCase();
   const fileName = file.name.toLowerCase();
-  console.log(fileName, fileType)
+  const fileType = file.type.toLowerCase();
 
-  if (fileType === 'application/pdf' || fileName.endsWith('.pdf')) {
+  if (fileType === 'application/pdf' || formatosTexto.some(ext => fileName.endsWith(ext))) {
     return await processPDF(file);
-  } else if (fileType === 'audio/mp3' || fileType === 'audio/mpeg' || fileType === 'audio/mp4' || 
-             fileName.endsWith('.mp3') || fileName.endsWith('.mp4') || fileName.endsWith('.m4a')) {
+  } else if (fileType.startsWith('audio/') || formatosAudio.some(ext => fileName.endsWith(ext))) {
     return await processAudio(file);
-  } else if (fileType === 'image/jpeg' || fileType === 'image/jpg' || fileType === 'image/png' || fileType === 'image/webp' ||
-             fileName.endsWith('.jpg') || fileName.endsWith('.jpeg') || fileName.endsWith('.png') || fileName.endsWith('.webp')) {
+  } else if (fileType.startsWith('video/') || formatosVideo.some(ext => fileName.endsWith(ext))) {
+    return await processVideo(file);
+  } else if (fileType.startsWith('image/') || formatosImagem.some(ext => fileName.endsWith(ext))) {
     return await processImage(file);
   } else {
     throw new Error(`Formato de arquivo não suportado: ${fileType || 'desconhecido'}`);

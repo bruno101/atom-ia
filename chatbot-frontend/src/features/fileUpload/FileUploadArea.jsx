@@ -4,6 +4,20 @@ import { faCloudUploadAlt, faFile, faTimes, faSpinner } from '@fortawesome/free-
 import { useFileUpload } from './useFileUpload';
 import styles from './FileUploadArea.module.css';
 
+console.log('ENV TEXTO:', process.env.REACT_APP_FORMATOS_SUPORTADOS_TEXTO);
+console.log('ENV AUDIO:', process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO);
+console.log('ENV VIDEO:', process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO);
+console.log('ENV IMAGEM:', process.env.REACT_APP_FORMATOS_SUPORTADOS_IMAGEM);
+
+const acceptedFormats = [
+  ...(process.env.REACT_APP_FORMATOS_SUPORTADOS_TEXTO?.split(',') || []),
+  ...(process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.split(',') || []),
+  ...(process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || []),
+  ...(process.env.REACT_APP_FORMATOS_SUPORTADOS_IMAGEM?.split(',') || [])
+].join(', ');
+
+console.log('Accept formats:', acceptedFormats);
+
 /**
  * Componente para upload de arquivos com drag & drop
  */
@@ -108,7 +122,7 @@ const FileUploadArea = ({ onFileProcessed, disabled }) => {
             Arraste um arquivo ou clique para selecionar
           </span>
           <span className={styles.supportedFormats}>
-            PDF, MP3, MP4
+            vídeo, imagem, áudio, pdf
           </span>
         </div>
       )}
@@ -116,7 +130,7 @@ const FileUploadArea = ({ onFileProcessed, disabled }) => {
       <input
         ref={fileInputRef}
         type="file"
-        accept=".pdf,.mp3,.mp4"
+        accept={acceptedFormats}
         onChange={handleFileSelect}
         className={styles.hiddenInput}
         disabled={disabled || isProcessing}

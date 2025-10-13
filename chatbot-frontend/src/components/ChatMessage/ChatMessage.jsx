@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { useTextToSpeech } from "../../hooks/useTextToSpeech";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp, faStop } from "@fortawesome/free-solid-svg-icons";
+import FileAttachment from "./FileAttachment";
 import styles from "./ChatMessage.module.css";
 
 /**
@@ -85,6 +86,11 @@ const ChatMessage = ({ message }) => {
             >
               <FontAwesomeIcon icon={isSpeaking ? faStop : faVolumeUp} />
             </button>
+          )}
+          
+          {/* Exibe arquivo anexado se existir */}
+          {message.fileMetadata && (
+            <FileAttachment fileMetadata={message.fileMetadata} />
           )}
           
           {/* Renderiza o conteúdo da mensagem com suporte a Markdown */}

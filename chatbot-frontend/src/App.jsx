@@ -77,8 +77,9 @@ function App() {
     startProgressTimeout,
     clearProgressTimeout,
     fileMetadata,
-    setAttachedFile
-  }), [messages, input, isLoading, selectedModel]);
+    setAttachedFile,
+    attachedFile
+  }), [messages, input, isLoading, selectedModel, attachedFile]);
  
  
  

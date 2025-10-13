@@ -19,7 +19,8 @@ export default function createHandleSubmit({
   startProgressTimeout,
   clearProgressTimeout,
   fileMetadata,
-  setAttachedFile
+  setAttachedFile,
+  attachedFile
 }) {
   const fallbackError = (content) => {
     clearProgressTimeout();
@@ -44,8 +45,6 @@ export default function createHandleSubmit({
       abortControllerRef.current = null;
     }
 
-    setAttachedFile(null);
-    
     clearProgressTimeout();
 
     const userMessage = {
@@ -53,7 +52,18 @@ export default function createHandleSubmit({
       role: "user",
       content: input.trim(),
       timestamp: new Date(),
+      ...(fileMetadata && attachedFile && { 
+        fileMetadata: {
+          ...fileMetadata,
+          nome_arquivo: attachedFile.name,
+          tipo: attachedFile.type.includes('pdf') ? 'pdf' : 
+                attachedFile.type.includes('audio') ? 'audio' : 
+                attachedFile.type.includes('video') ? 'video' : 'pdf'
+        }
+      }),
     };
+
+    setAttachedFile(null);
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
