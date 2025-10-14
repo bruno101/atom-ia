@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from urllib.parse import urljoin, urlparse
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def scrape_webpage(url):
     """
