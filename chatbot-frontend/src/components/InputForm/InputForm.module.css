@@ -47,7 +47,7 @@
 .textInput {
   width: 100%;
   height: 44px;
-  padding: 0 90px 0 10px;
+  padding: 0 130px 0 10px;
   border: 1px solid #ced4da;
   font-size: 14px;
   background-color: #ffffff;
@@ -243,6 +243,36 @@
   
 }
 
+.transcribeButton {
+  position: absolute;
+  right: 88px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #0c94ad;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.transcribeButton:hover {
+  background-color: #0C326F;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.transcribeButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: translateY(-50%);
+}
+
 .clipButton {
   position: absolute;
   right: 48px;
@@ -328,7 +358,7 @@
   .textInput {
     font-size: 13px;
     padding-left: 10px;
-    padding-right: 90px;
+    padding-right: 120px;
   }
 
   .clipButton {
@@ -351,5 +381,119 @@
     width: 28px;
     height: 28px;
     font-size: 12px;
+  }
+  
+  .transcribeButton {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    right: 80px;
+  }
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+}
+
+.modalHeader h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.closeModal {
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.closeModal:hover {
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+.modalContent {
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.modalContent p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.modalActions {
+  display: flex;
+  gap: 8px;
+  padding: 16px 20px;
+  border-top: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #0c94ad;
+  background-color: white;
+  color: #0c94ad;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #0c94ad;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .modalActions {
+    flex-direction: column;
+  }
+  
+  .actionButton {
+    justify-content: center;
   }
 }

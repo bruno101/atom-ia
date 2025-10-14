@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudUploadAlt, faFile, faTimes, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faCloudUploadAlt, faFile, faTimes, faSpinner, faPen, faCopy, faFilePdf, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { useFileUpload } from './useFileUpload';
 import styles from './FileUploadArea.module.css';
 
@@ -23,8 +23,11 @@ console.log('Accept formats:', acceptedFormats);
  */
 const FileUploadArea = ({ onFileProcessed, disabled }) => {
   const [isDragOver, setIsDragOver] = useState(false);
+  const [showTranscriptModal, setShowTranscriptModal] = useState(false);
   const fileInputRef = useRef(null);
   const { isProcessing, uploadedFile, handleFileUpload, clearFile } = useFileUpload();
+  
+  const transcriptText = "Quisque augue felis, tincidunt quis diam non, finibus efficitur turpis. Maecenas sed venenatis nisi, et posuere turpis. Quisque non neque odio. Morbi venenatis commodo nunc a cursus. Fusce sem nulla, varius eu ante nec";
 
   // Manipula drag over
   const handleDragOver = (e) => {
@@ -92,6 +95,42 @@ const FileUploadArea = ({ onFileProcessed, disabled }) => {
     }
   };
 
+  // Funções do modal de transcrição
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(transcriptText);
+    alert('Texto copiado para a área de transferência!');
+  };
+
+  const exportToPDF = () => {
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+      <html>
+        <head><title>Transcrição</title></head>
+        <body style="font-family: Arial, sans-serif; padding: 20px;">
+          <h2>Transcrição</h2>
+          <p>${transcriptText}</p>
+        </body>
+      </html>
+    `);
+    printWindow.document.close();
+    printWindow.print();
+  };
+
+  const printTranscript = () => {
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+      <html>
+        <head><title>Transcrição</title></head>
+        <body style="font-family: Arial, sans-serif; padding: 20px;">
+          <h2>Transcrição</h2>
+          <p>${transcriptText}</p>
+        </body>
+      </html>
+    `);
+    printWindow.document.close();
+    printWindow.print();
+  };
+
   return (
     <div className={styles.uploadContainer}>
       {uploadedFile ? (
@@ -102,13 +141,22 @@ const FileUploadArea = ({ onFileProcessed, disabled }) => {
           {isProcessing ? (
             <FontAwesomeIcon icon={faSpinner} className={styles.spinner} spin />
           ) : (
-            <button
-              onClick={removeFile}
-              className={styles.removeButton}
-              title="Remover arquivo"
-            >
-              <FontAwesomeIcon icon={faTimes} />
-            </button>
+            <div className={styles.buttonGroup}>
+              <button
+                onClick={() => setShowTranscriptModal(true)}
+                className={styles.transcribeButton}
+                title="Transcrever"
+              >
+                <FontAwesomeIcon icon={faPen} />
+              </button>
+              <button
+                onClick={removeFile}
+                className={styles.removeButton}
+                title="Remover arquivo"
+              >
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
+            </div>
           )}
         </div>
       ) : (
@@ -138,6 +186,37 @@ const FileUploadArea = ({ onFileProcessed, disabled }) => {
         className={styles.hiddenInput}
         disabled={disabled || isProcessing}
       />
+      
+      {/* Modal de Transcrição */}
+      {showTranscriptModal && (
+        <div className={styles.modalOverlay} onClick={() => setShowTranscriptModal(false)}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.modalHeader}>
+              <h3>Transcrição</h3>
+              <button 
+                onClick={() => setShowTranscriptModal(false)}
+                className={styles.closeModal}
+              >
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
+            </div>
+            <div className={styles.modalContent}>
+              <p>{transcriptText}</p>
+            </div>
+            <div className={styles.modalActions}>
+              <button onClick={copyToClipboard} className={styles.actionButton}>
+                <FontAwesomeIcon icon={faCopy} /> Copiar
+              </button>
+              <button onClick={exportToPDF} className={styles.actionButton}>
+                <FontAwesomeIcon icon={faFilePdf} /> Exportar PDF
+              </button>
+              <button onClick={printTranscript} className={styles.actionButton}>
+                <FontAwesomeIcon icon={faPrint} /> Imprimir
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
