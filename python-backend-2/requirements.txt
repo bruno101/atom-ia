@@ -16,3 +16,4 @@ llama_index.llms.vertex
 python-multipart
 requests
 beautifulsoup4
+imageio_ffmpeg

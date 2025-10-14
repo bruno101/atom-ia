@@ -63,12 +63,15 @@ const FileUploadArea = ({ onFileProcessed, disabled }) => {
 
   // Processa arquivo
   const processFile = async (file) => {
+    console.log('🚀 Iniciando processamento:', file.name);
     try {
       const result = await handleFileUpload(file, (result) => {
+        console.log('🎯 Callback onFileProcessed chamado');
         onFileProcessed?.(result, file);
       });
-      console.log('Arquivo processado:', result);
+      console.log('✅ Arquivo processado com sucesso:', result);
     } catch (error) {
+      console.error('🚫 Erro capturado:', error);
       alert(error.message);
       clearFile();
     }

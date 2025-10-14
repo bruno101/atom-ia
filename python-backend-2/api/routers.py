@@ -149,6 +149,31 @@ async def process_audio(file: UploadFile = File(...)):
         
         return error_response
 
+@router.post("/transcribe-audio")
+async def transcribe_audio(file: UploadFile = File(...)):
+    """Endpoint para transcrição de arquivo de áudio
+    
+    Args:
+        file (UploadFile): Arquivo de áudio enviado
+        
+    Returns:
+        dict: Transcrição do áudio
+    """
+    try:
+        audio_content = await file.read()
+        
+        if not audio_content:
+            raise ValueError("Arquivo de áudio vazio ou não foi possível ler o conteúdo")
+        
+        from processors.audio_transcriber import transcribe_audio_with_gemini
+        transcription = transcribe_audio_with_gemini(audio_content)
+        
+        return {"transcription": transcription}
+        
+    except Exception as e:
+        logger.error(f"Erro ao transcrever áudio: {str(e)}")
+        return {"transcription": "", "error": str(e)}
+
 @router.post("/process-image")
 async def process_image(file: UploadFile = File(...)):
     """Endpoint para processamento de arquivo de imagem
@@ -200,6 +225,52 @@ async def process_image(file: UploadFile = File(...)):
         
         print("\n" + "="*50)
         print("❌ ERRO NO PROCESSAMENTO DE IMAGEM")
+        print("="*50)
+        import json
+        print(json.dumps(error_response, ensure_ascii=False, indent=2))
+        print("="*50 + "\n")
+        
+        return error_response
+
+@router.post("/process-video")
+async def process_video(file: UploadFile = File(...)):
+    """Endpoint para processamento de arquivo de vídeo
+    
+    Args:
+        file (UploadFile): Arquivo de vídeo enviado
+        
+    Returns:
+        dict: JSON estruturado para busca
+    """
+    try:
+        video_content = await file.read()
+        
+        if not video_content:
+            raise ValueError("Arquivo de vídeo vazio ou não foi possível ler o conteúdo")
+        
+        from processors.video_processor import processVideoBackend
+        result = processVideoBackend(video_content)
+        
+        response_json = {"query": result["input_busca"], "metadata": result}
+        
+        print("\n" + "="*50)
+        print("🎬 JSON GERADO PARA UPLOAD DE VÍDEO")
+        print("="*50)
+        import json
+        print(json.dumps(response_json, ensure_ascii=False, indent=2))
+        print("="*50 + "\n")
+        
+        return response_json
+        
+    except Exception as e:
+        logger.error(f"Erro ao processar vídeo: {str(e)}")
+        error_response = {
+            "query": "Procure informações sobre o vídeo anexado",
+            "metadata": {"status": "error"}
+        }
+        
+        print("\n" + "="*50)
+        print("❌ ERRO NO PROCESSAMENTO DE VÍDEO")
         print("="*50)
         import json
         print(json.dumps(error_response, ensure_ascii=False, indent=2))
