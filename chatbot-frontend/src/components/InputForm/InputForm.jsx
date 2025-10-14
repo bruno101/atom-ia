@@ -1,19 +1,21 @@
-import { faBolt, faLightbulb, faSearch, faChevronUp, faMicrophone, faStop, faPaperclip, faPen, faCopy, faFilePdf, faPrint, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faLightbulb, faSearch, faChevronUp, faMicrophone, faStop, faPaperclip, faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useRef, useEffect } from "react";
 import { useSpeechRecognition } from "../../hooks/useSpeechRecognition";
 import { FileUploadArea } from "../../features/fileUpload";
+import { transcribeAudio } from "../../features/fileUpload/fileProcessor";
 import FileThumbnail from "./FileThumbnail";
+import TranscriptModal from "./TranscriptModal";
 import styles from "./InputForm.module.css"; 
 
 const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata, attachedFile, setAttachedFile }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showFileUpload, setShowFileUpload] = useState(false);
   const [showTranscriptModal, setShowTranscriptModal] = useState(false);
+  const [transcriptText, setTranscriptText] = useState("");
+  const [isTranscribing, setIsTranscribing] = useState(false);
   const dropdownRef = useRef(null);
   const { isListening, startListening, stopListening, isSupported } = useSpeechRecognition();
-  
-  const transcriptText = "Quisque augue felis, tincidunt quis diam non, finibus efficitur turpis. Maecenas sed venenatis nisi, et posuere turpis. Quisque non neque odio. Morbi venenatis commodo nunc a cursus. Fusce sem nulla, varius eu ante nec";
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -67,40 +69,33 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     setShowFileUpload(!showFileUpload);
   };
 
-  // Funções do modal de transcrição
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(transcriptText);
-    alert('Texto copiado para a área de transferência!');
+  // Abre modal e inicia transcrição
+  const handleShowTranscript = async () => {
+    setShowTranscriptModal(true);
+    setIsTranscribing(true);
+    setTranscriptText("");
+    
+    try {
+      const transcription = await transcribeAudio(attachedFile);
+      setTranscriptText(transcription);
+    } catch (error) {
+      setTranscriptText(`Erro ao transcrever: ${error.message}`);
+    } finally {
+      setIsTranscribing(false);
+    }
   };
 
-  const exportToPDF = () => {
-    const printWindow = window.open('', '_blank');
-    printWindow.document.write(`
-      <html>
-        <head><title>Transcrição</title></head>
-        <body style="font-family: Arial, sans-serif; padding: 20px;">
-          <h2>Transcrição</h2>
-          <p>${transcriptText}</p>
-        </body>
-      </html>
-    `);
-    printWindow.document.close();
-    printWindow.print();
-  };
-
-  const printTranscript = () => {
-    const printWindow = window.open('', '_blank');
-    printWindow.document.write(`
-      <html>
-        <head><title>Transcrição</title></head>
-        <body style="font-family: Arial, sans-serif; padding: 20px;">
-          <h2>Transcrição</h2>
-          <p>${transcriptText}</p>
-        </body>
-      </html>
-    `);
-    printWindow.document.close();
-    printWindow.print();
+  // Verifica se o arquivo é áudio ou vídeo
+  const isAudioOrVideo = () => {
+    if (!attachedFile) return false;
+    const fileName = attachedFile.name.toLowerCase();
+    const fileType = attachedFile.type.toLowerCase();
+    const formatosAudio = process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.split(',') || [];
+    const formatosVideo = process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || [];
+    
+    return fileType.startsWith('audio/') || fileType.startsWith('video/') ||
+           formatosAudio.some(ext => fileName.endsWith(ext)) ||
+           formatosVideo.some(ext => fileName.endsWith(ext));
   };
 
   // Manipula drag over no input para mostrar área de upload
@@ -167,10 +162,10 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         disabled={isLoading}
         aria-label="Digite seu nome completo"
       />
-      {attachedFile && (
+      {attachedFile && isAudioOrVideo() && (
         <button
           type="button"
-          onClick={() => setShowTranscriptModal(true)}
+          onClick={handleShowTranscript}
           className={styles.transcribeButton}
           disabled={isLoading}
           title="Transcrever"
@@ -208,36 +203,12 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     </button>
       </form>
       
-      {/* Modal de Transcrição */}
-      {showTranscriptModal && (
-        <div className={styles.modalOverlay} onClick={() => setShowTranscriptModal(false)}>
-          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-            <div className={styles.modalHeader}>
-              <h3>Transcrição</h3>
-              <button 
-                onClick={() => setShowTranscriptModal(false)}
-                className={styles.closeModal}
-              >
-                <FontAwesomeIcon icon={faTimes} />
-              </button>
-            </div>
-            <div className={styles.modalContent}>
-              <p>{transcriptText}</p>
-            </div>
-            <div className={styles.modalActions}>
-              <button onClick={copyToClipboard} className={styles.actionButton}>
-                <FontAwesomeIcon icon={faCopy} /> Copiar
-              </button>
-              <button onClick={exportToPDF} className={styles.actionButton}>
-                <FontAwesomeIcon icon={faFilePdf} /> Exportar PDF
-              </button>
-              <button onClick={printTranscript} className={styles.actionButton}>
-                <FontAwesomeIcon icon={faPrint} /> Imprimir
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <TranscriptModal
+        isOpen={showTranscriptModal}
+        onClose={() => setShowTranscriptModal(false)}
+        transcriptText={transcriptText}
+        isTranscribing={isTranscribing}
+      />
     </div>
   );
 };

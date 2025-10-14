@@ -1,8 +1,9 @@
 import json
 import tempfile
 import os
+import time
 from datetime import datetime
-import google.generativeai as genai
+from google import genai  # Updated import for simplicity
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,31 +17,27 @@ def show_progress(current, total, step):
 def analyze_audio_with_gemini(audio_file):
     """Analisa áudio diretamente com Gemini e gera JSON estruturado"""
     print(f"🤖 Analisando áudio diretamente com Gemini...")
-    
+   
     show_progress(1, 3, 'Configurando Gemini...')
-    
+   
     try:
-        genai.configure(api_key=os.getenv("GEMINI_API"))
-        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        client = genai.Client(api_key=os.getenv("GEMINI_API"))
         
         show_progress(2, 3, 'Enviando áudio para análise...')
         
-        # Criar arquivo temporário para o Gemini
         with tempfile.NamedTemporaryFile(suffix=".m4a", delete=False) as temp_file:
             temp_file.write(audio_file)
             temp_path = temp_file.name
         
-        # Upload do arquivo para o Gemini
-        audio_upload = genai.upload_file(temp_path)
+        with open(temp_path, 'rb') as f:
+            audio_upload = client.files.upload(file=f, config={'mime_type': 'audio/m4a'})
         
         prompt = """
         Analise este arquivo de áudio e extraia as informações solicitadas:
-
         Extraia e formate as seguintes informações em JSON:
         1. Assunto Principal: Área principal do áudio
         2. Termos-Chave: 3-5 termos essenciais para a busca de conteúdo relacionado
         3. Resumo: Resumo detalhado sobre o que foi discutido no áudio (5-7 frases)
-
         Responda APENAS com um JSON válido no seguinte formato:
         {
             "assunto_principal": "área de estudo",
@@ -49,28 +46,34 @@ def analyze_audio_with_gemini(audio_file):
         }
         """
         
-        response = model.generate_content([prompt, audio_upload])
+        response = client.models.generate_content(
+            model='gemini-2.0-flash-lite',
+            contents=[prompt, audio_upload]
+        )
         
-        # Limpar arquivo temporário
+        client.files.delete(name=audio_upload.name)
         os.unlink(temp_path)
         
-        json_text = response.text.strip()
+        json_text = response.text.strip() if hasattr(response, 'text') else str(response)
         if json_text.startswith('```json'):
             json_text = json_text[7:-3]
         elif json_text.startswith('```'):
             json_text = json_text[3:-3]
         
         return json.loads(json_text)
-        
+    
     except Exception as e:
         print(f"❌ Erro na análise com Gemini: {e}")
-        if 'temp_path' in locals():
-            os.unlink(temp_path)
+        if 'temp_path' in locals() and os.path.exists(temp_path):
+            try:
+                os.unlink(temp_path)
+            except:
+                pass
         
         return {
             "assunto_principal": "Arquivo de áudio",
             "termos_chave": ["áudio", "conteúdo", "análise"],
-            "resumo": "Arquivo de áudio processado. Não foi possível extrair conteúdo detalhado para análise."
+            "resumo": f"Arquivo de áudio processado. Erro: {str(e)}"
         }
 
 def create_search_json(metadata):

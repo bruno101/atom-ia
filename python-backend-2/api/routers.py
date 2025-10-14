@@ -324,8 +324,17 @@ async def process_url(request: URLRequest):
             env['http_proxy'] = os.environ['PROXY']
             env['https_proxy'] = os.environ['PROXY']
         
+        script_code = '''
+import ssl
+import sys
+ssl._create_default_https_context = ssl._create_unverified_context
+sys.path.insert(0, ".")
+with open("web_scraper.py", encoding="utf-8") as f:
+    exec(f.read())
+'''
+        
         result = subprocess.run(
-            ['python', '-c', 'import ssl; ssl._create_default_https_context = ssl._create_unverified_context; exec(open("web_scraper.py", encoding="utf-8").read())', url],
+            ['python', '-c', script_code, url],
             capture_output=True,
             text=True,
             cwd='.',

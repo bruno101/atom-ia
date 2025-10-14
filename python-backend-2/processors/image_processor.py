@@ -2,7 +2,7 @@ import json
 import tempfile
 import os
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,18 +20,16 @@ def analyze_image_with_gemini(image_file):
     show_progress(1, 3, 'Configurando Gemini...')
     
     try:
-        genai.configure(api_key=os.getenv("GEMINI_API"))
-        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        client = genai.Client(api_key=os.getenv("GEMINI_API"))
         
         show_progress(2, 3, 'Enviando imagem para análise...')
         
-        # Criar arquivo temporário para o Gemini
         with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as temp_file:
             temp_file.write(image_file)
             temp_path = temp_file.name
         
-        # Upload do arquivo para o Gemini
-        image_upload = genai.upload_file(temp_path)
+        with open(temp_path, 'rb') as f:
+            image_upload = client.files.upload(file=f, config={'mime_type': 'image/jpeg'})
         
         prompt = """
         Analise esta imagem e extraia as informações solicitadas:
@@ -49,9 +47,12 @@ def analyze_image_with_gemini(image_file):
         }
         """
         
-        response = model.generate_content([prompt, image_upload])
+        response = client.models.generate_content(
+            model='gemini-2.0-flash-lite',
+            contents=[prompt, image_upload]
+        )
         
-        # Limpar arquivo temporário
+        client.files.delete(name=image_upload.name)
         os.unlink(temp_path)
         
         json_text = response.text.strip()
@@ -64,8 +65,11 @@ def analyze_image_with_gemini(image_file):
         
     except Exception as e:
         print(f"❌ Erro na análise com Gemini: {e}")
-        if 'temp_path' in locals():
-            os.unlink(temp_path)
+        if 'temp_path' in locals() and os.path.exists(temp_path):
+            try:
+                os.unlink(temp_path)
+            except:
+                pass
         
         return {
             "assunto_principal": "Arquivo de imagem",

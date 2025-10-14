@@ -4,7 +4,7 @@ import os
 import subprocess
 import time
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 from dotenv import load_dotenv
 import imageio_ffmpeg
 
@@ -14,8 +14,7 @@ def analyze_video_with_gemini(video_file):
     """Analisa vídeo diretamente com Gemini e gera JSON estruturado"""
     try:
         print("[DEBUG] Configurando Gemini API...")
-        genai.configure(api_key=os.getenv("GEMINI_API"))
-        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        client = genai.Client(api_key=os.getenv("GEMINI_API"))
 
         print("[DEBUG] Salvando vídeo temporário...")
         with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as temp_file:
@@ -29,7 +28,7 @@ def analyze_video_with_gemini(video_file):
         ffmpeg_exe = imageio_ffmpeg.get_ffmpeg_exe()
         subprocess.run([
             ffmpeg_exe, '-i', temp_path, '-ss', '10', '-t', '60',
-            '-c:v', 'libx264', '-crf', '28', '-preset', 'fast',
+            '-vf', 'scale=480:-1', '-c:v', 'libx264', '-crf', '32', '-preset', 'fast',
             '-y', trimmed_path
         ], check=True, capture_output=True)
         
@@ -37,18 +36,19 @@ def analyze_video_with_gemini(video_file):
         os.unlink(temp_path)
         
         print("[DEBUG] Fazendo upload para Gemini...")
-        video_upload = genai.upload_file(trimmed_path)
+        with open(trimmed_path, 'rb') as f:
+            video_upload = client.files.upload(file=f, config={'mime_type': 'video/mp4'})
         print(f"[DEBUG] Upload concluído: {video_upload.name}")
         
         print("[DEBUG] Aguardando processamento do vídeo...")
-        while video_upload.state.name == "PROCESSING":
+        while video_upload.state == 'PROCESSING':
             time.sleep(2)
-            video_upload = genai.get_file(video_upload.name)
+            video_upload = client.files.get(name=video_upload.name)
         
-        if video_upload.state.name == "FAILED":
-            raise ValueError(f"Falha no processamento do vídeo")
+        if video_upload.state == 'FAILED':
+            raise ValueError("Falha no processamento do vídeo")
         
-        print(f"[DEBUG] Vídeo pronto para análise (estado: {video_upload.state.name})")
+        print(f"[DEBUG] Vídeo pronto (estado: {video_upload.state})")
         
         prompt = """
         Analise este arquivo de vídeo e extraia as informações solicitadas:
@@ -67,10 +67,16 @@ def analyze_video_with_gemini(video_file):
         """
         
         print("[DEBUG] Gerando análise com Gemini...")
-        response = model.generate_content([prompt, video_upload])
+        response = client.models.generate_content(
+            model='gemini-2.0-flash-lite',
+            contents=[prompt, video_upload]
+        )
         print(f"[DEBUG] Resposta recebida: {response.text[:200]}...")
         
-        genai.delete_file(video_upload.name)
+        try:
+            client.files.delete(name=video_upload.name)
+        except:
+            pass
         os.unlink(trimmed_path)
         
         json_text = response.text.strip()

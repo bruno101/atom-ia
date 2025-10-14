@@ -14,7 +14,7 @@ def scrape_webpage(url):
         }
         
         print("🌐 Baixando conteúdo da página...")
-        response = requests.get(url, headers=headers, timeout=30)
+        response = requests.get(url, headers=headers, timeout=30, verify=False)
         response.raise_for_status()
         print("✅ Download concluído")
         
