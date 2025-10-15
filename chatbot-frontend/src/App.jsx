@@ -41,7 +41,7 @@ function App() {
   useEffect(() => {
     console.log('📝 APP: partialResponse changed, length:', partialResponse?.length || 0);
   }, [partialResponse]);
-  const [showSidebar, setShowSidebar] = useState(false);
+
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
  
@@ -69,7 +69,7 @@ function App() {
     setIsLoading,
     setCurrentProgressMessage: updateProgressMessage,
     setPartialResponse,
-    setShowSidebar,
+
     abortControllerRef,
     selectedModel,
     scrollToEnd,
@@ -82,7 +82,7 @@ function App() {
  
  
  
-  const toggleSidebar = () => setShowSidebar(!showSidebar);
+
  
   // Cleanup do timeout quando o componente for desmontado
   useEffect(() => {
@@ -96,8 +96,6 @@ function App() {
       <Header />
       <div className="main-container">
         <Sidebar
-          showSidebar={showSidebar}
-          toggleSidebar={toggleSidebar}
           suggestedLinks={suggestedLinks}
         />
         <div className="chat-section">

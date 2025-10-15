@@ -62,7 +62,7 @@
   font-weight: 400;
   word-break: break-word;
   position: relative;
-  padding-right: 36px;
+  padding-right: 44px;
 }
 
 
@@ -343,6 +343,7 @@
 
   .messageContent {
     font-size: 12px;
+    padding-right: 40px;
   }
 }
 

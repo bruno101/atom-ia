@@ -50,6 +50,7 @@ body {
   background-color: #ffffff;
   min-width: 0;
   height: 100%;
+  border-right: 1px solid #e5e7eb;
 }
 
 .chat-container {
@@ -95,6 +96,10 @@ body {
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
+  }
+  
+  .chat-section {
+    border-right: 1px solid #e5e7eb;
   }
   
   .input-area {

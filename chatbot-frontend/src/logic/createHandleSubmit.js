@@ -12,7 +12,7 @@ export default function createHandleSubmit({
   setIsLoading,
   setCurrentProgressMessage,
   setPartialResponse,
-  setShowSidebar,
+
   abortControllerRef,
   selectedModel,
   scrollToEnd,
@@ -151,7 +151,6 @@ export default function createHandleSubmit({
 
               if (Array.isArray(data.links)) {
                 setSuggestedLinks(data.links);
-                if (window.innerWidth <= 768) setShowSidebar(true);
               }
             } catch (err) {
               console.error(
@@ -249,7 +248,6 @@ export default function createHandleSubmit({
 
             if (Array.isArray(data.links)) {
               setSuggestedLinks(data.links);
-              if (window.innerWidth <= 768) setShowSidebar(true);
             }
           } catch (err) {
             console.error(
@@ -341,7 +339,6 @@ export default function createHandleSubmit({
 
           if (Array.isArray(data.links)) {
             setSuggestedLinks(data.links);
-            if (window.innerWidth <= 768) setShowSidebar(true);
           }
         } catch (err) {
           console.error(
