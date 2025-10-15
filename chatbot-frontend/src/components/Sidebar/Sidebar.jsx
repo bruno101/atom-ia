@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import ExternalLinkIcon from "../../icons/ExternalLinkIcon";
@@ -11,8 +11,18 @@ const Sidebar = ({ suggestedLinks, onNewConversation, onLoadConversation, curren
   const [conversations, setConversations] = useState([]);
   const [conversationsExpanded, setConversationsExpanded] = useState(true);
   const [linksExpanded, setLinksExpanded] = useState(true);
+  const prevSuggestedLinksLength = useRef(0);
 
   const isExpanded = isHovered || isPinned;
+
+  useEffect(() => {
+    if (suggestedLinks.length > 0 && prevSuggestedLinksLength.current === 0) {
+      setIsPinned(true);
+      setConversationsExpanded(false);
+      setLinksExpanded(true);
+    }
+    prevSuggestedLinksLength.current = suggestedLinks.length;
+  }, [suggestedLinks]);
 
   useEffect(() => {
     const loadConversations = () => {
