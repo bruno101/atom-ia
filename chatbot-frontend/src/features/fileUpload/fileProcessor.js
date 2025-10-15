@@ -1,7 +1,7 @@
-const formatosTexto = process.env.REACT_APP_FORMATOS_SUPORTADOS_TEXTO?.split(',') || [];
-const formatosAudio = process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.split(',') || [];
-const formatosVideo = process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || [];
-const formatosImagem = process.env.REACT_APP_FORMATOS_SUPORTADOS_IMAGEM?.split(',') || [];
+export const formatosTexto = process.env.REACT_APP_FORMATOS_SUPORTADOS_TEXTO?.split(',') || [];
+export const formatosAudio = process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.split(',') || [];
+export const formatosVideo = process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || [];
+export const formatosImagem = process.env.REACT_APP_FORMATOS_SUPORTADOS_IMAGEM?.split(',') || [];
 
 const sendToBackend = async (file, endpoint) => {
   console.log('📤 Enviando arquivo:', {
@@ -151,6 +151,29 @@ export const transcribeFile = async (file) => {
   } else {
     throw new Error('Arquivo não é áudio ou vídeo');
   }
+};
+
+export const getTranscribeEndpoint = (file) => {
+  const fileName = file.name.toLowerCase();
+  const fileType = file.type.toLowerCase();
+
+  if (fileType.startsWith('video/') || formatosVideo.some(ext => fileName.endsWith(ext))) {
+    return process.env.REACT_APP_API_TRANSCRICAO_VIDEO;
+  } else if (fileType.startsWith('audio/') || formatosAudio.some(ext => fileName.endsWith(ext))) {
+    return process.env.REACT_APP_API_TRANSCRICAO_AUDIO;
+  } else {
+    throw new Error('Arquivo não é áudio ou vídeo');
+  }
+};
+
+export const isAudioOrVideoFile = (file) => {
+  if (!file) return false;
+  const fileName = file.name.toLowerCase();
+  const fileType = file.type.toLowerCase();
+  
+  return fileType.startsWith('audio/') || fileType.startsWith('video/') ||
+         formatosAudio.some(ext => fileName.endsWith(ext)) ||
+         formatosVideo.some(ext => fileName.endsWith(ext));
 };
 
 export const processFile = async (file) => {
