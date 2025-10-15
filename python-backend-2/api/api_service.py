@@ -132,3 +132,46 @@ async def handle_multimodal_stream(request: Request, req: ConsultaMultimodalRequ
             "event": "error",
             "data": f"Server error: {str(e)}"
         }
+
+async def handle_transcribe_stream(request: Request, file_content: bytes, file_type: str):
+    """Processa transcrição com streaming em tempo real"""
+    try:
+        logger.info(f"[SSE] Iniciando transcrição de {file_type}")
+        
+        if file_type == "audio":
+            from processors.audio_transcriber import transcribe_audio_with_gemini_stream
+            transcribe_generator = transcribe_audio_with_gemini_stream(file_content)
+        else:
+            from processors.video_transcriber import transcribe_video_with_gemini_stream
+            transcribe_generator = transcribe_video_with_gemini_stream(file_content)
+        
+        for chunk in transcribe_generator:
+            if await request.is_disconnected():
+                logger.info("[SSE] Client disconnected")
+                break
+            
+            logger.info(f"[SSE] Enviando chunk: {chunk[:50]}...")
+            
+            if chunk.startswith("ERRO:"):
+                yield {
+                    "event": "error",
+                    "data": chunk.replace("ERRO: ", "")
+                }
+            else:
+                yield {
+                    "event": "chunk",
+                    "data": chunk
+                }
+        
+        logger.info("[SSE] Transcrição concluída")
+        yield {
+            "event": "done",
+            "data": ""
+        }
+                
+    except Exception as e:
+        logger.exception("[SSE] Transcribe stream error")
+        yield {
+            "event": "error",
+            "data": f"Server error: {str(e)}"
+        }

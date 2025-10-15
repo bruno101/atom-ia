@@ -3,7 +3,7 @@
 from fastapi import APIRouter, HTTPException, Request, UploadFile, File
 from sse_starlette.sse import EventSourceResponse
 from .models import ConsultaRequest, ConsultaMultimodalRequest, ConsultaResponse, URLRequest
-from .api_service import handle_stream, handle_multimodal_stream
+from .api_service import handle_stream, handle_multimodal_stream, handle_transcribe_stream
 import logging
 
 # Configura roteador com prefixo vazio e tag para documentação
@@ -150,54 +150,40 @@ async def process_audio(file: UploadFile = File(...)):
         return error_response
 
 @router.post("/transcribe-audio")
-async def transcribe_audio(file: UploadFile = File(...)):
-    """Endpoint para transcrição de arquivo de áudio
+async def transcribe_audio(request: Request, file: UploadFile = File(...)):
+    """Endpoint para transcrição de arquivo de áudio com streaming
     
     Args:
+        request (Request): Requisição HTTP para controle de conexão
         file (UploadFile): Arquivo de áudio enviado
         
     Returns:
-        dict: Transcrição do áudio
+        EventSourceResponse: Stream de eventos SSE com transcrição
     """
-    try:
-        audio_content = await file.read()
-        
-        if not audio_content:
-            raise ValueError("Arquivo de áudio vazio ou não foi possível ler o conteúdo")
-        
-        from processors.audio_transcriber import transcribe_audio_with_gemini
-        transcription = transcribe_audio_with_gemini(audio_content)
-        
-        return {"transcription": transcription}
-        
-    except Exception as e:
-        logger.error(f"Erro ao transcrever áudio: {str(e)}")
-        return {"transcription": "", "error": str(e)}
+    audio_content = await file.read()
+    if not audio_content:
+        raise HTTPException(status_code=400, detail="Arquivo de áudio vazio")
+    
+    event_generator = handle_transcribe_stream(request, audio_content, "audio")
+    return EventSourceResponse(event_generator)
 
 @router.post("/transcribe-video")
-async def transcribe_video(file: UploadFile = File(...)):
-    """Endpoint para transcrição de arquivo de vídeo
+async def transcribe_video(request: Request, file: UploadFile = File(...)):
+    """Endpoint para transcrição de arquivo de vídeo com streaming
     
     Args:
+        request (Request): Requisição HTTP para controle de conexão
         file (UploadFile): Arquivo de vídeo enviado
         
     Returns:
-        dict: Transcrição do vídeo
+        EventSourceResponse: Stream de eventos SSE com transcrição
     """
-    try:
-        video_content = await file.read()
-        
-        if not video_content:
-            raise ValueError("Arquivo de vídeo vazio ou não foi possível ler o conteúdo")
-        
-        from processors.video_transcriber import transcribe_video_with_gemini
-        transcription = transcribe_video_with_gemini(video_content)
-        
-        return {"transcription": transcription}
-        
-    except Exception as e:
-        logger.error(f"Erro ao transcrever vídeo: {str(e)}")
-        return {"transcription": "", "error": str(e)}
+    video_content = await file.read()
+    if not video_content:
+        raise HTTPException(status_code=400, detail="Arquivo de vídeo vazio")
+    
+    event_generator = handle_transcribe_stream(request, video_content, "video")
+    return EventSourceResponse(event_generator)
 
 @router.post("/process-image")
 async def process_image(file: UploadFile = File(...)):

@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useRef, useEffect } from "react";
 import { useSpeechRecognition } from "../../hooks/useSpeechRecognition";
 import { FileUploadArea } from "../../features/fileUpload";
-import { transcribeFile } from "../../features/fileUpload/fileProcessor";
+import { handleTranscribeSSE } from "../../logic/handleTranscribeSSE";
+import { getTranscribeEndpoint, isAudioOrVideoFile } from "../../features/fileUpload/fileProcessor";
 import FileThumbnail from "./FileThumbnail";
 import TranscriptModal from "./TranscriptModal";
 import styles from "./InputForm.module.css"; 
@@ -14,6 +15,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
   const [showTranscriptModal, setShowTranscriptModal] = useState(false);
   const [transcriptText, setTranscriptText] = useState("");
   const [isTranscribing, setIsTranscribing] = useState(false);
+  const [progressMessage, setProgressMessage] = useState("");
   const dropdownRef = useRef(null);
   const { isListening, startListening, stopListening, isSupported } = useSpeechRecognition();
 
@@ -70,33 +72,44 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
   };
 
   // Abre modal e inicia transcrição
-  const handleShowTranscript = async () => {
+  const handleShowTranscript = () => {
     setShowTranscriptModal(true);
     setIsTranscribing(true);
     setTranscriptText("");
+    setProgressMessage("");
     
-    try {
-      const transcription = await transcribeFile(attachedFile);
-      setTranscriptText(transcription);
-    } catch (error) {
-      setTranscriptText(`Erro ao transcrever: ${error.message}`);
-    } finally {
-      setIsTranscribing(false);
-    }
+    const endpoint = getTranscribeEndpoint(attachedFile);
+    
+    handleTranscribeSSE(
+      attachedFile,
+      endpoint,
+      (progress) => {
+        setProgressMessage(progress);
+      },
+      (chunk, isFinal) => {
+        if (isFinal) {
+          console.log('[InputForm] Received FINAL chunk, length:', chunk.length);
+          console.log('[InputForm] FINAL chunk preview:', chunk.substring(0, 200));
+          // Replace with final correct transcription
+          setTranscriptText(chunk);
+        } else {
+          // Append partial chunk
+          setTranscriptText(prev => prev + chunk);
+        }
+      },
+      () => {
+        setIsTranscribing(false);
+        setProgressMessage("");
+      },
+      (error) => {
+        setTranscriptText(`Erro ao transcrever: ${error.message}`);
+        setIsTranscribing(false);
+        setProgressMessage("");
+      }
+    );
   };
 
-  // Verifica se o arquivo é áudio ou vídeo
-  const isAudioOrVideo = () => {
-    if (!attachedFile) return false;
-    const fileName = attachedFile.name.toLowerCase();
-    const fileType = attachedFile.type.toLowerCase();
-    const formatosAudio = process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.split(',') || [];
-    const formatosVideo = process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || [];
-    
-    return fileType.startsWith('audio/') || fileType.startsWith('video/') ||
-           formatosAudio.some(ext => fileName.endsWith(ext)) ||
-           formatosVideo.some(ext => fileName.endsWith(ext));
-  };
+
 
   // Manipula drag over no input para mostrar área de upload
   const handleInputDragOver = (e) => {
@@ -162,7 +175,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         disabled={isLoading}
         aria-label="Digite seu nome completo"
       />
-      {attachedFile && isAudioOrVideo() && (
+      {attachedFile && isAudioOrVideoFile(attachedFile) && (
         <button
           type="button"
           onClick={handleShowTranscript}
@@ -208,6 +221,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         onClose={() => setShowTranscriptModal(false)}
         transcriptText={transcriptText}
         isTranscribing={isTranscribing}
+        progressMessage={progressMessage}
       />
     </div>
   );

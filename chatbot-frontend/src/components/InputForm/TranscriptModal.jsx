@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkBreaks from 'remark-breaks';
 import styles from "./TranscriptModal.module.css";
 
-const TranscriptModal = ({ isOpen, onClose, transcriptText, isTranscribing }) => {
+const TranscriptModal = ({ isOpen, onClose, transcriptText, isTranscribing, progressMessage }) => {
   const [isReading, setIsReading] = useState(false);
   
   if (!isOpen) return null;
@@ -68,13 +68,13 @@ const TranscriptModal = ({ isOpen, onClose, transcriptText, isTranscribing }) =>
           </button>
         </div>
         <div className={styles.modalContent}>
-          {isTranscribing ? (
+          {isTranscribing && !transcriptText ? (
             <div className={styles.progressContainer}>
               <FontAwesomeIcon icon={faSpinner} spin size="3x" />
-              <p>Transcrevendo...</p>
+              <p>{progressMessage || 'Preparando transcrição...'}</p>
             </div>
           ) : (
-            <ReactMarkdown remarkPlugins={[remarkBreaks]}>{transcriptText}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkBreaks]}>{transcriptText || 'Aguardando transcrição...'}</ReactMarkdown>
           )}
         </div>
         <div className={styles.modalActions}>
