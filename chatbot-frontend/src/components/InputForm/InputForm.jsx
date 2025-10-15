@@ -102,12 +102,15 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
           console.log('[InputForm] FINAL chunk preview:', chunk.substring(0, 200));
           // Substitui com transcrição final corrigida
           setTranscriptText(chunk);
+          setIsTranscribing(false);
+          setProgressMessage("");
         } else {
           // Adiciona chunk parcial
           setTranscriptText(prev => prev + chunk);
         }
       },
       () => {
+        console.log('[InputForm] Transcription completed');
         setIsTranscribing(false);
         setProgressMessage("");
       },
