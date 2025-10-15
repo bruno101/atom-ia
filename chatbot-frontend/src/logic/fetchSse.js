@@ -98,7 +98,8 @@ const fetchSse = (
     } catch (e) {
       console.error('Erro na comunicação SSE:', e);
       if (e.name === 'AbortError') {
-        if (onError) onError(new Error('Timeout na comunicação com o servidor'));
+        console.log('SSE abortado - requisição cancelada');
+        if (onClose) onClose();
       } else {
         if (onError) onError(e);
       }

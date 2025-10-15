@@ -4,7 +4,7 @@ import { processFile } from './fileProcessor';
 /**
  * Hook para gerenciar upload e processamento de arquivos
  */
-export const useFileUpload = () => {
+export const useFileUpload = (abortControllerRef) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [uploadedFile, setUploadedFile] = useState(null);
 
@@ -51,23 +51,40 @@ export const useFileUpload = () => {
     setIsProcessing(true);
     setUploadedFile(file);
 
+    const controller = new AbortController();
+    if (abortControllerRef) {
+      abortControllerRef.current = controller;
+    }
+
     try {
-      const result = await processFile(file);
+      const result = await processFile(file, controller.signal);
       console.log('📦 Resultado recebido do processFile:', result);
       onResult?.(result);
       return result;
     } catch (error) {
+      if (error.message === 'Processamento cancelado') {
+        console.log('🚫 Processamento cancelado pelo usuário');
+        return null;
+      }
       console.error('🔴 Erro ao processar arquivo:', error);
       throw error;
     } finally {
       setIsProcessing(false);
+      if (abortControllerRef) {
+        abortControllerRef.current = null;
+      }
     }
-  }, [isValidFile]);
+  }, [isValidFile, abortControllerRef]);
 
   // Remove arquivo carregado
   const clearFile = useCallback(() => {
+    if (abortControllerRef?.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
     setUploadedFile(null);
-  }, []);
+    setIsProcessing(false);
+  }, [abortControllerRef]);
 
   return {
     isProcessing,

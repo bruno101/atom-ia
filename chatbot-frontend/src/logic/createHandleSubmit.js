@@ -16,6 +16,7 @@ export default function createHandleSubmit({
   setCurrentProgressMessage,
   setPartialResponse,
   abortControllerRef,
+  isIntentionalAbortRef,
   selectedModel,
   scrollToEnd,
   startProgressTimeout,
@@ -45,9 +46,11 @@ export default function createHandleSubmit({
 
     // Cancela requisição anterior se existir
     if (abortControllerRef.current) {
+      isIntentionalAbortRef.current = true;
       abortControllerRef.current.abort();
       abortControllerRef.current = null;
     }
+    isIntentionalAbortRef.current = false;
 
     clearProgressTimeout();
 
@@ -195,7 +198,7 @@ export default function createHandleSubmit({
             // Handler de fechamento de conexão
             console.log("HANDLER LOG: Stream da API concluído.");
             clearProgressTimeout();
-            if (isLoading) {
+            if (isLoading && !isIntentionalAbortRef.current) {
               fallbackError(
                 "A conexão com o servidor foi encerrada inesperadamente."
               );
@@ -292,7 +295,7 @@ export default function createHandleSubmit({
           // onClose
           console.log("HANDLER LOG: Stream da API concluído.");
           clearProgressTimeout();
-          if (isLoading) {
+          if (isLoading && !isIntentionalAbortRef.current) {
             fallbackError(
               "A conexão com o servidor foi encerrada inesperadamente."
             );

@@ -11,7 +11,7 @@ import FileThumbnail from "./FileThumbnail";
 import TranscriptModal from "./TranscriptModal";
 import styles from "./InputForm.module.css"; 
 
-const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata, attachedFile, setAttachedFile }) => {
+const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata, attachedFile, setAttachedFile, fileProcessingAbortRef }) => {
   // Estados para controle de UI
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showFileUpload, setShowFileUpload] = useState(false);
@@ -36,6 +36,13 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  // Limpa estado de upload quando arquivo é removido externamente
+  useEffect(() => {
+    if (!attachedFile) {
+      setShowFileUpload(false);
+    }
+  }, [attachedFile]);
 
   // Configuração dos modelos disponíveis
   const models = {
@@ -143,6 +150,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         <FileUploadArea 
           onFileProcessed={handleFileProcessed}
           disabled={isLoading}
+          abortControllerRef={fileProcessingAbortRef}
         />
       )}
       <form onSubmit={onSubmit} className={styles.inputForm}>

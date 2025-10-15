@@ -12,17 +12,21 @@ const Sidebar = ({ suggestedLinks, onNewConversation, onLoadConversation, curren
   const [conversationsExpanded, setConversationsExpanded] = useState(true);
   const [linksExpanded, setLinksExpanded] = useState(true);
   const prevSuggestedLinksLength = useRef(0);
+  const prevConversationId = useRef(currentConversationId);
 
   const isExpanded = isHovered || isPinned;
 
   useEffect(() => {
-    if (suggestedLinks.length > 0 && prevSuggestedLinksLength.current === 0) {
+    const conversationChanged = prevConversationId.current !== currentConversationId;
+    prevConversationId.current = currentConversationId;
+    
+    if (suggestedLinks.length > 0 && prevSuggestedLinksLength.current === 0 && !conversationChanged) {
       setIsPinned(true);
       setConversationsExpanded(false);
       setLinksExpanded(true);
     }
     prevSuggestedLinksLength.current = suggestedLinks.length;
-  }, [suggestedLinks]);
+  }, [suggestedLinks, currentConversationId]);
 
   useEffect(() => {
     const loadConversations = () => {

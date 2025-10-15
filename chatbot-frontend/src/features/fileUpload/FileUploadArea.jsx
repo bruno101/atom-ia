@@ -21,11 +21,11 @@ console.log('Accept formats:', acceptedFormats);
 /**
  * Componente para upload de arquivos com drag & drop
  */
-const FileUploadArea = ({ onFileProcessed, disabled }) => {
+const FileUploadArea = ({ onFileProcessed, disabled, abortControllerRef }) => {
   const [isDragOver, setIsDragOver] = useState(false);
   const [showTranscriptModal, setShowTranscriptModal] = useState(false);
   const fileInputRef = useRef(null);
-  const { isProcessing, uploadedFile, handleFileUpload, clearFile } = useFileUpload();
+  const { isProcessing, uploadedFile, handleFileUpload, clearFile } = useFileUpload(abortControllerRef);
   
   const transcriptText = "Quisque augue felis, tincidunt quis diam non, finibus efficitur turpis. Maecenas sed venenatis nisi, et posuere turpis. Quisque non neque odio. Morbi venenatis commodo nunc a cursus. Fusce sem nulla, varius eu ante nec";
 

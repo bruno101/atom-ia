@@ -3,7 +3,7 @@ export const formatosAudio = process.env.REACT_APP_FORMATOS_SUPORTADOS_AUDIO?.sp
 export const formatosVideo = process.env.REACT_APP_FORMATOS_SUPORTADOS_VIDEO?.split(',') || [];
 export const formatosImagem = process.env.REACT_APP_FORMATOS_SUPORTADOS_IMAGEM?.split(',') || [];
 
-const sendToBackend = async (file, endpoint) => {
+const sendToBackend = async (file, endpoint, abortSignal) => {
   console.log('📤 Enviando arquivo:', {
     arquivo: file.name,
     tipo: file.type,
@@ -17,7 +17,8 @@ const sendToBackend = async (file, endpoint) => {
   try {
     const response = await fetch(endpoint, {
       method: 'POST',
-      body: formData
+      body: formData,
+      signal: abortSignal
     });
     
     console.log('📥 Resposta recebida:', {
@@ -36,18 +37,22 @@ const sendToBackend = async (file, endpoint) => {
     console.log('✅ Processamento concluído:', result);
     return result;
   } catch (error) {
+    if (error.name === 'AbortError') {
+      console.log('🚫 Processamento cancelado');
+      throw new Error('Processamento cancelado');
+    }
     console.error('💥 Erro na requisição:', error);
     throw error;
   }
 };
 
-export const processPDF = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_PDF);
-export const processAudio = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_AUDIO);
-export const processImage = async (file) => {
-  const result = await sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_IMAGEM);
+export const processPDF = (file, abortSignal) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_PDF, abortSignal);
+export const processAudio = (file, abortSignal) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_AUDIO, abortSignal);
+export const processImage = async (file, abortSignal) => {
+  const result = await sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_IMAGEM, abortSignal);
   return result;
 };
-export const processVideo = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_VIDEO);
+export const processVideo = (file, abortSignal) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_VIDEO, abortSignal);
 
 /**
  * Processa URL de página web
@@ -179,7 +184,7 @@ export const isAudioOrVideoFile = (file) => {
          formatosVideo.some(ext => fileName.endsWith(ext));
 };
 
-export const processFile = async (file) => {
+export const processFile = async (file, abortSignal) => {
   const fileName = file.name.toLowerCase();
   const fileType = file.type.toLowerCase();
 
@@ -195,25 +200,25 @@ export const processFile = async (file) => {
 
   if (fileType === 'application/pdf' || formatosTexto.some(ext => fileName.endsWith(ext))) {
     console.log('📄 Detectado como PDF');
-    return await processPDF(file);
+    return await processPDF(file, abortSignal);
   } else if (fileType.startsWith('image/') || formatosImagem.some(ext => fileName.endsWith(ext))) {
     console.log('🖼️ Detectado como IMAGEM');
-    return await processImage(file);
+    return await processImage(file, abortSignal);
   } else if (fileType.startsWith('video/')) {
     console.log('🎬 Detectado como VÍDEO (MIME type)');
-    return await processVideo(file);
+    return await processVideo(file, abortSignal);
   } else if (fileType.startsWith('audio/')) {
     console.log('🎵 Detectado como ÁUDIO (MIME type)');
-    return await processAudio(file);
+    return await processAudio(file, abortSignal);
   } else if (fileName.endsWith('.mp4')) {
     console.log('🎬 .mp4 sem MIME type - assumindo VÍDEO');
-    return await processVideo(file);
+    return await processVideo(file, abortSignal);
   } else if (formatosVideo.some(ext => fileName.endsWith(ext))) {
     console.log('🎬 Detectado como VÍDEO (extensão)');
-    return await processVideo(file);
+    return await processVideo(file, abortSignal);
   } else if (formatosAudio.some(ext => fileName.endsWith(ext))) {
     console.log('🎵 Detectado como ÁUDIO (extensão)');
-    return await processAudio(file);
+    return await processAudio(file, abortSignal);
   } else {
     console.error('❌ Formato não suportado:', fileType);
     throw new Error(`Formato de arquivo não suportado: ${fileType || 'desconhecido'}`);

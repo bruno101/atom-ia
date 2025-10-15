@@ -58,6 +58,8 @@ function App() {
   // Refs para controle de scroll e cancelamento de requisições
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
+  const fileProcessingAbortRef = useRef(null);
+  const isIntentionalAbortRef = useRef(false);
  
   // Hook para gerenciar mensagens de progresso automáticas
   const { startProgressTimeout, updateProgressMessage, clearProgressTimeout } = useProgressTimeout(
@@ -85,6 +87,7 @@ function App() {
     setCurrentProgressMessage: updateProgressMessage,
     setPartialResponse,
     abortControllerRef,
+    isIntentionalAbortRef,
     selectedModel,
     scrollToEnd,
     startProgressTimeout,
@@ -94,6 +97,24 @@ function App() {
     attachedFile
   }), [messages, input, isLoading, selectedModel, attachedFile]);
  
+  // Cancela requisições em andamento ao trocar de conversa
+  useEffect(() => {
+    if (abortControllerRef.current) {
+      isIntentionalAbortRef.current = true;
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
+    if (fileProcessingAbortRef.current) {
+      fileProcessingAbortRef.current.abort();
+      fileProcessingAbortRef.current = null;
+    }
+    clearProgressTimeout();
+    setIsLoading(false);
+    setCurrentProgressMessage("");
+    setPartialResponse("");
+    setFileMetadata(null);
+    setAttachedFile(null);
+  }, [conversationId]);
  
   // Cleanup: limpa timeout quando componente é desmontado
   useEffect(() => {
@@ -126,6 +147,7 @@ function App() {
  
             <div className="input-area">
               <InputForm
+                key={conversationId}
                 input={input}
                 setInput={setInput}
                 onSubmit={handleSubmit}
@@ -135,6 +157,7 @@ function App() {
                 setFileMetadata={setFileMetadata}
                 attachedFile={attachedFile}
                 setAttachedFile={setAttachedFile}
+                fileProcessingAbortRef={fileProcessingAbortRef}
               />
               <div className="footer-info">
                 <span>Chatbot SIAN • Dataprev © 2025</span>

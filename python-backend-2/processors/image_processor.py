@@ -51,6 +51,8 @@ def analyze_image_with_gemini(image_file):
             model='gemini-2.0-flash-lite',
             contents=[prompt, image_upload]
         )
+
+        print("Resposta do Gemini: ", response)
         
         client.files.delete(name=image_upload.name)
         os.unlink(temp_path)
