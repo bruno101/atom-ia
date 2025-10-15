@@ -97,10 +97,6 @@ body {
     flex-direction: column;
   }
   
-  .chat-container {
-    max-height: calc(100vh - 270px);
-  }
-  
   .input-area {
     padding: 10px 15px;
   }
