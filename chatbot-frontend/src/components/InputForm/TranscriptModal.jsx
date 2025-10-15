@@ -1,4 +1,4 @@
-import { faCopy, faFilePdf, faPrint, faTimes, faVolumeUp, faStop, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faCopy, faFilePdf, faPrint, faTimes, faVolumeUp, faStop, faSpinner, faShare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
@@ -58,6 +58,22 @@ const TranscriptModal = ({ isOpen, onClose, transcriptText, isTranscribing, prog
     }
   };
 
+  const shareTranscript = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Transcrição',
+          text: transcriptText
+        });
+      } catch (error) {
+        console.log('Compartilhamento cancelado');
+      }
+    } else {
+      copyToClipboard();
+      alert('Texto copiado! Cole onde desejar compartilhar.');
+    }
+  };
+
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
@@ -78,17 +94,20 @@ const TranscriptModal = ({ isOpen, onClose, transcriptText, isTranscribing, prog
           )}
         </div>
         <div className={styles.modalActions}>
-          <button onClick={readTranscript} className={styles.actionButton} disabled={isTranscribing}>
-            <FontAwesomeIcon icon={isReading ? faStop : faVolumeUp} /> {isReading ? 'Parar' : 'Ler'}
+          <button onClick={readTranscript} className={styles.actionButton} disabled={isTranscribing} title={isReading ? 'Parar' : 'Ler'}>
+            <FontAwesomeIcon icon={isReading ? faStop : faVolumeUp} />
           </button>
-          <button onClick={copyToClipboard} className={styles.actionButton} disabled={isTranscribing}>
-            <FontAwesomeIcon icon={faCopy} /> Copiar
+          <button onClick={copyToClipboard} className={styles.actionButton} disabled={isTranscribing} title="Copiar">
+            <FontAwesomeIcon icon={faCopy} />
           </button>
-          <button onClick={exportToPDF} className={styles.actionButton} disabled={isTranscribing}>
-            <FontAwesomeIcon icon={faFilePdf} /> Exportar PDF
+          <button onClick={shareTranscript} className={styles.actionButton} disabled={isTranscribing} title="Compartilhar">
+            <FontAwesomeIcon icon={faShare} />
           </button>
-          <button onClick={printTranscript} className={styles.actionButton} disabled={isTranscribing}>
-            <FontAwesomeIcon icon={faPrint} /> Imprimir
+          <button onClick={exportToPDF} className={styles.actionButton} disabled={isTranscribing} title="Exportar PDF">
+            <FontAwesomeIcon icon={faFilePdf} />
+          </button>
+          <button onClick={printTranscript} className={styles.actionButton} disabled={isTranscribing} title="Imprimir">
+            <FontAwesomeIcon icon={faPrint} />
           </button>
         </div>
       </div>
