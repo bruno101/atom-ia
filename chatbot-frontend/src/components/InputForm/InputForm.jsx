@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useRef, useEffect } from "react";
 import { useSpeechRecognition } from "../../hooks/useSpeechRecognition";
 import { FileUploadArea } from "../../features/fileUpload";
-import { transcribeAudio } from "../../features/fileUpload/fileProcessor";
+import { transcribeFile } from "../../features/fileUpload/fileProcessor";
 import FileThumbnail from "./FileThumbnail";
 import TranscriptModal from "./TranscriptModal";
 import styles from "./InputForm.module.css"; 
@@ -76,7 +76,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     setTranscriptText("");
     
     try {
-      const transcription = await transcribeAudio(attachedFile);
+      const transcription = await transcribeFile(attachedFile);
       setTranscriptText(transcription);
     } catch (error) {
       setTranscriptText(`Erro ao transcrever: ${error.message}`);

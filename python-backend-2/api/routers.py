@@ -174,6 +174,31 @@ async def transcribe_audio(file: UploadFile = File(...)):
         logger.error(f"Erro ao transcrever áudio: {str(e)}")
         return {"transcription": "", "error": str(e)}
 
+@router.post("/transcribe-video")
+async def transcribe_video(file: UploadFile = File(...)):
+    """Endpoint para transcrição de arquivo de vídeo
+    
+    Args:
+        file (UploadFile): Arquivo de vídeo enviado
+        
+    Returns:
+        dict: Transcrição do vídeo
+    """
+    try:
+        video_content = await file.read()
+        
+        if not video_content:
+            raise ValueError("Arquivo de vídeo vazio ou não foi possível ler o conteúdo")
+        
+        from processors.video_transcriber import transcribe_video_with_gemini
+        transcription = transcribe_video_with_gemini(video_content)
+        
+        return {"transcription": transcription}
+        
+    except Exception as e:
+        logger.error(f"Erro ao transcrever vídeo: {str(e)}")
+        return {"transcription": "", "error": str(e)}
+
 @router.post("/process-image")
 async def process_image(file: UploadFile = File(...)):
     """Endpoint para processamento de arquivo de imagem

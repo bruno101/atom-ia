@@ -120,6 +120,39 @@ export const transcribeAudio = async (file) => {
   return result.transcription;
 };
 
+export const transcribeVideo = async (file) => {
+  console.log('🎬 Iniciando transcrição de vídeo:', file.name);
+  
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  const response = await fetch(process.env.REACT_APP_API_TRANSCRICAO_VIDEO, {
+    method: 'POST',
+    body: formData
+  });
+  
+  if (!response.ok) {
+    throw new Error(`Erro ao transcrever: ${response.statusText}`);
+  }
+  
+  const result = await response.json();
+  console.log('✅ Transcrição concluída');
+  return result.transcription;
+};
+
+export const transcribeFile = async (file) => {
+  const fileName = file.name.toLowerCase();
+  const fileType = file.type.toLowerCase();
+
+  if (fileType.startsWith('video/') || formatosVideo.some(ext => fileName.endsWith(ext))) {
+    return await transcribeVideo(file);
+  } else if (fileType.startsWith('audio/') || formatosAudio.some(ext => fileName.endsWith(ext))) {
+    return await transcribeAudio(file);
+  } else {
+    throw new Error('Arquivo não é áudio ou vídeo');
+  }
+};
+
 export const processFile = async (file) => {
   const fileName = file.name.toLowerCase();
   const fileType = file.type.toLowerCase();
