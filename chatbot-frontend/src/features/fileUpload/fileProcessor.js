@@ -43,7 +43,10 @@ const sendToBackend = async (file, endpoint) => {
 
 export const processPDF = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_PDF);
 export const processAudio = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_AUDIO);
-export const processImage = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_IMAGEM);
+export const processImage = async (file) => {
+  const result = await sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_IMAGEM);
+  return result;
+};
 export const processVideo = (file) => sendToBackend(file, process.env.REACT_APP_API_PROCESSAMENTO_VIDEO);
 
 /**

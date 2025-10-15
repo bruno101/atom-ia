@@ -1,3 +1,5 @@
+// Componente de formulário de entrada do chat
+// Gerencia input de texto, voz, upload de arquivos e transcrição
 import { faBolt, faLightbulb, faSearch, faChevronUp, faMicrophone, faStop, faPaperclip, faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useRef, useEffect } from "react";
@@ -10,15 +12,20 @@ import TranscriptModal from "./TranscriptModal";
 import styles from "./InputForm.module.css"; 
 
 const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flash', onModelChange, setFileMetadata, attachedFile, setAttachedFile }) => {
+  // Estados para controle de UI
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showFileUpload, setShowFileUpload] = useState(false);
   const [showTranscriptModal, setShowTranscriptModal] = useState(false);
+  
+  // Estados para transcrição
   const [transcriptText, setTranscriptText] = useState("");
   const [isTranscribing, setIsTranscribing] = useState(false);
   const [progressMessage, setProgressMessage] = useState("");
+  
   const dropdownRef = useRef(null);
   const { isListening, startListening, stopListening, isSupported } = useSpeechRecognition();
 
+  // Fecha dropdown ao clicar fora
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -30,17 +37,19 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Configuração dos modelos disponíveis
   const models = {
     flash: { icon: faBolt, name: 'Rápido', description: 'Mais rápido' },
     thinking: { icon: faLightbulb, name: 'Avançado', description: 'Mais preciso' }
   };
 
+  // Seleciona modelo e fecha dropdown
   const handleModelSelect = (model) => {
     onModelChange?.(model);
     setIsDropdownOpen(false);
   };
 
-  // Manipula o clique no botão de voz
+  // Inicia/para reconhecimento de voz
   const handleVoiceClick = () => {
     if (isListening) {
       stopListening();
@@ -51,7 +60,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     }
   };
 
-  // Manipula o resultado do processamento de arquivo
+  // Processa arquivo e atualiza estado
   const handleFileProcessed = (result, file) => {
     setInput(result.query);
     setFileMetadata(result.metadata);
@@ -59,19 +68,19 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     setShowFileUpload(false);
   };
 
-  // Remove arquivo anexado
+  // Remove arquivo anexado e limpa estado
   const handleRemoveFile = () => {
     setAttachedFile(null);
     setFileMetadata(null);
     setInput('');
   };
 
-  // Manipula clique no ícone de clipe
+  // Alterna visibilidade da área de upload
   const handleClipClick = () => {
     setShowFileUpload(!showFileUpload);
   };
 
-  // Abre modal e inicia transcrição
+  // Abre modal e inicia transcrição de áudio/vídeo
   const handleShowTranscript = () => {
     setShowTranscriptModal(true);
     setIsTranscribing(true);
@@ -80,6 +89,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
     
     const endpoint = getTranscribeEndpoint(attachedFile);
     
+    // Inicia transcrição com streaming SSE
     handleTranscribeSSE(
       attachedFile,
       endpoint,
@@ -90,10 +100,10 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
         if (isFinal) {
           console.log('[InputForm] Received FINAL chunk, length:', chunk.length);
           console.log('[InputForm] FINAL chunk preview:', chunk.substring(0, 200));
-          // Replace with final correct transcription
+          // Substitui com transcrição final corrigida
           setTranscriptText(chunk);
         } else {
-          // Append partial chunk
+          // Adiciona chunk parcial
           setTranscriptText(prev => prev + chunk);
         }
       },
@@ -110,8 +120,7 @@ const InputForm = ({ input, setInput, onSubmit, isLoading, selectedModel = 'flas
   };
 
 
-
-  // Manipula drag over no input para mostrar área de upload
+  // Mostra área de upload ao arrastar arquivo sobre input
   const handleInputDragOver = (e) => {
     e.preventDefault();
     if (!isLoading) {

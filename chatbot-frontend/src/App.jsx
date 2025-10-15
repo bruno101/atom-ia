@@ -1,3 +1,5 @@
+// Componente principal da aplicação SIAN
+// Gerencia estado global, layout e orquestração de componentes
 import React, { useRef, useEffect, useMemo } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
@@ -11,6 +13,7 @@ import { useProgressTimeout } from "./hooks/useProgressTimeout";
 import { useConversation } from "./hooks/useConversation";
  
 function App() {
+  // Hook customizado para gerenciar conversas e persistência
   const {
     conversationId,
     messages,
@@ -24,17 +27,22 @@ function App() {
     loadConversation,
     startNewConversation
   } = useConversation();
+  
+  // Estados para controle de loading e streaming
   const [isLoading, setIsLoading] = React.useState(false);
   const [currentProgressMessage, setCurrentProgressMessage] = React.useState("");
   const [partialResponse, setPartialResponse] = React.useState("");
+  
+  // Estados para gerenciamento de arquivos anexados
   const [fileMetadata, setFileMetadata] = React.useState(null);
   const [attachedFile, setAttachedFile] = React.useState(null);
 
+  // Auto-scroll quando novas mensagens são adicionadas
   useEffect(() => {
     scrollToEnd();
   }, [messages]);
  
-  // Debug logging para mudanças de estado
+  // Debug: monitora mudanças de estado para troubleshooting
   useEffect(() => {
     console.log('🔄 APP: isLoading changed to:', isLoading);
   }, [isLoading]);
@@ -47,23 +55,25 @@ function App() {
     console.log('📝 APP: partialResponse changed, length:', partialResponse?.length || 0);
   }, [partialResponse]);
 
+  // Refs para controle de scroll e cancelamento de requisições
   const scrollAreaRef = useRef(null);
   const abortControllerRef = useRef(null);
  
- 
- 
+  // Hook para gerenciar mensagens de progresso automáticas
   const { startProgressTimeout, updateProgressMessage, clearProgressTimeout } = useProgressTimeout(
     isLoading,
     partialResponse,
     setCurrentProgressMessage
   );
  
+  // Função para scroll automático até o final da lista de mensagens
   const scrollToEnd = () => {
     if (scrollAreaRef.current) {
       scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
     }
   };
  
+  // Memoiza handler de submit para evitar recriações desnecessárias
   const handleSubmit = useMemo(() => createHandleSubmit({
     messages,
     input,
@@ -74,7 +84,6 @@ function App() {
     setIsLoading,
     setCurrentProgressMessage: updateProgressMessage,
     setPartialResponse,
-
     abortControllerRef,
     selectedModel,
     scrollToEnd,
@@ -86,10 +95,7 @@ function App() {
   }), [messages, input, isLoading, selectedModel, attachedFile]);
  
  
- 
-
- 
-  // Cleanup do timeout quando o componente for desmontado
+  // Cleanup: limpa timeout quando componente é desmontado
   useEffect(() => {
     return () => {
       clearProgressTimeout();

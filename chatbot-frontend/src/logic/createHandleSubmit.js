@@ -1,6 +1,9 @@
+// Lógica de submissão de mensagens do chat
+// Gerencia envio de mensagens, processamento de arquivos e streaming SSE
 import buildHistorico from "./buildHistorico";
 import fetchSse from "./fetchSse";
 import { processURL } from "../features/fileUpload/fileProcessor";
+import { createImageThumbnail, createVideoThumbnail, saveThumbnail } from "../utils/imageThumbnail";
 
 export default function createHandleSubmit({
   messages,
@@ -12,7 +15,6 @@ export default function createHandleSubmit({
   setIsLoading,
   setCurrentProgressMessage,
   setPartialResponse,
-
   abortControllerRef,
   selectedModel,
   scrollToEnd,
@@ -22,6 +24,7 @@ export default function createHandleSubmit({
   setAttachedFile,
   attachedFile
 }) {
+  // Função auxiliar para exibir mensagens de erro
   const fallbackError = (content) => {
     clearProgressTimeout();
     setIsLoading(false);
@@ -40,6 +43,7 @@ export default function createHandleSubmit({
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
+    // Cancela requisição anterior se existir
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
       abortControllerRef.current = null;
@@ -47,8 +51,26 @@ export default function createHandleSubmit({
 
     clearProgressTimeout();
 
+    const messageId = Date.now().toString();
+    
+    // Gera e salva thumbnail para imagens e vídeos
+    if (fileMetadata && attachedFile) {
+      try {
+        if (attachedFile.type.startsWith('image/')) {
+          const thumbnail = await createImageThumbnail(attachedFile);
+          saveThumbnail(messageId, thumbnail);
+        } else if (attachedFile.type.startsWith('video/')) {
+          const thumbnail = await createVideoThumbnail(attachedFile);
+          saveThumbnail(messageId, thumbnail);
+        }
+      } catch (error) {
+        console.error('Error creating thumbnail:', error);
+      }
+    }
+    
+    // Cria mensagem do usuário com metadados de arquivo se existir
     const userMessage = {
-      id: Date.now().toString(),
+      id: messageId,
       role: "user",
       content: input.trim(),
       timestamp: new Date(),
@@ -58,13 +80,15 @@ export default function createHandleSubmit({
           nome_arquivo: attachedFile.name,
           tipo: attachedFile.type.includes('pdf') ? 'pdf' : 
                 attachedFile.type.includes('audio') ? 'audio' : 
-                attachedFile.type.includes('video') ? 'video' : 'pdf'
+                attachedFile.type.includes('video') ? 'video' : 
+                attachedFile.type.includes('image') ? 'image' : 'pdf'
         }
       }),
     };
 
     setAttachedFile(null);
 
+    // Atualiza estado com nova mensagem
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setCurrentProgressMessage("");
@@ -72,20 +96,20 @@ export default function createHandleSubmit({
     setIsLoading(true);
     
     console.log('🚀 SUBMIT: Starting request, calling startProgressTimeout');
-    // Inicia o timeout para mensagens de progresso automáticas
     startProgressTimeout();
     
+    // Scroll automático após adicionar mensagem
     setTimeout(() => {
       scrollToEnd();
     }, 100);
     setSuggestedLinks([]);
 
-    // Check if input is only a URL
+    // Verifica se input é apenas uma URL
     const urlRegex = /^https?:\/\/[^\s]+$/;
     const isUrlOnly = urlRegex.test(input.trim());
 
     if (isUrlOnly) {
-      // Process URL first, then make the streaming request
+      // Processa URL antes de fazer streaming
       try {
         setCurrentProgressMessage("Analisando URL...");
         console.log("HANDLER LOG: 🌐 Detectada URL, processando:", input.trim());
@@ -94,7 +118,7 @@ export default function createHandleSubmit({
         setCurrentProgressMessage("Pesquisando sobre " + processedData["assunto_principal"]);
         console.log("HANDLER LOG: ✅ URL processada com sucesso");
 
-        // Use the processed query for the streaming request
+        // Usa dados processados para streaming
         const payload = {
           consulta: "Encontre documentos relacionadas a: " + input.trim(),
           metadata: processedData
@@ -107,7 +131,7 @@ export default function createHandleSubmit({
           url,
           { body: payload },
           (event) => {
-            //onMessage
+            // Handler de mensagens SSE
             console.log("HANDLER LOG: 📨 Evento recebido:", event.type, event.data);
             if (event.type === "progress") {
               console.log('📊 SUBMIT: Progress event received, calling updateProgressMessage');
@@ -121,14 +145,14 @@ export default function createHandleSubmit({
             }
           },
           (error) => {
-            //onError
+            // Handler de erros
             console.error("HANDLER LOG: 🚫 Erro na conexão SSE (fetch):", error);
             fallbackError(
               "Ocorreu um erro na comunicação com o servidor. Tente novamente."
             );
           },
           (event) => {
-            //onDone
+            // Handler de conclusão
             try {
               const data = JSON.parse(event.data);
               const botMessage = {
@@ -164,11 +188,11 @@ export default function createHandleSubmit({
             }
           },
           () => {
-            // onOpen
+            // Handler de abertura de conexão
             console.log("HANDLER LOG: 🔌 Conexão SSE estabelecida.");
           },
           () => {
-            // onClose
+            // Handler de fechamento de conexão
             console.log("HANDLER LOG: Stream da API concluído.");
             clearProgressTimeout();
             if (isLoading) {

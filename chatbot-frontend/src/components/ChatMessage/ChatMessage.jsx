@@ -102,7 +102,7 @@ const ChatMessage = ({ message }) => {
           
           {/* Exibe arquivo anexado se existir */}
           {message.fileMetadata && (
-            <FileAttachment fileMetadata={message.fileMetadata} />
+            <FileAttachment fileMetadata={message.fileMetadata} messageId={message.id} />
           )}
           
           {/* Renderiza o conteúdo da mensagem com suporte a Markdown */}

@@ -2,10 +2,11 @@ const STORAGE_KEY = 'chatbot_conversations';
 
 export const saveConversation = (conversationId, data) => {
   const conversations = getAllConversations();
+  const existing = conversations[conversationId];
   conversations[conversationId] = {
     ...data,
     id: conversationId,
-    updatedAt: new Date().toISOString()
+    updatedAt: existing?.updatedAt || new Date().toISOString()
   };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
 };

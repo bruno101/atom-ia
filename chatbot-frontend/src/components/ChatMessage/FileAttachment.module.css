@@ -1,0 +1,15 @@
+.imageThumbnail {
+  margin-bottom: 12px;
+}
+
+.imageThumbnail img {
+  max-width: 200px;
+  border-radius: 8px;
+  display: block;
+}
+
+.imageName {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+}

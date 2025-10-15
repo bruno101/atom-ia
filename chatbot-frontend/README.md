@@ -59,25 +59,63 @@ npm run eject        # Ejetar configuração CRA
 ```
 src/
 ├── components/          # Componentes React
-│   ├── Header/         # Cabeçalho da aplicação
-│   ├── ChatHeader/     # Cabeçalho do chat
-│   ├── MessageList/    # Lista de mensagens
-│   ├── InputForm/      # Formulário com voz e upload de arquivos
-│   ├── Sidebar/        # Barra lateral com links
-│   └── Footer/         # Rodapé
+│   ├── Header/         # Cabeçalho governamental da aplicação
+│   ├── ChatHeader/     # Cabeçalho do chat com logo NISA
+│   ├── ChatMessage/    # Componente de mensagem individual
+│   │   ├── ChatMessage.jsx
+│   │   ├── UrlPreview.jsx  # Preview de URLs com YouTube embed
+│   │   └── FileAttachment.jsx  # Exibição de arquivos anexados
+│   ├── MessageList/    # Lista de mensagens com scroll
+│   ├── InputForm/      # Formulário com voz, upload e transcrição
+│   │   ├── InputForm.jsx
+│   │   ├── FileThumbnail.jsx  # Thumbnail de arquivos
+│   │   └── TranscriptModal.jsx  # Modal de transcrição
+│   ├── Sidebar/        # Barra lateral com histórico e links
+│   └── Footer/         # Rodapé institucional
 ├── features/           # Funcionalidades organizadas
-│   └── fileUpload/     # Sistema de upload de arquivos
-├── hooks/              # Hooks personalizados (useSpeechRecognition, useTextToSpeech)
-├── icons/              # Ícones SVG
+│   └── fileUpload/     # Sistema de upload multimodal
+│       ├── FileUploadArea.jsx
+│       └── fileProcessor.js  # Processamento de PDF, áudio, vídeo, imagem
+├── hooks/              # Hooks personalizados
+│   ├── useConversation.js  # Gerenciamento de conversas
+│   ├── useSpeechRecognition.js  # Reconhecimento de voz
+│   ├── useTextToSpeech.js  # Síntese de voz
+│   └── useProgressTimeout.js  # Mensagens de progresso
+├── icons/              # Ícones SVG customizados
 ├── logic/              # Lógica de negócio
+│   ├── createHandleSubmit.js  # Lógica de submissão
+│   ├── fetchSse.js     # Cliente SSE
+│   ├── buildHistorico.js  # Formatação de histórico
+│   └── handleTranscribeSSE.js  # Streaming de transcrição
+├── utils/              # Utilitários
+│   ├── conversationStorage.js  # Persistência local
+│   ├── formatTime.js   # Formatação de tempo
+│   └── imageThumbnail.js  # Geração de thumbnails
+├── config/             # Configurações
+│   └── progressConfig.js  # Mensagens de progresso
 └── App.jsx            # Componente principal
 ```
 
 ### Backend (python-backend-2)
+Veja [python-backend-2/README.md](../python-backend-2/README.md) para documentação completa do backend.
+
 ```
-├── api/                 # Serviços da API
-├── rag_models/          # Modelos RAG (flash, thinking)
-├── search_algorithms/   # Algoritmos de busca e avaliação
+python-backend-2/
+├── api/                 # Camada de API
+│   ├── api_service.py   # Lógica de negócio
+│   ├── models.py        # Modelos Pydantic
+│   └── routers.py       # Endpoints HTTP
+├── processors/          # Processadores multimodais
+│   ├── audio_processor.py
+│   ├── video_processor.py
+│   ├── image_processor.py
+│   ├── pdf_processor.py
+│   └── url_processor_backend.py
+├── rag_models/          # Modelos RAG
+│   ├── flash/           # Modelo rápido
+│   ├── thinking/        # Modelo avançado
+│   └── multimodal/      # Modelo multimodal
+├── search_algorithms/   # Algoritmos de busca
 ├── main.py             # Servidor FastAPI
 ├── config.py           # Configurações globais
 └── requirements.txt    # Dependências Python
@@ -107,7 +145,27 @@ src/
 Crie um arquivo `.env` na raiz do projeto:
  
 ```env
-REACT_APP_API_URL=http://localhost:8000
+# Endpoints de Chat
+REACT_APP_API_URL_FLASH=http://localhost:8000/ask-stream-flash
+REACT_APP_API_URL_THINKING=http://localhost:8000/ask-stream
+REACT_APP_API_URL_MULTIMODAL=http://localhost:8000/ask-file-stream
+
+# Endpoints de Processamento
+REACT_APP_API_PROCESSAMENTO_PDF=http://localhost:8000/process-pdf
+REACT_APP_API_PROCESSAMENTO_AUDIO=http://localhost:8000/process-audio
+REACT_APP_API_PROCESSAMENTO_VIDEO=http://localhost:8000/process-video
+REACT_APP_API_PROCESSAMENTO_IMAGEM=http://localhost:8000/process-image
+REACT_APP_API_PROCESSAMENTO_URL=http://localhost:8000/process-url
+
+# Endpoints de Transcrição
+REACT_APP_API_TRANSCRICAO_AUDIO=http://localhost:8000/transcribe-audio
+REACT_APP_API_TRANSCRICAO_VIDEO=http://localhost:8000/transcribe-video
+
+# Formatos de Arquivo Suportados
+REACT_APP_FORMATOS_SUPORTADOS_TEXTO=.pdf
+REACT_APP_FORMATOS_SUPORTADOS_AUDIO=.mp3,.wav,.aac,.flac,.m4a,.ogg
+REACT_APP_FORMATOS_SUPORTADOS_VIDEO=.mp4,.mov,.mpeg,.mpg,.webm,.avi
+REACT_APP_FORMATOS_SUPORTADOS_IMAGEM=.jpeg,.jpg,.png,.webp,.gif,.bmp,.heic,.heif
 ```
 
 ### Arquitetura do Backend

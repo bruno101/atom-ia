@@ -1,8 +1,13 @@
+// Hook customizado para gerenciamento de conversas
+// Gerencia estado, persistência e navegação entre conversas
 import { useState, useEffect, useCallback } from 'react';
 import { saveConversation, getConversation, generateConversationId } from '../utils/conversationStorage';
 
 export const useConversation = () => {
+  // Estado da conversa atual
   const [conversationId, setConversationId] = useState(() => generateConversationId());
+  
+  // Mensagens da conversa (inicializa com mensagem de boas-vindas)
   const [messages, setMessages] = useState([
     {
       id: "1",
@@ -11,10 +16,13 @@ export const useConversation = () => {
       timestamp: new Date(),
     },
   ]);
+  
+  // Estado do input e configurações
   const [input, setInput] = useState("");
   const [selectedModel, setSelectedModel] = useState("flash");
   const [suggestedLinks, setSuggestedLinks] = useState([]);
 
+  // Salva conversa atual no localStorage
   const saveCurrentConversation = useCallback(() => {
     if (messages.length > 1) {
       saveConversation(conversationId, {
@@ -27,10 +35,12 @@ export const useConversation = () => {
     }
   }, [conversationId, messages, input, selectedModel, suggestedLinks]);
 
+  // Auto-save: salva conversa sempre que houver mudanças
   useEffect(() => {
     saveCurrentConversation();
   }, [messages, input, selectedModel, suggestedLinks]);
 
+  // Carrega conversa existente do localStorage
   const loadConversation = useCallback((id) => {
     const conversation = getConversation(id);
     if (conversation) {
@@ -45,6 +55,7 @@ export const useConversation = () => {
     }
   }, []);
 
+  // Inicia nova conversa com estado limpo
   const startNewConversation = useCallback(() => {
     const newId = generateConversationId();
     setConversationId(newId);

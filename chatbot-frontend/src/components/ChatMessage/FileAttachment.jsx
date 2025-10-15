@@ -1,6 +1,19 @@
+import { getThumbnail } from '../../utils/imageThumbnail';
 import FileThumbnail from '../InputForm/FileThumbnail';
+import styles from './FileAttachment.module.css';
 
-const FileAttachment = ({ fileMetadata }) => {
+const FileAttachment = ({ fileMetadata, messageId }) => {
+  const thumbnail = getThumbnail(messageId);
+  
+  if ((fileMetadata.tipo === 'image' || fileMetadata.tipo === 'video') && thumbnail) {
+    return (
+      <div className={styles.imageThumbnail}>
+        <img src={thumbnail} alt={fileMetadata.nome_arquivo} />
+        <div className={styles.imageName}>{fileMetadata.nome_arquivo}</div>
+      </div>
+    );
+  }
+  
   const file = {
     name: fileMetadata.nome_arquivo,
     type: fileMetadata.tipo === 'pdf' ? 'application/pdf' :
