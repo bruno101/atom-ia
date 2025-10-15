@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useMemo } from "react";
+import React, { useRef, useEffect, useMemo } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import ChatHeader from "./components/ChatHeader/ChatHeader";
@@ -8,26 +8,31 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import createHandleSubmit from "./logic/createHandleSubmit";
 import Footer from "./components/Footer/Footer";
 import { useProgressTimeout } from "./hooks/useProgressTimeout";
+import { useConversation } from "./hooks/useConversation";
  
 function App() {
-  const [messages, setMessages] = useState([
-    {
-      id: "1",
-      role: "assistant",
-      content:
-        "Olá! Eu sou **NISA**, uma IA especializada em busca arquivística do S**IA**N.\n\nPosso ajudá-lo a encontrar documentos, fundos arquivísticos, séries documentais e informações históricas.\n\nO que você deseja pesquisar hoje?",
-      timestamp: new Date(),
-    },
-  ]);
- 
-  const [input, setInput] = useState("");
-  const [selectedModel, setSelectedModel] = useState("flash");
-  const [suggestedLinks, setSuggestedLinks] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [currentProgressMessage, setCurrentProgressMessage] = useState("");
-  const [partialResponse, setPartialResponse] = useState("");
-  const [fileMetadata, setFileMetadata] = useState(null);
-  const [attachedFile, setAttachedFile] = useState(null);
+  const {
+    conversationId,
+    messages,
+    setMessages,
+    input,
+    setInput,
+    selectedModel,
+    setSelectedModel,
+    suggestedLinks,
+    setSuggestedLinks,
+    loadConversation,
+    startNewConversation
+  } = useConversation();
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [currentProgressMessage, setCurrentProgressMessage] = React.useState("");
+  const [partialResponse, setPartialResponse] = React.useState("");
+  const [fileMetadata, setFileMetadata] = React.useState(null);
+  const [attachedFile, setAttachedFile] = React.useState(null);
+
+  useEffect(() => {
+    scrollToEnd();
+  }, [messages]);
  
   // Debug logging para mudanças de estado
   useEffect(() => {
@@ -97,6 +102,9 @@ function App() {
       <div className="main-container">
         <Sidebar
           suggestedLinks={suggestedLinks}
+          onNewConversation={startNewConversation}
+          onLoadConversation={loadConversation}
+          currentConversationId={conversationId}
         />
         <div className="chat-section">
           <div className="chat-container">

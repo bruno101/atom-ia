@@ -6,6 +6,7 @@ import { useTextToSpeech } from "../../hooks/useTextToSpeech";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp, faStop } from "@fortawesome/free-solid-svg-icons";
 import FileAttachment from "./FileAttachment";
+import UrlPreview from "./UrlPreview";
 import styles from "./ChatMessage.module.css";
 
 /**
@@ -51,6 +52,10 @@ const ChatMessage = ({ message }) => {
   // Determina se a mensagem é do usuário ou do assistente
   const isUser = message.role === "user";
 
+  // Detecta se a mensagem contém uma URL
+  const urlRegex = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/;
+  const isUrl = isUser && urlRegex.test(message.content.trim());
+
   // Manipula o clique no botão de leitura
   const handleSpeakClick = () => {
     speak(message.content);
@@ -86,6 +91,13 @@ const ChatMessage = ({ message }) => {
             >
               <FontAwesomeIcon icon={isSpeaking ? faStop : faVolumeUp} />
             </button>
+          )}
+          
+          {/* Exibe preview de URL se a mensagem for uma URL */}
+          {isUrl && (
+            <div>
+              <UrlPreview url={message.content.trim()} />
+            </div>
           )}
           
           {/* Exibe arquivo anexado se existir */}
