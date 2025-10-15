@@ -18,7 +18,7 @@ const Sidebar = ({ suggestedLinks, onNewConversation, onLoadConversation, curren
     const loadConversations = () => {
       const allConvs = getAllConversations();
       const convArray = Object.values(allConvs).sort((a, b) => 
-        new Date(a.updatedAt) - new Date(b.updatedAt)
+        new Date(b.updatedAt) - new Date(a.updatedAt)
       );
       setConversations(convArray);
     };
